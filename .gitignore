@@ -1,0 +1,9 @@
+# Original files
+LitDev.xml
+Litdev.De.xml
+
+# Binaries
+*.exe
+
+# Setting files
+TranslateXML.settings
