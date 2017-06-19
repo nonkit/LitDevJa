@@ -6,7 +6,8 @@ LitDev Extension Document in Japanese
 - Litdev Extension 1.2
 
 ## Usage
-TBD
+1. Copy LitDev.ja.xml to C:\Program Files (x86)\Microsoft\Small Basic\Lib .
+1. Run Japanese Version of Small Basic.
 
 ## Development Tool
 - Translate Aid J
