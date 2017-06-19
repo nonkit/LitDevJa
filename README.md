@@ -1,5 +1,7 @@
 # LitDevJa
-LitDev Extension Document in Japanese
+LitDev Extension Help Document in Japanese
+
+Current version 1.2.0b JA is a beta version.  It stareted with machine translation and now is working to refine Japanese.
 
 ## System Requirement
 - Small Basic 1.2
