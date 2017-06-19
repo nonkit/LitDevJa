@@ -1,0 +1,321 @@
+' Translate Aid J
+' Version 0.1
+' Copyright © 2017 Nonki Takahashi.  The MIT License.
+' Last update 2017-06-19
+
+debug = "False"
+title = "Translate Aid J 0.1"
+GraphicsWindow.Title = title
+Not = "False=True;True=False;"
+WQ = Text.GetCharacter(34)
+Form()
+path[1] = Program.Directory + "\LitDev.xml"
+lang = 1  ' en
+Open()
+path[2] = Program.Directory + "\LitDev.ja.xml"
+lang = 2  ' ja
+Open()
+LDControls.MenuClicked = OnMenuClicked
+While "True"
+  If menuClicked Then
+    lang = 2  ' only for ja
+    UpdateNode()
+    If menu = "Child" Then
+      For lang = 1 To 2
+        LDxml.Switch(name[lang])
+        lvl[lang] = lvl[lang] + 1
+        nSib[lang][lvl[lang]] = LDxml.ChildrenCount
+        sib[lang][lvl[lang]] = 1
+        result[lang] = LDxml.FirstChild()
+        ShowNode()
+      EndFor
+    ElseIf menu = "Next" Then
+      For lang = 1 To 2
+        LDxml.Switch(name[lang])
+        FindNext()
+      EndFor
+    ElseIf menu = "Parent" Then
+      For lang = 1 To 2
+        LDxml.Switch(name[lang])
+        result[lang] = LDxml.Parent()
+        nSib[lang][lvl[lang]] = ""
+        sib[lang][lvl[lang]] = ""
+        lvl[lang] = lvl[lang] - 1
+        ShowNode()
+      EndFor
+    ElseIf menu = "Prev" Then
+      For lang = 1 To 2
+        LDxml.Switch(name[lang])
+        FindPrev()
+      EndFor
+    ElseIf menu = "Quote" Then
+      lang = 2
+      LDxml.Switch(name[lang])
+      FirstNode()
+      cont = "True"
+      While cont
+        FindNext()
+        If lvl[lang] = 1 Then
+          cont = "False"
+        Else
+          inner[lang] = LDText.Replace(saved[lang], "「", WQ)
+          inner[lang] = LDText.Replace(inner[lang], "」", WQ)
+          If Text.IsSubText(saved[lang], "「") Then
+            TextWindow.WriteLine("saved=" + saved[lang])
+            TextWindow.WriteLine("inner=" + inner[lang])
+          EndIf
+          UpdateNode()
+        EndIf
+      EndWhile
+    ElseIf menu = "Save" Then
+      lang = 2
+      msg = "Are you sure to save " + path[lang] + "?"
+      ans = LDDialogs.Confirm(msg, "Save")
+      If ans = "Yes" Then
+        LDxml.Switch(name[lang])
+        LDxml.Save(path[lang])
+      EndIf
+    ElseIf menu = "Sibling" Then
+      For lang = 1 To 2
+        LDxml.Switch(name[lang])
+        result[lang] = LDxml.NextSibling()
+        If result[lang] = "SUCCESS" Then
+          sib[lang][lvl[lang]] = sib[lang][lvl[lang]] + 1
+        EndIf
+        ShowNode()
+      EndFor
+    EndIf
+    menuClicked = "False"
+  Else
+    Program.Delay(200)
+  EndIf
+EndWhile
+
+Sub DumpNode
+  t = ""
+  For l = 1 To lvl[lang]
+    If 1 < l Then
+      t = Text.Append(t, ".")
+    EndIf
+    t = Text.Append(t, sib[lang][l])
+  EndFor
+  TextWindow.WriteLine(t)
+EndSub
+
+Sub FindNext
+  found = "False"
+  If debug Then
+    TextWindow.WriteLine(path[lang])
+  EndIf
+  While Not[found]
+    While 0 < n[lang]
+      lvl[lang] = lvl[lang] + 1
+      nSib[lang][lvl[lang]] = n[lang]
+      sib[lang][lvl[lang]] = 1
+      If debug Then
+        DumpNode()
+      EndIf
+      result[lang] = LDxml.FirstChild()
+      If result[lang] = "SUCCESS" Then
+        advance = "True"
+        ShowNode()
+        If node[lang] = "#text" Then
+          found = "True"
+        EndIf
+      EndIf
+    EndWhile
+    advance = "False"
+    While Not[found] And Not[advance]
+      If Not[advance] And (sib[lang][lvl[lang]] < nSib[lang][lvl[lang]]) Then
+        result[lang] = LDxml.NextSibling()
+        If result[lang] = "SUCCESS" Then
+          advance = "True"  ' found next sibling
+          sib[lang][lvl[lang]] = sib[lang][lvl[lang]] + 1
+          If debug Then
+            DumpNode()
+          EndIf
+          ShowNode()
+          If node[lang] = "#text" Then
+            found = "True"
+          EndIf
+        EndIf
+      EndIf
+      If Not[advance] Then
+        result[lang] = LDxml.Parent()
+        If result[lang] = "SUCCESS" Then
+          nSib[lang][lvl[lang]] = ""
+          sib[lang][lvl[lang]] = ""
+          lvl[lang] = lvl[lang] - 1
+          If debug Then
+            DumpNode()
+          EndIf
+          ShowNode()
+        Else
+          FirstNode()
+          found = "True"    ' end of xml
+        EndIf
+      EndIf
+    EndWhile
+  EndWhile
+  If debug Then
+    TextWindow.WriteLine("found=" + found)
+    TextWindow.WriteLine("advance=" + advance)
+  EndIf
+EndSub
+
+Sub FindPrev
+  found = "False"
+  If debug Then
+    TextWindow.WriteLine(path[lang])
+  EndIf
+  While Not[found]
+    While 0 < n[lang]
+      lvl[lang] = lvl[lang] + 1
+      nSib[lang][lvl[lang]] = n[lang]
+      sib[lang][lvl[lang]] = n[lang]
+      If debug Then
+        DumpNode()
+      EndIf
+      result[lang] = LDxml.LastChild()
+      If result[lang] = "SUCCESS" Then
+        advance = "True"
+        ShowNode()
+        If node[lang] = "#text" Then
+          found = "True"
+        EndIf
+      EndIf
+    EndWhile
+    advance = "False"
+    While Not[found] And Not[advance]
+      If Not[advance] And (1 < nSib[lang][lvl[lang]]) Then
+        result[lang] = LDxml.PreviousSibling()
+        If result[lang] = "SUCCESS" Then
+          advance = "True"  ' found next sibling
+          sib[lang][lvl[lang]] = sib[lang][lvl[lang]] - 1
+          If debug Then
+            DumpNode()
+          EndIf
+          ShowNode()
+          If node[lang] = "#text" Then
+            found = "True"
+          EndIf
+        EndIf
+      EndIf
+      If Not[advance] Then
+        result[lang] = LDxml.Parent()
+        If result[lang] = "SUCCESS" Then
+          nSib[lang][lvl[lang]] = ""
+          sib[lang][lvl[lang]] = ""
+          lvl[lang] = lvl[lang] - 1
+          If debug Then
+            DumpNode()
+          EndIf
+          ShowNode()
+        Else
+          FirstNode()
+          found = "True"    ' end of xml
+        EndIf
+      EndIf
+    EndWhile
+  EndWhile
+  If debug Then
+    TextWindow.WriteLine("found=" + found)
+    TextWindow.WriteLine("advance=" + advance)
+  EndIf
+EndSub
+
+Sub FirstNode
+  lvl[lang] = 1
+  nSib[lang][lvl[lang]] = 1
+  sib[lang][lvl[lang]] = 1
+  result[lang] = LDxml.FirstNode()
+  ShowNode()
+EndSub
+
+Sub Form
+  gw = 598
+  gh = 428
+  GraphicsWindow.Width = gw
+  GraphicsWindow.Height = gh
+  GraphicsWindow.BackgroundColor = "LightGray"
+  GraphicsWindow.BrushColor = "Black"
+  
+  menuList["File"] = "Main"
+  menuList["Save"] = "File"
+  menuList["Node"] = "Main"
+  menuList["Next"] = "Node"
+  menuList["Prev"] = "Node"
+  menuList["--"] = "Node"
+  menuList["Sibling"] = "Node"
+  menuList["Child"] = "Node"
+  menuList["Parent"] = "Node"
+  menuList["Auto"] = "Main"
+  menuList["Quote"] = "Auto"
+  LDControls.AddMenu(gw, 20, menuList, "", "")
+  yOffset = "1=20;2=210;"
+  For lang = 1 To 2
+    textName[lang] = Shapes.AddText("")
+    Shapes.Move(textName[lang], 10, 10 + yOffset[lang])
+    textResult[lang] = Shapes.AddText("")
+    Shapes.Move(textResult[lang], 110, 10 + yOffset[lang])
+    GraphicsWindow.DrawText(210, 10 + yOffset[lang], "Sibling")
+    textSib[lang] = Shapes.AddText("")
+    Shapes.Move(textSib[lang], 260, 10 + yOffset[lang])
+    GraphicsWindow.DrawText(310, 10 + yOffset[lang], "Child")
+    textN[lang] = Shapes.AddText("")
+    Shapes.Move(textN[lang], 360, 10 + yOffset[lang])
+    textNode[lang] = Controls.AddTextBox(410, 7 + yOffset[lang])
+    textInner[lang] = Controls.AddMultiLineTextBox(10, 32 + yOffset[lang])
+    Controls.SetSize(textInner[lang], gw - 20, 150)
+  EndFor
+EndSub
+
+Sub OnMenuClicked
+  menuClicked = "True"
+  menu = LDControls.LastMenuItem
+EndSub
+
+Sub Open
+  name[lang] = LDxml.Open(path[lang])
+  Shapes.SetText(textName[lang], name[lang])
+  FirstNode()
+EndSub
+
+Sub ShowNode
+  t = title + " - "
+  For l = 1 To lvl[lang]
+    If 1 < l Then
+      t = t + "."
+    EndIf
+    t = t + sib[lang][l]
+  EndFor
+  GraphicsWindow.Title = t 
+  Shapes.SetText(textResult[lang], result[lang])
+  Shapes.SetText(textSib[lang], sib[lang][lvl[lang]] + "/" + nSib[lang][lvl[lang]])
+  n[lang] = LDxml.ChildrenCount
+  Shapes.SetText(textN[lang], n[lang])
+  node[lang] = LDxml.NodeName
+  Controls.SetTextBoxText(textNode[lang], node[lang])
+  nAttr = LDxml.AttributesCount
+  If node[lang] = "#text" Then
+    saved[lang] = LDxml.NodeInnerText
+    Controls.SetTextBoxText(textInner[lang], saved[lang])
+  ElseIf 0 < nAttr Then
+    attr = LDxml.Attributes
+    Controls.SetTextBoxText(textInner[lang], attr)
+  Else
+    Controls.SetTextBoxText(textInner[lang], "")
+  EndIf
+EndSub
+
+Sub UpdateNode
+  If node[lang] = "#text" Then
+    inner[lang] = Controls.GetTextBoxText(textInner[lang])
+    If inner[lang] <> saved[lang] Then
+      LDxml.Parent()
+      LDxml.AddNode(LDxml.NodeName, LDxml.Attributes, inner[lang], "Before")
+      LDxml.RemoveNode()
+      LDxml.FirstChild()
+    EndIf
+  EndIf
+EndSub

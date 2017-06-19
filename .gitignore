@@ -3,7 +3,9 @@ LitDev.xml
 Litdev.De.xml
 
 # Binaries
+*.dll
 *.exe
+*.pdb
 
 # Setting files
 TranslateXML.settings
