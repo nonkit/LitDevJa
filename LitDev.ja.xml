@@ -29,7 +29,7 @@
       <param name="Query">Bing検索クエリのサンプル値：xbox</param>
       <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlightingです。サンプル値：EnableHighlighting</param>
       <param name="WebSearchOptions">Webソース・タイプへの要求のオプションを指定します。有効な値は、DisableHostCollapsing、DisableQueryAlterationsです。サンプル値：DisableQueryAlterations</param>
-      <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけでは・りません。サンプル値：en-US</param>
+      <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
       <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：中位</param>
       <param name="Latitude">緯度サンプル値：47.603450</param>
       <param name="Longitude">経度サンプル値：-122.329696</param>
@@ -40,7 +40,7 @@
       </summary>
       <param name="Query">Bing検索クエリのサンプル値：xbox</param>
       <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlightingです。サンプル値：EnableHighlighting</param>
-      <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけでは・りません。サンプル値：en-US</param>
+      <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
       <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：中位</param>
       <param name="Latitude">緯度サンプル値：47.603450</param>
       <param name="Longitude">経度サンプル値：-122.329696</param>
@@ -51,7 +51,7 @@
       </summary>
       <param name="Query">Bing検索クエリのサンプル値：xbox</param>
       <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlightingです。サンプル値：EnableHighlighting</param>
-      <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけでは・りません。サンプル値：en-US</param>
+      <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
       <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：中位</param>
       <param name="Latitude">緯度サンプル値：47.603450</param>
       <param name="Longitude">経度サンプル値：-122.329696</param>
@@ -63,7 +63,7 @@
       </summary>
       <param name="Query">Bing検索クエリのサンプル値：xbox</param>
       <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlightingです。サンプル値：EnableHighlighting</param>
-      <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけでは・りません。サンプル値：en-US</param>
+      <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
       <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：中位</param>
       <param name="Latitude">緯度サンプル値：47.603450</param>
       <param name="Longitude">経度サンプル値：-122.329696</param>
@@ -76,7 +76,7 @@
       </summary>
       <param name="Query">Bing検索クエリのサンプル値：xbox</param>
       <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlightingです。サンプル値：EnableHighlighting</param>
-      <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけでは・りません。サンプル値：en-US</param>
+      <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
       <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：中位</param>
       <param name="Latitude">緯度サンプル値：47.603450</param>
       <param name="Longitude">経度サンプル値：-122.329696</param>
@@ -86,7 +86,7 @@
       </summary>
       <param name="Query">Bing検索照会のサンプル値：xblox</param>
       <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlightingです。サンプル値：EnableHighlighting</param>
-      <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけでは・りません。サンプル値：en-US</param>
+      <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
       <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：中位</param>
       <param name="Latitude">緯度サンプル値：47.603450</param>
       <param name="Longitude">経度サンプル値：-122.329696</param>
@@ -98,7 +98,7 @@
             スモールベーシックアレイと同じように、配列内のさまざまな行が異なる次元または要素数（ジャグ配列）を持つことも可能です。
             内部的には、配列の次元またはサイズを最初に設定する必要がないように、サイズを拡大できるリストを使用します。
             インデックス付けは、1から始まる整数です。
-            1D配列の場合、追加のソート方法が・るので、LDListを使用することをお勧めします。
+            1D配列の場合、追加のソート方法があるので、LDListを使用することをお勧めします。
             3より大きい次元を持つ配列の要素は、インデックスまたはインデックス変数名のカンマ区切りリストでインデックスされます。
             </summary>
     </member>
@@ -274,7 +274,7 @@
     <member name="M:LitDev.LDFastArray.Collapse(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             配列内の空のエントリをすべて削除します。 "
-            内部エントリが削除されると、インデックスまたは次元が変更される可能性が・ることに注意してください。
+            内部エントリが削除されると、インデックスまたは次元が変更される可能性があることに注意してください。
             </summary>
       <param name="arrayName">配列名。</param>
     </member>
@@ -384,7 +384,7 @@
     </member>
     <member name="M:LitDev.LDVector.Subtract(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            ・るベクトルを別のベクトルから引きます。
+            あるベクトルを別のベクトルから引きます。
             </summary>
       <param name="vector1">最初のベクトル。</param>
       <param name="vector2">2番目のベクトル（最初から減算する）。</param>
@@ -444,19 +444,19 @@
             基本単位は、単一の次元と名前で構成され、すべて独立しています。
             派生単位は、基本単位または他の派生単位からなる記述、名前、および単位定義、およびオプションの加算項（通常は0）で構成されます。
             単位は分割によって解析されます。 / +  - と*を使用して、導出された単位変換、ブラケット付き（）の項を再帰的に解決します。
-            値（特に、小数点「。」または「 - 」を含むもの）は、（）内に含める必要が・ります。
+            値（特に、小数点「。」または「 - 」を含むもの）は、（）内に含める必要があります。
             ユニットの先頭に接頭辞または数値を付けることができます（たとえば、miliは0.001、Kはkilo 1000など）。
             どのユニットにも電源を供給することができます。
-            典型的な単位は「マイル/時」、「m / s2」または「MJ /日」などで・り、ベースユニットと派生ユニットの任意の組み合わせとすることができる。
+            典型的な単位は「マイル/時」、「m / s2」または「MJ /日」などであり、ベースユニットと派生ユニットの任意の組み合わせとすることができる。
             次元的に同じユニユーアのペアは変換できます。
             加法的な値は、非複合単位変換（例えば、CからFへの変換）にのみ使用されます。
-            プレフィックス単位が不明瞭にならないようにするには、完全なプレフィックス名を使用します（たとえば、minは60秒または0.001インチになります。後者はミリインチにする必要が・ります）。
+            プレフィックス単位が不明瞭にならないようにするには、完全なプレフィックス名を使用します（たとえば、minは60秒または0.001インチになります。後者はミリインチにする必要があります）。
             通貨換算は毎日更新されます。
             </summary>
     </member>
     <member name="M:LitDev.LDUnits.Convert(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            ・るユニットから別のユニットに値を変換する。
+            あるユニットから別のユニットに値を変換する。
             </summary>
       <param name="value">変換する値。</param>
       <param name="fromUnit">変換元の単位。</param>
@@ -570,7 +570,7 @@
             </summary>
       <param name="width">形状の幅。</param>
       <param name="height">形状の高さです。</param>
-      <param name="thickness">矢印の軸の相対的な厚さ、例えば。 0.25で・る。</param>
+      <param name="thickness">矢印の軸の相対的な厚さ、例えば。 0.25である。</param>
       <param name="arrowAngle">矢印の頭の角度（度）。</param>
       <param name="direction">矢印の方向：「上」、「下」、「左」または「右」。</param>
       <returns>形状の名前。</returns>
@@ -776,7 +776,7 @@
     </member>
     <member name="M:LitDev.LDBits.Not(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            論理的には数字では・りません。
+            論理的には数字ではありません。
             </summary>
       <param name="var">番号はNot。</param>
       <returns>Not番号（すべてのビットが反転）。</returns>
@@ -993,7 +993,7 @@
     <member name="P:LitDev.LDClipboard.ImageTransparency">
       <summary>
             透明を含むSetImageの拡張フォーマットを使用します（ "True"デフォルトまたは "False"）。
-            この拡張形式は、貼り付けたときに一部のアプリケーションで認識されないことが・ります。
+            この拡張形式は、貼り付けたときに一部のアプリケーションで認識されないことがあります。
             </summary>
     </member>
     <member name="E:LitDev.LDClipboard.ClipboardChanged">
@@ -1126,14 +1126,14 @@
             </summary>
       <param name="real">FFTを計算するための実際の値の配列。</param>
       <returns>複素数データ（実振幅と虚数位相）の配列、または "FAILED"。
-            各複合対について、インデックスは実数部で・り、値は虚数部で・る。</returns>
+            各複合対について、インデックスは実数部であり、値は虚数部である。</returns>
     </member>
     <member name="M:LitDev.LDMathX.FFTInverse(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             FFT（高速フーリエ変換）の逆数。
             </summary>
       <param name="complex">複素数データの配列（実振幅と虚数位相）。
-            各複合対について、インデックスは実数部で・り、値は虚数部で・る。</param>
+            各複合対について、インデックスは実数部であり、値は虚数部である。</param>
       <returns>逆FFT値または「FAILED」の配列。</returns>
     </member>
     <member name="M:LitDev.LDMathX.FFTReal(Microsoft.SmallBasic.Library.Primitive)">
@@ -1141,7 +1141,7 @@
             複雑なデータの配列の真の部分を取得します。
             </summary>
       <param name="complex">複素数データの配列（実振幅と虚数位相）。
-            各複合対について、インデックスは実数部で・り、値は虚数部で・る。</param>
+            各複合対について、インデックスは実数部であり、値は虚数部である。</param>
       <returns>データの実数部分の配列、または「FAILED」。</returns>
     </member>
     <member name="M:LitDev.LDMathX.FFTImaginary(Microsoft.SmallBasic.Library.Primitive)">
@@ -1149,7 +1149,7 @@
             複雑なデータの配列の虚数部分を取得します。
             </summary>
       <param name="complex">複素数データの配列（実振幅と虚数位相）。
-            各複合対について、インデックスは実数部で・り、値は虚数部で・る。</param>
+            各複合対について、インデックスは実数部であり、値は虚数部である。</param>
       <returns>データの虚数部分の配列、または「FAILED」。</returns>
     </member>
     <member name="M:LitDev.LDMathX.FFTComplex(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -1159,7 +1159,7 @@
       <param name="real">実データの配列。</param>
       <param name="imaginary">虚偽のデータの配列。</param>
       <returns>複素数データ（実振幅と虚数位相）の配列、 "MISMATCH"または "FAILED"。
-            各複合対について、インデックスは実数部で・り、値は虚数部で・る。</returns>
+            各複合対について、インデックスは実数部であり、値は虚数部である。</returns>
     </member>
     <member name="T:LitDev.LDResources">
       <summary>
@@ -1276,7 +1276,7 @@
       <summary>
             使用中のリソースをクリーンアップします。
             </summary>
-      <param name="disposing">管理されたリソースを廃棄する必要が・る場合はtrue、それ以外の場合はfalse。</param>
+      <param name="disposing">管理されたリソースを廃棄する必要がある場合はtrue、それ以外の場合はfalse。</param>
     </member>
     <member name="M:LitDev.FormEvents.InitializeComponent">
       <summary>
@@ -1286,9 +1286,9 @@
     </member>
     <member name="T:LitDev.LDController">
       <summary>
-            1つ以上のUSB接続のゲームコントローラ（ゲームパッドやジョイスティックなど）からの入力を取得します。接続されているデバイスが2つ以上・る場合は、1から番号が付けられます。
+            1つ以上のUSB接続のゲームコントローラ（ゲームパッドやジョイスティックなど）からの入力を取得します。接続されているデバイスが2つ以上ある場合は、1から番号が付けられます。
             
-            このオブジェクトを使用する前に、.Net 4.0のSlimDXランタイムをインストールする必要が・ります（http://slimdx.org/download.php）。
+            このオブジェクトを使用する前に、.Net 4.0のSlimDXランタイムをインストールする必要があります（http://slimdx.org/download.php）。
             </summary>
     </member>
     <member name="M:LitDev.LDController.Buttons(Microsoft.SmallBasic.Library.Primitive)">
@@ -1337,7 +1337,7 @@
             http://blogs.msdn.com/b/smallbasic/archive/2014/05/10/smallbasic-pulse-position-modulation-extension.aspxを参照してください。
             同時に非同期に再生できるシンプルなサウンド波形を追加して作成します。
             
-            このオブジェクトを使用する前に、.Net 4.0のSlimDXランタイムをインストールする必要が・ります（http://slimdx.org/download.php）。
+            このオブジェクトを使用する前に、.Net 4.0のSlimDXランタイムをインストールする必要があります（http://slimdx.org/download.php）。
             </summary>
     </member>
     <member name="M:LitDev.LDWaveForm.Stop(Microsoft.SmallBasic.Library.Primitive)">
@@ -1370,7 +1370,7 @@
       <param name="duration">期間（ミリ秒）。これが負の場合、波形は繰り返されます（期間）。</param>
       <param name="waveform">反復波のためのフォーム。
             これは配列で、インデックスは相対的な増加時間（実際の値は周波数に対して正規化されます）で、値は振幅（-1対1）です。
-            三角波の例は、「0 = -1; 1 = 1; 2 = -1;」で・る。</param>
+            三角波の例は、「0 = -1; 1 = 1; 2 = -1;」である。</param>
       <returns>波の名前または失敗時の ""</returns>
     </member>
     <member name="M:LitDev.LDWaveForm.PlayHarmonics(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -1380,7 +1380,7 @@
       <param name="frequency">周波数（HZ）。</param>
       <param name="duration">期間（ミリ秒）。これが負の場合、波形は繰り返されます（期間）。</param>
       <param name="harmonics">高調波振幅。
-            これは配列で、インデックスは基本周波数（2、3など）の高調波倍数で・り、値は高調波の相対振幅です。
+            これは配列で、インデックスは基本周波数（2、3など）の高調波倍数であり、値は高調波の相対振幅です。
             方形波は、（https://en.wikipedia.org/wiki/Square_wave）によって形成することができます：
             i = 3?21の場合ステップ2
               ハーモニクス[i] = 1 / i
@@ -1436,7 +1436,7 @@
     </member>
     <member name="M:LitDev.LDxml.Open(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            既存のxmlファイルを開きます。他のメソッドを使用するには、このメソッドを呼び出す必要が・ります。
+            既存のxmlファイルを開きます。他のメソッドを使用するには、このメソッドを呼び出す必要があります。
             </summary>
       <param name="fileName">xmlファイルのフルパスを開きます。
             これが ""の場合、新しい空のXML文書が作成されます。</param>
@@ -1457,19 +1457,19 @@
     </member>
     <member name="M:LitDev.LDxml.NextSibling">
       <summary>
-            現在のノードが・る場合は、そのノードを次の兄弟ノードに移動します。
+            現在のノードがある場合は、そのノードを次の兄弟ノードに移動します。
             </summary>
       <returns>"SUCCESS"または "FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDxml.PreviousSibling">
       <summary>
-            現在のノードが・る場合は、そのノードを前の兄弟ノードに移動します。
+            現在のノードがある場合は、そのノードを前の兄弟ノードに移動します。
             </summary>
       <returns>"SUCCESS"または "FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDxml.FirstChild">
       <summary>
-            現在のノードが・る場合は、そのノードを最初の子ノードに移動します。
+            現在のノードがある場合は、そのノードを最初の子ノードに移動します。
             </summary>
       <returns>"SUCCESS"または "FAILED"。</returns>
     </member>
@@ -1517,9 +1517,9 @@
     <member name="M:LitDev.LDxml.ToArray">
       <summary>
             現在のXML文書をSmall Basic配列に変換します。
-            アレイの構造および深さは、かなり複雑で・り得る。
-            各ノードには、オプションの配列「属性」と「子」または「データ」が・ります。
-            子ノードが・る場合、最初に数字で索引付けされ、同じ名前の複数の子を区切ります。
+            アレイの構造および深さは、かなり複雑であり得る。
+            各ノードには、オプションの配列「属性」と「子」または「データ」があります。
+            子ノードがある場合、最初に数字で索引付けされ、同じ名前の複数の子を区切ります。
             </summary>
       <returns>スモールベーシックアレイまたは "FAILED"。</returns>
     </member>
@@ -1533,7 +1533,7 @@
     <member name="P:LitDev.LDxml.NodeType">
       <summary>
             現在のノードの型を取得します。
-            多くのタイプのうちの1つで・るが、一般的には「要素」または「テキスト」で・る。
+            多くのタイプのうちの1つであるが、一般的には「要素」または「テキスト」である。
             </summary>
     </member>
     <member name="P:LitDev.LDxml.NodeName">
@@ -1638,9 +1638,9 @@
     <member name="T:LitDev.LDFastShapes">
       <summary>
             標準のSmall Basic Shape操作よりも高速なShapeメソッド。
-            これは、主に、ゲームループで更新された多数の図形が・る場合のシェイプ移動用です。
+            これは、主に、ゲームループで更新された多数の図形がある場合のシェイプ移動用です。
             主なシェイプコマンドのみがサポートされています。これは、頻繁に何回も繰り返されるものなので、サポートされています。
-            最初にシェイプを作成してから登録し（ShapeIndex）、他のメソッドで使用される整数インデックスを返す必要が・ります。
+            最初にシェイプを作成してから登録し（ShapeIndex）、他のメソッドで使用される整数インデックスを返す必要があります。
             すべての変更が一緒に処理されるときに（Update）が呼び出されるまで、変更の視覚的な更新は行われません。
             パフォーマンスの向上は、整数インデックス作成とバッチ更新の両方からもたらされます。
             </summary>
@@ -1648,7 +1648,7 @@
     <member name="M:LitDev.LDFastShapes.ShapeIndex(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             このオブジェクトで使用するシェイプを登録します。
-            このコマンドは潜在的に遅いため、時間的に重要な視覚的な更新が行われる前に呼び出される必要が・ります。
+            このコマンドは潜在的に遅いため、時間的に重要な視覚的な更新が行われる前に呼び出される必要があります。
             モーションがシミュレートされる前にすべての形状を作成して登録する。
             </summary>
       <param name="shapeName">作成された図形の名前。</param>
@@ -1855,7 +1855,7 @@
     </member>
     <member name="M:LitDev.LDArray.Delete(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            既存の配列を削除します（一般的には必要・りませんが、多数の配列が作成されている場合はメモリを節約できます）。
+            既存の配列を削除します（一般的には必要ありませんが、多数の配列が作成されている場合はメモリを節約できます）。
             </summary>
       <param name="array">
             配列名。
@@ -1908,7 +1908,7 @@
     </member>
     <member name="M:LitDev.LDArray.Copy(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            ・るアレイを別のアレイにコピーします。
+            あるアレイを別のアレイにコピーします。
             2つの配列の次元は同じでなければなりません。
             </summary>
       <param name="array1">
@@ -1939,7 +1939,7 @@
       <summary>
             LDArrayでソートを実行します。
             
-            デフォルトでは、ソートは文字列値で・るため、10は2の前に来ます。
+            デフォルトでは、ソートは文字列値であるため、10は2の前に来ます。
             数値でソートするには、すべての値が数値（または空）でなければなりません。
             
             空の値はソートの最後に置かれます。
@@ -1961,11 +1961,11 @@
       <summary>
             配列のソート順のインデックスの配列を取得します。
             
-            デフォルトでは、ソートは文字列値で・るため、10は2の前に来ます。
+            デフォルトでは、ソートは文字列値であるため、10は2の前に来ます。
             数値でソートするには、すべての値が数値（または空）でなければなりません。
             
             空の値はソートの最後に置かれます。
-            入力配列は変更されず、並べ替える配列と同じサイズでインデックス配列を事前に作成する必要が・ります。
+            入力配列は変更されず、並べ替える配列と同じサイズでインデックス配列を事前に作成する必要があります。
             </summary>
       <param name="array">インデックスの順序ソートを取得するための配列。</param>
       <param name="index">ソートされた配列のインデックス順を保持する配列です。</param>
@@ -1977,7 +1977,7 @@
       <summary>
             searchstringを含む値を持つインデックスの配列を取得します。
             検索で大文字と小文字が区別されます。
-            入力配列は変更されず、照合する配列と同じサイズで照合配列を作成しておく必要が・ります。
+            入力配列は変更されず、照合する配列と同じサイズで照合配列を作成しておく必要があります。
             </summary>
       <param name="array">一致するかどうかを調べる配列。</param>
       <param name="searchstring">検索する文字列。</param>
@@ -2136,8 +2136,8 @@
             </summary>
       <param name="shapeName">コントロール名またはシェイプ名。</param>
       <param name="items">コンテキストメニュー項目の選択テキストの配列。</param>
-      <param name="images">オプションの画像アイコンの配列。いずれかまたはすべてが ""で・る可能性が・ります。
-            ImageList.LoadImageまたはローカルまたはネットワークイメージファイルの結果で・る可能性が・ります。</param>
+      <param name="images">オプションの画像アイコンの配列。いずれかまたはすべてが ""である可能性があります。
+            ImageList.LoadImageまたはローカルまたはネットワークイメージファイルの結果である可能性があります。</param>
     </member>
     <member name="M:LitDev.LDControls.RichTextBoxSave(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -2360,7 +2360,7 @@
             カーソルキャレットをテキストボックス内の指定された位置に設定します。
             </summary>
       <param name="shapeName">テキストボックスのシェイプ名。</param>
-      <param name="position">カーソル文字の位置（0が最初の文字の前に・るか、たとえば1000などの大きな値がカーソルを最後に設定します）。</param>
+      <param name="position">カーソル文字の位置（0が最初の文字の前にあるか、たとえば1000などの大きな値がカーソルを最後に設定します）。</param>
     </member>
     <member name="M:LitDev.LDControls.SetSpellCheck(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -2599,7 +2599,7 @@
       <param name="height">コントロールの高さ。</param>
       <param name="menuList">
             メニュー項目の配列。インデックスはメニュー表示名で、値は親表示名です。
-            トップレベルの表示名は「Main」にする必要が・ります。名前はclickイベントで返されるので一意でなければなりません。
+            トップレベルの表示名は「Main」にする必要があります。名前はclickイベントで返されるので一意でなければなりません。
             セパレータは一意でなければならず、選択できないため、 " - "、 " - "、 "---"などです。
             
             menuList ["File"] = "Main"
@@ -2737,10 +2737,10 @@
     </member>
     <member name="M:LitDev.LDControls.DataViewGetFocus(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            フォーカスの・る現在のデータビューセルを取得します。
+            フォーカスのある現在のデータビューセルを取得します。
             </summary>
       <param name="shapeName">データビューコントロール。</param>
-      <returns>行番号と列番号がフォーカスの・る1次元配列、または ""。</returns>
+      <returns>行番号と列番号がフォーカスのある1次元配列、または ""。</returns>
     </member>
     <member name="M:LitDev.LDControls.DataViewSetValue(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -2830,7 +2830,7 @@
     <member name="M:LitDev.LDControls.DataViewSetColumnComboBox(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             データビューの列コントロールを、選択可能な値のComboBoxに変更します。
-            これは、データビューが作成された後、データが追加される前に設定する必要が・ります。
+            これは、データビューが作成された後、データが追加される前に設定する必要があります。
             データビューがデータベースにバインドされている場合は、LDDataBase.EditTableが設定された後でこれを設定します。
             セルに対して取得および設定する値は、dataパラメータで設定したラベルです。
             </summary>
@@ -2842,7 +2842,7 @@
     <member name="M:LitDev.LDControls.DataViewSetColumnButton(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             データビューの列コントロールをButtonsに変更します。
-            これは、データビューが作成された後、データが追加される前に設定する必要が・ります。
+            これは、データビューが作成された後、データが追加される前に設定する必要があります。
             データビューがデータベースにバインドされている場合は、LDDataBase.EditTableが設定された後でこれを設定します。
             これらのセルのデータはボタンのタイトルになります。
             </summary>
@@ -2853,7 +2853,7 @@
     <member name="M:LitDev.LDControls.DataViewSetColumnCheckBox(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             データビュー列コントロールをCheckBoxesに変更します。
-            これは、データビューが作成された後、データが追加される前に設定する必要が・ります。
+            これは、データビューが作成された後、データが追加される前に設定する必要があります。
             データビューがデータベースにバインドされている場合は、LDDataBase.EditTableが設定された後でこれを設定します。
             これらのセルのデータは、 "True"または "False"でなければなりません。
             </summary>
@@ -2930,10 +2930,10 @@
             </summary>
       <param name="shapeName">変更するボタン。</param>
       <param name="brushUnpressed">非押しボタンの色は、グラデーションブラシです。</param>
-      <param name="brushMouseOver">マウスの上に・るときのボタンの色は、グラデーションブラシでもかまいません。</param>
+      <param name="brushMouseOver">マウスの上にあるときのボタンの色は、グラデーションブラシでもかまいません。</param>
       <param name="brushPressed">押したボタンの色は、グラデーションブラシでもかまいません。</param>
       <param name="penUnpressed">非押されたボタンのテキストフォントの色。</param>
-      <param name="penMouseOver">マウスの上に・るときのボタンのテキストフォント色。</param>
+      <param name="penMouseOver">マウスの上にあるときのボタンのテキストフォント色。</param>
       <param name="penPressed">押されたボタンのテキストフォントの色です。</param>
       <param name="radius">ボタンの角の半径（デフォルトは9）。</param>
       <param name="shine">'輝き'効果を適用するか、「True」（デフォルト）または「False」を適用します。</param>
@@ -3271,7 +3271,7 @@
             
             入力引数は "args"という配列にコピーされます。
             結果は、 "return"と呼ばれる変数（配列でもよい）に入れなければなりません。
-            変数 "args"は、プログラムの開始時に ""に設定する必要が・ります。
+            変数 "args"は、プログラムの開始時に ""に設定する必要があります。
             入力パラメータは変更されず、 "args"と "return"はリターン時に ""に設定されます。
             </summary>
       <param name="funcName">スモールベーシックサブ名。</param>
@@ -3342,7 +3342,7 @@
       <param name="extension">拡張名前空間（通常、SmallBasicLibrary.dllの場合は "LitDev"や "MicroSoft.SmallBasic.Library"などのdll名と同じです）。</param>
       <param name="obj">拡張オブジェクト名。</param>
       <param name="method">拡張メソッド名。</param>
-      <param name="arguments">引数の配列またはなしの場合は ""。単一の引数は配列内に・る必要は・りません。</param>
+      <param name="arguments">引数の配列またはなしの場合は ""。単一の引数は配列内にある必要はありません。</param>
       <returns>「保留中」または失敗時のエラーメッセージ。</returns>
     </member>
     <member name="M:LitDev.LDCall.Include(Microsoft.SmallBasic.Library.Primitive)">
@@ -3387,7 +3387,7 @@
       <summary>
             GraphicsWindowでの3Dビジュアライゼーション。
             
-            座標には次の指示が・り、GraphicsWindowの座標には対応していません。
+            座標には次の指示があり、GraphicsWindowの座標には対応していません。
             X  - 左（ - ）から右（+）
             Y  - 下（ - ）から上（+）
             Z  -  Far（ - ）からNear（+）
@@ -3681,7 +3681,7 @@
     <member name="M:LitDev.LD3DView.AnimateRotation(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             ジオメトリの回転を軸ベクトルを中心にアニメーション化します。
-            これは第2の回転を使用し、第1の回転は他の軸の回転に対してまだ利用可能で・る。
+            これは第2の回転を使用し、第1の回転は他の軸の回転に対してまだ利用可能である。
             </summary>
       <param name="shapeName">3DViewオブジェクトです。</param>
       <param name="geometryName">アニメーション化するジオメトリオブジェクト。</param>
@@ -3696,7 +3696,7 @@
     <member name="M:LitDev.LD3DView.AnimateRotation2(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             ジオメトリの回転を軸ベクトルを中心にアニメーション化します。
-            これは第3の回転を使用し、第1の回転は他の軸の回転に対してまだ利用可能で・る。
+            これは第3の回転を使用し、第1の回転は他の軸の回転に対してまだ利用可能である。
             </summary>
       <param name="shapeName">3DViewオブジェクトです。</param>
       <param name="geometryName">アニメーション化するジオメトリオブジェクト。</param>
@@ -3722,7 +3722,7 @@
     <member name="M:LitDev.LD3DView.LoadModel(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             ファイルからジオメトリモデルをロードします。
-            サポートされている形式には、3ds、lwo、obj、objz、stl、およびoffが・ります。
+            サポートされている形式には、3ds、lwo、obj、objz、stl、およびoffがあります。
             </summary>
       <param name="shapeName">3DViewオブジェクトです。</param>
       <param name="fileName">ロードするファイル。
@@ -3765,7 +3765,7 @@
     <member name="M:LitDev.LD3DView.AddRevolute(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             回転ジオメトリオブジェクトを追加します。これは、（0,0,0）で始まり上を指すサーフェスです。
-            その形状は、設定点（Y、Z）によって定義され、ここで、Yは、0から表面に沿った垂直距離で・り、Zは、回転半径で・る。
+            その形状は、設定点（Y、Z）によって定義され、ここで、Yは、0から表面に沿った垂直距離であり、Zは、回転半径である。
             </summary>
       <param name="shapeName">3DViewオブジェクトです。</param>
       <param name="path">回転形状を記述する2D点座標のリストをスペースまたはコロンで区切ったもの。</param>
@@ -3918,7 +3918,7 @@
             ジオメトリの回転とスケール変換の中心を設定します。
             デフォルトでは、これはジオメトリのバウンディングボックスの中心です。多くの場合0,0,0です。
             中心は、ジオメトリの作成に使用される座標で定義されます。
-            ジオメトリ内に・る必要は・りません。
+            ジオメトリ内にある必要はありません。
             座標値が ""に設定されている場合は、デフォルト値が使用されます。
             </summary>
       <param name="shapeName">3DViewオブジェクトです。</param>
@@ -4056,7 +4056,7 @@
       <summary>
             高度な機能。
             外部デバイスとサービスをBluetooth USBスティックに接続します。
-            最初に初期化してから、デバイス、サービス、エンコーディングを設定する必要が・ります。
+            最初に初期化してから、デバイス、サービス、エンコーディングを設定する必要があります。
             </summary>
       <returns>成功または失敗の場合は「True」または「False」。</returns>
     </member>
@@ -4064,8 +4064,8 @@
       <summary>
             高度な機能。
             データをBluetoothデバイスに送信します。
-            デバイスを初期化して接続する必要が・ります。
-            エンコーディングも設定する必要が・ります。
+            デバイスを初期化して接続する必要があります。
+            エンコーディングも設定する必要があります。
             </summary>
       <param name="data">送信する文字列。</param>
       <returns>結果ステータスメッセージ "True"または "False"。</returns>
@@ -4074,15 +4074,15 @@
       <summary>
             高度な機能。
             Bluetoothデバイスからデータを受信（フェッチ）します。
-            デバイスを初期化して接続する必要が・ります。
-            エンコーディングも設定する必要が・ります。
+            デバイスを初期化して接続する必要があります。
+            エンコーディングも設定する必要があります。
             </summary>
       <returns>受信した文字列、失敗した場合は ""です。</returns>
     </member>
     <member name="M:LitDev.LDBlueTooth.SendFile(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             添付された外部Bluetoothデバイスにファイルを送信します。
-            最初に初期化してからデバイスを設定する必要が・ります。
+            最初に初期化してからデバイスを設定する必要があります。
             </summary>
       <param name="fileName">送信するファイル。</param>
       <returns>結果ステータスメッセージ "True"または "False"。</returns>
@@ -4090,7 +4090,7 @@
     <member name="M:LitDev.LDBlueTooth.ReceiveFile(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             接続された外部Bluetoothデバイスからファイルを受信（フェッチ）します。
-            最初に初期化してからデバイスを設定する必要が・ります。
+            最初に初期化してからデバイスを設定する必要があります。
             </summary>
       <param name="fileName">受信したファイルを保存する場所。</param>
       <returns>結果ステータスメッセージ "True"または "False"。</returns>
@@ -4103,7 +4103,7 @@
     <member name="P:LitDev.LDBlueTooth.LastError">
       <summary>
             最後のエラーメッセージを取得します。
-            さまざまな障害に対してエラーメッセージが設定されることが・ります。
+            さまざまな障害に対してエラーメッセージが設定されることがあります。
             </summary>
     </member>
     <member name="P:LitDev.LDBlueTooth.DataAvailable">
@@ -4171,7 +4171,7 @@
     </member>
     <member name="M:LitDev.LDShell.ApplyVerbOn(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>与えられたファイルまたはフォルダの動詞（コンテキストメニュー項目）を適用します。
-            'GetAllVerbsFor'の下に・る利用可能な動詞のリスト（ファイルタイプまたはフォルダ用）。</summary>
+            'GetAllVerbsFor'の下にある利用可能な動詞のリスト（ファイルタイプまたはフォルダ用）。</summary>
       <param name="path">完全なファイルパスまたはフォルダパス。</param>
       <param name="verb">適用する動詞（大文字と小文字の区別なし）</param>
       <returns>成功すれば "SUCCESS"、失敗した場合は "FAILED"となります。</returns>
@@ -4254,7 +4254,7 @@
     </member>
     <member name="M:LitDev.LDShell.SpecialFolderList(Microsoft.SmallBasic.Library.Primitive)">
       <summary>特殊なシステム/シェルフォルダ内のすべての項目を取得します（上位レベルのみ）。</summary>
-      <param name="csidl">システムフォルダのCSIDL番号（0?47、s。SpecialFolderConstantsの下に・る利用可能なフォルダの定数および名前）。</param>
+      <param name="csidl">システムフォルダのCSIDL番号（0?47、s。SpecialFolderConstantsの下にある利用可能なフォルダの定数および名前）。</param>
       <returns>成功した場合はシステムフォルダ内のすべてのオブジェクトの名前（上位レベルのみ）、それ以外の場合は「FAILED」。</returns>
       <example>http://msdn.microsoft.com/library/bb774096.aspx
             例えば。 CSIDL：
@@ -4296,15 +4296,15 @@
       <summary>日付と時刻の設定ダイアログを表示します。</summary>
     </member>
     <member name="M:LitDev.LDShell.StartSettings">
-      <summary>startmen・ taskbar設定のダイアログを表示します。</summary>
+      <summary>startment taskbar設定のダイアログを表示します。</summary>
     </member>
     <member name="M:LitDev.LDShell.ExploreFolder(Microsoft.SmallBasic.Library.Primitive)">
       <summary>Windows Explorerウィンドウで指定したフォルダを開きます。 （既存のファイルパスの親フォルダ）。 QTTabBarの新しいタブ。</summary>
-      <param name="path">エクスプローラで開くフォルダパス（ファイルパスは親フォルダを開きます）。フォルダが存在する必要が・ります。</param>
+      <param name="path">エクスプローラで開くフォルダパス（ファイルパスは親フォルダを開きます）。フォルダが存在する必要があります。</param>
     </member>
     <member name="M:LitDev.LDShell.OpenFolder(Microsoft.SmallBasic.Library.Primitive)">
       <summary>指定されたファイル/フォルダパス（既存のファイルパスの親フォルダ）でエクスプローラを開きます。 QTTabBarの新しいタブ。</summary>
-      <param name="path">指定したフォルダを開きます（ファイルパスは親フォルダを開きます）。フォルダが存在する必要が・ります。</param>
+      <param name="path">指定したフォルダを開きます（ファイルパスは親フォルダを開きます）。フォルダが存在する必要があります。</param>
     </member>
     <member name="M:LitDev.LDShell.SelectFolder(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>フォルダ選択ダイアログを表示します。</summary>
@@ -4353,20 +4353,20 @@
     <member name="T:LitDev.LDInline">
       <summary>
             実行時に使用するC＃、VB、またはJScriptコードをインクルードします。
-            複数の名前空間またはクラスが使用される場合は、すべてのメソッド、プロパティ、またはイベント名が一意で・る必要が・ります。
-            ・るいは、完全修飾namespace.type.nameを使用することもできます。
+            複数の名前空間またはクラスが使用される場合は、すべてのメソッド、プロパティ、またはイベント名が一意である必要があります。
+            あるいは、完全修飾namespace.type.nameを使用することもできます。
             拡張機能をコンパイルするために使用できます。
             外部でコンパイルされた他の.Net dllでも使用できます。
             メソッド、プロパティ、イベント、クラス、および使用された参照を取得できます（public staticのみ）。
             
             現在のアプリケーションアセンブリは自動的に参照されます。
-            使用される.NETメソッドによっては、追加のアセンブリが必要な場合が・ります。
+            使用される.NETメソッドによっては、追加のアセンブリが必要な場合があります。
             追加のアセンブリは完全なdllパスによって参照されます。
             アセンブリDLLは、次の場所または類似の場所でよく使用されます。
             C：\ Windows \ Microsoft.NET \ Framework \ v2.0.50727
             C：\ Program Files（x86）\ Referenceアセンブリ\ Microsoft \ Framework \ v3.0
             
-            後でTextWindowを使用する必要が・る場合は、これらのメソッドを使用する前にTextWindowを表示する必要が・ります。
+            後でTextWindowを使用する必要がある場合は、これらのメソッドを使用する前にTextWindowを表示する必要があります。
             </summary>
     </member>
     <member name="M:LitDev.LDInline.IncludeCS(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -4460,7 +4460,7 @@
     <member name="M:LitDev.LDInline.GetReferences(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             追加されたインラインリファレンスの配列を取得します。
-            これらは参照される追加されたもので・り、使用される場合と使用されない場合が・ります。
+            これらは参照される追加されたものであり、使用される場合と使用されない場合があります。
             </summary>
       <param name="fullName">完全修飾名（バージョン、カルチャ、PublicKeyToken） "True"または基本名 "False"を取得します。</param>
       <returns>参照名とdllの場所の配列。</returns>
@@ -4860,7 +4860,7 @@
     <member name="M:LitDev.LDClient.CheckServer(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             サーバーが接続可能かどうかをテストします。
-            高い頻度（1秒・たり1を超える）でこのメソッドを呼び出さないでください。
+            高い頻度（1秒あたり1を超える）でこのメソッドを呼び出さないでください。
             </summary>
       <param name="server">サーバー接続のip：port（例： "192.168.1.60:100"）。
             この値は、LDServer.Startによって返されます。</param>
@@ -4874,9 +4874,9 @@
             この値は、LDServer.Startによって返されます。</param>
       <param name="auto">自動メッセージの受け渡しを「True」または「False」にします。
             これを使用すると（推奨）、すべてのクライアントデータがサーバー経由で他のすべてのクライアントに渡されます。
-            送受信イベントの処理は必要・りません。
+            送受信イベントの処理は必要ありません。
             データは、Updateメソッドから返されるデータの配列（クライアント名でインデックス付け）に更新されます。
-            autoオプションは、サーバーとすべてのクライアントで同じにする必要が・ります。</param>
+            autoオプションは、サーバーとすべてのクライアントで同じにする必要があります。</param>
       <returns>"SUCCESS"、 "FAILED"または "ALREADY_CONNECTED"</returns>
     </member>
     <member name="M:LitDev.LDClient.Disconnect">
@@ -4889,7 +4889,7 @@
       <summary>
             サーバーにメッセージを送信します。
             </summary>
-      <param name="message">メッセージは、配列を含む任意の変数で・ってもよい。</param>
+      <param name="message">メッセージは、配列を含む任意の変数であってもよい。</param>
       <returns>"成功"、 "失敗"、または "未接続"</returns>
     </member>
     <member name="M:LitDev.LDClient.UpdateDynamic(Microsoft.SmallBasic.Library.Primitive)">
@@ -4905,7 +4905,7 @@
       <summary>
             自動メッセージの受け渡しを使用する場合は、クライアントデータを更新します。
             これは、クライアントの設定など、頻繁に変化するデータを大量に処理するためのものです。
-            この方法では、サーバーに格納されて取得されたデータが使用されるため、サーバーが取得したデータを待つため、UpdateDynamicよりも遅くなる可能性が・ります。
+            この方法では、サーバーに格納されて取得されたデータが使用されるため、サーバーが取得したデータを待つため、UpdateDynamicよりも遅くなる可能性があります。
             すべてのクライアントデータが完全に同期されることを保証します。
             </summary>
       <param name="data">このクライアントが他のクライアントに伝播するためのデータ。</param>
@@ -4920,13 +4920,13 @@
     <member name="P:LitDev.LDClient.Name">
       <summary>
             この顧客の名前。
-            ・なたの名前を取得または設定します。
+            あなたの名前を取得または設定します。
             </summary>
     </member>
     <member name="P:LitDev.LDClient.CloseDelay">
       <summary>
             接続が切断される前にメッセージを送信できるように切断するときの遅延（デフォルトは100）です（切断）。
-            この遅延は、LDServer.CloseDelayのサーバーに対しても設定する必要が・ります。
+            この遅延は、LDServer.CloseDelayのサーバーに対しても設定する必要があります。
             </summary>
     </member>
     <member name="P:LitDev.LDClient.LastServerMessage">
@@ -4972,15 +4972,15 @@
             </summary>
       <param name="clientName">クライアント名、通常Client1、Client2など
             現在のクライアントのリストは、GetClientsメソッドから取得するか、ClientConnectedイベントから検索できます。</param>
-      <param name="message">メッセージは、配列を含む任意の変数で・ってもよい。</param>
+      <param name="message">メッセージは、配列を含む任意の変数であってもよい。</param>
       <returns>"SUCCESS"、 "NOT_CONNECTED"、 "NO_CLIENT"または "FAILED"</returns>
     </member>
     <member name="M:LitDev.LDServer.Broadcast(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             すべてのクライアントにメッセージを送信します。
             </summary>
-      <param name="message">メッセージは、配列を含む任意の変数で・ってもよい。</param>
-      <returns>クライアント名がインデックスで・る "SUCCESS"、 "NOT_CONNECTED"、 "NO_CLIENT"または "FAILED"の値の配列。</returns>
+      <param name="message">メッセージは、配列を含む任意の変数であってもよい。</param>
+      <returns>クライアント名がインデックスである "SUCCESS"、 "NOT_CONNECTED"、 "NO_CLIENT"または "FAILED"の値の配列。</returns>
     </member>
     <member name="M:LitDev.LDServer.Start(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -4988,9 +4988,9 @@
             </summary>
       <param name="auto">自動メッセージの受け渡しを「True」または「False」にします。
             これを使用すると（推奨）、すべてのクライアントデータがサーバー経由で他のすべてのクライアントに渡されます。
-            送受信イベントの処理は必要・りません。
+            送受信イベントの処理は必要ありません。
             データは、クライアントのUpdateメソッドから返されるデータの配列（クライアント名でインデックス付け）に更新されます。
-            autoオプションは、サーバーとすべてのクライアントで同じにする必要が・ります。</param>
+            autoオプションは、サーバーとすべてのクライアントで同じにする必要があります。</param>
       <returns>現在の接続パラメータip：port（「192.168.1.60:100」など）、または「FAILED」です。
             これは、クライアントからの接続に使用するパラメータです。</returns>
     </member>
@@ -5009,7 +5009,7 @@
     <member name="P:LitDev.LDServer.IP">
       <summary>
             サーバーのIPアドレス（デフォルトは現在のLAN IPです）。
-            ・なたがインターネット上で使用したい場合は、Web IPが必要になります。
+            あなたがインターネット上で使用したい場合は、Web IPが必要になります。
             </summary>
     </member>
     <member name="P:LitDev.LDServer.Port">
@@ -5020,7 +5020,7 @@
     <member name="P:LitDev.LDServer.CloseDelay">
       <summary>
             接続が切断される前にメッセージを送信できるように切断したときの遅延（ミリ秒（デフォルトは100秒））です（停止、切断、終了）。
-            この遅延は、LDClient.CloseDelayのクライアントに対しても設定する必要が・ります。
+            この遅延は、LDClient.CloseDelayのクライアントに対しても設定する必要があります。
             </summary>
     </member>
     <member name="P:LitDev.LDServer.AutoMessages">
@@ -5067,7 +5067,7 @@
       <summary>
             このオブジェクトは値を格納する方法を提供します。
             これはスタックと似ていますが、それはキューのように先入れ先出しです。
-            キューの最後に値をエンキュー（追加）し、キューの先頭に・る最初の値をデキュー（削除）することができます。
+            キューの最後に値をエンキュー（追加）し、キューの先頭にある最初の値をデキュー（削除）することができます。
             値を1つずつエンキューおよびデキューできます。
             </summary>
     </member>
@@ -5261,7 +5261,7 @@
     <member name="M:LitDev.LDDataBase.ConnectSQLite(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             SQLiteデータベースを作成または開く。
-            これは、SQLメソッドの前に呼び出される必要が・ります。
+            これは、SQLメソッドの前に呼び出される必要があります。
             テーブルが作成されるときには、最初のカラムが "Id INTEGER PRIMARY KEY"でなければなりません。
             </summary>
       <param name="fileName">SQLiteデータベースファイルへのフルパス（通常は拡張子db）。</param>
@@ -5270,8 +5270,8 @@
     <member name="M:LitDev.LDDataBase.ConnectMySQL(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             MySQLデータベースに接続します。
-            これは、SQLメソッドの前に呼び出される必要が・ります。
-            SQLiteを使用する疑いが・る場合は、MySQLサービスが実行されていて、資格情報を持つデータベースがすでに作成されている必要が・ります。
+            これは、SQLメソッドの前に呼び出される必要があります。
+            SQLiteを使用する疑いがある場合は、MySQLサービスが実行されていて、資格情報を持つデータベースがすでに作成されている必要があります。
             </summary>
       <param name="server">MySQLサーバ（例えば "localhost"）。</param>
       <param name="user">MySQLユーザー名。</param>
@@ -5282,8 +5282,8 @@
     <member name="M:LitDev.LDDataBase.ConnectSqlServer(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             SqlServerデータベースに接続します。
-            これは、SQLメソッドの前に呼び出される必要が・ります。
-            疑わしい場合はSQLiteを使用して、SqlServerサービスが実行されていて、資格情報を持つデータベースが既に作成されている必要が・ります。
+            これは、SQLメソッドの前に呼び出される必要があります。
+            疑わしい場合はSQLiteを使用して、SqlServerサービスが実行されていて、資格情報を持つデータベースが既に作成されている必要があります。
             </summary>
       <param name="server">SqlServerサーバー（例： "（local）\ SQLEXPRESS"）。</param>
       <param name="database">SqlServerデータベース名。</param>
@@ -5292,8 +5292,8 @@
     <member name="M:LitDev.LDDataBase.ConnectOleDb(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             Access OleDbデータベースに接続します。
-            これは、SQLメソッドの前に呼び出される必要が・ります。
-            Access OleDbサービスが実行されていて、疑わしい場合はSQLiteを使用して、資格情報を使用してデータベースを作成しておく必要が・ります。
+            これは、SQLメソッドの前に呼び出される必要があります。
+            Access OleDbサービスが実行されていて、疑わしい場合はSQLiteを使用して、資格情報を使用してデータベースを作成しておく必要があります。
             </summary>
       <param name="provider">OleDbプロバイダ（「SQLOLEDB」など）。</param>
       <param name="server">OleDbサーバー（例： "localhost"）。</param>
@@ -5303,8 +5303,8 @@
     <member name="M:LitDev.LDDataBase.ConnectOdbc(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             接続されているOdbcドライバに接続します。
-            これは、SQLメソッドの前に呼び出される必要が・ります。
-            疑わしい場合は、SQLiteを使用して、Odbcサービスが実行されていて、資格情報を持つデータベースがすでに作成されている必要が・ります。
+            これは、SQLメソッドの前に呼び出される必要があります。
+            疑わしい場合は、SQLiteを使用して、Odbcサービスが実行されていて、資格情報を持つデータベースがすでに作成されている必要があります。
             </summary>
       <param name="driver">Odbcドライバ（例： "{MySQL ODBC 3.51ドライバ}"）。</param>
       <param name="server">Odbcサーバー（「localhost」など）。</param>
@@ -5378,7 +5378,7 @@
     <member name="M:LitDev.LDEncryption.RSAEncrypt(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             RSAメッセージを暗号化する
-            公開鍵を設定する必要が・ります（誰でも公開鍵で暗号化できます）。
+            公開鍵を設定する必要があります（誰でも公開鍵で暗号化できます）。
             キーが設定されていない場合、このセッション用に作成されたキーが使用されます。
             </summary>
       <param name="unencrypted">暗号化するメッセージ。</param>
@@ -5387,7 +5387,7 @@
     <member name="M:LitDev.LDEncryption.RSADecrypt(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             RSAメッセージを無視する。
-            秘密鍵を設定する必要が・ります（発信者だけが秘密鍵で復号化できます）。
+            秘密鍵を設定する必要があります（発信者だけが秘密鍵で復号化できます）。
             キーが設定されていない場合、このセッション用に作成されたキーが使用されます。
             </summary>
       <param name="encrypted">暗号化されたメッセージ</param>
@@ -5396,7 +5396,7 @@
     <member name="M:LitDev.LDEncryption.RSASign(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             RSAメッセージに署名してください。
-            秘密鍵を設定する必要が・ります（発信者だけが秘密鍵で署名できます）。
+            秘密鍵を設定する必要があります（発信者だけが秘密鍵で署名できます）。
             キーが設定されていない場合、このセッション用に作成されたキーが使用されます。
             </summary>
       <param name="data">署名するメッセージ。</param>
@@ -5405,7 +5405,7 @@
     <member name="M:LitDev.LDEncryption.RSAVerify(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             署名されたRSAメッセージを確認します。
-            公開鍵を設定する必要が・ります（誰でも公開鍵で確認できます）。
+            公開鍵を設定する必要があります（誰でも公開鍵で確認できます）。
             キーが設定されていない場合、このセッション用に作成されたキーが使用されます。
             </summary>
       <param name="data">署名されたメッセージ。</param>
@@ -5421,7 +5421,7 @@
       <summary>
             AES暗号化とパスワードキーを使用してテキストを暗号化します。
             暗号化されたテキストはファイルに保存できます。
-            パスワードを忘れた場合、解読する方法は・りません。
+            パスワードを忘れた場合、解読する方法はありません。
             </summary>
       <param name="source">暗号化するテキスト。</param>
       <param name="password">暗号化のためのパスワードキー。</param>
@@ -5519,7 +5519,7 @@
     </member>
     <member name="M:LitDev.LDText.FindAll(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            ・るテキストの中のサブテキストの出現をすべて取得します。
+            あるテキストの中のサブテキストの出現をすべて取得します。
             </summary>
       <param name="text">検索するテキスト。</param>
       <param name="find">検索するサブテキスト。</param>
@@ -5528,7 +5528,7 @@
     <member name="M:LitDev.LDText.GetWidth(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             現在のフォントでGraphicsWindowに表示されるテキストの幅をピクセル単位で取得します。
-            このメソッドを使用するには、GraphicsWindowを開いておく必要が・ります。
+            このメソッドを使用するには、GraphicsWindowを開いておく必要があります。
             </summary>
       <param name="text">幅を取得するテキスト。</param>
       <returns>幅（ピクセル単位）。</returns>
@@ -5536,7 +5536,7 @@
     <member name="M:LitDev.LDText.GetHeight(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             現在のフォントでGraphicsWindowに表示されるテキストの高さをピクセル単位で取得します。
-            このメソッドを使用するには、GraphicsWindowを開いておく必要が・ります。
+            このメソッドを使用するには、GraphicsWindowを開いておく必要があります。
             </summary>
       <param name="text">高さを取得するためのテキスト。</param>
       <returns>幅（ピクセル単位）。</returns>
@@ -5569,7 +5569,7 @@
     </member>
     <member name="T:LitDev.LDSound">
       <summary>
-            サウンドレコーダー。マイク（内・の場合も・ります）が必要です。
+            サウンドレコーダー。マイク（内蔵の場合もあります）が必要です。
             システムサウンドも再生できます（適切に設定されている場合）。
             </summary>
     </member>
@@ -5624,7 +5624,7 @@
     <member name="M:LitDev.LDSound.Tone(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             周波数と持続時間でシステム音を再生します。
-            マザーボードのスピーカー（サウンドカードでは・りません）を使用していますが、音質が低いか、使用できない可能性が・ります。
+            マザーボードのスピーカー（サウンドカードではありません）を使用していますが、音質が低いか、使用できない可能性があります。
             </summary>
       <param name="frequency">トーン周波数（37?32767 Hz）。</param>
       <param name="duration">トーンの持続時間（ms）。</param>
@@ -5686,7 +5686,7 @@
             VIDとPIDからHID接続デバイスを追加します。
             VIDとPIDは4文字（16進数）の値で、次の場所から検索できます。
             デバイスマネージャー - &gt;プロパティー - &gt;詳細 - &gt;ハードウェアID
-            例：HID \ VID_046D PID_C215 REV_0204には、VID "046D"とPID "C215"が・ります。
+            例：HID \ VID_046D PID_C215 REV_0204には、VID "046D"とPID "C215"があります。
             一度だけデバイスを追加してください。
             </summary>
       <param name="VID">デバイスのVID。</param>
@@ -5799,10 +5799,10 @@
     <member name="P:LitDev.LDScrollBars.Rasterize">
       <summary>
             ラスタライズドローイング "True"（デフォルト）または "False"。
-            100以上のオブジェクトが描画されると（図形では・りません）、パフォーマンス上の理由からSmallBasicはこれらを画像にラスタライズします。
+            100以上のオブジェクトが描画されると（図形ではありません）、パフォーマンス上の理由からSmallBasicはこれらを画像にラスタライズします。
             非常に大きなスクロール可能領域の場合、メモリが不足し、ここでは無効にすることができます。
             無効になっている場合は、100を超える描画可能オブジェクトを使用しないでください。
-            このプロパティは、LDScrollBars.Addが呼び出される前に設定する必要が・ります。
+            このプロパティは、LDScrollBars.Addが呼び出される前に設定する必要があります。
             </summary>
     </member>
     <member name="E:LitDev.LDScrollBars.ScrollBarChanged">
@@ -5829,15 +5829,15 @@
       <summary>
             ゲームのデータをアップロードします。
             </summary>
-      <param name="game">ゲーム名（各ゲームまたはバージョンごとに固有の大文字と小文字を区別する必要が・ります）。</param>
-      <param name="data">格納するデータは配列で・る可能性が・ります。</param>
+      <param name="game">ゲーム名（各ゲームまたはバージョンごとに固有の大文字と小文字を区別する必要があります）。</param>
+      <param name="data">格納するデータは配列である可能性があります。</param>
       <returns>保存された成功のデータ。</returns>
     </member>
     <member name="M:LitDev.LDNetwork.GetGameData(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             ゲーム用にいくつかのデータ（以前に保存したもの）をダウンロードする。
             </summary>
-      <param name="game">ゲーム名（各ゲームまたはバージョンごとに固有の大文字と小文字を区別する必要が・ります）。</param>
+      <param name="game">ゲーム名（各ゲームまたはバージョンごとに固有の大文字と小文字を区別する必要があります）。</param>
       <returns>保存された成功のデータ。</returns>
     </member>
     <member name="M:LitDev.LDNetwork.LAN(Microsoft.SmallBasic.Library.Primitive)">
@@ -5897,20 +5897,20 @@
     <member name="M:LitDev.LDTextWindow.Hide">
       <summary>
             TextWindowを非表示にします。
-            失敗する可能性の・る標準的なメソッドの置き換え（これらのメソッドを混在させないでください）。
+            失敗する可能性のある標準的なメソッドの置き換え（これらのメソッドを混在させないでください）。
             </summary>
     </member>
     <member name="M:LitDev.LDTextWindow.Show">
       <summary>
             TextWindowを表示し、フォーカスを与えます。
-            失敗する可能性の・る標準的なメソッドの置き換え（これらのメソッドを混在させないでください）。
+            失敗する可能性のある標準的なメソッドの置き換え（これらのメソッドを混在させないでください）。
             </summary>
     </member>
     <member name="M:LitDev.LDTextWindow.Capture(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             TextWindowを画像ファイル（png、jpg、bmp、gif、tiffまたはico）として保存します。
             
-            ウィンドウを表示する必要が・り、呼び出しの前にウィンドウを更新した後に短い遅延が必要になることが・ります。
+            ウィンドウを表示する必要があり、呼び出しの前にウィンドウを更新した後に短い遅延が必要になることがあります。
             </summary>
       <param name="fileName">
             イメージを（* .png、* .jpg、* .bmp、* .gif、* .tiff、* .ico）に保存するファイル。
@@ -5927,7 +5927,7 @@
       <summary>
             TextWindowの内容を印刷します。
             
-            ウィンドウを表示する必要が・り、呼び出しの前にウィンドウを更新した後に短い遅延が必要になることが・ります。
+            ウィンドウを表示する必要があり、呼び出しの前にウィンドウを更新した後に短い遅延が必要になることがあります。
             </summary>
       <param name="border">
             ウィンドウ枠を含めます（ "True"または "False"）。
@@ -5939,11 +5939,11 @@
     <member name="M:LitDev.LDTextWindow.SetColour(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             標準のTextWindowカラーの1つを置き換えます。
-            使用可能な色は16種類・り、デフォルトでは0から15のインデックスが付けられています。
+            使用可能な色は16種類あり、デフォルトでは0から15のインデックスが付けられています。
             黒（0）、ダークブルー（1）、ダークグリーン（2）、ダークチェン（3）、ダークリダクション（4）、ダークマジェンタ（5）、ダークイエロー（6）、グレー
             暗いグレー（8）、青（9）、緑（10）、シアン（11）、赤（12）、マゼンタ（13）、黄色（14）、白（15）。
             TextWindow.BackgroundColorとTextWindow.ForegroundColorを使用して新しい色（元の色名を使用）を使用することもできます。また、インデックスからLDTextWindow.SetColoursを使用して色を選択することもできます。
-            色は、適用する前にいずれかの方法で設定する必要が・ります。
+            色は、適用する前にいずれかの方法で設定する必要があります。
             </summary>
       <param name="index">置き換えるべき標準カラーインデックスカラー。</param>
       <param name="colour">標準色を置き換える任意の色。</param>
@@ -5988,7 +5988,7 @@
       <summary>
             GraphicsWindowを画像ファイル（png、jpg、bmp、gif、tiffまたはico）として保存します。
             
-            ウィンドウを表示する必要が・り、呼び出しの前にウィンドウを更新した後に短い遅延が必要になることが・ります。
+            ウィンドウを表示する必要があり、呼び出しの前にウィンドウを更新した後に短い遅延が必要になることがあります。
             </summary>
       <param name="fileName">
             イメージを（* .png、* .jpg、* .bmp、* .gif、* .tiff、* .ico）に保存するファイル。
@@ -6005,7 +6005,7 @@
       <summary>
             GraphicsWindowの内容を印刷します。
             
-            ウィンドウを表示する必要が・り、呼び出しの前にウィンドウを更新した後に短い遅延が必要になることが・ります。
+            ウィンドウを表示する必要があり、呼び出しの前にウィンドウを更新した後に短い遅延が必要になることがあります。
             </summary>
       <param name="border">
             ウィンドウ枠を含めます（ "True"または "False"）。
@@ -6040,11 +6040,11 @@
     <member name="M:LitDev.LDGraphicsWindow.TransparentGW">
       <summary>
             透明なGraphicsWindowを作成します。
-            これは、ウィンドウを作成する他のGraphicsWindow、Controls、またはShapesメソッドの前に呼び出される必要が・ります。
-            何かを見るには、透明なGraphicsWindowに何かを追加する必要が・ります。
+            これは、ウィンドウを作成する他のGraphicsWindow、Controls、またはShapesメソッドの前に呼び出される必要があります。
+            何かを見るには、透明なGraphicsWindowに何かを追加する必要があります。
             たとえば、LDShapes.BackgroundImageで透明な境界pngを使用して非長方形のウィンドウを作成します。
             透明度はGraphicsWindow.BackgroundColorで変更できます。
-            時には、100％未満の透明度が必要とされることも・る（例えば、マウスの動きを登録するため）。
+            時には、100％未満の透明度が必要とされることもある（例えば、マウスの動きを登録するため）。
             </summary>
     </member>
     <member name="M:LitDev.LDGraphicsWindow.BackgroundImage(Microsoft.SmallBasic.Library.Primitive)">
@@ -6187,21 +6187,21 @@
     <member name="P:LitDev.LDGraphicsWindow.ExitOnClose">
       <summary>
             GraphicsWindowが "True"（デフォルト）または "False"で閉じられたときに、SmallBasicプログラムが終了するかどうかを設定します。
-            falseに設定した場合、プログラムは引き続き実行する必要が・ります。
+            falseに設定した場合、プログラムは引き続き実行する必要があります。
             </summary>
     </member>
     <member name="P:LitDev.LDGraphicsWindow.CancelClose">
       <summary>
             次のGraphicsWindow Closeオペレーション "True"または "False"（デフォルト）をキャンセルします。
-            ExitOnCloseを "False"に設定する必要が・ります。
-            これは、通常、LDDialogs.Confirmを使用してClosingイベント内で設定する必要が・ります。
+            ExitOnCloseを "False"に設定する必要があります。
+            これは、通常、LDDialogs.Confirmを使用してClosingイベント内で設定する必要があります。
             クロージャが防止された後、 "False"にリセットされます。
             </summary>
     </member>
     <member name="P:LitDev.LDGraphicsWindow.TopMost">
       <summary>
             GraphicsWindowを一番上のウィンドウとして設定します。
-            他のウィンドウにフォーカスが・る場合でも、ウィンドウは他のウィンドウの上に残ります。
+            他のウィンドウにフォーカスがある場合でも、ウィンドウは他のウィンドウの上に残ります。
             "正しいか間違っているか"。
             </summary>
     </member>
@@ -6264,7 +6264,7 @@
     <member name="E:LitDev.LDGraphicsWindow.Closing">
       <summary>
             GraphicsWindowが閉じられたときのイベント。
-            このイベントを使用するにはExitOnCloseを "False"に設定する必要が・ります。
+            このイベントを使用するにはExitOnCloseを "False"に設定する必要があります。
             CancelCloseをtrueに設定すると、クロージャがキャンセルされます。
             </summary>
     </member>
@@ -6343,7 +6343,7 @@
     </member>
     <member name="M:LitDev.LDTranslate.Translate(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            ・る言語のテキストを別の言語に翻訳します。
+            ある言語のテキストを別の言語に翻訳します。
             </summary>
       <param name="input">翻訳するテキスト。</param>
       <param name="languageFrom">翻訳する言語コード。</param>
@@ -6486,7 +6486,7 @@
             追加のGraphicsWindowsを作成します。
             
             すべての変数はウィンドウ間で共有されます（グローバルスコープ）。
-            GraphicsWindowイベントはウィンドウごとに登録する必要が・りますが、イベントサブルーチンは共有できます。
+            GraphicsWindowイベントはウィンドウごとに登録する必要がありますが、イベントサブルーチンは共有できます。
             他のすべてのイベントは、通常どおり1回登録できます。
             すべてのコマンドまたはメソッドは、CurrentIDを使用して設定された現在のアクティブウィンドウに適用されます。
             元のGraphicsWindowまたはデフォルトのGraphicsWindowは、id 0を持ちます。
@@ -6532,12 +6532,12 @@
             "smtp.live.com"（Hotmail）
             "smtp.mail.yahoo.com"
             
-            「From、Password、およびRecipient」プロパティの最小値を最初に設定する必要が・ります。
+            「From、Password、およびRecipient」プロパティの最小値を最初に設定する必要があります。
             「From」および「Password」のプロパティは、クライアントの電子メールの資格情報でなければなりません。
-            さらに、 "件名と本文"プロパティを設定する必要が・ります。
+            さらに、 "件名と本文"プロパティを設定する必要があります。
             "Attachment"プロパティはオプションで完全なファイルパスに設定することができます。
             
-            1分・たり1メールは送信できません。
+            1分あたり1メールは送信できません。
             </summary>
       <returns>成功のための ""またはエラーメッセージ。</returns>
     </member>
@@ -6649,7 +6649,7 @@
     <member name="M:LitDev.LDImage.Add(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             画像に色の値を追加します。
-            画像には、0?255の範囲のR、G、Bのピクセルが・ります。
+            画像には、0?255の範囲のR、G、Bのピクセルがあります。
             </summary>
       <param name="image">変更するImageListイメージ。</param>
       <param name="red">追加する赤の値。</param>
@@ -6659,7 +6659,7 @@
     <member name="M:LitDev.LDImage.Multiply(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             画像の色の値を掛けます。
-            画像には、0?255の範囲のR、G、Bのピクセルが・ります。
+            画像には、0?255の範囲のR、G、Bのピクセルがあります。
             </summary>
       <param name="image">変更するImageListイメージ。</param>
       <param name="red">乗算する赤の値。</param>
@@ -6683,7 +6683,7 @@
     <member name="M:LitDev.LDImage.AddImages(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             2枚の画像を一緒に追加します。
-            画像には、0?255の範囲のR、G、Bのピクセルが・ります。
+            画像には、0?255の範囲のR、G、Bのピクセルがあります。
             どちらの画像も同じ次元でなければなりません。
             </summary>
       <param name="image1">追加する最初のImageListイメージ。</param>
@@ -6693,7 +6693,7 @@
     <member name="M:LitDev.LDImage.DifferenceImages(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             違いは2画像。
-            画像には、0?255の範囲のR、G、Bのピクセルが・ります。
+            画像には、0?255の範囲のR、G、Bのピクセルがあります。
             どちらの画像も同じ次元でなければなりません。
             </summary>
       <param name="image1">差分の最初のImageListイメージ。</param>
@@ -6714,7 +6714,7 @@
     <member name="M:LitDev.LDImage.ColorMatrix(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             画像に対してカラーマトリックス変換を実行します。
-            これは・らゆる種類の色変換に使用できます。
+            これはあらゆる種類の色変換に使用できます。
             http://msdn.microsoft.com/en-us/library/a7xw19wh%28v=vs.110%29.aspxを参照してください。
             </summary>
       <param name="image">変更するImageListイメージ。</param>
@@ -7014,7 +7014,7 @@
     <member name="M:LitDev.LDImage.OpenWorkingImage(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             高速ピクセルレベル操作のための一時的な作業イメージを開きます。
-            一時的な作業イメージが終了したら、CloseWorkingImageを使用してイメージに設定する必要が・ります。
+            一時的な作業イメージが終了したら、CloseWorkingImageを使用してイメージに設定する必要があります。
             </summary>
       <param name="image">ImageListイメージを一時的な作業イメージとして開きます。</param>
     </member>
@@ -7055,7 +7055,7 @@
       <summary>
             イメージメタデータの配列を取得します。
             </summary>
-      <param name="imageFile">画像ファイル（ImageList画像では・りません）。</param>
+      <param name="imageFile">画像ファイル（ImageList画像ではありません）。</param>
       <returns>16進数でインデックスされたメタデータ値の配列（16進数のaからfまでのインデックスには引用符を使用）
             idsの一覧については、https：//msdn.microsoft.com/en-us/library/System.Drawing.Imaging.propertyitem.id%28v=vs.110%29.aspxを参照してください。</returns>
     </member>
@@ -7083,8 +7083,8 @@
       <param name="sourceY">画像に対する光源のy位置。</param>
       <param name="sourceZ">画像に対する光源のz位置。これは画像の高さです。
             これは影効果の有効コントラストを変更するのに使用できます。</param>
-      <param name="texture">オプションのImageListイメージ、またはテクスチャ（色）を変更する ""の場合は、通常のマップイメージと同じ寸法にする必要が・ります。
-            その後の呼び出しでテクスチャ画像が変更されることが・ります。</param>
+      <param name="texture">オプションのImageListイメージ、またはテクスチャ（色）を変更する ""の場合は、通常のマップイメージと同じ寸法にする必要があります。
+            その後の呼び出しでテクスチャ画像が変更されることがあります。</param>
       <param name="ambient">テクスチャが設定されている場合は、オプションの環境光強度（デフォルトは0.3）。</param>
       <param name="intensity">テクスチャが設定されている場合は、オプションの光強度（デフォルトは2）。</param>
     </member>
@@ -7105,7 +7105,7 @@
     </member>
     <member name="M:LitDev.LDImage.ReplaceColour(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            ImageListイメージの・る色を別の色に置き換えます。
+            ImageListイメージのある色を別の色に置き換えます。
             </summary>
       <param name="image">ImageListイメージ。</param>
       <param name="colourFrom">置き換える色。</param>
@@ -7137,7 +7137,7 @@
     <member name="M:LitDev.LDWeather.Forecast(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             場所の気象条件を取得します。
-            現在の条件の詳細を取得するには、これを呼び出す必要が・ります。
+            現在の条件の詳細を取得するには、これを呼び出す必要があります。
             </summary>
       <param name="location">場所は、町/都市または郵便番号とすることができます。</param>
       <returns>4日間の予測または「FAILED」を含む配列。</returns>
@@ -7186,7 +7186,7 @@
       <summary>
             使用中のリソースをクリーンアップします。
             </summary>
-      <param name="disposing">管理リソースを廃棄する必要が・る場合はtrue、それ以外の場合はfalse。</param>
+      <param name="disposing">管理リソースを廃棄する必要がある場合はtrue、それ以外の場合はfalse。</param>
     </member>
     <member name="M:LitDev.FormMatrix.InitializeComponent">
       <summary>
@@ -7211,7 +7211,7 @@
     </member>
     <member name="M:LitDev.LDMatrix.Delete(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            既存の行列を削除します（一般的には必要・りませんが、多数の行列が作成される場合はメモリを節約できます）。
+            既存の行列を削除します（一般的には必要ありませんが、多数の行列が作成される場合はメモリを節約できます）。
             </summary>
       <param name="matrix">
             行列名。
@@ -7286,7 +7286,7 @@
     <member name="M:LitDev.LDMatrix.Add(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             2つの行列を加算すると、与えられた3つの行列の行と列の数は同じでなければなりません。
-            ・るいは、第2の行列がスカラー数で・れば、それは第1の行列の各要素に加えられる。
+            あるいは、第2の行列がスカラー数であれば、それは第1の行列の各要素に加えられる。
             </summary>
       <param name="matrix1">最初の行列。</param>
       <param name="matrix2">2番目の行列（またはスカラー値）。</param>
@@ -7299,7 +7299,7 @@
       <summary>
             2つの行列を掛け合わせると、第2の行列の最初と最後の列の数は同じでなければなりません。
             結果行列の行と列の数は、2番目の列の最初と最後の列でなければなりません。
-            ・るいは、第2の行列がスカラー数で・れば、それは第1の行列の各要素と乗算され、第1と結果の次元は同じでなければならない。
+            あるいは、第2の行列がスカラー数であれば、それは第1の行列の各要素と乗算され、第1と結果の次元は同じでなければならない。
             </summary>
       <param name="matrix1">最初の行列。</param>
       <param name="matrix2">2番目の行列（またはスカラー値）。</param>
@@ -7312,7 +7312,7 @@
       <summary>
             （Gaussian Eliminationを使用して）行列の逆行列を計算します。
             行列と逆行列の行と列の数は同じでなければなりません（正方行列）。
-            特異行列は "SINGULAR"を返し、逆行列は正しく・りません。
+            特異行列は "SINGULAR"を返し、逆行列は正しくありません。
             </summary>
       <param name="matrix">反転する行列（反転されていない）。</param>
       <param name="inverse">逆行列。</param>
@@ -7323,7 +7323,7 @@
     <member name="M:LitDev.LDMatrix.Transpose(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             行列の転置を計算します。
-            行列と転置の行数と列数は逆にする必要が・ります（cols =行とその逆）。
+            行列と転置の行数と列数は逆にする必要があります（cols =行とその逆）。
             </summary>
       <param name="matrix">転置する行列。</param>
       <param name="transpose">結果の転置行列。</param>
@@ -7572,7 +7572,7 @@
             
             このオブジェクトは、標準のShapesメソッドを使用して移動、回転、回転などができます。
             
-            最大解像度は通常640 x 480ピクセルで、より高速になる場合が・ります。
+            最大解像度は通常640 x 480ピクセルで、より高速になる場合があります。
             </summary>
       <param name="width">ウェブカメラ表示オブジェクトの幅。</param>
       <param name="height">ウェブカメラ表示オブジェクトの高さ。</param>
@@ -7764,8 +7764,8 @@
             プログラムが一時停止し、変数値を表示できるブレークポイントを設定します。
             </summary>
       <param name="label">ブレークポイントの識別ラベル。
-            定義されたブレークポイントごとに固有のラベルを選択する必要が・ります。
-            イベントサブルーチン内にブレークポイントに関する既知の制限がいくつか・ります。</param>
+            定義されたブレークポイントごとに固有のラベルを選択する必要があります。
+            イベントサブルーチン内にブレークポイントに関する既知の制限がいくつかあります。</param>
     </member>
     <member name="T:LitDev.LDDialogs">
       <summary>
@@ -7774,7 +7774,7 @@
     </member>
     <member name="M:LitDev.LDDialogs.SetStartupPosition(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            ほとんどのダイアログの起動座標（左上）を設定します。これは、ダイアログが呼び出される前に設定する必要が・ります。
+            ほとんどのダイアログの起動座標（左上）を設定します。これは、ダイアログが呼び出される前に設定する必要があります。
             </summary>
       <param name="x">X座標。</param>
       <param name="y">X座標。</param>
@@ -7824,7 +7824,7 @@
             </summary>
       <param name="extension">
             ファイルタイプ拡張子。 "sb"。
-            これは、 "1 = png; 2 = jpg;"のような拡張タイプの配列で・ってもよい。
+            これは、 "1 = png; 2 = jpg;"のような拡張タイプの配列であってもよい。
             拡張子に "|"それは "Images | * .bmp; *。jpg; *。gif; *。png |すべてのファイル（*。*）| *。*"のように直接使用されます。
             </param>
       <param name="folder">
@@ -7838,7 +7838,7 @@
             </summary>
       <param name="extension">
             ファイルタイプ拡張子。 "sb"。
-            これは、 "1 = png; 2 = jpg;"のような拡張タイプの配列で・ってもよい。
+            これは、 "1 = png; 2 = jpg;"のような拡張タイプの配列であってもよい。
             拡張子に "|"それは "Images | * .bmp; *。jpg; *。gif; *。png |すべてのファイル（*。*）| *。*"のように直接使用されます。
             </param>
       <param name="folder">
@@ -7881,8 +7881,8 @@
             GraphicsWindowの右クリックコンテキストメニューを追加します。
             </summary>
       <param name="items">コンテキストメニュー項目の選択テキストの配列。</param>
-      <param name="images">オプションの画像アイコンの配列。いずれかまたはすべてが ""で・る可能性が・ります。
-            ImageList.LoadImageまたはローカルまたはネットワークイメージファイルの結果で・る可能性が・ります。</param>
+      <param name="images">オプションの画像アイコンの配列。いずれかまたはすべてが ""である可能性があります。
+            ImageList.LoadImageまたはローカルまたはネットワークイメージファイルの結果である可能性があります。</param>
     </member>
     <member name="M:LitDev.LDDialogs.Confirm(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -7911,7 +7911,7 @@
       <summary>
             使用中のリソースをクリーンアップします。
             </summary>
-      <param name="disposing">管理されたリソースを廃棄する必要が・る場合はtrue、それ以外の場合はfalse。</param>
+      <param name="disposing">管理されたリソースを廃棄する必要がある場合はtrue、それ以外の場合はfalse。</param>
     </member>
     <member name="M:LitDev.FormWait.InitializeComponent">
       <summary>
@@ -7928,7 +7928,7 @@
       <summary>
             いくつかの統計を実行するために1Dの配列を設定します。
             
-            このコマンドは、統計が計算される前に呼び出される必要が・ります。
+            このコマンドは、統計が計算される前に呼び出される必要があります。
             </summary>
       <param name="array">
             統計を実行する配列。
@@ -7950,7 +7950,7 @@
       <summary>
             二項分布を持つ配列を作成します。
             
-            これは、20（n）のコイントスからk個の頭を得る可能性のようで・り、各トスが0.5（p）の頭を得る可能性が高い。
+            これは、20（n）のコイントスからk個の頭を得る可能性のようであり、各トスが0.5（p）の頭を得る可能性が高い。
             </summary>
       <param name="n">試行回数</param>
       <param name="p">各試行の成功の確率。</param>
@@ -8255,8 +8255,8 @@
             UTF8は、Small Basicで使用されるデフォルトのテキストファイルエンコーディングです。
             </summary>
       <param name="fileName">変換するファイルパス。</param>
-      <param name="BOM">バイトオーダーマーク（BOM）をUTF8ファイルに含めます（「True」または「False」、BOMは通常・りません）。</param>
-      <returns>変換されたファイルパス（-UTF8.txt）または失敗（ "encoding"が正しく検出されていない可能性が・ります）。</returns>
+      <param name="BOM">バイトオーダーマーク（BOM）をUTF8ファイルに含めます（「True」または「False」、BOMは通常ありません）。</param>
+      <returns>変換されたファイルパス（-UTF8.txt）または失敗（ "encoding"が正しく検出されていない可能性があります）。</returns>
     </member>
     <member name="M:LitDev.LDFile.ReadANSI(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -8265,7 +8265,7 @@
             UTF8は、Small Basicで使用されるデフォルトのテキストファイルエンコーディングです。
             </summary>
       <param name="fileName">読み込むファイルパス。</param>
-      <returns>ファイルの内容、または失敗の場合は ""（エンコーディングが正しく検出されていない可能性が・ります）。</returns>
+      <returns>ファイルの内容、または失敗の場合は ""（エンコーディングが正しく検出されていない可能性があります）。</returns>
     </member>
     <member name="M:LitDev.LDFile.ReadANSIToArray(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -8277,12 +8277,12 @@
             ファイルの絶対パス。
             </param>
       <returns>
-            ファイル内の各行に対して1つの要素を持つ配列、または失敗の場合は ""（エンコーディングが正しく検出されていない可能性が・ります）。
+            ファイル内の各行に対して1つの要素を持つ配列、または失敗の場合は ""（エンコーディングが正しく検出されていない可能性があります）。
             </returns>
     </member>
     <member name="M:LitDev.LDFile.Exists(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            ファイルパスが既存のファイルまたはディレクトリで・るかどうかを確認します。
+            ファイルパスが既存のファイルまたはディレクトリであるかどうかを確認します。
             </summary>
       <param name="fileName">
             ファイルまたはディレクトリのフルパス。
@@ -8292,7 +8292,7 @@
     <member name="M:LitDev.LDFile.SaveAllVariables(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             すべての現在の変数をファイルに保存します。
-            これは・なたのプログラムの完全な現在の状態です。
+            これはあなたのプログラムの完全な現在の状態です。
             ゲーム状態の保存やデバッグに便利です。
             </summary>
       <param name="fileName">変数とその値を格納する完全パス。
@@ -8347,7 +8347,7 @@
             CSVファイルを読み込むときに、インポートされた配列に空の値の代わりに使用する文字。
             SmallBasic配列は空の値、つまり ""を保持できません。
             
-            デフォルトは空文字列 ""です（CSVファイルの空の値に対して作成された配列エントリは・りません）。
+            デフォルトは空文字列 ""です（CSVファイルの空の値に対して作成された配列エントリはありません）。
             </summary>
     </member>
     <member name="P:LitDev.LDFile.TempFolder">
@@ -8633,7 +8633,7 @@
     <member name="M:LitDev.LDUtilities.IsNumber(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             入力がSmallBasicによって数値として扱われるかどうかをテストします。
-            これはカルチャ不変の番号です（例： "3.14"ではなく、 "3,14"または "24x"で・る。
+            これはカルチャ不変の番号です（例： "3.14"ではなく、 "3,14"または "24x"である。
             </summary>
       <param name="input">テストする入力。</param>
       <returns>"正しいか間違っているか"</returns>
@@ -8643,7 +8643,7 @@
             現在の文化で表現された数字を取得します。
             数値は計算で数値として扱うためにはカルチャ不変でなければなりません。
             現在のカルチャー番号は、入力または出力方法です。
-            例えば、「3.14」は文化不変で・り、「3,14」はフランス文化で・る。
+            例えば、「3.14」は文化不変であり、「3,14」はフランス文化である。
             </summary>
       <param name="input">文化不変数。</param>
       <returns>現在のカルチャーで表現された数字または失敗したときの入力。</returns>
@@ -8653,7 +8653,7 @@
             文化不変式で表現された数を取得します。
             数値は計算で数値として扱うためにはカルチャ不変でなければなりません。
             現在のカルチャー番号は、入力または出力方法です。
-            例えば、「3.14」は文化不変で・り、「3,14」はフランス文化で・る。
+            例えば、「3.14」は文化不変であり、「3,14」はフランス文化である。
             </summary>
       <param name="input">現在の文化で表現されている数字。</param>
       <returns>文化不変の形式で表現された数または失敗時の入力数。</returns>
@@ -8662,7 +8662,7 @@
       <summary>
             すべてのSmall Basic関連ファイルをtempフォルダから削除します。
             これらは拡張子tmp、pdb、dllのファイルです。
-            他のアプリケーションもこれらを使用する可能性が・るので、他のアプリケーションを実行していない状態で使用することをおすすめします。
+            他のアプリケーションもこれらを使用する可能性があるので、他のアプリケーションを実行していない状態で使用することをおすすめします。
             </summary>
       <returns>削除されたファイルの数。</returns>
     </member>
@@ -8789,7 +8789,7 @@
     </member>
     <member name="M:LitDev.LDCursors.SetShapeCursor(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            マウスがシェイプ上に・るときにシェイプまたはコントロールのカーソルを設定します。
+            マウスがシェイプ上にあるときにシェイプまたはコントロールのカーソルを設定します。
             </summary>
       <param name="shapeName">形状または制御名。</param>
       <param name="cursor">CreateCursorまたはで作成されたカーソル
@@ -8882,7 +8882,7 @@
             グラフを作成します。
             </summary>
       <param name="xpos">
-            グラフは左の位置に・ります。
+            グラフは左の位置にあります。
             </param>
       <param name="ypos">
             グラフの右の位置。
@@ -9098,8 +9098,8 @@
             より一般的には、data [x] = y。
             </param>
       <param name="order">トレンドラインの多項式次数。
-            1は線形で・る。
-            2は2次で・る。
+            1は線形である。
+            2は2次である。
             </param>
       <returns>プロットされる傾向を保持するデータ配列。</returns>
     </member>
@@ -9218,7 +9218,7 @@
       <summary>
             ファイルが作成、変更、または削除されたときのイベント。
             
-            このイベントを登録する前にFilePathとFileFilterを設定する必要が・ります。
+            このイベントを登録する前にFilePathとFileFilterを設定する必要があります。
             </summary>
     </member>
     <member name="E:LitDev.LDEvents.Error">
@@ -9339,7 +9339,7 @@
     </member>
     <member name="M:LitDev.LDPhysics.AttachShapes(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            2つの図形を1つの図形として一緒に移動します。それらの形状は遠隔のジョイントと接続されており、ヒットした場合には少しぐらつくことが・ります。
+            2つの図形を1つの図形として一緒に移動します。それらの形状は遠隔のジョイントと接続されており、ヒットした場合には少しぐらつくことがあります。
             </summary>
       <param name="shape1">
             最初のシェイプ名。
@@ -9481,7 +9481,7 @@
             接点の接点からの最大距離。
             </param>
       <returns>
-            各連絡先が2つの形状名の配列で・る連絡先の配列。
+            各連絡先が2つの形状名の配列である連絡先の配列。
             </returns>
     </member>
     <member name="M:LitDev.LDPhysics.GetAllShapesAt(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -9512,7 +9512,7 @@
     </member>
     <member name="M:LitDev.LDPhysics.GetShapeAt(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            入力座標で（もし・れば）形状を取得します。
+            入力座標で（もしあれば）形状を取得します。
             このメソッドの座標は、パンが存在する場合の画面座標です。
             </summary>
       <param name="posX">
@@ -9556,19 +9556,19 @@
             
             拡張機能はBox2D（http://box2d.org）をエンジンとして使用し、SmallBasicのグラフィックス機能との間のインターフェイスを提供します。
             
-            物理エンジンに接続されているシェイプだけがモーション物理に参加します。たとえば、通常のシェイプ（たとえば、ガンを物理エンジンに接続しないなど）を追加することができます。図形がエンジンに接続されたら、拡張機能によって提供される方法でのみ図形と対話するのが最善です。すべての位置はSmallBasic GraphicsWindowピクセルに・り、シェイプセンターを参照します。
+            物理エンジンに接続されているシェイプだけがモーション物理に参加します。たとえば、通常のシェイプ（たとえば、ガンを物理エンジンに接続しないなど）を追加することができます。図形がエンジンに接続されたら、拡張機能によって提供される方法でのみ図形と対話するのが最善です。すべての位置はSmallBasic GraphicsWindowピクセルにあり、シェイプセンターを参照します。
             
-            画像とテキストの形は長方形として扱われ、楕円は円として扱われます。三角形と凸多角形のサポートも・りますが、線は・りません。 LoadImagesAsCirclesプロパティを "True"に設定することで、画像を円として扱うことができます。
+            画像とテキストの形は長方形として扱われ、楕円は円として扱われます。三角形と凸多角形のサポートもありますが、線はありません。 LoadImagesAsCirclesプロパティを "True"に設定することで、画像を円として扱うことができます。
             
             Box2Dが難しかった1つの問題は、偏向されずに他の図形を「トンネル」することができる小さな動きの速いオブジェクトです（SetBulletオプションを参照）。
             
-            別の問題は、非常に異なるサイズ、したがって質量、特にそれらが互いに接続されたときの大きな形状の形状で・る。これらの密度を変更する必要が・るかもしれません（Anchorオプションはこれを少し自動化しようとしています）。さもなければ、デフォルト密度1が良いです。余りにも多くの形を一緒に接続する誘惑に抵抗する。
+            別の問題は、非常に異なるサイズ、したがって質量、特にそれらが互いに接続されたときの大きな形状の形状である。これらの密度を変更する必要があるかもしれません（Anchorオプションはこれを少し自動化しようとしています）。さもなければ、デフォルト密度1が良いです。余りにも多くの形を一緒に接続する誘惑に抵抗する。
             
             TimestepControlの設定を使用していくつかの「難しい」モデルの安定性を向上させることは可能かもしれませんが、デフォルトはほとんどの場合よく見えます。
             
             SmallBasicイベントサブルーチン内の物理メソッドを直接呼び出すのではなく、メインのゲームループで処理できるフラグを設定します。
             
-            サンプルのSmallBasicプログラムと、拡張DLLに付属の「入門ガイド」が・ります。これは開始するのに最適な場所です。
+            サンプルのSmallBasicプログラムと、拡張DLLに付属の「入門ガイド」があります。これは開始するのに最適な場所です。
             
             バグや問題をSmallBasicフォーラム（http://social.msdn.microsoft.com/Forums/en-US/smallbasic/threads）に報告してください。しかし、最初にSmallBasicコードを単純化して短い「実行可能な」コードを提供する前に問題を特定してくださいサンプル。
             </summary>
@@ -9629,7 +9629,7 @@
       <summary>
             ビュー内のボックス内に残るように図形を設定します。
             これは、ビューが自動的にパンして、指定されたシェイプをGraphicsWindowのボックス領域内に保持することを除いて、PanViewと似ています。
-            ・に入れることができるのは1つの形だけです。シェイプボックスの設定を解除するには、shapeNameを ""に設定します。
+            ボックスに入れることができるのは1つの形だけです。シェイプボックスの設定を解除するには、shapeNameを ""に設定します。
             </summary>
       <param name="shapeName">形状をボックスまたは ""にします。</param>
       <param name="x1">ボックスの左のx座標。</param>
@@ -9650,7 +9650,7 @@
     </member>
     <member name="M:LitDev.LDPhysics.RemoveFrozen">
       <summary>
-            エンジンのAABBの外に・るフリーズした図形をすべて削除します。
+            エンジンのAABBの外にあるフリーズした図形をすべて削除します。
             </summary>
       <returns>
             なし。
@@ -9948,7 +9948,7 @@
       <summary>
             トップダウンゲームのために運転可能なタイヤとして機能するオブジェクトを設定します。
             通常、重力は0になり、形状はすでにエンジンに追加されています。
-            オブジェクトは、最初にディスプレイ上で前方を向いて配置する必要が・ります。
+            オブジェクトは、最初にディスプレイ上で前方を向いて配置する必要があります。
             </summary>
       <param name="shapeName">タイヤを作るための形。</param>
     </member>
@@ -9957,7 +9957,7 @@
             タイヤの形を動かす、前方または後方の力を加える。
             </summary>
       <param name="shapeName">移動するタイヤの形状。</param>
-      <param name="force">適用する力は正、前方は負で・る。</param>
+      <param name="force">適用する力は正、前方は負である。</param>
     </member>
     <member name="M:LitDev.LDPhysics.BrakeTire(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -10043,7 +10043,7 @@
     <member name="M:LitDev.LDPhysics.AttachShapesWithJoint(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
              2つの図形を接続して、いくつかの関節タイプの1つとして一緒に動くようにします。
-             これらは高度化することができ、Box2Dのマニュアルを参照する必要が・ります。
+             これらは高度化することができ、Box2Dのマニュアルを参照する必要があります。
              多くの場合、ジョイントが必要に応じて動作するようにシェイプの回転を防止することが最善です。
              複数のジョイントをシェイプに適用することもできます。
              この方法では最初の形状の位置が使用されるため、最初に設定します。
@@ -10055,7 +10055,7 @@
              「距離」 - 形状間の固定距離を維持します。
              "歯車"  -  2つの形状のプリズムまたは回転ジョイント（以前に作成したもの）をリンクします。
              「線」 - 最初に図形を結ぶ線に沿って図形を移動します。
-             "Mouse"  - シェイプをマウスの後に移動します（両方のシェイプ名は同じにする必要が・ります）。
+             "Mouse"  - シェイプをマウスの後に移動します（両方のシェイプ名は同じにする必要があります）。
              "Prismatic_H"  -  2つの図形の間の線に沿って図形を垂直に移動します。
              "Prismatic_V"  -  2つの図形の間の線に沿って図形を水平に移動します。
              「プーリー」 - プーリーシステムで、一方の形状が下に動くにつれて上に移動し、最初にプーリーの動きの極端な点で形状を位置決めします。
@@ -10063,7 +10063,7 @@
              </param>
       <param name="collide">接続された図形は、相互に「True」または「False」（デフォルト）で対話できます。
              </param>
-      <param name="parameters">オプションのパラメータ（デフォルトは ""）、複数のパラメータは配列に・ります。
+      <param name="parameters">オプションのパラメータ（デフォルトは ""）、複数のパラメータは配列にあります。
             
              「距離」 - 減衰比（デフォルトは0）
              "歯車"  - 歯車比、第1関節、第2関節（デフォルト1、関節の自動検出）
@@ -10102,7 +10102,7 @@
     </member>
     <member name="M:LitDev.LDPhysics.WakeAll">
       <summary>
-            すべての睡眠の形を起こす - 形状は力や接触が加えられていないため眠る。接触や力が加えられたときに自動的に起きるため、この操作はほとんど必要・りません。
+            すべての睡眠の形を起こす - 形状は力や接触が加えられていないため眠る。接触や力が加えられたときに自動的に起きるため、この操作はほとんど必要ありません。
             </summary>
       <returns>
             なし。
@@ -10113,7 +10113,7 @@
             目に見えない光線を投射して形の近接を検出する。
             </summary>
       <param name="shapeName">レイをキャストするための形状。</param>
-      <param name="angle">チェックする角度（度）。これは角度の配列でも・ります。</param>
+      <param name="angle">チェックする角度（度）。これは角度の配列でもあります。</param>
       <param name="distance">確認する最大距離。</param>
       <returns>その距離に等しい値を持つ形状名（静的障害物の場合は「壁」）によって索引付けされた結果の配列。
             図形はソートされ、最も近いものが最初にリストされます。
@@ -10121,14 +10121,14 @@
     </member>
     <member name="M:LitDev.LDPhysics.WriteJson(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            R.U.B.Eと互換性の・るjsonスクリプトを作成します。現在のLDPhysicsモデルから。
+            R.U.B.Eと互換性のあるjsonスクリプトを作成します。現在のLDPhysicsモデルから。
             詳細については、https：//www.iforce2d.net/rubeを参照してください。
             </summary>
       <param name="fileName">作成するjsonファイルへのフルパス。</param>
     </member>
     <member name="M:LitDev.LDPhysics.ReadJson(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            R.U.B.Eと互換性の・るjsonスクリプトで読み込みます。 LDPhysicsモデルを作成します。
+            R.U.B.Eと互換性のあるjsonスクリプトで読み込みます。 LDPhysicsモデルを作成します。
             詳細については、https：//www.iforce2d.net/rubeを参照してください。
             </summary>
       <param name="fileName">読み取るjsonファイルへのフルパス。</param>
@@ -10409,7 +10409,7 @@
     <member name="M:LitDev.LDShapes.RasteriseTurtleLines">
       <summary>
             すべてのカメの軌跡線をラスタライズします。
-            亀の軌跡の数が多い場合、プログラムは線の形状（軌跡）の数のために遅くなることが・ります。
+            亀の軌跡の数が多い場合、プログラムは線の形状（軌跡）の数のために遅くなることがあります。
             これは、タートルの線を線の形から背景の図に変換します。
             </summary>
     </member>
@@ -10485,7 +10485,7 @@
     </member>
     <member name="M:LitDev.LDShapes.RotateAbout(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            ・る点を中心にして図形を回転させます。
+            ある点を中心にして図形を回転させます。
             </summary>
       <param name="shapeName">
             形状の名前。
@@ -10585,7 +10585,7 @@
     <member name="M:LitDev.LDShapes.Overlap(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             形状の重なりをチェックします（楕円形または長方形のタイプの衝突検出）。
-            最初の形状は、ズームされず、回転しないようにする必要が・ります。
+            最初の形状は、ズームされず、回転しないようにする必要があります。
             </summary>
       <param name="shape1">
             最初のシェイプ名。
@@ -10645,7 +10645,7 @@
     <member name="M:LitDev.LDShapes.BrushImage(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             イメージブラシを作成します。
-            これらのブラシは、BrushGradientを使用できる場所で・ればどこでも動作します。
+            これらのブラシは、BrushGradientを使用できる場所であればどこでも動作します。
             </summary>
       <param name="imageName">
             ブラシにロードする画像。
@@ -10656,7 +10656,7 @@
     <member name="M:LitDev.LDShapes.BrushText(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             テキストブラシを作成します。
-            これらのブラシは、BrushGradientを使用できる場所で・ればどこでも動作するはずです。
+            これらのブラシは、BrushGradientを使用できる場所であればどこでも動作するはずです。
             </summary>
       <param name="text">
             ブラシに追加するテキスト。
@@ -10866,7 +10866,7 @@
     </member>
     <member name="M:LitDev.LDShapes.SetSize(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            ・たかも新しいサイズで作成されたかのように、図形のサイズをリセットします。
+            あたかも新しいサイズで作成されたかのように、図形のサイズをリセットします。
             位置（左上の点）は変更されません。
             </summary>
       <param name="shapeName">
@@ -10884,7 +10884,7 @@
     </member>
     <member name="M:LitDev.LDShapes.Centre(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            形状を・る点に集中させ、拡大した図形に対しても機能します。
+            形状をある点に集中させ、拡大した図形に対しても機能します。
             </summary>
       <param name="shapeName">
             形状または制御名。
@@ -10963,7 +10963,7 @@
     <member name="M:LitDev.LDShapes.AddAnimatedGif(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             アニメーションGIFシェイプを作成します。
-            これらを非常に多く追加したり、パフォーマンスが低下する可能性が・ります。
+            これらを非常に多く追加したり、パフォーマンスが低下する可能性があります。
             </summary>
       <param name="imageName">
             ロードするアニメーションGIFファイル（ローカルまたはネットワーク）。
@@ -10978,7 +10978,7 @@
     <member name="M:LitDev.LDShapes.AddAnimatedImage(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             1つのレイヤーに複数の画像を含む1つの画像からアニメーションを作成します。
-            これらを非常に多く追加したり、パフォーマンスが低下する可能性が・ります。
+            これらを非常に多く追加したり、パフォーマンスが低下する可能性があります。
             </summary>
       <param name="imageName">
             ロードするイメージファイル（ローカルまたはネットワーク）。
@@ -11036,8 +11036,8 @@
     </member>
     <member name="M:LitDev.LDShapes.GetAllShapesAt(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            指定された座標に・るすべての図形（存在する場合）の配列を取得します。
-            座標は、例えばマウス座標で・ってもよい。
+            指定された座標にあるすべての図形（存在する場合）の配列を取得します。
+            座標は、例えばマウス座標であってもよい。
             </summary>
       <param name="x">X座標</param>
       <param name="y">Y座標</param>
@@ -11051,7 +11051,7 @@
             不透明度をアニメーション化するためのシェイプを設定し、フラッシュ（フェードアウトおよびイン）します。
             </summary>
       <param name="shapeName">点滅するシェイプまたはコントロール。</param>
-      <param name="interval">完全なフラッシュ・サイクルの間隔（ミリ秒単位）。
+      <param name="interval">完全なフラッシュあサイクルの間隔（ミリ秒単位）。
             値0は点滅を停止します。</param>
       <param name="count">フラッシュの数。
             0の値は連続的に点滅します。</param>
@@ -11146,9 +11146,9 @@
             オーバーラップメソッドを呼び出した後、このプロパティは交差点に追加の詳細を提供します。
             結果は次のいずれかです。
             "空"  - 交差点なし
-            "FullyContains"  -  shape1は完全に内側に・ります2
+            "FullyContains"  -  shape1は完全に内側にあります2
             「交差」 - 重複しているが、どちらも完全に含まれていない
-            "FullyInside"  -  shape2は完全に内側に・ります1
+            "FullyInside"  -  shape2は完全に内側にあります1
             </summary>
     </member>
     <member name="P:LitDev.LDShapes.AnimationInterval">
@@ -11244,7 +11244,7 @@
     <member name="M:LitDev.LDSpeech.Vocabulary(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
             音声規則を使用するための単語とフレーズのボキャブラリを設定します。
-            これが設定されていないと、大きな言語ボキャブラリが使用され、結果は一般に・まり良く・りません（使用できなくなります）。
+            これが設定されていないと、大きな言語ボキャブラリが使用され、結果は一般にあまり良くありません（使用できなくなります）。
             また、明確なフレーズは、単一の単語よりも優れた認識を持つことができます。
             </summary>
       <param name="dictionary">
@@ -11293,7 +11293,7 @@
     </member>
     <member name="M:LitDev.LDFocus.IsFocus(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            指定された図形にフォーカスが・るかどうかをチェックします。
+            指定された図形にフォーカスがあるかどうかをチェックします。
             </summary>
       <param name="shapeName">
             シェイプ名（通常はテキストボックス）。
@@ -11315,7 +11315,7 @@
     </member>
     <member name="M:LitDev.LDFocus.GetFocus">
       <summary>
-            現在のフォーカスが・るシェイプを取得します。
+            現在のフォーカスがあるシェイプを取得します。
             </summary>
       <returns>
             形状名（通常はテキストボックス）または「False」。
@@ -11511,7 +11511,7 @@
       <summary>
             文字列式を数値またはブール値に評価します（可能な場合）。
             JScriptコマンド 'eval'が使用されているため、より複雑なJScript操作が可能です（LDInlineも参照してください）。
-            後でTextWindowを使用する必要が・る場合は、このメソッドを使用する前にTextWindowを表示する必要が・ります。
+            後でTextWindowを使用する必要がある場合は、このメソッドを使用する前にTextWindowを表示する必要があります。
             </summary>
       <param name="expression">評価する式。 "（9/6）+ 3"または "2.1&gt; 1.5"となる。</param>
       <returns>評価された結果。</returns>
@@ -11526,7 +11526,7 @@
     </member>
     <member name="M:LitDev.LDMath.Evaluate3(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-            文字列式をブール値 "True"または "False"（可能で・れば）に評価します。
+            文字列式をブール値 "True"または "False"（可能であれば）に評価します。
             TextWindowでうまく動作するEvaluateの代替方法。
             </summary>
       <param name="expression">ブール値に評価する式。 "21.3&gt; 16"。</param>
@@ -11555,7 +11555,7 @@
     </member>
     <member name="P:LitDev.LDMath.RandomNumberSeed">
       <summary>
-            乱数の種を設定します。シードは整数で、Math.GetRandomNumberが呼び出される前に設定する必要が・ります。
+            乱数の種を設定します。シードは整数で、Math.GetRandomNumberが呼び出される前に設定する必要があります。
             乱数シーケンスは、シードによって初期化され、乱数の繰り返し可能なシーケンスが必要な場合にテストに使用できます。
             </summary>
     </member>
@@ -12372,7 +12372,7 @@
     <member name="M:LitDev.Engines.Functions.IowKitOpenDevice">
       <summary>
             IowKitOpenDeviceのUSBインターフェイスはIO-Warrior-Bausteine
-            IO-Warriorzur・k。
+            IO-Warrior zurück。
             </summary>
       <returns>MisserfolgよりIO-Warriorまたはnullを処理します。</returns>
     </member>
@@ -12386,13 +12386,13 @@
     <member name="M:LitDev.Engines.Functions.IowKitGetProductId(System.IntPtr)">
       <summary>
             IO-Warrior Bausteines abのプロダクトID（PID）
-            ・なたの意見や感想を教えてください：
+            あなたの意見や感想を教えてください：
             </summary>
       <param name="IowHandle">IO-Warriorの取り扱い</param>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitGetNumDevs">
       <summary>
-            USBコネクタとIO-Warrior Bausteineが・ります。
+            USBコネクタとIO-Warrior Bausteineがあります。
             </summary>
       <returns>
       </returns>
@@ -12403,16 +12403,16 @@
             ハンドルのナンバーはハンドルです。 Vorrausgesetzt、dasGer舩
             ミーダー・ナンマーが存在する。
             IowKitGetDeviceHandleは、Aufruf
-            IowKitDeviceOpen。・なたの意見は嘘つきだった。
+            IowKitDeviceOpen。あなたの意見は嘘つきだった。
             </summary>
       <param name="numDevice">Nummer des zufnendenGer舩es。</param>
-      <returns>Misserfolg。による0件のユーザーレビューが・ります。</returns>
+      <returns>Misserfolg。による0件のユーザーレビューがあります。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitGetRevision(System.IntPtr)">
       <summary>
-            IoWarrior-Firmawarezur・kのバージョンを参照してください。 2バイトは0になります。
-            Es sind 4 Hex-Stelleng・tig。 Softwareversion 1.0.2.1 so wirdをダウンロードする
-            0x1021zur・kgegeben。すべてのIO戦士、・なたの敵、Seriennummer haben、liefern
+            IoWarrior-Firmawarezurあkのバージョンを参照してください。 2バイトは0になります。
+            Es sind 4 Hex-Stellengあtig。 Softwareversion 1.0.2.1 so wirdをダウンロードする
+            0x1021zurあkgegeben。すべてのIO戦士、あなたの敵、Seriennummer haben、liefern
             Versionsnummer kleiner 1.0.1.0をダウンロードしてください。
             </summary>
       <param name="IowHandle">IO-Warriorの取り扱い</param>
@@ -12434,7 +12434,7 @@
     <member name="M:LitDev.Engines.Functions.IowKitRead(System.IntPtr,System.UInt32,System.Byte[],System.UInt32)">
       <summary>
             IO-WarriorからLiest Daten。スレッド機能ブロックバイナリスレッドスレッド
-            ・なたの意見や感想を教えてください：自分のレビューを作成する
+            あなたの意見や感想を教えてください：自分のレビューを作成する
             IowKitReadNonBlocking（）でブロックされたブロックは、
             エルフォゲン。
             フォームのレポートにダイデータを入力します。報告書の内容は次のとおりです
@@ -12471,7 +12471,7 @@
             </summary>
       <param name="IowHandle">IO-Warriorの取り扱い</param>
       <param name="IoPinStatus">Ziel-Datenfeld氏はAbspeichern der Pin-Zust舅deに就任しました。</param>
-      <returns>True bei Erfolg、間違った経緯が・りましたDaten erfasst wurden oder
+      <returns>True bei Erfolg、間違った経緯がありましたDaten erfasst wurden oder
             いくつかの重要な問題を処理する。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitSetTimeout(System.IntPtr,System.UInt32)">
@@ -12480,12 +12480,12 @@
             エイン・タイムアウト・アウト・オブ・ラウフェンデン、ノッチ・ニヒト・ビエンテン
             Datenverlust（レポートgehen verloren）。 IowKitRead（）関数は、関数inhalhal
             ガーベネ・グレンズ・データ・オブ・ウォーリアー・ワーゲン・ケルン。
-            ・なたの意見や感想を教えてください：自分のレビューを作成する
+            あなたの意見や感想を教えてください：自分のレビューを作成する
             I2C-Bus（I2C-Bus）デバイスは、I2Cバスを介して接続されています。
             他の病変）。
             </summary>
       <param name="IowHandle">IO-Warriorの取り扱い</param>
-      <param name="Timeout">MillisekundenのGrenzef・Zeit・erschreitungに・る。 Empfohlen in
+      <param name="Timeout">MillisekundenのGrenzef・Zeit・erschreitungにある。 Empfohlen in
             der iowkit.dll-Beschreibung sindから1000 msまたはそれより後のmehr。</param>
       <returns>True bei ErfolgまたはFalse bei Fehlschlagです。</returns>
     </member>
@@ -12497,7 +12497,7 @@
             Fehler auftreten氏。
             </summary>
       <param name="IowHandle">IO-Warriorの取り扱い</param>
-      <param name="Timeout">MillisekundenのGrenzef・Zeit・erschreitungに・る。 Empfohlen in
+      <param name="Timeout">MillisekundenのGrenzef・Zeit・erschreitungにある。 Empfohlen in
             der iowkit.dll-Beschreibung sindから1000 msまたはそれより後のmehr。</param>
       <returns>True bei ErfolgまたはFalse bei Fehlschlagです。</returns>
     </member>
@@ -12515,7 +12515,7 @@
     <member name="M:LitDev.Engines.Functions.IowKitWrite(System.IntPtr,System.UInt32,System.Byte[],System.UInt32)">
       <summary>
             「長さ」のバイト数を「numPipe」とし、IO-Warriorsのデータを変換します。
-            ・なたの意見や感想を教えてください：自分のレビューを作成する&gt;すべてのカスタマーレビューを見る（件）
+            あなたの意見や感想を教えてください：自分のレビューを作成する&gt;すべてのカスタマーレビューを見る（件）
             レポートデータ、レポート、スケーラビリティ
             Funktion fehl。
             </summary>
@@ -12530,7 +12530,7 @@
       <summary>
             Gibt den Handle des Threadszur・k、der zum I / O-Pins des
             IO-Warriors genutzt wird。 Linux用のスレッドキーはFunktionen
-            IO-Warriorsは・なたの居場所を破壊しています。
+            IO-Warriorsはあなたの居場所を破壊しています。
             </summary>
       <param name="IowHandle">IO-Warriorの取り扱い</param>
       <returns>Misserfolg上のスレッドまたはスレッドを処理します。</returns>
@@ -12621,7 +12621,7 @@
             </summary>
       <param name="hInfoSet">インフォセットへのハンドル</param>
       <param name="oInterface">DeviceInterfaceData構造体</param>
-      <returns>デバイスパスまたは問題が・った場合はnull</returns>
+      <returns>デバイスパスまたは問題があった場合はnull</returns>
     </member>
     <member name="M:LitDev.Engines.HIDDevice.FindDevice(System.Int32,System.Int32,System.Type)">
       <summary>
@@ -12696,7 +12696,7 @@
     <member name="M:LitDev.Engines.InputReport.SetData(System.Byte[])">
       <summary>
             生の入力レポートを与えられたバッファを設定するには、これを呼び出します。オーバーライド可能なメソッドを呼び出す
-            自動的にバイトを意味構造に構文解析する必要が・ります。
+            自動的にバイトを意味構造に構文解析する必要があります。
             </summary>
       <param name="arrData">生の入力レポート。</param>
     </member>
@@ -12748,7 +12748,7 @@
       <summary>CreateFile：重複した操作のハンドルを開く</summary>
     </member>
     <member name="F:LitDev.Engines.Win32Usb.OPEN_EXISTING">
-      <summary>CreateFile： "作成する"リソースが存在する必要が・ります</summary>
+      <summary>CreateFile： "作成する"リソースが存在する必要があります</summary>
     </member>
     <member name="F:LitDev.Engines.Win32Usb.ERROR_IO_PENDING">
       <summary>ReadFile / WriteFile：重複した操作が不完全です。</summary>
@@ -12799,9 +12799,9 @@
     <member name="M:LitDev.Engines.Win32Usb.SetupDiGetDeviceInterfaceDetail(System.IntPtr,LitDev.Engines.Win32Usb.DeviceInterfaceData@,System.IntPtr,System.UInt32,System.UInt32@,LitDev.Engines.Win32Usb.DeviceInfoData@)">
       <summary>
             SetupDiGetDeviceInterfaceDetail  - これらの2つは、若干異なる場合に一緒に使用されるためオーバーロードされます
-            方法とパラメータには異なる意味が・ります。
+            方法とパラメータには異なる意味があります。
             DeviceInterfaceDataからインターフェイスの詳細を取得します。これはデバイスのパスとほぼ同じです。
-            これを2回呼びます。送信する必要が・る構造体のサイズを取得するには（nDeviceInterfaceDetailDataSize = 0）
+            これを2回呼びます。送信する必要がある構造体のサイズを取得するには（nDeviceInterfaceDetailDataSize = 0）
             必要なスペースを割り当てたときに再び表示されます。
             </summary>
       <param name="lpDeviceInfoSet">アクセスするインフォセット</param>
@@ -12863,7 +12863,7 @@
       <param name="nShareMode">共有モード</param>
       <param name="lpSecurity">セキュリティの詳細（nullでもかまいません）</param>
       <param name="nCreationFlags">ファイルを作成するか、開くかを指定します。</param>
-      <param name="nAttributes">余分な属性は・りますか？例えば開いている</param>
+      <param name="nAttributes">余分な属性はありますか？例えば開いている</param>
       <param name="lpTemplate">使用されていない</param>
       <returns>
       </returns>
@@ -12877,7 +12877,7 @@
     </member>
     <member name="M:LitDev.Engines.Win32Usb.RegisterForUsbEvents(System.IntPtr,System.Guid)">
       <summary>
-            デバイスの挿入/削除時にウィンドウメッセージを受信するウィンドウを登録します。これを呼び出す必要が・ります
+            デバイスの挿入/削除時にウィンドウメッセージを受信するウィンドウを登録します。これを呼び出す必要があります
             フォームのコンストラクタではなく、そのハンドルが作成されたときにフォームから削除されます。フォームのOnHandleCreatedオーバーライドを使用します。
             </summary>
       <param name="hWnd">メッセージを受け取るウィンドウへのハンドル</param>
