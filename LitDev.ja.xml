@@ -1,7 +1,7 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>LitDev</name>
+    <name>LitDev 1.2.0b JA</name>
   </assembly>
   <members>
     <member name="M:Bing.BingSearchContainer.Composite(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
@@ -11,7 +11,7 @@
       <param name="Query">Bing検索クエリのサンプル値：xbox</param>
       <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlightingです。サンプル値：EnableHighlighting</param>
       <param name="WebSearchOptions">Webソース・タイプへの要求のオプションを指定します。有効な値は、DisableHostCollapsing、DisableQueryAlterationsです。サンプル値：DisableQueryAlterations</param>
-      <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけでは・りません。サンプル値：en-US</param>
+      <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
       <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：中位</param>
       <param name="Latitude">緯度サンプル値：47.603450</param>
       <param name="Longitude">経度サンプル値：-122.329696</param>
