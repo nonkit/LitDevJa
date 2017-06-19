@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
     <name>LitDev 1.2.0b JA</name>
@@ -197,7 +197,7 @@
       <param name="arrayName">配列名。</param>
       <param name="indices">
         コンマ（またはスペース）で区切られたインデックスのリスト。
-        例えば第1次元では「」、第1次元では3番目の要素の第2次元では「3」です。
+        例えば第1次元では""、第1次元では3番目の要素の第2次元では"3"です。
       </param>
       <returns>ディメンションサイズ。</returns>
     </member>
@@ -450,10 +450,10 @@
         基本単位は、単一の次元と名前で構成され、すべて独立しています。
         派生単位は、基本単位または他の派生単位からなる記述、名前、および単位定義、およびオプションの加算項（通常は0）で構成されます。
         単位は分割によって解析されます。 / +  - と*を使用して、導出された単位変換、ブラケット付き（）の項を再帰的に解決します。
-        値（特に、小数点「。」または「 - 」を含むもの）は、（）内に含める必要があります。
+        値（特に、小数点"。"または" - "を含むもの）は、（）内に含める必要があります。
         ユニットの先頭に接頭辞または数値を付けることができます（たとえば、miliは0.001、Kはkilo 1000など）。
         どのユニットにも電源を供給することができます。
-        典型的な単位は「マイル/時」、「m / s2」または「MJ /日」などであり、ベースユニットと派生ユニットの任意の組み合わせとすることができる。
+        典型的な単位は"マイル/時"、"m / s2"または"MJ /日"などであり、ベースユニットと派生ユニットの任意の組み合わせとすることができる。
         次元的に同じユニユーアのペアは変換できます。
         加法的な値は、非複合単位変換（例えば、CからFへの変換）にのみ使用されます。
         プレフィックス単位が不明瞭にならないようにするには、完全なプレフィックス名を使用します（たとえば、minは60秒または0.001インチになります。後者はミリインチにする必要があります）。
@@ -468,7 +468,7 @@
       <param name="fromUnit">変換元の単位。</param>
       <param name="toUnit">変換する単位。</param>
       <returns>
-        変換された値または「FAILED」（通常、存在しない単位または不一致の次元）。
+        変換された値または"FAILED"（通常、存在しない単位または不一致の次元）。
       </returns>
     </member>
     <member name="M:LitDev.LDUnits.GetErrors">
@@ -580,7 +580,7 @@
       <param name="height">形状の高さです。</param>
       <param name="thickness">矢印の軸の相対的な厚さ、例えば。 0.25である。</param>
       <param name="arrowAngle">矢印の頭の角度（度）。</param>
-      <param name="direction">矢印の方向：「上」、「下」、「左」または「右」。</param>
+      <param name="direction">矢印の方向："上"、"下"、"左"または"右"。</param>
       <returns>形状の名前。</returns>
     </member>
     <member name="M:LitDev.LDFigures.AddCallout(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -590,8 +590,8 @@
       <param name="width">形状の幅。</param>
       <param name="height">形状の高さです。</param>
       <param name="text">コールアウトテキスト。</param>
-      <param name="style">コールアウトスタイル：「クラウド」、「楕円」、「長方形」、または「丸みを帯びた輪郭」。</param>
-      <param name="anchor">コールアウトサイズに対するコールアウトアンカーの位置（例：「X = 0; Y = 1.25;」）</param>
+      <param name="style">コールアウトスタイル："クラウド"、"楕円"、"長方形"、または"丸みを帯びた輪郭"。</param>
+      <param name="anchor">コールアウトサイズに対するコールアウトアンカーの位置（例："X = 0; Y = 1.25;"）</param>
       <returns>形状の名前。</returns>
     </member>
     <member name="M:LitDev.LDFigures.AddLineArrow(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -602,9 +602,9 @@
       <param name="height">形状の高さです。</param>
       <param name="size">矢印の頭のサイズ（ピクセル単位）。</param>
       <param name="bend">矢印の曲げ量（例えば、0は直線、0.5は滑らかに曲がる）。</param>
-      <param name="startArrow">開始矢印のタイプ：「なし」、「矢印」、「開く」、「オーバル」または「ステルス」。</param>
-      <param name="endArrow">終わりの矢印のタイプ：「なし」、「矢印」、「開く」、「楕円形」または「ステルス」。</param>
-      <param name="startCorner">開始角位置：「BottomLeft」、「BottomRight」、「TopLeft」または「TopRight」。矢印は反対側のコーナーで終了します。</param>
+      <param name="startArrow">開始矢印のタイプ："なし"、"矢印"、"開く"、"オーバル"または"ステルス"。</param>
+      <param name="endArrow">終わりの矢印のタイプ："なし"、"矢印"、"開く"、"楕円形"または"ステルス"。</param>
+      <param name="startCorner">開始角位置："BottomLeft"、"BottomRight"、"TopLeft"または"TopRight"。矢印は反対側のコーナーで終了します。</param>
       <returns>形状の名前。</returns>
     </member>
     <member name="M:LitDev.LDFigures.AddRegularPolygon(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -636,7 +636,7 @@
       <param name="properties">
         プロパティ名でインデックス付けされた任意の（ ""のための）プロパティの配列：
         BlurRadius（デフォルトは5）
-        色（デフォルトでは「黒」）
+        色（デフォルトでは"黒"）
         方向（デフォルトは315）
         不透明度（デフォルト値1）
         ShadowDepth（デフォルトは5）
@@ -688,7 +688,7 @@
       <param name="properties">
         プロパティ名でインデックス付けされた任意の（ ""のための）プロパティの配列：
         金額（デフォルトは3）
-        色（デフォルトは「グレー」）
+        色（デフォルトは"グレー"）
         高さ（デフォルトは0.001）
       </param>
     </member>
@@ -700,7 +700,7 @@
       <param name="properties">
         プロパティ名でインデックス付けされた任意の（ ""のための）プロパティの配列：
         金額（デフォルトは0.5）
-        センター（デフォルトでは「X = 0.5; Y = 0.5;」）
+        センター（デフォルトでは"X = 0.5; Y = 0.5;"）
         InnerRadius（デフォルトは0.2）
         OuterRadius（デフォルトは0.4）
       </param>
@@ -712,7 +712,7 @@
       <param name="shapeName">効果を適用するシェイプです。</param>
       <param name="properties">
         プロパティ名でインデックス付けされた任意の（ ""のための）プロパティの配列：
-        カラー（デフォルトは「白」）
+        カラー（デフォルトは"白"）
       </param>
     </member>
     <member name="M:LitDev.LDEffect.Pixelate(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -732,7 +732,7 @@
       <param name="shapeName">効果を適用するシェイプです。</param>
       <param name="properties">
         プロパティ名でインデックス付けされた任意の（ ""のための）プロパティの配列：
-        センター（デフォルトでは「X = 0.5; Y = 0.5;」）
+        センター（デフォルトでは"X = 0.5; Y = 0.5;"）
         頻度（デフォルトは40）
         大きさ（デフォルトは0.1）
         フェーズ（デフォルト10）
@@ -757,7 +757,7 @@
       <param name="properties">
         プロパティ名でインデックス付けされた任意の（ ""のための）プロパティの配列：
         AngleFrequency（デフォルト45）
-        センター（デフォルトでは「X = 0.5; Y = 0.5;」）
+        センター（デフォルトでは"X = 0.5; Y = 0.5;"）
         TwistAmount（デフォルトは10）
       </param>
     </member>
@@ -1077,8 +1077,8 @@
       <param name="hsl">
         異なるセグメントに変更するパラメータは次のとおりです。
         "色相"（デフォルト）の虹色
-        色の濃さが増す「彩度」
-        明るさを増す「明度」
+        色の濃さが増す"彩度"
+        明るさを増す"明度"
       </param>
       <param name="start">[0?1]の範囲のカラーバリエーションの開始値。デフォルトは0です。</param>
       <param name="end">[0?1]の範囲のカラーバリエーションの終了値。デフォルトは1です。</param>
@@ -1093,13 +1093,13 @@
       <param name="legend">
         凡例スタイルは、次のとおりです。
         "なし"伝説なし
-        「伝説」別の伝説
-        「オーバーレイ」の名前がチャートの上に重なる
+        "伝説"別の伝説
+        "オーバーレイ"の名前がチャートの上に重なる
         グラフの上に重なるパーセント値
         "Legend_Percent"（既定値）別の凡例と割合のオーバーレイチャート
         "
       </param>
-      <param name="background">凡例ラベルのテキストの背景色は「True」または「False」（デフォルト）です。</param>
+      <param name="background">凡例ラベルのテキストの背景色は"True"または"False"（デフォルト）です。</param>
     </member>
     <member name="M:LitDev.LDChart.Highlight(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -1164,7 +1164,7 @@
         複素数データの配列（実振幅と虚数位相）。
         各複合対について、インデックスは実数部であり、値は虚数部である。
       </param>
-      <returns>逆FFT値または「FAILED」の配列。</returns>
+      <returns>逆FFT値または"FAILED"の配列。</returns>
     </member>
     <member name="M:LitDev.LDMathX.FFTReal(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -1174,7 +1174,7 @@
         複素数データの配列（実振幅と虚数位相）。
         各複合対について、インデックスは実数部であり、値は虚数部である。
       </param>
-      <returns>データの実数部分の配列、または「FAILED」。</returns>
+      <returns>データの実数部分の配列、または"FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDMathX.FFTImaginary(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -1184,7 +1184,7 @@
         複素数データの配列（実振幅と虚数位相）。
         各複合対について、インデックスは実数部であり、値は虚数部である。
       </param>
-      <returns>データの虚数部分の配列、または「FAILED」。</returns>
+      <returns>データの虚数部分の配列、または"FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDMathX.FFTComplex(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -1407,7 +1407,7 @@
       <param name="waveform">
         反復波のためのフォーム。
         これは配列で、インデックスは相対的な増加時間（実際の値は周波数に対して正規化されます）で、値は振幅（-1対1）です。
-        三角波の例は、「0 = -1; 1 = 1; 2 = -1;」である。
+        三角波の例は、"0 = -1; 1 = 1; 2 = -1;"である。
       </param>
       <returns>波の名前または失敗時の ""</returns>
     </member>
@@ -1455,13 +1455,13 @@
     </member>
     <member name="P:LitDev.LDWaveForm.Loop">
       <summary>
-        サウンドを「True」または「False」のデフォルトで連続的にループします。
+        サウンドを"True"または"False"のデフォルトで連続的にループします。
         Loppingサウンドは、再生中にStopメソッドを呼び出すことで停止できます。
       </summary>
     </member>
     <member name="P:LitDev.LDWaveForm.Async">
       <summary>
-        サウンドを非同期で再生します（サウンドが完了する前に戻ります）。デフォルトは「True」または「False」です。
+        サウンドを非同期で再生します（サウンドが完了する前に戻ります）。デフォルトは"True"または"False"です。
       </summary>
     </member>
     <member name="P:LitDev.LDWaveForm.Amplitude">
@@ -1482,7 +1482,7 @@
         xmlファイルのフルパスを開きます。
         これが ""の場合、新しい空のXML文書が作成されます。
       </param>
-      <returns>文書の名前または「FAILED」。</returns>
+      <returns>文書の名前または"FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDxml.Switch(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -1562,7 +1562,7 @@
       <summary>
         現在のXML文書をSmall Basic配列に変換します。
         アレイの構造および深さは、かなり複雑であり得る。
-        各ノードには、オプションの配列「属性」と「子」または「データ」があります。
+        各ノードには、オプションの配列"属性"と"子"または"データ"があります。
         子ノードがある場合、最初に数字で索引付けされ、同じ名前の複数の子を区切ります。
       </summary>
       <returns>スモールベーシックアレイまたは "FAILED"。</returns>
@@ -1572,12 +1572,12 @@
         ToArrayメソッドの逆関数を実行し、配列定義からxmlドキュメントを作成します。
       </summary>
       <param name="array">正しい形式のSmall Basic配列。</param>
-      <returns>文書の名前または「FAILED」。</returns>
+      <returns>文書の名前または"FAILED"。</returns>
     </member>
     <member name="P:LitDev.LDxml.NodeType">
       <summary>
         現在のノードの型を取得します。
-        多くのタイプのうちの1つであるが、一般的には「要素」または「テキスト」である。
+        多くのタイプのうちの1つであるが、一般的には"要素"または"テキスト"である。
       </summary>
     </member>
     <member name="P:LitDev.LDxml.NodeName">
@@ -1619,7 +1619,7 @@
       <param name="ftpServerIP">ftpサーバアドレス（またはIP）。</param>
       <param name="ftpUserID">ユーザーID。</param>
       <param name="ftpPassword">ユーザーのパスワード。</param>
-      <returns>非同期の場合、「成功」、「失敗」または「保留」。</returns>
+      <returns>非同期の場合、"成功"、"失敗"または"保留"。</returns>
     </member>
     <member name="M:LitDev.LDftp.Download(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -1630,7 +1630,7 @@
       <param name="ftpServerIP">ftpサーバアドレス（またはIP）。</param>
       <param name="ftpUserID">ユーザーID。</param>
       <param name="ftpPassword">ユーザーのパスワード。</param>
-      <returns>非同期の場合、「成功」、「失敗」または「保留」。</returns>
+      <returns>非同期の場合、"成功"、"失敗"または"保留"。</returns>
     </member>
     <member name="M:LitDev.LDftp.Delete(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -1640,7 +1640,7 @@
       <param name="ftpServerIP">ftpサーバアドレス（またはIP）。</param>
       <param name="ftpUserID">ユーザーID。</param>
       <param name="ftpPassword">ユーザーのパスワード。</param>
-      <returns>非同期の場合、「成功」、「失敗」または「保留」。</returns>
+      <returns>非同期の場合、"成功"、"失敗"または"保留"。</returns>
     </member>
     <member name="M:LitDev.LDftp.ListFiles(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -1650,7 +1650,7 @@
       <param name="ftpServerIP">ftpサーバアドレス（またはIP）。</param>
       <param name="ftpUserID">ユーザーID。</param>
       <param name="ftpPassword">ユーザーのパスワード。</param>
-      <returns>ファイル名とフォルダ名の配列、または「FAILED」。配列はファイル名で索引付けされ、値には追加情報が含まれます。</returns>
+      <returns>ファイル名とフォルダ名の配列、または"FAILED"。配列はファイル名で索引付けされ、値には追加情報が含まれます。</returns>
     </member>
     <member name="P:LitDev.LDftp.LastFTPFile">
       <summary>
@@ -1936,7 +1936,7 @@
         値を取得するインデックスです（インデックスは1から始まります）。
       </param>
       <returns>
-        値または「FAILED」。
+        値または"FAILED"。
       </returns>
     </member>
     <member name="M:LitDev.LDArray.CopyNew(Microsoft.SmallBasic.Library.Primitive)">
@@ -2109,7 +2109,7 @@
       </summary>
       <param name="shapeName">ツリービューのシェイプ名。</param>
       <param name="node">展開/崩壊するノード番号、0はすべてのノードを漸増/崩壊させる。</param>
-      <param name="expand">「True」または「False」を展開または折りたたむ</param>
+      <param name="expand">"True"または"False"を展開または折りたたむ</param>
       <param name="recursive">再帰的にノードを展開/折りたたむ（すべての子ノード） "True"または "False"</param>
     </member>
     <member name="M:LitDev.LDControls.TreeViewSelect(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2291,7 +2291,7 @@
         ブラウザページを前後に移動します。
       </summary>
       <param name="shapeName">ブラウザ名。</param>
-      <param name="direction">「F」または「B」の順または逆方向。</param>
+      <param name="direction">"F"または"B"の順または逆方向。</param>
     </member>
     <member name="M:LitDev.LDControls.BrowserHistory(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -2459,7 +2459,7 @@
         画像または背景で設定された画像。
         MediaPlayer用のメディア（有効なメディアがすでにロードされている場合のみ有効）。
       </summary>
-      <param name="shapeName">ドロップまたは「背景」を許可するシェイプ。</param>
+      <param name="shapeName">ドロップまたは"背景"を許可するシェイプ。</param>
     </member>
     <member name="M:LitDev.LDControls.AddMediaPlayer(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -2539,8 +2539,8 @@
         ストレッチ法。使用可能なストレッチオプションは次のとおりです。
         "なし"（コンテンツは元のサイズを保持します）。
         "統一"（コンテンツは、ネイティブのアスペクト比を維持しながら宛先のサイズに合わせてサイズ変更されます - デフォルト）。
-        「塗りつぶし」（コンテンツのサイズが目的の寸法を満たすようにリサイズされます。アスペクト比は保持されません）。
-        「UniformToFill」（コンテンツは、ネイティブのアスペクト比を維持しながら必要に応じてクリッピングすると、コピー先のサイズを満たすようにサイズが変更されます）。
+        "塗りつぶし"（コンテンツのサイズが目的の寸法を満たすようにリサイズされます。アスペクト比は保持されません）。
+        "UniformToFill"（コンテンツは、ネイティブのアスペクト比を維持しながら必要に応じてクリッピングすると、コピー先のサイズを満たすようにサイズが変更されます）。
       </param>
     </member>
     <member name="M:LitDev.LDControls.ListBoxContent(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2583,7 +2583,7 @@
       </summary>
       <param name="width">コントロールの幅。</param>
       <param name="height">コントロールの高さ。</param>
-      <param name="orientation">水平または垂直（「H」または「V」）。</param>
+      <param name="orientation">水平または垂直（"H"または"V"）。</param>
       <returns>進行状況バーの形状名。</returns>
     </member>
     <member name="M:LitDev.LDControls.ProgressBarValue(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2599,7 +2599,7 @@
       </summary>
       <param name="width">コントロールの幅。</param>
       <param name="height">コントロールの高さ。</param>
-      <param name="orientation">水平または垂直（「H」または「V」）。</param>
+      <param name="orientation">水平または垂直（"H"または"V"）。</param>
       <returns>スライダシェイプの名前。</returns>
     </member>
     <member name="M:LitDev.LDControls.SliderValue(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2658,7 +2658,7 @@
       <param name="height">コントロールの高さ。</param>
       <param name="menuList">
         メニュー項目の配列。インデックスはメニュー表示名で、値は親表示名です。
-        トップレベルの表示名は「Main」にする必要があります。名前はclickイベントで返されるので一意でなければなりません。
+        トップレベルの表示名は"Main"にする必要があります。名前はclickイベントで返されるので一意でなければなりません。
         セパレータは一意でなければならず、選択できないため、 " - "、 " - "、 "---"などです。
 
         menuList ["File"] = "Main"
@@ -2712,7 +2712,7 @@
       </summary>
       <param name="shapeName">リストビューコントロール。</param>
       <param name="col">列番号（1からのインデックス）。</param>
-      <param name="alignment">「左」、「中央」または「右」</param>
+      <param name="alignment">"左"、"中央"または"右"</param>
     </member>
     <member name="M:LitDev.LDControls.ListViewSetRow(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -2761,7 +2761,7 @@
         リストビューを編集可能な状態に変更します。
       </summary>
       <param name="shapeName">リストビューのシェイプ名。</param>
-      <param name="editable">編集可能なテキストボックスまたは編集不可能なTextBlockの「True」。</param>
+      <param name="editable">編集可能なテキストボックスまたは編集不可能なTextBlockの"True"。</param>
     </member>
     <member name="M:LitDev.LDControls.TextBoxReadOnly(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -2873,7 +2873,7 @@
         ヘッダーをクリックしてデータビューコントロールを列ソートできるようにします。
       </summary>
       <param name="shapeName">データビューコントロール。</param>
-      <param name="allow">「True」（デフォルト）を許可するか、「False」を許可しない。</param>
+      <param name="allow">"True"（デフォルト）を許可するか、"False"を許可しない。</param>
       <returns>"SUCCESS"または "FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDControls.DataViewSaveAsCSV(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2943,7 +2943,7 @@
       </summary>
       <param name="shapeName">データビューコントロール。</param>
       <param name="col">列番号。</param>
-      <param name="readOnly">読み取り専用として「True」または「False」（デフォルト）を設定します。</param>
+      <param name="readOnly">読み取り専用として"True"または"False"（デフォルト）を設定します。</param>
       <returns>"SUCCESS"または "FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDControls.DataViewColumnVisible(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2953,7 +2953,7 @@
       </summary>
       <param name="shapeName">データビューコントロール。</param>
       <param name="col">列番号。</param>
-      <param name="visible">「True」（デフォルト）または「False」として表示されます。</param>
+      <param name="visible">"True"（デフォルト）または"False"として表示されます。</param>
       <returns>"SUCCESS"または "FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDControls.DataViewAllowUserEntry(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2961,7 +2961,7 @@
         ユーザーが最後の行にデータを追加できるようにします。
       </summary>
       <param name="shapeName">データビューコントロール。</param>
-      <param name="allow">ユーザーデータの入力を「True」（デフォルト）または「False」にします。</param>
+      <param name="allow">ユーザーデータの入力を"True"（デフォルト）または"False"にします。</param>
       <returns>"SUCCESS"または "FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDControls.DataViewColumnWidths(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2988,7 +2988,7 @@
       </summary>
       <param name="shapeName">データビューコントロール。</param>
       <param name="col">列番号。</param>
-      <param name="alignment">「左」、「中央」または「右」</param>
+      <param name="alignment">"左"、"中央"または"右"</param>
       <returns>"SUCCESS"または "FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDControls.SetButtonStyle(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -3003,7 +3003,7 @@
       <param name="penMouseOver">マウスの上にあるときのボタンのテキストフォント色。</param>
       <param name="penPressed">押されたボタンのテキストフォントの色です。</param>
       <param name="radius">ボタンの角の半径（デフォルトは9）。</param>
-      <param name="shine">'輝き'効果を適用するか、「True」（デフォルト）または「False」を適用します。</param>
+      <param name="shine">'輝き'効果を適用するか、"True"（デフォルト）または"False"を適用します。</param>
       <returns>"SUCCESS"または "FAILED"。</returns>
     </member>
     <member name="P:LitDev.LDControls.LastTreeView">
@@ -3076,7 +3076,7 @@
     </member>
     <member name="P:LitDev.LDControls.RichTextBoxTextAlignment">
       <summary>
-        テキストの配置「中央」「左」「右」または「正当化」。
+        テキストの配置"中央""左""右"または"正当化"。
         AddRichTextBoxが呼び出される前にこれを設定します。
       </summary>
     </member>
@@ -3088,7 +3088,7 @@
     </member>
     <member name="P:LitDev.LDControls.RichTextBoxCaseSensitive">
       <summary>
-        単語またはフレーズの強調表示が大文字と小文字を区別するかどうか（「True」または「False」（デフォルト））。
+        単語またはフレーズの強調表示が大文字と小文字を区別するかどうか（"True"または"False"（デフォルト））。
         RichTextBoxWordが呼び出される前にこれを設定します。
       </summary>
     </member>
@@ -3410,7 +3410,7 @@
       <param name="obj">拡張オブジェクト名。</param>
       <param name="method">拡張メソッド名。</param>
       <param name="arguments">引数の配列またはなしの場合は ""。単一の引数は配列内にある必要はありません。</param>
-      <returns>「保留中」または失敗時のエラーメッセージ。</returns>
+      <returns>"保留中"または失敗時のエラーメッセージ。</returns>
     </member>
     <member name="M:LitDev.LDCall.Include(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -3472,8 +3472,8 @@
       <param name="width">3DViewの幅です。</param>
       <param name="height">3DViewの高さです。</param>
       <param name="performance">
-        品質のスピードに賛成するフラグ「True」または「False」。
-        「True」はビジュアルクリッピング（3DViewを幅と高さにクリップする）、ヒットテスト（未使用）、アンチエイリアス（不要）を削除します。
+        品質のスピードに賛成するフラグ"True"または"False"。
+        "True"はビジュアルクリッピング（3DViewを幅と高さにクリップする）、ヒットテスト（未使用）、アンチエイリアス（不要）を削除します。
       </param>
       <returns>3DViewビューポート3Dの名前。</returns>
     </member>
@@ -3490,7 +3490,7 @@
         YawとPitchのシーンをShiftキーで移動し、オブジェクトを選択してマウスの左ボタンを押すと、シーンが回転します。
         X、Y、Zキーはビュー方向と上方向を（0,0,0）に向かってこれらの方向に向けるように変更し、Shiftキーを押しながら負方向に移動します。
       </summary>
-      <param name="pitchRoll">ピッチとロールの動きを許可する、「True」または「False」。</param>
+      <param name="pitchRoll">ピッチとロールの動きを許可する、"True"または"False"。</param>
       <param name="shift">マウスコントロールのShift / Controlキー修飾子に "True"または "False"を許可します。</param>
       <param name="keyDistance">キーを使用してシーンを表示する距離（0はX、Y、Zキーのショートカットを防止し、-1はA、D、W、S、および矢印キーも禁止します）。</param>
       <param name="speed">前方および後方速度倍率（デフォルトは1）。</param>
@@ -3531,7 +3531,7 @@
     <member name="M:LitDev.LD3DView.AddImage(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         ジオメトリオブジェクトにイメージを追加します。
-        ジオメトリ「スキン」は、1つの画像内に複数のセグメント画像を含むことができる。
+        ジオメトリ"スキン"は、1つの画像内に複数のセグメント画像を含むことができる。
       </summary>
       <param name="shapeName">3DViewオブジェクトです。</param>
       <param name="geometryName">ジオメトリオブジェクト。</param>
@@ -4033,7 +4033,7 @@
       <param name="shapeName">3DViewオブジェクトです。</param>
       <param name="geometryName">ジオメトリオブジェクト。</param>
       <returns>
-        次元の配列または「FAILED」
+        次元の配列または"FAILED"
         array [1] = sizeX（width）
         配列[2] =サイズY（高さ）
         配列[3] =サイズZ（深さ）
@@ -4064,7 +4064,7 @@
       <param name="shapeName">3DViewオブジェクトです。</param>
       <param name="geometryName">ジオメトリオブジェクト。</param>
       <returns>
-        変換された位置または「FAILED」の配列。
+        変換された位置または"FAILED"の配列。
         配列[1] = X（Xcen）
         配列[2] = Y（Ycen）
         配列[3] = Z（Zcen）
@@ -4125,7 +4125,7 @@
         Bluetooth USBスティックを初期化し、検出可能な外部デバイスを検出します。
         デバイスが範囲内または範囲外になると、デバイスリストが更新されます。
       </summary>
-      <returns>Bluetoothインターフェイスの設定の成功または失敗については、「True」または「False」。</returns>
+      <returns>Bluetoothインターフェイスの設定の成功または失敗については、"True"または"False"。</returns>
     </member>
     <member name="M:LitDev.LDBlueTooth.GetDevices">
       <summary>
@@ -4153,7 +4153,7 @@
         外部デバイスとサービスをBluetooth USBスティックに接続します。
         最初に初期化してから、デバイス、サービス、エンコーディングを設定する必要があります。
       </summary>
-      <returns>成功または失敗の場合は「True」または「False」。</returns>
+      <returns>成功または失敗の場合は"True"または"False"。</returns>
     </member>
     <member name="M:LitDev.LDBlueTooth.SendData(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -4247,7 +4247,7 @@
         IDの番号とsの下に利用可能なプロパティの名前。 'AllDetails'
       </param>
       <returns>
-        利用可能な場合はプロパティの値、そうでない場合は ""です。失敗した場合（たとえば、パスが見つからない場合）は「FAILED」
+        利用可能な場合はプロパティの値、そうでない場合は ""です。失敗した場合（たとえば、パスが見つからない場合）は"FAILED"
         lfで区切られ、crlfで終わるようにしてください。
       </returns>
     </member>
@@ -4289,10 +4289,10 @@
         "フォルダ"作業ディレクトリ
         "Desc"コメント*
         "HotKey"ショートカットキーの櫛*（デフォルト：0）
-        「スタイル」ウィンドウスタイル*（通常1、最大3、最小7分）
-        「アイコン」アイコンのパス
+        "スタイル"ウィンドウスタイル*（通常1、最大3、最小7分）
+        "アイコン"アイコンのパス
       </param>
-      <returns>利用可能な場合はプロパティの値、または ""失敗した場合は「FAILED」</returns>
+      <returns>利用可能な場合はプロパティの値、または ""失敗した場合は"FAILED"</returns>
     </member>
     <member name="M:LitDev.LDShell.LinkSetProperty(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>既存のlnk / urlショートカットリンクのプロパティ（ターゲットパス、引数など）を変更します（* URLの場合は*）。</summary>
@@ -4305,19 +4305,19 @@
       <param name="icoIdx">*アイコンファイル内のアイコンのインデックス（デフォルト：0、.ico）。</param>
       <param name="hotkey">*キーの組み合わせを使用してショートカットリンクを開きます（デフォルト：0）。</param>
       <param name="style">*ショートカットを起動するときのウィンドウスタイル（デフォルト：通常1、最大3、最小7分）。</param>
-      <returns>成功した場合の変更されたショートカットの完全なファイルパス。そうでない場合は「FAILED」。</returns>
+      <returns>成功した場合の変更されたショートカットの完全なファイルパス。そうでない場合は"FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDShell.LinkCreate(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>新しいlnk / urlショートカット（Shell32）を作成します。 'LinkSetProperty'でさらに編集します。</summary>
       <param name="shortcut">新しいlnk / urlショートカットファイルの絶対パス。</param>
       <param name="target">ターゲットファイル/ -folder respのフルパス。 URLアドレス。</param>
-      <returns>成功した場合に作成されたショートカットの完全なファイルパス。そうでない場合は「FAILED」です。</returns>
+      <returns>成功した場合に作成されたショートカットの完全なファイルパス。そうでない場合は"FAILED"です。</returns>
     </member>
     <member name="M:LitDev.LDShell.ShellLink(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>新しいlnk / urlショートカット（IWshRuntimeLibrary）を作成します。 'ShellLinkSet'でさらに編集する。</summary>
       <param name="shortcut">新しいlnk / urlショートカットファイルの絶対パス。</param>
       <param name="target">ターゲットファイル/ -folder respのフルパス。 URLアドレス。</param>
-      <returns>成功した場合に作成されたショートカットの完全なファイルパス。そうでない場合は「FAILED」です。</returns>
+      <returns>成功した場合に作成されたショートカットの完全なファイルパス。そうでない場合は"FAILED"です。</returns>
     </member>
     <member name="M:LitDev.LDShell.ShellLinkGet(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>target pfad、argumentsなど（IWshRuntimeLibrary）のようなlnk / urlショートカットリンクのプロパティを取得します。</summary>
@@ -4329,10 +4329,10 @@
         "フォルダ"作業ディレクトリ
         "Desc"コメント*
         "HotKey"ショートカットキーの櫛*（デフォルト：0）
-        「スタイル」ウィンドウスタイル*（通常1、最大3、最小7分）
+        "スタイル"ウィンドウスタイル*（通常1、最大3、最小7分）
         "アイコン"アイコンパス、Idx（デフォルト：、0）
       </param>
-      <returns>利用可能な場合はプロパティの値、または ""失敗した場合は「FAILED」</returns>
+      <returns>利用可能な場合はプロパティの値、または ""失敗した場合は"FAILED"</returns>
     </member>
     <member name="M:LitDev.LDShell.ShellLinkSet(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>ターゲットパス、引数など（URLの場合は*）（IWshRuntimeLibrary）など、既存のlnk / urlショートカットリンクのプロパティを変更します。</summary>
@@ -4344,7 +4344,7 @@
       <param name="icon">*ショートカットリンクのアイコンの完全パス（パス、Idx）または ""。 'Idx'はファイル内のアイコンのインデックスです（デフォルトは0、.ico）。</param>
       <param name="hotkey">*キーの組み合わせを使用してショートカットリンクを開きます（デフォルト：0）。</param>
       <param name="style">*ショートカットを起動するときのウィンドウスタイル（デフォルト：通常1、最大3、最小7分）。</param>
-      <returns>成功した場合の変更されたショートカットの完全なファイルパス。そうでない場合は「FAILED」。</returns>
+      <returns>成功した場合の変更されたショートカットの完全なファイルパス。そうでない場合は"FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDShell.DTIconsHide">
       <summary>すべてのデスクトップアイコンを非表示にします。</summary>
@@ -4362,7 +4362,7 @@
     <member name="M:LitDev.LDShell.SpecialFolderList(Microsoft.SmallBasic.Library.Primitive)">
       <summary>特殊なシステム/シェルフォルダ内のすべての項目を取得します（上位レベルのみ）。</summary>
       <param name="csidl">システムフォルダのCSIDL番号（0?47、s。SpecialFolderConstantsの下にある利用可能なフォルダの定数および名前）。</param>
-      <returns>成功した場合はシステムフォルダ内のすべてのオブジェクトの名前（上位レベルのみ）、それ以外の場合は「FAILED」。</returns>
+      <returns>成功した場合はシステムフォルダ内のすべてのオブジェクトの名前（上位レベルのみ）、それ以外の場合は"FAILED"。</returns>
       <example>
         http://msdn.microsoft.com/library/bb774096.aspx
         例えば。 CSIDL：
@@ -4433,7 +4433,7 @@
     <member name="M:LitDev.LDShell.GetSetting(Microsoft.SmallBasic.Library.Primitive)">
       <summary>グローバルシェル設定（folder opions-view、CheckedStatus）の値を取得します。</summary>
       <param name="value">取得する値の整数定数です（例：1,2,4、 "8"、 "32"など）。</param>
-      <returns>成功した場合は「True」または「False」、それ以外の場合は「FAILED」。</returns>
+      <returns>成功した場合は"True"または"False"、それ以外の場合は"FAILED"。</returns>
       <example>
         http://msdn.microsoft.com/library/windows/desktop/gg537739.aspx
         ShowAllObjects = SBShell.GetSetting（1）
@@ -4489,7 +4489,7 @@
       <param name="source">C＃ソース。</param>
       <param name="assemblies">必要な追加アセンブリの配列。</param>
       <param name="dllName">dll（+ xml）出力を作成するオプションのパスは、 ""を使用してメモリ内で実行します。</param>
-      <returns>「FAILED」または「SUCCESS」</returns>
+      <returns>"FAILED"または"SUCCESS"</returns>
     </member>
     <member name="M:LitDev.LDInline.IncludeVB(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -4498,7 +4498,7 @@
       <param name="source">VBソース。</param>
       <param name="assemblies">必要な追加アセンブリの配列。</param>
       <param name="dllName">dll（+ xml）出力を作成するオプションのパスは、 ""を使用してメモリ内で実行します。</param>
-      <returns>「FAILED」または「SUCCESS」</returns>
+      <returns>"FAILED"または"SUCCESS"</returns>
     </member>
     <member name="M:LitDev.LDInline.IncludeJScript(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -4507,7 +4507,7 @@
       <param name="source">JScriptソース。</param>
       <param name="assemblies">必要な追加アセンブリの配列。</param>
       <param name="dllName">dll出力を作成するオプションのパスは、 ""を使用してメモリ内で実行します。</param>
-      <returns>「FAILED」または「SUCCESS」</returns>
+      <returns>"FAILED"または"SUCCESS"</returns>
     </member>
     <member name="M:LitDev.LDInline.LoadDLL(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -4521,7 +4521,7 @@
       </summary>
       <param name="method">メソッド名。</param>
       <param name="args">メソッド引数、noneの場合は ""、1つの値の場合は1つ以上の値の配列。</param>
-      <returns>通話の結果または「FAILED」。</returns>
+      <returns>通話の結果または"FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDInline.Get(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -4979,7 +4979,7 @@
         サーバー接続のip：port（例： "192.168.1.60:100"）。
         この値は、LDServer.Startによって返されます。
       </param>
-      <returns>「使用可能」または「使用不可」</returns>
+      <returns>"使用可能"または"使用不可"</returns>
     </member>
     <member name="M:LitDev.LDClient.Connect(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -4990,7 +4990,7 @@
         この値は、LDServer.Startによって返されます。
       </param>
       <param name="auto">
-        自動メッセージの受け渡しを「True」または「False」にします。
+        自動メッセージの受け渡しを"True"または"False"にします。
         これを使用すると（推奨）、すべてのクライアントデータがサーバー経由で他のすべてのクライアントに渡されます。
         送受信イベントの処理は必要ありません。
         データは、Updateメソッドから返されるデータの配列（クライアント名でインデックス付け）に更新されます。
@@ -5112,14 +5112,14 @@
         サーバーを起動します。
       </summary>
       <param name="auto">
-        自動メッセージの受け渡しを「True」または「False」にします。
+        自動メッセージの受け渡しを"True"または"False"にします。
         これを使用すると（推奨）、すべてのクライアントデータがサーバー経由で他のすべてのクライアントに渡されます。
         送受信イベントの処理は必要ありません。
         データは、クライアントのUpdateメソッドから返されるデータの配列（クライアント名でインデックス付け）に更新されます。
         autoオプションは、サーバーとすべてのクライアントで同じにする必要があります。
       </param>
       <returns>
-        現在の接続パラメータip：port（「192.168.1.60:100」など）、または「FAILED」です。
+        現在の接続パラメータip：port（"192.168.1.60:100"など）、または"FAILED"です。
         これは、クライアントからの接続に使用するパラメータです。
       </returns>
     </member>
@@ -5154,7 +5154,7 @@
     </member>
     <member name="P:LitDev.LDServer.AutoMessages">
       <summary>
-        自動モード「True」（デフォルト）または「False」のときにTextWindow接続メッセージを表示します。
+        自動モード"True"（デフォルト）または"False"のときにTextWindow接続メッセージを表示します。
       </summary>
     </member>
     <member name="P:LitDev.LDServer.LastClient">
@@ -5428,7 +5428,7 @@
         これは、SQLメソッドの前に呼び出される必要があります。
         Access OleDbサービスが実行されていて、疑わしい場合はSQLiteを使用して、資格情報を使用してデータベースを作成しておく必要があります。
       </summary>
-      <param name="provider">OleDbプロバイダ（「SQLOLEDB」など）。</param>
+      <param name="provider">OleDbプロバイダ（"SQLOLEDB"など）。</param>
       <param name="server">OleDbサーバー（例： "localhost"）。</param>
       <param name="database">OleDbデータベース名。</param>
       <returns>データベースを識別するラベル。</returns>
@@ -5440,7 +5440,7 @@
         疑わしい場合は、SQLiteを使用して、Odbcサービスが実行されていて、資格情報を持つデータベースがすでに作成されている必要があります。
       </summary>
       <param name="driver">Odbcドライバ（例： "{MySQL ODBC 3.51ドライバ}"）。</param>
-      <param name="server">Odbcサーバー（「localhost」など）。</param>
+      <param name="server">Odbcサーバー（"localhost"など）。</param>
       <param name="port">Odbcポート番号。</param>
       <param name="user">Odbcユーザー名。</param>
       <param name="password">Odbcユーザーのパスワード。</param>
@@ -5642,7 +5642,7 @@
     </member>
     <member name="M:LitDev.LDText.Trim(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-        先頭と末尾の「空白」をすべて削除した文字列を返します。
+        先頭と末尾の"空白"をすべて削除した文字列を返します。
       </summary>
       <param name="text">トリミングする文字列。</param>
       <returns>入力文字列のトリムコピー。</returns>
@@ -5789,7 +5789,7 @@
         音量レベルを変更する以下のオプションのいずれか。
         "Up"は音量を上げます。
         "Down"は音量を下げます。
-        「ミュート」は、ミュートとミュート解除の音量を切り替えます。
+        "ミュート"は、ミュートとミュート解除の音量を切り替えます。
       </param>
     </member>
     <member name="T:LitDev.LDHID">
@@ -5822,7 +5822,7 @@
       </summary>
       <param name="name">HIDデバイス名。</param>
       <param name="data">送信するデータ。</param>
-      <returns>データの一貫性を保つために「True」または「False」。</returns>
+      <returns>データの一貫性を保つために"True"または"False"。</returns>
     </member>
     <member name="M:LitDev.LDHID.AddDevice(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -5835,7 +5835,7 @@
       <param name="VID">デバイスのVID。</param>
       <param name="PID">デバイスのPID。</param>
       <param name="name">デバイスの名前。</param>
-      <returns>成功または失敗の場合は「True」または「False」</returns>
+      <returns>成功または失敗の場合は"True"または"False"</returns>
     </member>
     <member name="M:LitDev.LDHID.GetBits(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -5866,7 +5866,7 @@
         最後のHID入力データの配列。
         これは、0?255（バイト）の値のセットです。
       </summary>
-      <returns>入力データの配列、または「なし」の配列。</returns>
+      <returns>入力データの配列、または"なし"の配列。</returns>
     </member>
     <member name="P:LitDev.LDHID.LastDevice">
       <summary>
@@ -5916,7 +5916,7 @@
     </member>
     <member name="P:LitDev.LDScrollBars.KeyScroll">
       <summary>
-        矢印キー「True」（デフォルト）または「False」でスクロールバーが移動するかどうかを設定します。
+        矢印キー"True"（デフォルト）または"False"でスクロールバーが移動するかどうかを設定します。
       </summary>
     </member>
     <member name="P:LitDev.LDScrollBars.MouseScroll">
@@ -6219,7 +6219,7 @@
     <member name="M:LitDev.LDGraphicsWindow.SetFontFromFile(Microsoft.SmallBasic.Library.Primitive)">
       <summary>GraphicsWindowのフォントをローカルのTTFフォントファイルから設定します。</summary>
       <param name="fontFile">設定するフォントファイルのフルパス。</param>
-      <returns>成功した場合はフォント名、そうでない場合は「FAILED」。</returns>
+      <returns>成功した場合はフォント名、そうでない場合は"FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDGraphicsWindow.GetPixel(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -6388,12 +6388,12 @@
     </member>
     <member name="P:LitDev.LDGraphicsWindow.RepositionedMouseX">
       <summary>
-        マウスX GraphicsWindowは、再配置されたビュー内での座標になります（「再配置」を参照）。
+        マウスX GraphicsWindowは、再配置されたビュー内での座標になります（"再配置"を参照）。
       </summary>
     </member>
     <member name="P:LitDev.LDGraphicsWindow.RepositionedMouseY">
       <summary>
-        再配置されたビュー内のマウスGraphicsWindow Y座標です（「再配置」を参照）。
+        再配置されたビュー内のマウスGraphicsWindow Y座標です（"再配置"を参照）。
       </summary>
     </member>
     <member name="P:LitDev.LDGraphicsWindow.Resize">
@@ -6673,12 +6673,12 @@
     <member name="M:LitDev.LDEmail.Send">
       <summary>
         メールを送る。
-        デフォルトのSmtpクライアントは「smtp.gmail.com」で、デフォルトのポートは587です。以下の電子メールクライアントと他の電子メールクライアントも動作します。
+        デフォルトのSmtpクライアントは"smtp.gmail.com"で、デフォルトのポートは587です。以下の電子メールクライアントと他の電子メールクライアントも動作します。
         "smtp.live.com"（Hotmail）
         "smtp.mail.yahoo.com"
 
-        「From、Password、およびRecipient」プロパティの最小値を最初に設定する必要があります。
-        「From」および「Password」のプロパティは、クライアントの電子メールの資格情報でなければなりません。
+        "From、Password、およびRecipient"プロパティの最小値を最初に設定する必要があります。
+        "From"および"Password"のプロパティは、クライアントの電子メールの資格情報でなければなりません。
         さらに、 "件名と本文"プロパティを設定する必要があります。
         "Attachment"プロパティはオプションで完全なファイルパスに設定することができます。
 
@@ -7298,7 +7298,7 @@
         現在の条件の詳細を取得するには、これを呼び出す必要があります。
       </summary>
       <param name="location">場所は、町/都市または郵便番号とすることができます。</param>
-      <returns>4日間の予測または「FAILED」を含む配列。</returns>
+      <returns>4日間の予測または"FAILED"を含む配列。</returns>
     </member>
     <member name="P:LitDev.LDWeather.Location">
       <summary>
@@ -7412,7 +7412,7 @@
         値を取得する列です（1からインデックスされます）。
       </param>
       <returns>
-        値または「FAILED」。
+        値または"FAILED"。
       </returns>
     </member>
     <member name="M:LitDev.LDMatrix.CopyNew(Microsoft.SmallBasic.Library.Primitive)">
@@ -7475,7 +7475,7 @@
       <param name="matrix">反転する行列（反転されていない）。</param>
       <param name="inverse">逆行列。</param>
       <returns>
-        成功のために「FAILED」または「SINGULAR」または「」
+        成功のために"FAILED"または"SINGULAR"または""
       </returns>
     </member>
     <member name="M:LitDev.LDMatrix.Transpose(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -8055,7 +8055,7 @@
       </summary>
       <param name="text">ダイアログのテキスト質問。</param>
       <param name="title">ダイアログのタイトル。</param>
-      <returns>「はい」、「いいえ」または「キャンセル」</returns>
+      <returns>"はい"、"いいえ"または"キャンセル"</returns>
     </member>
     <member name="P:LitDev.LDDialogs.LastRightClickMenuItem">
       <summary>
@@ -8420,7 +8420,7 @@
         UTF8は、Small Basicで使用されるデフォルトのテキストファイルエンコーディングです。
       </summary>
       <param name="fileName">変換するファイルパス。</param>
-      <param name="BOM">バイトオーダーマーク（BOM）をUTF8ファイルに含めます（「True」または「False」、BOMは通常ありません）。</param>
+      <param name="BOM">バイトオーダーマーク（BOM）をUTF8ファイルに含めます（"True"または"False"、BOMは通常ありません）。</param>
       <returns>変換されたファイルパス（-UTF8.txt）または失敗（ "encoding"が正しく検出されていない可能性があります）。</returns>
     </member>
     <member name="M:LitDev.LDFile.ReadANSI(Microsoft.SmallBasic.Library.Primitive)">
@@ -8556,7 +8556,7 @@
       <summary>
         時間と日付の変換。
 
-        日付形式は「25/01/2012 22:18:52」です。時間部分はオプションです。
+        日付形式は"25/01/2012 22:18:52"です。時間部分はオプションです。
         日付部分はロケールに依存します（例：米国では "01/25/2012 22:18:52"となります。
 
         OADateは、1899年12月30日以降の日数（および部分日数）で、日付の加算または減算が可能です。
@@ -8569,7 +8569,7 @@
       <returns>
         現在の日付と時刻。
 
-        形式は「25/01/2012 22:18:52」です。時間部分はオプションです。
+        形式は"25/01/2012 22:18:52"です。時間部分はオプションです。
         日付部分はロケールに依存します（例：米国では "01/25/2012 22:18:52"となります。
       </returns>
     </member>
@@ -8590,7 +8590,7 @@
       <returns>
         入力日付+オフセットに相当する日付。
 
-        形式は「25/01/2012 22:18:52」です。時間部分はオプションです。
+        形式は"25/01/2012 22:18:52"です。時間部分はオプションです。
         日付部分はロケールに依存します（例：米国では "01/25/2012 22:18:52"となります。
       </returns>
     </member>
@@ -8611,7 +8611,7 @@
       <param name="date">
         変換する日付文字列。
 
-        形式は「25/01/2012 22:18:52」です。時間部分はオプションです。
+        形式は"25/01/2012 22:18:52"です。時間部分はオプションです。
         日付部分はロケールに依存します（例：米国では "01/25/2012 22:18:52"となります。
       </param>
       <returns>
@@ -8630,7 +8630,7 @@
       <returns>
         日付文字列。
 
-        形式は「25/01/2012 22:18:52」です。時間部分はオプションです。
+        形式は"25/01/2012 22:18:52"です。時間部分はオプションです。
         日付部分はロケールに依存します（例：米国では "01/25/2012 22:18:52"となります。
       </returns>
     </member>
@@ -8782,7 +8782,7 @@
         キーがダウンしている場合に取得します。
         簡略化されたキーボードゲームコントロールに役立ちます。
       </summary>
-      <param name="key">州を倒すための鍵、例えば「スペース」。</param>
+      <param name="key">州を倒すための鍵、例えば"スペース"。</param>
       <returns>キーダウン状態（ "True"または "False"）</returns>
     </member>
     <member name="M:LitDev.LDUtilities.FontList">
@@ -8810,7 +8810,7 @@
         現在の文化で表現された数字を取得します。
         数値は計算で数値として扱うためにはカルチャ不変でなければなりません。
         現在のカルチャー番号は、入力または出力方法です。
-        例えば、「3.14」は文化不変であり、「3,14」はフランス文化である。
+        例えば、"3.14"は文化不変であり、"3,14"はフランス文化である。
       </summary>
       <param name="input">文化不変数。</param>
       <returns>現在のカルチャーで表現された数字または失敗したときの入力。</returns>
@@ -8820,7 +8820,7 @@
         文化不変式で表現された数を取得します。
         数値は計算で数値として扱うためにはカルチャ不変でなければなりません。
         現在のカルチャー番号は、入力または出力方法です。
-        例えば、「3.14」は文化不変であり、「3,14」はフランス文化である。
+        例えば、"3.14"は文化不変であり、"3,14"はフランス文化である。
       </summary>
       <param name="input">現在の文化で表現されている数字。</param>
       <returns>文化不変の形式で表現された数または失敗時の入力数。</returns>
@@ -8836,7 +8836,7 @@
     <member name="M:LitDev.LDUtilities.GetNextMapIndex(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         オブジェクト名の次の整数を取得します。
-        たとえば、ボタンには「Button1」、「Button2」などのラベルが付けられます。
+        たとえば、ボタンには"Button1"、"Button2"などのラベルが付けられます。
         このメソッドは、次に追加されるオブジェクトに使用される整数インデックスを返します。
       </summary>
       <param name="listName">
@@ -8952,7 +8952,7 @@
       </summary>
       <param name="cursor">
         CreateCursorまたはで作成されたカーソル
-        このオブジェクト内の標準カーソル（例えば、「ArrowCD」）、または
+        このオブジェクト内の標準カーソル（例えば、"ArrowCD"）、または
         カーソルとして使用する* .curファイルまたは* .aniファイルへのフルパス。
       </param>
     </member>
@@ -8963,7 +8963,7 @@
       <param name="shapeName">形状または制御名。</param>
       <param name="cursor">
         CreateCursorまたはで作成されたカーソル
-        このオブジェクト内の標準カーソル（例えば、「ArrowCD」）、または
+        このオブジェクト内の標準カーソル（例えば、"ArrowCD"）、または
         カーソルとして使用する* .curファイルまたは* .aniファイルへのフルパス。
       </param>
     </member>
@@ -9330,7 +9330,7 @@
     </member>
     <member name="P:LitDev.LDGraph.AutoScale">
       <summary>
-        自動スケール軸は「True」（デフォルト）または「False」です。
+        自動スケール軸は"True"（デフォルト）または"False"です。
         "False"に設定すると、初期バージョンのスケーリングが使用されます。
       </summary>
     </member>
@@ -9372,7 +9372,7 @@
     </member>
     <member name="P:LitDev.LDEvents.LastFileChangeType">
       <summary>
-        最後のファイル変更タイプ（「作成済み」、「変更済み」または「削除済み」）。
+        最後のファイル変更タイプ（"作成済み"、"変更済み"または"削除済み"）。
       </summary>
     </member>
     <member name="P:LitDev.LDEvents.LastError">
@@ -9741,17 +9741,17 @@
 
         画像とテキストの形は長方形として扱われ、楕円は円として扱われます。三角形と凸多角形のサポートもありますが、線はありません。 LoadImagesAsCirclesプロパティを "True"に設定することで、画像を円として扱うことができます。
 
-        Box2Dが難しかった1つの問題は、偏向されずに他の図形を「トンネル」することができる小さな動きの速いオブジェクトです（SetBulletオプションを参照）。
+        Box2Dが難しかった1つの問題は、偏向されずに他の図形を"トンネル"することができる小さな動きの速いオブジェクトです（SetBulletオプションを参照）。
 
         別の問題は、非常に異なるサイズ、したがって質量、特にそれらが互いに接続されたときの大きな形状の形状である。これらの密度を変更する必要があるかもしれません（Anchorオプションはこれを少し自動化しようとしています）。さもなければ、デフォルト密度1が良いです。余りにも多くの形を一緒に接続する誘惑に抵抗する。
 
-        TimestepControlの設定を使用していくつかの「難しい」モデルの安定性を向上させることは可能かもしれませんが、デフォルトはほとんどの場合よく見えます。
+        TimestepControlの設定を使用していくつかの"難しい"モデルの安定性を向上させることは可能かもしれませんが、デフォルトはほとんどの場合よく見えます。
 
         SmallBasicイベントサブルーチン内の物理メソッドを直接呼び出すのではなく、メインのゲームループで処理できるフラグを設定します。
 
-        サンプルのSmallBasicプログラムと、拡張DLLに付属の「入門ガイド」があります。これは開始するのに最適な場所です。
+        サンプルのSmallBasicプログラムと、拡張DLLに付属の"入門ガイド"があります。これは開始するのに最適な場所です。
 
-        バグや問題をSmallBasicフォーラム（http://social.msdn.microsoft.com/Forums/en-US/smallbasic/threads）に報告してください。しかし、最初にSmallBasicコードを単純化して短い「実行可能な」コードを提供する前に問題を特定してくださいサンプル。
+        バグや問題をSmallBasicフォーラム（http://social.msdn.microsoft.com/Forums/en-US/smallbasic/threads）に報告してください。しかし、最初にSmallBasicコードを単純化して短い"実行可能な"コードを提供する前に問題を特定してくださいサンプル。
       </summary>
       <returns>
         なし。
@@ -9909,7 +9909,7 @@
     </member>
     <member name="M:LitDev.LDPhysics.SetBullet(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-        形状を弾丸として設定します。これは、パフォーマンスを犠牲にして、高速で動く小さなオブジェクトの「トンネリング」を防ぎます。
+        形状を弾丸として設定します。これは、パフォーマンスを犠牲にして、高速で動く小さなオブジェクトの"トンネリング"を防ぎます。
       </summary>
       <param name="shapeName">
         形状の名前。
@@ -9964,7 +9964,7 @@
       </param>
       <param name="mask">
         このシェイプが衝突するグループの配列（デフォルトではすべてのグループ0,1,2、..、14,15）。
-        形状がグループ0、1、および4とだけ相互作用できるようにするには、「1 = 0; 2 = 1; 3 = 4;」となります。
+        形状がグループ0、1、および4とだけ相互作用できるようにするには、"1 = 0; 2 = 1; 3 = 4;"となります。
       </param>
       <returns>
         なし。
@@ -10236,29 +10236,29 @@
       <param name="type">
         以下のジョイントタイプのいずれか。
 
-        「距離」 - 形状間の固定距離を維持します。
+        "距離" - 形状間の固定距離を維持します。
         "歯車"  -  2つの形状のプリズムまたは回転ジョイント（以前に作成したもの）をリンクします。
-        「線」 - 最初に図形を結ぶ線に沿って図形を移動します。
+        "線" - 最初に図形を結ぶ線に沿って図形を移動します。
         "Mouse"  - シェイプをマウスの後に移動します（両方のシェイプ名は同じにする必要があります）。
         "Prismatic_H"  -  2つの図形の間の線に沿って図形を垂直に移動します。
         "Prismatic_V"  -  2つの図形の間の線に沿って図形を水平に移動します。
-        「プーリー」 - プーリーシステムで、一方の形状が下に動くにつれて上に移動し、最初にプーリーの動きの極端な点で形状を位置決めします。
-        「Revolute」 - 形状はお互いに回転することができます。
+        "プーリー" - プーリーシステムで、一方の形状が下に動くにつれて上に移動し、最初にプーリーの動きの極端な点で形状を位置決めします。
+        "Revolute" - 形状はお互いに回転することができます。
       </param>
       <param name="collide">
-        接続された図形は、相互に「True」または「False」（デフォルト）で対話できます。
+        接続された図形は、相互に"True"または"False"（デフォルト）で対話できます。
       </param>
       <param name="parameters">
         オプションのパラメータ（デフォルトは ""）、複数のパラメータは配列にあります。
 
-        「距離」 - 減衰比（デフォルトは0）
+        "距離" - 減衰比（デフォルトは0）
         "歯車"  - 歯車比、第1関節、第2関節（デフォルト1、関節の自動検出）
         "線"  -  X方向、Y方向、下側平行移動、上側平行移動（形状を結ぶデフォルトの線、制限なし）
         "マウス"  - 最大加速、減衰比（デフォルト10000,0.7）
         "Prismatic_H"  -  X方向、Y方向、下側平行移動、上側平行移動（デフォルト1,0、無制限）
         "Prismatic_V"  -  X方向、Y方向、下側平行移動、上側平行移動（デフォルトは0,1、無限）
-        「プーリ」 - プーリ比（ブロックとタックル）（デフォルトは1）
-        「Revolute」 - 低い角度、上の角度（デフォルトなし）
+        "プーリ" - プーリ比（ブロックとタックル）（デフォルトは1）
+        "Revolute" - 低い角度、上の角度（デフォルトなし）
       </param>
       <returns>
         ジョイント名。
@@ -10304,7 +10304,7 @@
       <param name="angle">チェックする角度（度）。これは角度の配列でもあります。</param>
       <param name="distance">確認する最大距離。</param>
       <returns>
-        その距離に等しい値を持つ形状名（静的障害物の場合は「壁」）によって索引付けされた結果の配列。
+        その距離に等しい値を持つ形状名（静的障害物の場合は"壁"）によって索引付けされた結果の配列。
         図形はソートされ、最も近いものが最初にリストされます。
         入力角度の配列を使用すると、各角度に最も近い形状のみが返され、値は距離ではなく角度です。
       </returns>
@@ -10324,7 +10324,7 @@
       <param name="fileName">読み取るjsonファイルへのフルパス。</param>
       <param name="scale">すべてのシェイプのスケールを設定します（既定の1（スケーリングなし））。</param>
       <param name="reverseY">Y方向を上から下に反転します（ "True"または "False"）。</param>
-      <param name="stationary">すべてのシェイプを最初に休止状態に設定すると、ジョイントモーターはまだ有効です（「True」または「False」）。</param>
+      <param name="stationary">すべてのシェイプを最初に休止状態に設定すると、ジョイントモーターはまだ有効です（"True"または"False"）。</param>
       <param name="offsetX">すべての図形にx座標オフセットを追加します。</param>
       <param name="offsetY">すべての図形にy座標オフセットを追加します。特に、reverseYが設定されている場合に便利です。</param>
       <returns>モデルの作成に使用されたLDPhysicsコマンドを含むテキスト配列。</returns>
@@ -10336,7 +10336,7 @@
     </member>
     <member name="P:LitDev.LDPhysics.LoadImagesAsCircles">
       <summary>
-        画像の形状を円として読み込むかどうかを「True」または「False」（デフォルトは「False」）に切り替えます。
+        画像の形状を円として読み込むかどうかを"True"または"False"（デフォルトは"False"）に切り替えます。
       </summary>
     </member>
     <member name="P:LitDev.LDPhysics.PositionIterations">
@@ -10366,7 +10366,7 @@
     </member>
     <member name="P:LitDev.LDPhysics.VelocityThreshold">
       <summary>
-        非弾性衝突の「粘り強い壁」（デフォルト1）の物理エンジンの速度閾値。
+        非弾性衝突の"粘り強い壁"（デフォルト1）の物理エンジンの速度閾値。
       </summary>
     </member>
     <member name="P:LitDev.LDPhysics.MaxPolygonVertices">
@@ -10376,7 +10376,7 @@
     </member>
     <member name="P:LitDev.LDPhysics.MaxProxies">
       <summary>
-        物理エンジンの最大オブジェクト数「プロキシ」（デフォルトは1024）。
+        物理エンジンの最大オブジェクト数"プロキシ"（デフォルトは1024）。
       </summary>
     </member>
     <member name="T:LitDev.LDCommPort">
@@ -10411,7 +10411,7 @@
         開いているシリアルポートから1バイトを読み取り、そのバイトを整数として返します。
       </summary>
       <returns>
-        1?255の整数値（失敗時には「NOCONNECTION」または「FAILED」）。
+        1?255の整数値（失敗時には"NOCONNECTION"または"FAILED"）。
       </returns>
     </member>
     <member name="M:LitDev.LDCommPort.RXChar">
@@ -10419,7 +10419,7 @@
         開いているシリアルポートから1バイトを読み取り、そのバイトをユニコード文字として返します。
       </summary>
       <returns>
-        1つのユニコード文字（失敗時には「NOCONNECTION」または「FAILED」）。
+        1つのユニコード文字（失敗時には"NOCONNECTION"または"FAILED"）。
       </returns>
     </member>
     <member name="M:LitDev.LDCommPort.RXAll">
@@ -11166,7 +11166,7 @@
         ロードするアニメーションGIFファイル（ローカルまたはネットワーク）。
       </param>
       <param name="repeat">
-        アニメーション「True」または「False」を連続して繰り返します。
+        アニメーション"True"または"False"を連続して繰り返します。
       </param>
       <returns>
         アニメーションGIFシェイプ名。
@@ -11182,7 +11182,7 @@
         ImageListイメージにすることもできます。
       </param>
       <param name="repeat">
-        アニメーション「True」または「False」を連続して繰り返します。
+        アニメーション"True"または"False"を連続して繰り返します。
       </param>
       <param name="countX">
         X方向のサブ画像の数。
@@ -11356,7 +11356,7 @@
         結果は次のいずれかです。
         "空"  - 交差点なし
         "FullyContains"  -  shape1は完全に内側にあります2
-        「交差」 - 重複しているが、どちらも完全に含まれていない
+        "交差" - 重複しているが、どちらも完全に含まれていない
         "FullyInside"  -  shape2は完全に内側にあります1
       </summary>
     </member>
@@ -11415,7 +11415,7 @@
         プロセスIDを停止します。
       </param>
       <returns>
-        成功または失敗の場合は「True」または「False」。
+        成功または失敗の場合は"True"または"False"。
       </returns>
     </member>
     <member name="M:LitDev.LDProcess.GetProcesses">
@@ -11519,7 +11519,7 @@
         シェイプ名（通常はテキストボックス）。
       </param>
       <returns>
-        成功または失敗に応じて「真」または「偽」。
+        成功または失敗に応じて"真"または"偽"。
       </returns>
     </member>
     <member name="M:LitDev.LDFocus.GetFocus">
@@ -11527,7 +11527,7 @@
         現在のフォーカスがあるシェイプを取得します。
       </summary>
       <returns>
-        形状名（通常はテキストボックス）または「False」。
+        形状名（通常はテキストボックス）または"False"。
       </returns>
     </member>
     <member name="T:LitDev.LDMath">
@@ -11685,7 +11685,7 @@
       </summary>
       <param name="number">変換する10進数（負ではない）。</param>
       <param name="Base">（2進数）（8進数）（16進数）またはその他の基数（36）に変換する基数。</param>
-      <returns>要求されたベースの番号、または「FAILED」。</returns>
+      <returns>要求されたベースの番号、または"FAILED"。</returns>
     </member>
     <member name="M:LitDev.LDMath.Base2Decimal(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -12737,7 +12737,7 @@
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitWrite(System.IntPtr,System.UInt32,System.Byte[],System.UInt32)">
       <summary>
-        「長さ」を書き込みバイトはIO戦士の「numPipe」データチャネルで示す方向に
+        "長さ"を書き込みバイトはIO戦士の"numPipe"データチャネルで示す方向に
         される。有効なレポート以外は、バイトの適切な数とから
         からなります選択されたデータチャネルが送信されたレポートIDが
         機能を失敗し受け入れた。
