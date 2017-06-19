@@ -5140,7 +5140,7 @@
     <member name="T:LitDev.LDIOWarrior">
       <summary>
             IO-Warriorデバイスにアクセスします。
-            http://www.codemercs.com/io-warrior/?L=1を参照してください。
+            http://www.codemercs.com/io-warrior/?L=1 を参照してください。
             </summary>
     </member>
     <member name="M:LitDev.LDIOWarrior.Initialise">
@@ -5170,7 +5170,7 @@
       <param name="blocking">"True"（状態が変化した後に戻る）または "False"（現在の状態で戻る）。</param>
       <param name="count">読み込むバイト数（ゼロの場合、channelが0の場合はReportSizeが使用され、channelが1の場合はSpecialReportSizeが使用されます）。
             GetReportSizeとGetSpecialReportSizeを参照してください。</param>
-      <returns>読み込みバイトの配列[0?255]</returns>
+      <returns>読み込みバイトの配列[0～255]</returns>
     </member>
     <member name="M:LitDev.LDIOWarrior.Write(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -5178,7 +5178,7 @@
             </summary>
       <param name="id">デバイス番号（1からのインデックス）。</param>
       <param name="channel">書き込むチャネル（0からインデックスされます）。</param>
-      <param name="data">送信するバイト配列[0?255]。
+      <param name="data">送信するバイト配列[0～255]。
             配列サイズは、チャネル0の場合はReportSize、チャネル1の場合はSpecialReportSizeでなければなりません。
             GetReportSizeとGetSpecialReportSizeを参照してください。</param>
       <returns>正常に書き込まれたバイト数。</returns>
@@ -12365,196 +12365,205 @@
     </member>
     <member name="T:LitDev.Engines.Defines">
       <summary>
-             Klasse IowKitFunctionsは、Funktionen der IowKit.dllで保護されています。
-             Klasse IowKitDefines kapesltがKonstanten der Iowkit.dllを破棄する
+        クラスIowKitFunctionsはIowKit.dllの機能をカプセル化し、
+        クラスIowKitDefinesがIowkit.dllの定数をカプセル化します。
              </summary>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitOpenDevice">
       <summary>
-            IowKitOpenDeviceのUSBインターフェイスはIO-Warrior-Bausteine
-            IO-Warrior zurück。
+        メソッド IowKitOpenDeviceが戻ってすべてのUSBデバイスを認識IO-戦士
+        を開き、最初に見つかったIO-戦士へのハンドルを提供。
             </summary>
-      <returns>MisserfolgよりIO-Warriorまたはnullを処理します。</returns>
+      <returns>IO-戦士に処理するか、失敗した場合にはゼロ。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitCloseDevice(System.IntPtr)">
       <summary>
-            IOメソッドを使用すると、IOメソッドを呼び出すことができます。
-            ガジェットを手掛かりにする。
+        メソッド IowKitCloseDeviceは
+        所与のハンドルによって制御されるIO戦士を閉じる。
             </summary>
-      <param name="IowHandle">IO-Warriorの取り扱い</param>
+      <param name="IowHandle">IO-Warriorへの有効なハンドル。</param>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitGetProductId(System.IntPtr)">
       <summary>
-            IO-Warrior Bausteines abのプロダクトID（PID）
-            あなたの意見や感想を教えてください：
+            与えられたハンドルによって制御される IO-Warrior チップのプロダクトID（PID）
+            を取得する。
             </summary>
-      <param name="IowHandle">IO-Warriorの取り扱い</param>
+      <param name="IowHandle">IO-Warrior への有効なハンドル。</param>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitGetNumDevs">
       <summary>
-            USBコネクタとIO-Warrior Bausteineがあります。
+            IO-Warrior チップのUSBコネクタの数を取得します。
             </summary>
       <returns>
       </returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitGetDeviceHandle(System.UInt32)">
       <summary>
-            IowKitGetDeviceHandleは、Ger舩mitと一致します
-            ハンドルのナンバーはハンドルです。 Vorrausgesetzt、dasGer舩
-            ミーダー・ナンマーが存在する。
-            IowKitGetDeviceHandleは、Aufruf
-            IowKitDeviceOpen。あなたの意見は嘘つきだった。
+        メソッド IowKitGetDeviceHandle が有効なハンドル
+        指定された番号をデバイスに供給を動作します。しかし、番号でデバイス
+        が存在することを確認してください。IowKitGetDeviceHandleだけ
+        IowKitDeviceOpenの成功コール
+        後に動作します。だけにして、すべてのブロックが番号が付けられます。
             </summary>
-      <param name="numDevice">Nummer des zufnendenGer舩es。</param>
-      <returns>Misserfolg。による0件のユーザーレビューがあります。</returns>
+      <param name="numDevice">デバイスの数が開かれます。</param>
+      <returns>有効なデバイスへのハンドルまたは失敗した場合に0。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitGetRevision(System.IntPtr)">
       <summary>
-            IoWarrior-Firmawarezurあkのバージョンを参照してください。 2バイトは0になります。
-            Es sind 4 Hex-Stellengあtig。 Softwareversion 1.0.2.1 so wirdをダウンロードする
-            0x1021zurあkgegeben。すべてのIO戦士、あなたの敵、Seriennummer haben、liefern
-            Versionsnummer kleiner 1.0.1.0をダウンロードしてください。
-            </summary>
-      <param name="IowHandle">IO-Warriorの取り扱い</param>
-      <returns>IO-Warriorsまたは0のソフトウェアのダウンロード、0です
-            ・ergebenwurdeを処理します。</returns>
+        バックIoWarrior会社の財のバージョンを返します。
+        上位2つのバイトは常に0です。
+        4桁の16進数の有効なあります。現在のソフトウェアバージョン1.0.2.1は0x1021
+        返された場合。シリアル番号を持っていないリモートの年齢IO-戦士、バック小さいバージョン番号1.0.1.0を。
+        </summary>
+      <param name="IowHandle">IO-Warrior への有効なハンドル。</param>
+      <returns>IO-Warrior のソフトウェアバージョンまたは0。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitGetSerialNumber(System.IntPtr,System.Text.StringBuilder)">
       <summary>
-            IO-Warriorの取り扱いを開始しました
-            ヘラス。
+            IO-Warriorの有効なハンドルで制御されるシリアル番号を読み取ります。
             </summary>
-      <param name="IowHandle">IO-Warriorの取り扱い</param>
-      <param name="SnTarget">Serennummer speichertの下で、Datenfeldの上のVerweis、
-            ストリングビルダは、ストーリービギナーの言葉を使っています。</param>
-      <returns>真実、礼儀正しい人は、
-            werden konnte。偽、戦争の兵士の戦い、戦闘員の犠牲者
-            アブスカティナ・デ・ナーマー、ジル・フェルゲシュラーゲン・イット。</returns>
+      <param name="IowHandle">IO-Warriorへの有効なハンドル。</param>
+      <param name="SnTarget">
+                対象のシリアル番号が。文字列ビルダを
+        というデータフィールドに
+        参照がインスタンス化されている必要があります。</param>
+      <returns>
+        "True"、シリアル番号が正しく指定されたデータフィールドに格納
+        することができれば。ハンドルが無効だった場合、IO-Warrior は、"False"のシリアル番号を
+        ないか、指定されたターゲット内の数字は失敗し保存しています。
+      </returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitRead(System.IntPtr,System.UInt32,System.Byte[],System.UInt32)">
       <summary>
-            IO-WarriorからLiest Daten。スレッド機能ブロックバイナリスレッドスレッド
-            あなたの意見や感想を教えてください：自分のレビューを作成する
-            IowKitReadNonBlocking（）でブロックされたブロックは、
-            エルフォゲン。
-            フォームのレポートにダイデータを入力します。報告書の内容は次のとおりです
-            IO-Warriors zu findenのデータべ一ス。
-            </summary>
-      <param name="IowHandle">IO-Warriorの取り扱い</param>
-      <param name="numPipe">データカナルReicht von 0
-            bis IOWKIT_MAX_PIPES-1</param>
-      <param name="buffer">Ablage der Daten。</param>
-      <param name="Length">Anzahl der einzulesenden Bytes。</param>
-      <returns>Misserfolgよりバイトまたはその他のバイト。</returns>
+        はIO-戦士からデータを読み込みます。ブロックによってIO戦士の入力における変化がregisriert。非ブロッキング
+        はれるまでスレッドを呼び出す機能ブロックは
+        はIowKitReadNonBlockingを呼び出すことによって行うことができるREAD（）。&lt;Brで/&gt;データは、報告書の形で到着します。レポートの詳細な説明は、それぞれのIO-戦士のデータシートに見つけること
+        れる。
+      </summary>
+      <param name="IowHandle">IO戦士への有効なハンドル。</param>
+      <param name="numPipe">
+        データチャネルはから読み取ることができます。 0から
+        IOWKIT_MAX_PIPES-1
+        の範囲。
+      </param>
+      <param name="buffer">データを格納するためのターゲット。</param>
+      <param name="Length">読み込むバイト数。</param>
+      <returns>数は、実際に失敗した場合にバイトまたは0を刈り取りました。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitReadNonBlocking(System.IntPtr,System.UInt32,System.Byte[],System.UInt32)">
       <summary>
-            IO-WarriorからLiest Daten。ワール・ニードル・ブロック
-            キネのデータは、スティーブン、また、
-            IO-Warriors stattgefunden hat。
-            </summary>
-      <param name="IowHandle">IO-Warriorの取り扱い</param>
-      <param name="numPipe">データカナルReicht von 0
-            bis IOWKIT_MAX_PIPES-1</param>
-      <param name="buffer">Ablage der Daten。</param>
-      <param name="Length">Anzahl der einzulesenden Bytes。</param>
-      <returns>Misserfolgよりバイトまたはその他のバイト。</returns>
+        はIO-戦士からデータを読み込みます。呼び出し元のスレッドが
+        、使用可能なデータがないとき、ブロックされていないため、
+        IO-戦士の入力では変更されていない。
+      </summary>
+      <param name="IowHandle">IO戦士への有効なハンドル。</param>
+      <param name="numPipe">
+        データチャネルはから読み取ることができます。 0から
+        IOWKIT_MAX_PIPES-1
+        の範囲。
+      </param>
+      <param name="buffer">データを格納するためのターゲット。</param>
+      <param name="Length">読み込むバイト数。</param>
+      <returns>数は、実際に失敗した場合にバイトまたは0を刈り取りました。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitReadImmediate(System.IntPtr,System.Byte[])">
       <summary>
-            IO-Warriorsディレクターからのメッセージ。
-            ファンク・ジブ・トゥ・ザ・チューリッヒ、ピン・トゥ・ダン・デン
-            Baustein登録者は傷ついています。 Gleichzeitig is im Ziel-Datenfeld ein Abbild der
-            また、
-            Achtung !!：IO-Warrior 56を使用している間違いなく機能しています。 Der
-            32ビット・チューリックと同じようなものです。
-            </summary>
-      <param name="IowHandle">IO-Warriorの取り扱い</param>
-      <param name="IoPinStatus">Ziel-Datenfeld氏はAbspeichern der Pin-Zust舅deに就任しました。</param>
-      <returns>True bei Erfolg、間違った経緯がありましたDaten erfasst wurden oder
-            いくつかの重要な問題を処理する。</returns>
+        直接の接続されたIO-戦士の入力端子の状態を読み込み。ピンの変化が前
+        ブロックによって登録された場合、関数がTrueを返す。
+        同時に入力の画像が!!ターゲット・データ・フィールドの値
+        注意として入手可能である。この機能は、IO-戦士56で動作しません。
+        ブロック以上32ビットバック
+        あります。
+      </summary>
+      <param name="IowHandle">IO戦士への有効なハンドル。</param>
+      <param name="IoPinStatus">端子の状態を格納するためのターゲット・データ・フィールド。</param>
+      <returns>
+        新しいデータが収集されていないか、渡されたハンドルが動作していない
+        された場合、
+        成功した場合はTrue Falseの。
+      </returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitSetTimeout(System.IntPtr,System.UInt32)">
       <summary>
-            レッグ・ダイ・グレンズ・オブ・ザ・イヤー・ウォリアー・フェスティヴァル・レゼジグリフ
-            エイン・タイムアウト・アウト・オブ・ラウフェンデン、ノッチ・ニヒト・ビエンテン
-            Datenverlust（レポートgehen verloren）。 IowKitRead（）関数は、関数inhalhal
-            ガーベネ・グレンズ・データ・オブ・ウォーリアー・ワーゲン・ケルン。
-            あなたの意見や感想を教えてください：自分のレビューを作成する
-            I2C-Bus（I2C-Bus）デバイスは、I2Cバスを介して接続されています。
-            他の病変）。
-            </summary>
-      <param name="IowHandle">IO-Warriorの取り扱い</param>
-      <param name="Timeout">MillisekundenのGrenzef・Zeit・erschreitungにある。 Empfohlen in
-            der iowkit.dll-Beschreibung sindから1000 msまたはそれより後のmehr。</param>
-      <returns>True bei ErfolgまたはFalse bei Fehlschlagです。</returns>
+        しっかりとIO-戦士へのアクセスを読んでいる間にタイムアウトの制限を設定します。
+        現在進行中の間にタイムアウトを、
+        まだ終わっ読んアクションは、データの損失を
+        につながる（レポートは失われます）。データは
+        与えられた制限内にIO-戦士で読み取ることができない場合IowKitRead（）が失敗します。すべてのアクションが時間
+        に既に送ったが、再びまだ実行されていないする必要があります前にタイマーが切れると
+        （例えばI2Cバスライト
+        または読み取り）に送信されます。
+      </summary>
+      <param name="IowHandle">IO戦士への有効なハンドル。</param>
+      <param name="Timeout">
+        限度。
+        iowkit.dll説明で推奨さ1000ミリ秒以上です。
+      </param>
+      <returns>成功した場合にTRUEを、失敗した場合にはfalse。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitSetWriteTimeout(System.IntPtr,System.UInt32)">
       <summary>
-            レッグ・ダイ・グレンズ・オブ・ザ・イヤー・ウォリアー・フェスティヴァル・シュライバーズリーフ
-            IowKitWrite（）関数は、関数の内部で使用されています。
-            werdenknen。 Schreibfehlerはuntypischを破壊する。 Verbindungen und Hardwaren臧erpr・en、
-            Fehler auftreten氏。
-            </summary>
-      <param name="IowHandle">IO-Warriorの取り扱い</param>
-      <param name="Timeout">MillisekundenのGrenzef・Zeit・erschreitungにある。 Empfohlen in
-            der iowkit.dll-Beschreibung sindから1000 msまたはそれより後のmehr。</param>
-      <returns>True bei ErfolgまたはFalse bei Fehlschlagです。</returns>
+        がIowKitWriteを。
+        IO戦士への書き込みアクセス中にタイムアウトに固定限界を示すデータが所定の制限
+        内に書き込むことができない場合に失敗します。タイプミスは非定型です。近くに接続し、ハードウェアをチェックし、
+        エラーが発生したとき。
+      </summary>
+      <param name="IowHandle">IO戦士への有効なハンドル。</param>
+      <param name="Timeout">
+        限度。
+        iowkit.dll説明で推奨さ1000ミリ秒以上です。
+      </param>
+      <returns>成功した場合にTRUEを、失敗した場合にはfalse。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitCancelIo(System.IntPtr,System.UInt32)">
       <summary>
-            Datenkanal（Pipe）でのデータ転送。
-            Der Einsatz dieserメソッド、メソッド、メソッド、メソッド、メソッド
-            beipsielsweise laufende IowKitRead（） - 機能ブロックスレッドブロック、
-            R・kgabeempfangen werden konnte。
-            </summary>
-      <param name="IowHandle">IO-Warriorの取り扱い</param>
-      <param name="numPipe">Nummer des Datenkanals。</param>
-      <returns>True bei Erfolg、falseです。</returns>
+        は、が現在IowKitReadを（）beipsielsweiseので、一般的に別のスレッドを必要とするこの方法の使用
+        指定されたデータ・チャンネル（管）の上のすべての進行中のデータ転送動作を終了します
+        が戻るまで受信することができます。
+      </summary>
+      <param name="IowHandle">IO戦士への有効なハンドル。</param>
+      <param name="numPipe">データチャネルの数。</param>
+      <returns>成功した場合はtrue、それ以外の場合はfalse。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitWrite(System.IntPtr,System.UInt32,System.Byte[],System.UInt32)">
       <summary>
-            「長さ」のバイト数を「numPipe」とし、IO-Warriorsのデータを変換します。
-            あなたの意見や感想を教えてください：自分のレビューを作成する&gt;すべてのカスタマーレビューを見る（件）
-            レポートデータ、レポート、スケーラビリティ
-            Funktion fehl。
-            </summary>
-      <param name="IowHandle">IO-Warriorの取り扱い</param>
-      <param name="numPipe">Datenkanal、der beschickt werden soll。</param>
-      <param name="buffer">Puffer、der die zu schreibenden日付の変更点。</param>
-      <param name="length">Anzahl zu schreibender Bytes。</param>
-      <returns>Bei ErfolgreicherDurchf・rungist die Anzahl geschriebener =
-            Anazahl zu schreibender Bytes。</returns>
+        「長さ」を書き込みバイトはIO戦士の「numPipe」データチャネルで示す方向に
+        される。有効なレポート以外は、バイトの適切な数とから
+        からなります選択されたデータチャネルが送信されたレポートIDが
+        機能を失敗し受け入れた。
+      </summary>
+      <param name="IowHandle">IO戦士への有効なハンドル。</param>
+      <param name="numPipe">データチャネルがロードされます。</param>
+      <param name="buffer">バッファは、データが書き込まれるように、調製します。</param>
+      <param name="length">書き込まれるバイト数。</param>
+      <returns>、番号が書かれている。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitGetThreadHandle(System.IntPtr)">
       <summary>
-            Gibt den Handle des Threadszur・k、der zum I / O-Pins des
-            IO-Warriors genutzt wird。 Linux用のスレッドキーはFunktionen
-            IO-Warriorsはあなたの居場所を破壊しています。
-            </summary>
-      <param name="IowHandle">IO-Warriorの取り扱い</param>
-      <returns>Misserfolg上のスレッドまたはスレッドを処理します。</returns>
+        はIO-戦士のI/Oピンを読み取るために使用されるスレッドのハンドルを返します。 LinuxはIO
+        戦士の機能を実行するためにKeieスレッドを使用して常にため、0
+        を統合しています。
+      </summary>
+      <param name="IowHandle">IO戦士への有効なハンドル。</param>
+      <returns>現在のスレッドに処理するか、または失敗の0。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitVersion">
       <summary>
-            Gibt die Version iowkit.dllも文字列です。
-            </summary>
-      <returns>Versionsangabeの文字列。</returns>
+        バックiowkit.dll文字列のバージョンを返します。
+      </summary>
+      <returns>バージョン番号を文字列。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitSetLegacyOpenMode(System.UInt32)">
       <summary>
-            ファームウェアリビジョン1.0.1.0 istを使用してください。ディーゼ
-            バースティーン・ハーペン・キーイン・セリエンヌマー・ダイ・アウゼルジェン・ヴェルデン・カーン。
-            </summary>
-      <param name="legacyOpenMode">シンプルまたはコンプレックスモード。</param>
-      <returns>True bei Erfolgは虚偽です。</returns>
+        は、そのファームウェアのリビジョンは1.0.1.0古いIOWarrior40を開きます。この
+        ブロックを読み取ることができるシリアル番号を持っていません。
+      </summary>
+      <param name="legacyOpenMode">単純または複雑なモード。</param>
+      <returns>trueとfalseそうでない場合は成功しました。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.GetLastError">
-      <summary>
-            Liefert den zuletzt aufgetretenen Felerzur・k、カーネルから
-            登録簿のist。
-            </summary>
-      <returns>Bei FehlerfallによるZahl ungleich 0。</returns>
+      <summary>カーネルによって登録された最新のエラーを返します。</summary>
+      <returns>エラーがある場合は、0に等しくない数値を指定します。</returns>
     </member>
     <member name="F:LitDev.Engines.HIDDevice.m_oFile">
       <summary>読み書きに使用できるファイルストリーム</summary>
