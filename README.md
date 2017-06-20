@@ -1,7 +1,7 @@
 # LitDevJa
 LitDev Extension Help Document in Japanese
 
-Current version 1.2.0b JA is a beta version.  It stareted with machine translation and now is working to refine Japanese.
+Current version 1.2.1 ja is a beta version.  It stareted with machine translation and now is working to refine Japanese.
 
 ## System Requirement
 - Small Basic 1.2
@@ -12,4 +12,4 @@ Current version 1.2.0b JA is a beta version.  It stareted with machine translati
 1. Run Japanese Version of Small Basic.
 
 ## Development Tool
-- Translate Aid J
+- Translate Aid J (written in Small Basic with LitDev Extension)
