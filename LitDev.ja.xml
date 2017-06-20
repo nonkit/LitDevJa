@@ -419,7 +419,7 @@
         タイマーを開始または再開します。
       </summary>
       <param name="timer">タイマー名。</param>
-      <param name="interval">タイマーがTickイベントを発生させる頻度を指定する間隔（ミリ秒単位）を設定します。この値の範囲は10?100000000です。</param>
+      <param name="interval">タイマーがTickイベントを発生させる頻度を指定する間隔（ミリ秒単位）を設定します。この値の範囲は10～100000000です。</param>
     </member>
     <member name="M:LitDev.LDTimer.Pause(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -766,7 +766,7 @@
         バイナリフラグをビットとして単一の数に格納するビット単位のロジック。
         32ビットの数値が内部的に使用されます。
         これは、1つの番号に格納された1と0の32次元配列のようなものです。
-        ビット（1?32）は1からインデックスされます。
+        ビット（1～32）は1からインデックスされます。
       </summary>
     </member>
     <member name="M:LitDev.LDBits.SetBit(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -774,7 +774,7 @@
         数字にビットを設定します。
       </summary>
       <param name="var">ビットを設定する数値。</param>
-      <param name="bit">設定するビット（1?32）。</param>
+      <param name="bit">設定するビット（1～32）。</param>
       <returns>ビットを設定した変更番号。</returns>
     </member>
     <member name="M:LitDev.LDBits.UnsetBit(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -782,7 +782,7 @@
         数字のビットを解除します。
       </summary>
       <param name="var">ビットを設定解除するための数値。</param>
-      <param name="bit">設定を解除するビット（1?32）。</param>
+      <param name="bit">設定を解除するビット（1～32）。</param>
       <returns>bitを設定しないで変更した数値。</returns>
     </member>
     <member name="M:LitDev.LDBits.GetBit(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -790,7 +790,7 @@
         数値のビット値を取得します。
       </summary>
       <param name="var">テストする数値。</param>
-      <param name="bit">テストするビット（1?32）。</param>
+      <param name="bit">テストするビット（1～32）。</param>
       <returns>0（未設定）または1（設定済み）。</returns>
     </member>
     <member name="M:LitDev.LDBits.Not(Microsoft.SmallBasic.Library.Primitive)">
@@ -1071,17 +1071,17 @@
         チャートの色マッピングを設定します。
       </summary>
       <param name="chartName">チャート名。</param>
-      <param name="hue">色相（カラー0?360）、デフォルトは0（赤色）。</param>
-      <param name="saturation">彩度（強度0?1）。デフォルトは0.5です。</param>
-      <param name="lightness">明度（明るさ0?1）。デフォルトは0.5です。</param>
+      <param name="hue">色相（カラー0～360）、デフォルトは0（赤色）。</param>
+      <param name="saturation">彩度（強度0～1）。デフォルトは0.5です。</param>
+      <param name="lightness">明度（明るさ0～1）。デフォルトは0.5です。</param>
       <param name="hsl">
         異なるセグメントに変更するパラメータは次のとおりです。
         "色相"（デフォルト）の虹色
         色の濃さが増す"彩度"
         明るさを増す"明度"
       </param>
-      <param name="start">[0?1]の範囲のカラーバリエーションの開始値。デフォルトは0です。</param>
-      <param name="end">[0?1]の範囲のカラーバリエーションの終了値。デフォルトは1です。</param>
+      <param name="start">[0～1]の範囲のカラーバリエーションの開始値。デフォルトは0です。</param>
+      <param name="end">[0～1]の範囲のカラーバリエーションの終了値。デフォルトは1です。</param>
       <param name="centralColour">チャートを中心としたオプションの円形グラデーションカラーです（デフォルトは ""）。</param>
     </member>
     <member name="M:LitDev.LDChart.Legend(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -1339,7 +1339,7 @@
         コントローラスライダのスライダ位置を取得します。
       </summary>
       <param name="controller">1からインデックスされたUSB接続コントローラ番号（ジョイスティックまたはゲームパッドなど）。</param>
-      <returns>スライダ位置の配列（0?100）</returns>
+      <returns>スライダ位置の配列（0～100）</returns>
     </member>
     <member name="M:LitDev.LDController.POV(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -1353,14 +1353,14 @@
         コントローラのジョイスティックの位置を取得します。
       </summary>
       <param name="controller">1からインデックスされたUSB接続コントローラ番号（ジョイスティックまたはゲームパッドなど）。</param>
-      <returns>（X、Y、Z）位置値の配列（-100?100）</returns>
+      <returns>（X、Y、Z）位置値の配列（-100～100）</returns>
     </member>
     <member name="M:LitDev.LDController.Rotation(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         コントローラのジョイスティックの回転を取得します。
       </summary>
       <param name="controller">1からインデックスされたUSB接続コントローラ番号（ジョイスティックまたはゲームパッドなど）。</param>
-      <returns>（X、Y、Z）回転値の配列（-100?100）</returns>
+      <returns>（X、Y、Z）回転値の配列（-100～100）</returns>
     </member>
     <member name="P:LitDev.LDController.Count">
       <summary>
@@ -1421,7 +1421,7 @@
         高調波振幅。
         これは配列で、インデックスは基本周波数（2、3など）の高調波倍数であり、値は高調波の相対振幅です。
         方形波は、（https://en.wikipedia.org/wiki/Square_wave）によって形成することができます：
-        i = 3?21の場合ステップ2
+        i = 3～21の場合ステップ2
         ハーモニクス[i] = 1 / i
         EndFor
         squareWave = LDWaveForm.PlayHarmonics（256,1000、高調波）
@@ -1440,12 +1440,12 @@
       <summary>
         DX7を再生します。
       </summary>
-      <param name="channels">各チャンネルの値の配列（0?1の値、通常は8チャンネル）。</param>
+      <param name="channels">各チャンネルの値の配列（0～1の値、通常は8チャンネル）。</param>
       <returns>波の名前または失敗時の ""</returns>
     </member>
     <member name="P:LitDev.LDWaveForm.Volume">
       <summary>
-        波形を再生する音量（0?100）。
+        波形を再生する音量（0～100）。
       </summary>
     </member>
     <member name="P:LitDev.LDWaveForm.Pan">
@@ -1752,7 +1752,7 @@
         シェイプのインデックス（ShapeIndexによって返される）。
       </param>
       <param name="level">
-        0?100の不透明度レベル。0は完全に透明で100は完全に不透明です。
+        0～100の不透明度レベル。0は完全に透明で100は完全に不透明です。
       </param>
     </member>
     <member name="M:LitDev.LDFastShapes.GetOpacity(Microsoft.SmallBasic.Library.Primitive)">
@@ -1763,7 +1763,7 @@
         シェイプのインデックス（ShapeIndexによって返される）。
       </param>
       <returns>
-        0?100の値のオブジェクトの不透明度。0は完全に透明で100は完全に不透明です。
+        0～100の値のオブジェクトの不透明度。0は完全に透明で100は完全に不透明です。
       </returns>
     </member>
     <member name="M:LitDev.LDFastShapes.Rotate(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -1816,9 +1816,9 @@
       <summary>
         色相、彩度、明度（HSL）の色をSmallBasicで使用される赤、緑、青（RGB）の色に変換します。
       </summary>
-      <param name="H">色相（0?360）。</param>
-      <param name="S">飽和（0?1）。</param>
-      <param name="L">明度（0?1）。</param>
+      <param name="H">色相（0～360）。</param>
+      <param name="S">飽和（0～1）。</param>
+      <param name="L">明度（0～1）。</param>
       <returns>RGBカラー</returns>
     </member>
     <member name="M:LitDev.LDColours.SetOpacity(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -1826,7 +1826,7 @@
         色の不透明度を変更します。
       </summary>
       <param name="colour">変更する色。</param>
-      <param name="opacity">不透明度（0?255）です。</param>
+      <param name="opacity">不透明度（0～255）です。</param>
       <returns>変更された色。</returns>
     </member>
     <member name="M:LitDev.LDColours.GetRed(Microsoft.SmallBasic.Library.Primitive)">
@@ -1834,55 +1834,55 @@
         色の赤コンポーネントを取得します。
       </summary>
       <param name="colour">コンポーネントを取得するための色です。</param>
-      <returns>赤のコンポーネント（0?255）。</returns>
+      <returns>赤のコンポーネント（0～255）。</returns>
     </member>
     <member name="M:LitDev.LDColours.GetGreen(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         色の緑の成分を取得します。
       </summary>
       <param name="colour">コンポーネントを取得するための色です。</param>
-      <returns>緑のコンポーネント（0?255）。</returns>
+      <returns>緑のコンポーネント（0～255）。</returns>
     </member>
     <member name="M:LitDev.LDColours.GetBlue(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         色の青成分を取得します。
       </summary>
       <param name="colour">コンポーネントを取得するための色です。</param>
-      <returns>青のコンポーネント（0?255）。</returns>
+      <returns>青のコンポーネント（0～255）。</returns>
     </member>
     <member name="M:LitDev.LDColours.GetOpacity(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         色の不透明度コンポーネントを取得します。
       </summary>
       <param name="colour">コンポーネントを取得するための色です。</param>
-      <returns>不透明成分（0?255）です。</returns>
+      <returns>不透明成分（0～255）です。</returns>
     </member>
     <member name="M:LitDev.LDColours.GetHue(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         色の色相成分を取得します。
       </summary>
       <param name="colour">コンポーネントを取得するための色です。</param>
-      <returns>色相成分（0?360）。</returns>
+      <returns>色相成分（0～360）。</returns>
     </member>
     <member name="M:LitDev.LDColours.GetSaturation(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         色の彩度成分を取得します。
       </summary>
       <param name="colour">コンポーネントを取得するための色です。</param>
-      <returns>彩度成分（0?1）。</returns>
+      <returns>彩度成分（0～1）。</returns>
     </member>
     <member name="M:LitDev.LDColours.GetLightness(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         色の明度成分を取得します。
       </summary>
       <param name="colour">コンポーネントを取得するための色です。</param>
-      <returns>明度成分（0?1）。</returns>
+      <returns>明度成分（0～1）。</returns>
     </member>
     <member name="T:LitDev.LDArray">
       <summary>
         標準のSmallBasic配列よりもはるかに高速な1次元配列メソッドです。
 
-        100?1000以上の要素を持つ配列に役立ちます。
+        100～1000以上の要素を持つ配列に役立ちます。
         エラーが発生すると、 "FAILED"という戻り値が返されます。
       </summary>
     </member>
@@ -2475,14 +2475,14 @@
         メディアプレーヤーの音量を設定します。
       </summary>
       <param name="shapeName">メディアプレーヤー名。</param>
-      <param name="volume">ボリューム（0?1）のデフォルトは0.5です。</param>
+      <param name="volume">ボリューム（0～1）のデフォルトは0.5です。</param>
     </member>
     <member name="M:LitDev.LDControls.MediaPlayerSpeed(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         メディアプレーヤーの再生速度を設定します。
       </summary>
       <param name="shapeName">メディアプレーヤー名。</param>
-      <param name="speed">速度（0?100）はデフォルト1（通常の再生）です。</param>
+      <param name="speed">速度（0～100）はデフォルト1（通常の再生）です。</param>
     </member>
     <member name="M:LitDev.LDControls.MediaPlayerLoad(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -2591,7 +2591,7 @@
         進行状況バーの値（進行状況）を設定します。
       </summary>
       <param name="shapeName">進行状況バーの形状名。</param>
-      <param name="value">進捗値（0?100）。</param>
+      <param name="value">進捗値（0～100）。</param>
     </member>
     <member name="M:LitDev.LDControls.AddSlider(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -2607,14 +2607,14 @@
         スライダの値（位置）を設定します。
       </summary>
       <param name="shapeName">スライダシェイプの名前。</param>
-      <param name="value">スライダの値（0?100）。</param>
+      <param name="value">スライダの値（0～100）。</param>
     </member>
     <member name="M:LitDev.LDControls.SliderGetValue(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         スライダの値（位置）を取得します。
       </summary>
       <param name="shapeName">スライダシェイプの名前。</param>
-      <returns>スライダの値（0?100）。</returns>
+      <returns>スライダの値（0～100）。</returns>
     </member>
     <member name="M:LitDev.LDControls.AddPasswordBox(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -4361,7 +4361,7 @@
     </member>
     <member name="M:LitDev.LDShell.SpecialFolderList(Microsoft.SmallBasic.Library.Primitive)">
       <summary>特殊なシステム/シェルフォルダ内のすべての項目を取得します（上位レベルのみ）。</summary>
-      <param name="csidl">システムフォルダのCSIDL番号（0?47、s。SpecialFolderConstantsの下にある利用可能なフォルダの定数および名前）。</param>
+      <param name="csidl">システムフォルダのCSIDL番号（0～47、s。SpecialFolderConstantsの下にある利用可能なフォルダの定数および名前）。</param>
       <returns>成功した場合はシステムフォルダ内のすべてのオブジェクトの名前（上位レベルのみ）、それ以外の場合は"FAILED"。</returns>
       <example>
         http://msdn.microsoft.com/library/bb774096.aspx
@@ -4443,7 +4443,7 @@
       </example>
     </member>
     <member name="P:LitDev.LDShell.AllDetails">
-      <summary>使用可能なすべての拡張プロパティをArray（ "idx =プロパティ名;"、-1 = Infotip、0 = Name、..?286 =合計ビットレート（または全ビットレート））として取得します。</summary>
+      <summary>使用可能なすべての拡張プロパティをArray（ "idx =プロパティ名;"、-1 = Infotip、0 = Name、..～286 =合計ビットレート（または全ビットレート））として取得します。</summary>
     </member>
     <member name="P:LitDev.LDShell.DTIconsOn">
       <summary>デスクトップアイコンが現在表示されている天気を取得します（ "True"または "False"）。</summary>
@@ -5767,7 +5767,7 @@
         周波数と持続時間でシステム音を再生します。
         マザーボードのスピーカー（サウンドカードではありません）を使用していますが、音質が低いか、使用できない可能性があります。
       </summary>
-      <param name="frequency">トーン周波数（37?32767 Hz）。</param>
+      <param name="frequency">トーン周波数（37～32767 Hz）。</param>
       <param name="duration">トーンの持続時間（ms）。</param>
     </member>
     <member name="M:LitDev.LDSound.MusicPlayTime(Microsoft.SmallBasic.Library.Primitive)">
@@ -5817,7 +5817,7 @@
     <member name="M:LitDev.LDHID.Output(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         データをHIDデバイスに送信します。
-        これは、バイト配列（0?255）でなければなりません。
+        これは、バイト配列（0～255）でなければなりません。
         配列は1からインデックスされ、サイズはOutputLengthでなければなりません。
       </summary>
       <param name="name">HIDデバイス名。</param>
@@ -5841,7 +5841,7 @@
       <summary>
         バイトのどのビットがセットされているかを示す1と0の8要素配列を取得します。
       </summary>
-      <param name="data">バイト番号（0?255）。</param>
+      <param name="data">バイト番号（0～255）。</param>
       <returns>8要素のビット配列（小さいビットが最初）または失敗した時に ""。</returns>
     </member>
     <member name="M:LitDev.LDHID.SetBits(Microsoft.SmallBasic.Library.Primitive)">
@@ -5849,7 +5849,7 @@
         バイトのどのビットがセットされているかを示す1と0の8要素配列からバイトを設定します。
       </summary>
       <param name="data">1と0の8要素配列（小さいビットが最初）。</param>
-      <returns>バイト番号（0?255）または失敗した場合は-1</returns>
+      <returns>バイト番号（0～255）または失敗した場合は-1</returns>
     </member>
     <member name="M:LitDev.LDHID.FindDevices">
       <summary>
@@ -5864,7 +5864,7 @@
     <member name="P:LitDev.LDHID.LastInput">
       <summary>
         最後のHID入力データの配列。
-        これは、0?255（バイト）の値のセットです。
+        これは、0～255（バイト）の値のセットです。
       </summary>
       <returns>入力データの配列、または"なし"の配列。</returns>
     </member>
@@ -6097,8 +6097,8 @@
       <summary>
         現在の前景色と背景色のインデックスを設定します。
       </summary>
-      <param name="fgIndex">フォアグラウンドカラーインデックス（0?15）</param>
-      <param name="bgIndex">背景色のインデックス（0?15）。</param>
+      <param name="fgIndex">フォアグラウンドカラーインデックス（0～15）</param>
+      <param name="bgIndex">背景色のインデックス（0～15）。</param>
     </member>
     <member name="P:LitDev.LDTextWindow.LastKey">
       <summary>
@@ -6796,7 +6796,7 @@
     <member name="M:LitDev.LDImage.Add(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         画像に色の値を追加します。
-        画像には、0?255の範囲のR、G、Bのピクセルがあります。
+        画像には、0～255の範囲のR、G、Bのピクセルがあります。
       </summary>
       <param name="image">変更するImageListイメージ。</param>
       <param name="red">追加する赤の値。</param>
@@ -6806,7 +6806,7 @@
     <member name="M:LitDev.LDImage.Multiply(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         画像の色の値を掛けます。
-        画像には、0?255の範囲のR、G、Bのピクセルがあります。
+        画像には、0～255の範囲のR、G、Bのピクセルがあります。
       </summary>
       <param name="image">変更するImageListイメージ。</param>
       <param name="red">乗算する赤の値。</param>
@@ -6818,19 +6818,19 @@
         カラーピクセル値の最小、最大、平均、およびSTDを取得します。
       </summary>
       <param name="image">ImageListイメージ。</param>
-      <returns>R、G、Bの "Min"、 "Max"、 "Mean"、 "STD"および1,2,3で索引付けされた統計値の配列（0?255）。</returns>
+      <returns>R、G、Bの "Min"、 "Max"、 "Mean"、 "STD"および1,2,3で索引付けされた統計値の配列（0～255）。</returns>
     </member>
     <member name="M:LitDev.LDImage.Histogram(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         カラーピクセル値のヒストグラムを取得します。
       </summary>
       <param name="image">ImageListイメージ。</param>
-      <returns>R、G、Bおよび0?255の1,2,3で索引付けされた色ヒストグラムの配列。</returns>
+      <returns>R、G、Bおよび0～255の1,2,3で索引付けされた色ヒストグラムの配列。</returns>
     </member>
     <member name="M:LitDev.LDImage.AddImages(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         2枚の画像を一緒に追加します。
-        画像には、0?255の範囲のR、G、Bのピクセルがあります。
+        画像には、0～255の範囲のR、G、Bのピクセルがあります。
         どちらの画像も同じ次元でなければなりません。
       </summary>
       <param name="image1">追加する最初のImageListイメージ。</param>
@@ -6840,7 +6840,7 @@
     <member name="M:LitDev.LDImage.DifferenceImages(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         違いは2画像。
-        画像には、0?255の範囲のR、G、Bのピクセルがあります。
+        画像には、0～255の範囲のR、G、Bのピクセルがあります。
         どちらの画像も同じ次元でなければなりません。
       </summary>
       <param name="image1">差分の最初のImageListイメージ。</param>
@@ -7032,7 +7032,7 @@
         色相を変更するために変換します。
       </summary>
       <param name="image">変更するImageListイメージ。</param>
-      <param name="hue">色相シフト（0?360、デフォルトは180）。</param>
+      <param name="hue">色相シフト（0～360、デフォルトは180）。</param>
     </member>
     <member name="M:LitDev.LDImage.EffectSaturation(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -7541,18 +7541,18 @@
         演奏する音符のセット。形式は、QBasicでサポートされている音楽マークアップ言語のサブセットです。
       </param>
       <param name="instrument"> 楽器番号。</param>
-      <param name="velocity"> キーのベロシティ（1?128、デフォルトは100）。</param>
-      <param name="volume"> ボリューム（0?100、デフォルトは50）。</param>
+      <param name="velocity"> キーのベロシティ（1～128、デフォルトは100）。</param>
+      <param name="volume"> ボリューム（0～100、デフォルトは50）。</param>
       <param name="pan"> パンを左（-100）または右（100）（デフォルトは0）。</param>
-      <param name="channel">MIDIチャンネル（1?16）。</param>
+      <param name="channel">MIDIチャンネル（1～16）。</param>
     </member>
     <member name="M:LitDev.LDMusic.PlayNote(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         個々の音符を演奏します（マルチチャンネル楽器を許可します）。
       </summary>
-      <param name="octave">オクターブ（0?8）。</param>
+      <param name="octave">オクターブ（0～8）。</param>
       <param name="note">メモ（ "A"、 "F＃"、 "B-"など）。</param>
-      <param name="channel">MIDIチャンネル（1?16）。</param>
+      <param name="channel">MIDIチャンネル（1～16）。</param>
       <returns>再生されているノート値。</returns>
     </member>
     <member name="M:LitDev.LDMusic.EndNote(Microsoft.SmallBasic.Library.Primitive)">
@@ -7576,7 +7576,7 @@
     </member>
     <member name="P:LitDev.LDMusic.Instrument">
       <summary>
-        楽器を設定します（1?128）。
+        楽器を設定します（1～128）。
         1 Acoustic_Grand_Piano
         2 Bright_Acoustic_Piano
         3 Electric_Grand_Piano
@@ -7709,13 +7709,13 @@
     </member>
     <member name="P:LitDev.LDMusic.Velocity">
       <summary>
-        キーのベロシティ（1?128）を設定します。
+        キーのベロシティ（1～128）を設定します。
         これは、キーが押された強さです（デフォルトは100）。
       </summary>
     </member>
     <member name="P:LitDev.LDMusic.Channel">
       <summary>
-        MIDIチャンネルを設定します（1?16、デフォルトは1）。
+        MIDIチャンネルを設定します（1～16、デフォルトは1）。
         PlayMusic、楽器、ベロシティで使用されます。
       </summary>
     </member>
@@ -8928,7 +8928,7 @@
     <member name="P:LitDev.LDUtilities.Priority">
       <summary>
         ディスパッチャのSmallBasicLibraryオブジェクトとのやり取りの速度を上げるための実験的なオプション。
-        1?10（デフォルトは7、Render）
+        1～10（デフォルトは7、Render）
       </summary>
     </member>
     <member name="T:LitDev.LDCursors">
@@ -9449,10 +9449,10 @@
         形状の名前。
       </param>
       <param name="friction">
-        形状の摩擦（通常0?1）。
+        形状の摩擦（通常0～1）。
       </param>
       <param name="restitution">
-        形状の復元またはうねり（通常0?1）。
+        形状の復元またはうねり（通常0～1）。
       </param>
       <returns>
         なし。
@@ -9491,10 +9491,10 @@
         形状の名前。
       </param>
       <param name="friction">
-        形状の摩擦（通常0?1）。
+        形状の摩擦（通常0～1）。
       </param>
       <param name="restitution">
-        形状の復元またはうねり（通常0?1）。
+        形状の復元またはうねり（通常0～1）。
         反転のために負の値が設定されている場合、形状は画像境界に一致する不規則な複合形状内にグループ化できる非アクティブ画像を追加するために使用される非常に小さいサイズで追加されます。
       </param>
       <param name="density">
@@ -9960,7 +9960,7 @@
         変更する形状。
       </param>
       <param name="group">
-        現在の図形が属するグループ（デフォルトは0）。これは0?15の整数でなければなりません。
+        現在の図形が属するグループ（デフォルトは0）。これは0～15の整数でなければなりません。
       </param>
       <param name="mask">
         このシェイプが衝突するグループの配列（デフォルトではすべてのグループ0,1,2、..、14,15）。
@@ -10411,7 +10411,7 @@
         開いているシリアルポートから1バイトを読み取り、そのバイトを整数として返します。
       </summary>
       <returns>
-        1?255の整数値（失敗時には"NOCONNECTION"または"FAILED"）。
+        1～255の整数値（失敗時には"NOCONNECTION"または"FAILED"）。
       </returns>
     </member>
     <member name="M:LitDev.LDCommPort.RXChar">
@@ -10506,11 +10506,11 @@
     <member name="M:LitDev.LDCommPort.SetDataBits(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         現在のポートデータビットを設定します。
-        5?8（デフォルト）。
+        5～8（デフォルト）。
       </summary>
       <param name="dataBits">
         データビット：
-        5?8（デフォルト）。
+        5～8（デフォルト）。
       </param>
       <returns>
         "SUCCESS"、 "NOCONNECTION"、 "FAILED"のいずれかです。
@@ -10816,7 +10816,7 @@
       <returns>
         3要素配列
         1）16進形式のブラシ（または背景色）のシェイプ
-        2）形状の不透明度（0?100）
+        2）形状の不透明度（0～100）
         3）16進形式のペン（またはフォアグラウンド）カラーを描く
       </returns>
     </member>
@@ -11308,7 +11308,7 @@
         形状の名前。
       </param>
       <returns>
-        0?100の値のオブジェクトの不透明度。0は完全に透明で100は完全に不透明です。
+        0～100の値のオブジェクトの不透明度。0は完全に透明で100は完全に不透明です。
       </returns>
     </member>
     <member name="M:LitDev.LDShapes.ZoomAll(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -11466,12 +11466,12 @@
     </member>
     <member name="P:LitDev.LDSpeech.Speed">
       <summary>
-        スピーチスピード（-10?10）
+        スピーチスピード（-10～10）
       </summary>
     </member>
     <member name="P:LitDev.LDSpeech.Volume">
       <summary>
-        音声の音量（0?100）。
+        音声の音量（0～100）。
       </summary>
     </member>
     <member name="P:LitDev.LDSpeech.Voice">
@@ -12257,7 +12257,7 @@
     <member name="M:LitDev.Engines.FIP.ContrastStretching(System.Drawing.Bitmap)">
       <summary>
         輝度法を使用してARGB画像をグレースケールに変換し、コントラストストレッチ法を使用して明るくします。
-        明るさの最小値と最大値は、デフォルトで0?255です。
+        明るさの最小値と最大値は、デフォルトで0～255です。
       </summary>
       <param name="OriginalImage">元のARGB画像</param>
       <returns>グレーススケール画像を強調する</returns>
@@ -12265,7 +12265,7 @@
     <member name="M:LitDev.Engines.FIP.ContrastStretching(System.Drawing.Bitmap,System.Int32,System.Int32)">
       <summary>
         輝度法を使用してARGB画像をグレースケールに変換し、コントラストストレッチ法を使用して明るくします。
-        明るさの最小値と最大値は、デフォルトで0?255です。
+        明るさの最小値と最大値は、デフォルトで0～255です。
       </summary>
       <param name="OriginalImage">元のARGB画像</param>
       <param name="RMinSet">使用可能な最小輝度値</param>
