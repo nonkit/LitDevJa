@@ -7,7 +7,7 @@
     <member name="M:Bing.BingSearchContainer.Composite(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
       <summary>
       </summary>
-      <param name="Sources">Bing 検索ソースサンプル値：web + image + video + news + spell</param>
+      <param name="Sources">Bing 検索ソースサンプル値：web+image+video+news+spell</param>
       <param name="Query">Bing 検索クエリのサンプル値：xbox</param>
       <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlighting です。サンプル値：EnableHighlighting</param>
       <param name="WebSearchOptions">Web ソース・タイプへの要求のオプションを指定します。有効な値は、DisableHostCollapsing、DisableQueryAlterations です。サンプル値：DisableQueryAlterations</param>
@@ -117,7 +117,7 @@
       <param name="arrayName">配列名。</param>
       <param name="indices">
         カンマ（またはスペース）で区切られたインデックス値のリスト（より遅い）またはインデックス変数名（より速い）。
-        例えば "3,2,6" または "i、j、k"
+        例えば "3,2,6" または "i,j,k"
         これを "" に設定すると、以前に設定されたインデックス変数が使用されます。
       </param>
       <param name="value">設定する値。</param>
@@ -279,7 +279,7 @@
     </member>
     <member name="M:LitDev.LDFastArray.Collapse(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-        配列内の空のエントリをすべて削除します。"
+        配列内の空のエントリ "" をすべて削除します。
         内部エントリが削除されると、インデックスまたは次元が変更される可能性があることに注意してください。
       </summary>
       <param name="arrayName">配列名。</param>
@@ -842,36 +842,36 @@
     </member>
     <member name="M:LitDev.LDLogic.Not(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-        Not 演算子です。
-        Not（"True"）= "False"
-        Not（"False"）= "True"
+        Not 演算子。
+        Not("True") = "False"
+        Not("False") = "True"
       </summary>
       <param name="value">操作する値（"True" または "False"）。</param>
-      <returns>"正しいか間違っているか"。</returns>
+      <returns>"True" または "False"。</returns>
     </member>
     <member name="M:LitDev.LDLogic.Or(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-        Or 演算子です。
-        または（"True"、"True"）= "True"
-        または（"False"、"False"）= "False"
-        または（"True"、"False"）= "True"
-        または（"False"、"True"）= "True"
+        Or 演算子。
+        Or("True","True") = "True"
+        Or("False","False") = "False"
+        Or("True","False") = "True"
+        Or("False","True") = "True"
       </summary>
       <param name="value1">最初の値（"True" または "False"）。</param>
       <param name="value2">2 番目の値（"True" または "False"）。</param>
-      <returns>"正しいか間違っているか"。</returns>
+      <returns>"True" または "False"。</returns>
     </member>
     <member name="M:LitDev.LDLogic.And(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-        And 演算子です。
-        そして（"True"、"True"）= "True"
-        そして（"False"、"False"）= "False"
-        そして（"True"、"False"）= "False"
-        そして（"False"、"True"）= "False"
+        And 演算子。
+        And("True","True") = "True"
+        And("False","False") = "False"
+        And("True","False") = "False"
+        And("False","True") = "False"
       </summary>
       <param name="value1">最初の値（"True" または "False"）。</param>
       <param name="value2">2 番目の値（"True" または "False"）。</param>
-      <returns>"正しいか間違っているか"。</returns>
+      <returns>"True" または "False"。</returns>
     </member>
     <member name="M:LitDev.LDLogic.XOr(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -883,7 +883,7 @@
       </summary>
       <param name="value1">最初の値（"True" または "False"）。</param>
       <param name="value2">2 番目の値（"True" または "False"）。</param>
-      <returns>"正しいか間違っているか"。</returns>
+      <returns>"True" または "False"。</returns>
     </member>
     <member name="M:LitDev.LDLogic.LT(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -893,7 +893,7 @@
       </summary>
       <param name="value1">最初の値。</param>
       <param name="value2">2 番目の値。</param>
-      <returns>"正しいか間違っているか"。</returns>
+      <returns>"True" または "False"。</returns>
     </member>
     <member name="M:LitDev.LDLogic.LE(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -903,7 +903,7 @@
       </summary>
       <param name="value1">最初の値。</param>
       <param name="value2">2 番目の値。</param>
-      <returns>"正しいか間違っているか"。</returns>
+      <returns>"True" または "False"。</returns>
     </member>
     <member name="M:LitDev.LDLogic.GT(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -913,7 +913,7 @@
       </summary>
       <param name="value1">最初の値。</param>
       <param name="value2">2 番目の値。</param>
-      <returns>"正しいか間違っているか"。</returns>
+      <returns>"True" または "False"。</returns>
     </member>
     <member name="M:LitDev.LDLogic.GE(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -923,7 +923,7 @@
       </summary>
       <param name="value1">最初の値。</param>
       <param name="value2">2 番目の値。</param>
-      <returns>"正しいか間違っているか"。</returns>
+      <returns>"True" または "False"。</returns>
     </member>
     <member name="M:LitDev.LDLogic.EQ(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -933,7 +933,7 @@
       </summary>
       <param name="value1">最初の値。</param>
       <param name="value2">2 番目の値。</param>
-      <returns>"正しいか間違っているか"。</returns>
+      <returns>"True" または "False"。</returns>
     </member>
     <member name="M:LitDev.LDLogic.NE(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -943,16 +943,16 @@
       </summary>
       <param name="value1">最初の値。</param>
       <param name="value2">2 番目の値。</param>
-      <returns>"正しいか間違っているか"。</returns>
+      <returns>"True" または "False"。</returns>
     </member>
     <member name="M:LitDev.LDLogic.Switch(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-        sorthand 条件文です。
+        簡易条件文。
       </summary>
       <param name="condition">"True" または "False" と評価される条件または変数。</param>
-      <param name="value1">condition が "True" の場合に返す値です。</param>
-      <param name="value2">condition が "False" の場合に返す値です。</param>
-      <returns>値 1 または値 2。</returns>
+      <param name="value1">condition が "True" の場合に返す値。</param>
+      <param name="value2">condition が "False" の場合に返す値。</param>
+      <returns>value1 または value2。</returns>
     </member>
     <member name="P:LitDev.LDLogic.CaseSensitive">
       <summary>
@@ -1240,7 +1240,7 @@
       <summary>
         以前に保存したすべてのリソースを sbres ファイルからロードします。
         ImageList とサウンドはすべて自動的にロードされ、使用できる状態になります。
-        サウンドファイルは、Sound.Play で必要とされるので、％ temp ％フォルダに再作成されます。
+        サウンドファイルは、Sound.Play で必要とされるので、%temp% フォルダに再作成されます。
       </summary>
       <returns>"SUCCESS" または "FAILED"。</returns>
     </member>
@@ -1664,7 +1664,7 @@
     </member>
     <member name="P:LitDev.LDftp.UseBinary">
       <summary>
-        ftp 転送がバイナリ（デフォルト）か ascii を使用するかどうかを設定するか取得します。（"正しいか間違っているか"）。
+        ftp 転送がバイナリ（デフォルト）か ascii を使用するかどうかを設定するか取得します。（"True" または "False"）。
       </summary>
     </member>
     <member name="P:LitDev.LDftp.DoAssync">
@@ -2425,7 +2425,7 @@
         テキストボックスまたはリッチテキストボックスのスペルチェックを設定します。
       </summary>
       <param name="shapeName">textbox または richtextbox のシェイプ名。</param>
-      <param name="state">"正しいか間違っているか"</param>
+      <param name="state">"True" または "False"</param>
     </member>
     <member name="M:LitDev.LDControls.AddRadioButton(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -2648,7 +2648,7 @@
       </summary>
       <param name="shapeName">メニューシェイプ名。</param>
       <param name="itemName">メニュー項目名。</param>
-      <returns>"正しいか間違っているか"。</returns>
+      <returns>"True" または "False"。</returns>
     </member>
     <member name="M:LitDev.LDControls.AddMenu(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -3459,7 +3459,7 @@
         Y  - 下（-）から上（+）
         Z  -  Far（-）から Near（+）
 
-        基礎となる方法の詳細については、http：//msdn.microsoft.com/en-us/library/ms747437%28v=vs.90%29.aspx を参照してください。
+        基礎となる方法の詳細については、http://msdn.microsoft.com/en-us/library/ms747437%28v=vs.90%29.aspx を参照してください。
         AddShape メソッドのいくつかは HelixToolkit を使用しています（SmallBasic 用に再コンパイルされ、わずかに変更されています）。http://helixToolkit.codeplex.com
 
         また、ベクトル代数法については LDVector を参照してください。
@@ -4465,7 +4465,7 @@
     </member>
     <member name="T:LitDev.LDInline">
       <summary>
-        実行時に使用する C ＃、VB、または JScript コードをインクルードします。
+        実行時に使用する C#、VB、または JScript コードをインクルードします。
         複数の名前空間またはクラスが使用される場合は、すべてのメソッド、プロパティ、またはイベント名が一意である必要があります。
         あるいは、完全修飾 namespace.type.name を使用することもできます。
         拡張機能をコンパイルするために使用できます。
@@ -4476,17 +4476,17 @@
         使用される .NET メソッドによっては、追加のアセンブリが必要な場合があります。
         追加のアセンブリは完全な dll パスによって参照されます。
         アセンブリ DLL は、次の場所または類似の場所でよく使用されます。
-        C：\ Windows \ Microsoft.NET \ Framework \ v2.0.50727
-        C：\ Program Files（x86）\ Reference アセンブリ \ Microsoft \ Framework \ v3.0
+        C:\Windows\Microsoft.NET\Framework\v2.0.50727
+        C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0
 
         後で TextWindow を使用する必要がある場合は、これらのメソッドを使用する前に TextWindow を表示する必要があります。
       </summary>
     </member>
     <member name="M:LitDev.LDInline.IncludeCS(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
-        C ＃クラスをインクルードしてコンパイルします。File.ReadContents（）で読み取ったファイルの内容にすることができます。
+        C# クラスをインクルードしてコンパイルします。File.ReadContents（）で読み取ったファイルの内容にすることができます。
       </summary>
-      <param name="source">C ＃ソース。</param>
+      <param name="source">C# ソース。</param>
       <param name="assemblies">必要な追加アセンブリの配列。</param>
       <param name="dllName">dll（+ xml）出力を作成するオプションのパスは、"" を使用してメモリ内で実行します。</param>
       <returns>"FAILED" または "SUCCESS"</returns>
@@ -4721,7 +4721,7 @@
         チェックする値。
       </param>
       <returns>
-        "正しいか間違っているか"。
+        "True" または "False"。
       </returns>
     </member>
     <member name="M:LitDev.LDList.Reverse(Microsoft.SmallBasic.Library.Primitive)">
@@ -5547,7 +5547,7 @@
       </summary>
       <param name="data">署名されたメッセージ。</param>
       <param name="sign">メッセージの署名。</param>
-      <returns>"正しいか間違っているか"。</returns>
+      <returns>"True" または "False"。</returns>
     </member>
     <member name="M:LitDev.LDEncryption.RSAReset">
       <summary>
@@ -5938,7 +5938,7 @@
     <member name="P:LitDev.LDScrollBars.Visibility">
       <summary>
         スクロールバーの可視性を取得または設定します。
-        "正しいか間違っているか"。
+        "True" または "False"。
       </summary>
     </member>
     <member name="P:LitDev.LDScrollBars.Rasterize">
@@ -6347,7 +6347,7 @@
       <summary>
         GraphicsWindow を一番上のウィンドウとして設定します。
         他のウィンドウにフォーカスがある場合でも、ウィンドウは他のウィンドウの上に残ります。
-        "正しいか間違っているか"。
+        "True" または "False"。
       </summary>
     </member>
     <member name="P:LitDev.LDGraphicsWindow.MouseX">
@@ -7206,7 +7206,7 @@
       <param name="imageFile">画像ファイル（ImageList 画像ではありません）。</param>
       <returns>
         16 進数でインデックスされたメタデータ値の配列（16 進数の a から f までのインデックスには引用符を使用）
-        ids の一覧については、https：//msdn.microsoft.com/en-us/library/System.Drawing.Imaging.propertyitem.id%28v=vs.110%29.aspx を参照してください。
+        ids の一覧については、https://msdn.microsoft.com/en-us/library/System.Drawing.Imaging.propertyitem.id%28v=vs.110%29.aspx を参照してください。
       </returns>
     </member>
     <member name="M:LitDev.LDImage.AddText(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -7494,7 +7494,7 @@
         dubugging 目的のためのマトリックスを表示します。
       </summary>
       <param name="matrix">表示する行列。</param>
-      <param name="modal">マトリックスディスプレイは、閉じられるまで他のすべての動作を一時停止します。（"正しいか間違っているか"）。</param>
+      <param name="modal">マトリックスディスプレイは、閉じられるまで他のすべての動作を一時停止します。（"True" または "False"）。</param>
       <returns>
         なし。
       </returns>
@@ -8452,7 +8452,7 @@
       <param name="fileName">
         ファイルまたはディレクトリのフルパス。
       </param>
-      <returns>"正しいか間違っているか"。</returns>
+      <returns>"True" または "False"。</returns>
     </member>
     <member name="M:LitDev.LDFile.SaveAllVariables(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -8803,7 +8803,7 @@
         これはカルチャ不変の番号です（例："3.14" ではなく、"3,14" または "24x" である。
       </summary>
       <param name="input">テストする入力。</param>
-      <returns>"正しいか間違っているか"</returns>
+      <returns>"True" または "False"</returns>
     </member>
     <member name="M:LitDev.LDUtilities.GetCurrentCultureNumber(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
@@ -10312,14 +10312,14 @@
     <member name="M:LitDev.LDPhysics.WriteJson(Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         R.U.B.E と互換性のある json スクリプトを作成します。現在の LDPhysics モデルから。
-        詳細については、https：//www.iforce2d.net/rube を参照してください。
+        詳細については、https://www.iforce2d.net/rube を参照してください。
       </summary>
       <param name="fileName">作成する json ファイルへのフルパス。</param>
     </member>
     <member name="M:LitDev.LDPhysics.ReadJson(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
       <summary>
         R.U.B.E と互換性のある json スクリプトで読み込みます。LDPhysics モデルを作成します。
-        詳細については、https：//www.iforce2d.net/rube を参照してください。
+        詳細については、https://www.iforce2d.net/rube を参照してください。
       </summary>
       <param name="fileName">読み取る json ファイルへのフルパス。</param>
       <param name="scale">すべてのシェイプのスケールを設定します（既定の 1（スケーリングなし））。</param>
@@ -10760,7 +10760,7 @@
         2 番目のシェイプ名。
       </param>
       <returns>
-        "正しいか間違っているか"。
+        "True" または "False"。
       </returns>
     </member>
     <member name="M:LitDev.LDShapes.OverlapCircle(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -10774,7 +10774,7 @@
         2 番目のシェイプ名。
       </param>
       <returns>
-        "正しいか間違っているか"。
+        "True" または "False"。
       </returns>
     </member>
     <member name="M:LitDev.LDShapes.Overlap(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -10789,7 +10789,7 @@
         2 番目のシェイプ名。
       </param>
       <returns>
-        "正しいか間違っているか"。
+        "True" または "False"。
       </returns>
     </member>
     <member name="M:LitDev.LDShapes.BrushColour(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -11398,7 +11398,7 @@
         外部アプリケーションを起動します。
       </summary>
       <param name="application">
-        アプリケーションの完全なパスを開始する。"C：･Program Files（x86）･Microsoft･Small Basic･SB.exe" と入力します。
+        アプリケーションの完全なパスを開始する。"C:\Program Files (x86)\Microsoft\Small Basic\SB.exe" と入力します。
       </param>
       <param name="arguments">
         コマンドに与える引数、ない場合は "" のいずれかです。
@@ -11508,7 +11508,7 @@
         シェイプ名（通常はテキストボックス）。
       </param>
       <returns>
-        "正しいか間違っているか"。
+        "True" または "False"。
       </returns>
     </member>
     <member name="M:LitDev.LDFocus.SetFocus(Microsoft.SmallBasic.Library.Primitive)">
@@ -12580,10 +12580,10 @@
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitOpenDevice">
       <summary>
-        メソッド IowKitOpenDevice が戻ってすべての USB デバイスを認識 IO- 戦士
-        を開き、最初に見つかった IO- 戦士へのハンドルを提供。
+        メソッド IowKitOpenDevice が戻ってすべての USB デバイスを認識 IO-Warrior
+        を開き、最初に見つかった IO-Warrior へのハンドルを提供。
       </summary>
-      <returns>IO- 戦士に処理するか、失敗した場合にはゼロ。</returns>
+      <returns>IO-Warrior に処理するか、失敗した場合にはゼロ。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitCloseDevice(System.IntPtr)">
       <summary>
@@ -12622,7 +12622,7 @@
         バック IoWarrior 会社の財のバージョンを返します。
         上位 2 つのバイトは常に 0 です。
         4 桁の 16 進数の有効なあります。現在のソフトウェアバージョン 1.0.2.1 は 0x1021
-        返された場合。シリアル番号を持っていないリモートの年齢 IO- 戦士、バック小さいバージョン番号 1.0.1.0 を。
+        返された場合。シリアル番号を持っていないリモートの年齢 IO-Warrior、バック小さいバージョン番号 1.0.1.0 を。
       </summary>
       <param name="IowHandle">IO-Warrior への有効なハンドル。</param>
       <returns>IO-Warrior のソフトウェアバージョンまたは 0。</returns>
@@ -12645,9 +12645,10 @@
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitRead(System.IntPtr,System.UInt32,System.Byte[],System.UInt32)">
       <summary>
-        は IO- 戦士からデータを読み込みます。ブロックによって IO 戦士の入力における変化が regisriert。非ブロッキング
+        は IO-Warrior からデータを読み込みます。ブロックによって IO 戦士の入力における変化が regisriert。非ブロッキング
         はれるまでスレッドを呼び出す機能ブロックは
-        は IowKitReadNonBlocking を呼び出すことによって行うことができる READ（）。&lt;Br で /&gt; データは、報告書の形で到着します。レポートの詳細な説明は、それぞれの IO- 戦士のデータシートに見つけること
+        は IowKitReadNonBlocking を呼び出すことによって行うことができる READ（）。
+        データは、報告書の形で到着します。レポートの詳細な説明は、それぞれの IO-Warrior のデータシートに見つけること
         れる。
       </summary>
       <param name="IowHandle">IO 戦士への有効なハンドル。</param>
@@ -12662,9 +12663,9 @@
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitReadNonBlocking(System.IntPtr,System.UInt32,System.Byte[],System.UInt32)">
       <summary>
-        は IO- 戦士からデータを読み込みます。呼び出し元のスレッドが
+        は IO-Warrior からデータを読み込みます。呼び出し元のスレッドが
         、使用可能なデータがないとき、ブロックされていないため、
-        IO- 戦士の入力では変更されていない。
+        IO-Warrior の入力では変更されていない。
       </summary>
       <param name="IowHandle">IO 戦士への有効なハンドル。</param>
       <param name="numPipe">
@@ -12678,10 +12679,10 @@
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitReadImmediate(System.IntPtr,System.Byte[])">
       <summary>
-        直接の接続された IO- 戦士の入力端子の状態を読み込み。ピンの変化が前
+        直接の接続された IO-Warrior の入力端子の状態を読み込み。ピンの変化が前
         ブロックによって登録された場合、関数が True を返す。
         同時に入力の画像が !! ターゲット・データ・フィールドの値
-        注意として入手可能である。この機能は、IO- 戦士 56 で動作しません。
+        注意として入手可能である。この機能は、IO-Warrior 56 で動作しません。
         ブロック以上 32 ビットバック
         あります。
       </summary>
@@ -12695,11 +12696,11 @@
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitSetTimeout(System.IntPtr,System.UInt32)">
       <summary>
-        しっかりと IO- 戦士へのアクセスを読んでいる間にタイムアウトの制限を設定します。
+        しっかりと IO-Warrior へのアクセスを読んでいる間にタイムアウトの制限を設定します。
         現在進行中の間にタイムアウトを、
         まだ終わっ読んアクションは、データの損失を
         につながる（レポートは失われます）。データは
-        与えられた制限内に IO- 戦士で読み取ることができない場合 IowKitRead（）が失敗します。すべてのアクションが時間
+        与えられた制限内に IO-Warrior で読み取ることができない場合 IowKitRead（）が失敗します。すべてのアクションが時間
         に既に送ったが、再びまだ実行されていないする必要があります前にタイマーが切れると
         （例えば I2C バスライト
         または読み取り）に送信されます。
@@ -12750,7 +12751,7 @@
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitGetThreadHandle(System.IntPtr)">
       <summary>
-        は IO- 戦士の I/O ピンを読み取るために使用されるスレッドのハンドルを返します。Linux は IO
+        は IO-Warrior の I/O ピンを読み取るために使用されるスレッドのハンドルを返します。Linux は IO
         戦士の機能を実行するために Keie スレッドを使用して常にため、0
         を統合しています。
       </summary>
