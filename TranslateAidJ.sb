@@ -1,12 +1,14 @@
 ' Translate Aid J
-' Version 0.2
+' Version 1.2.1
 ' Copyright © 2017 Nonki Takahashi.  The MIT License.
-' Last update 2017-06-19
+' Last update 2017-06-20
 
 debug = "False"
-title = "Translate Aid J 0.2"
+title = "Translate Aid J 1.2.1"
 GraphicsWindow.Title = title
 Not = "False=True;True=False;"
+CR = Text.GetCharacter(13)
+LF = Text.GetCharacter(10)
 WQ = Text.GetCharacter(34)
 Form()
 path[1] = Program.Directory + "\LitDev.xml"
@@ -85,6 +87,20 @@ While "True"
         EndIf
         ShowNode()
       EndFor
+    ElseIf menu = "Space" Then
+      lang = 2
+      LDxml.Switch(name[lang])
+      FirstNode()
+      cont = "True"
+      While cont
+        FindNext()
+        If lvl[lang] = 1 Then
+          cont = "False"
+        Else
+          WordSpacing()
+          UpdateNode()
+        EndIf
+      EndWhile
     EndIf
     menuClicked = "False"
   Else
@@ -252,6 +268,7 @@ Sub Form
   menuList["Parent"] = "Node"
   menuList["Auto"] = "Main"
   menuList["Quote"] = "Auto"
+  menuList["Space"] = "Auto"
   LDControls.AddMenu(gw, 20, menuList, "", "")
   yOffset = "1=20;2=210;"
   For lang = 1 To 2
@@ -269,6 +286,59 @@ Sub Form
     textInner[lang] = Controls.AddMultiLineTextBox(10, 32 + yOffset[lang])
     Controls.SetSize(textInner[lang], gw - 20, 150)
   EndFor
+EndSub
+
+Sub GetFullWidthWord
+  pSave = p
+  c = Text.GetSubText(saved[lang], p, 1)
+  code = Text.GetCharacterCode(c)
+  While (256 <= code) Or (code = 10) Or (code = 13)
+    p = p + 1
+    c = Text.GetSubText(saved[lang], p, 1)
+    code = Text.GetCharacterCode(c)
+  EndWhile
+  afterBracket = "False"
+  If 1 < p Then
+    c = Text.GetSubText(saved[lang], p - 1, 1)
+    If Text.IsSubText("（）［］。？！、：；" + CR + LF, c) Then
+      afterBracket = "True"
+    EndIf
+  EndIf
+  word = Text.GetSubText(saved[lang], pSave, p - pSave)
+  If 0 < Text.GetLength(word) Then
+    afterHalf = "False"
+  EndIf
+EndSub
+
+Sub GetHalfWidthWord
+  word = ""
+  SkipSpace()
+  c = Text.GetSubText(saved[lang], p, 1)
+  If c = WQ Then
+    q = Text.GetIndexOf(Text.GetSubTextToEnd(saved[lang], p + 1), WQ)
+    word = Text.GetSubText(saved[lang], p, q + 1)
+    p = p + q + 1
+    c = Text.GetSubText(saved[lang], p, 1)
+  Else
+    code = Text.GetCharacterCode(c)
+    While (code < 256) And (code <> 10) And (code <> 13) And (code <> 34) And (code <> 0)
+      word = Text.Append(word, c)
+      p = p + 1
+      c = Text.GetSubText(saved[lang], p, 1)
+      code = Text.GetCharacterCode(c)
+    EndWhile
+  EndIf
+  If Text.IsSubText("（）［］、。？！：；" + CR + LF, c) Or (c = "") Then
+    beforeBracket = "True"
+  Else
+    beforeBracket = "False"
+  EndIf
+  word = LDText.Trim(word)
+  If 0 < Text.GetLength(word) Then
+    afterHalf = "True"
+  Else
+    beforeBracket = "True"
+  EndIf
 EndSub
 
 Sub OnMenuClicked
@@ -309,6 +379,14 @@ Sub ShowNode
   EndIf
 EndSub
 
+Sub SkipSpace
+  c = Text.GetSubText(saved[lang], p, 1)
+  While c = " "
+    p = p + 1
+    c = Text.GetSubText(saved[lang], p, 1)
+  EndWhile
+EndSub
+
 Sub UpdateNode
   If node[lang] = "#text" Then
     If inner[lang] <> saved[lang] Then
@@ -319,3 +397,29 @@ Sub UpdateNode
     EndIf
   EndIf
 EndSub
+
+Sub WordSpacing
+  p = 1
+  len = Text.GetLength(saved[lang])
+  inner[lang] = ""
+  afterBracket = "True"
+  afterHalf = "Flase"
+  While p <= len
+    savedHalf = afterHalf
+    GetHalfWidthWord()
+    If (1 < p) And Not[afterBracket] And Not[savedHalf] Then
+      inner[lang] = Text.Append(inner[lang], " ")
+    EndIf
+    inner[lang] = Text.Append(inner[lang], word)
+    If (p < len) And Not[beforeBracket] Then
+      inner[lang] = Text.Append(inner[lang], " ")
+    EndIf
+    GetFullWidthWord()
+    inner[lang] = Text.Append(inner[lang], word)
+  EndWhile
+  If debug And (saved[lang] <> inner[lang]) Then
+    TextWindow.WriteLine("saved=" + saved[lang])
+    TextWindow.WriteLine("inner=" + inner[lang])
+  EndIf
+EndSub
+    
