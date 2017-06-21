@@ -197,7 +197,7 @@
          <param name="arrayName">配列名。</param>
          <param name="indices">
             コンマ（またはスペース）で区切られたインデックスのリスト。
-            例えば第 1 次元では ""、第 1 次元では 3 番目の要素の第 2 次元では "3" です。
+            例えば第 1 次元では ""、第 1 次元では 3 番目の要素の第 2 次元では "3" 。
          </param>
          <returns>ディメンションサイズ。</returns>
       </member>
@@ -251,7 +251,7 @@
             2D FastArray 配列を CSV（カンマ区切り値）ファイルに書き込みます。
             デリミネータは、ユーティリティを使用してコンマから変更することができます .CSVDeliminator
          </summary>
-         <param name="arrayName">2D 配列名です。</param>
+         <param name="arrayName">2D 配列名。</param>
          <param name="fileName">CSV ファイルのフルパス。</param>
       </member>
       <member name="M:LitDev.LDFastArray.CreateFromValues(Microsoft.SmallBasic.Library.Primitive)">
@@ -377,7 +377,7 @@
             スカラーでベクトルを掛けます。
          </summary>
          <param name="vector">ベクトル。</param>
-         <param name="scalar">ベクトルのサイズを変更するためのスカラー番号です。</param>
+         <param name="scalar">ベクトルのサイズを変更するためのスカラー番号。</param>
          <returns>再スケーリングされたベクトルまたは "" 失敗した場合。</returns>
       </member>
       <member name="M:LitDev.LDVector.Add(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -566,7 +566,7 @@
             円弧形状を追加します。
          </summary>
          <param name="width">形状の幅。</param>
-         <param name="height">形状の高さです。</param>
+         <param name="height">形状の高さ。</param>
          <param name="startAngle">開始角度（度）。</param>
          <param name="endAngle">終了角度（度）。</param>
          <param name="thickness">弧の太さ（ピクセル単位）。</param>
@@ -577,7 +577,7 @@
             ブロックの矢印の形を追加します。
          </summary>
          <param name="width">形状の幅。</param>
-         <param name="height">形状の高さです。</param>
+         <param name="height">形状の高さ。</param>
          <param name="thickness">矢印の軸の相対的な厚さ、例えば。0.25 である。</param>
          <param name="arrowAngle">矢印の頭の角度（度）。</param>
          <param name="direction">矢印の方向："上"、"下"、"左" または "右"。</param>
@@ -588,7 +588,7 @@
             吹き出し図形を追加します。
          </summary>
          <param name="width">形状の幅。</param>
-         <param name="height">形状の高さです。</param>
+         <param name="height">形状の高さ。</param>
          <param name="text">コールアウトテキスト。</param>
          <param name="style">コールアウトスタイル："クラウド"、"楕円"、"長方形"、または "丸みを帯びた輪郭"。</param>
          <param name="anchor">コールアウトサイズに対するコールアウトアンカーの位置（例："X = 0; Y = 1.25;"）</param>
@@ -599,7 +599,7 @@
             線の矢印の形を追加します。
          </summary>
          <param name="width">形状の幅。</param>
-         <param name="height">形状の高さです。</param>
+         <param name="height">形状の高さ。</param>
          <param name="size">矢印の頭のサイズ（ピクセル単位）。</param>
          <param name="bend">矢印の曲げ量（例えば、0 は直線、0.5 は滑らかに曲がる）。</param>
          <param name="startArrow">開始矢印のタイプ："なし"、"矢印"、"開く"、"オーバル" または "ステルス"。</param>
@@ -612,7 +612,7 @@
             正多角形を追加します。
          </summary>
          <param name="width">形状の幅。</param>
-         <param name="height">形状の高さです。</param>
+         <param name="height">形状の高さ。</param>
          <param name="corners">コーナーの数。</param>
          <param name="radius">星形の相対半径（例えば、五角形の場合は 1、尖った星の場合は 0.5）。</param>
          <returns>形状の名前。</returns>
@@ -626,13 +626,13 @@
          <summary>
             エフェクトをクリアします。
          </summary>
-         <param name="shapeName">エフェクトをクリアするシェイプです。</param>
+         <param name="shapeName">エフェクトをクリアするシェイプ。</param>
       </member>
       <member name="M:LitDev.LDEffect.DropShaddow(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             ドロップシャドーエフェクトを適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプです。</param>
+         <param name="shapeName">効果を適用するシェイプ。</param>
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             BlurRadius（デフォルトは 5）
@@ -646,7 +646,7 @@
          <summary>
             ぼかし効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプです。</param>
+         <param name="shapeName">効果を適用するシェイプ。</param>
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             KernelType（デフォルトの "Gaussian" または "Box"）
@@ -657,7 +657,7 @@
          <summary>
             ブルーム効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプです。</param>
+         <param name="shapeName">効果を適用するシェイプ。</param>
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             BaseIntensity（デフォルトは 1）
@@ -671,7 +671,7 @@
          <summary>
             色調効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプです。</param>
+         <param name="shapeName">効果を適用するシェイプ。</param>
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             不飽和度（デフォルトは 0.5）
@@ -684,7 +684,7 @@
          <summary>
             浮き彫り効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプです。</param>
+         <param name="shapeName">効果を適用するシェイプ。</param>
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             金額（デフォルトは 3）
@@ -696,7 +696,7 @@
          <summary>
             拡大効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプです。</param>
+         <param name="shapeName">効果を適用するシェイプ。</param>
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             金額（デフォルトは 0.5）
@@ -709,7 +709,7 @@
          <summary>
             モノクロ効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプです。</param>
+         <param name="shapeName">効果を適用するシェイプ。</param>
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             カラー（デフォルトは "白"）
@@ -719,7 +719,7 @@
          <summary>
             ピクセル効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプです。</param>
+         <param name="shapeName">効果を適用するシェイプ。</param>
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             ピクセル化（デフォルトは 0.75）
@@ -729,7 +729,7 @@
          <summary>
             リップル効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプです。</param>
+         <param name="shapeName">効果を適用するシェイプ。</param>
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             センター（デフォルトでは "X = 0.5; Y = 0.5;"）
@@ -742,7 +742,7 @@
          <summary>
             シャープ効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプです。</param>
+         <param name="shapeName">効果を適用するシェイプ。</param>
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             金額（デフォルトは 2）
@@ -753,7 +753,7 @@
          <summary>
             渦巻き効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプです。</param>
+         <param name="shapeName">効果を適用するシェイプ。</param>
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             AngleFrequency（デフォルト 45）
@@ -1826,56 +1826,56 @@
             色の不透明度を変更します。
          </summary>
          <param name="colour">変更する色。</param>
-         <param name="opacity">不透明度（0 ～ 255）です。</param>
+         <param name="opacity">不透明度（0 ～ 255）。</param>
          <returns>変更された色。</returns>
       </member>
       <member name="M:LitDev.LDColours.GetRed(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             色の赤コンポーネントを取得します。
          </summary>
-         <param name="colour">コンポーネントを取得するための色です。</param>
+         <param name="colour">コンポーネントを取得するための色。</param>
          <returns>赤のコンポーネント（0 ～ 255）。</returns>
       </member>
       <member name="M:LitDev.LDColours.GetGreen(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             色の緑の成分を取得します。
          </summary>
-         <param name="colour">コンポーネントを取得するための色です。</param>
+         <param name="colour">コンポーネントを取得するための色。</param>
          <returns>緑のコンポーネント（0 ～ 255）。</returns>
       </member>
       <member name="M:LitDev.LDColours.GetBlue(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             色の青成分を取得します。
          </summary>
-         <param name="colour">コンポーネントを取得するための色です。</param>
+         <param name="colour">コンポーネントを取得するための色。</param>
          <returns>青のコンポーネント（0 ～ 255）。</returns>
       </member>
       <member name="M:LitDev.LDColours.GetOpacity(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             色の不透明度コンポーネントを取得します。
          </summary>
-         <param name="colour">コンポーネントを取得するための色です。</param>
-         <returns>不透明成分（0 ～ 255）です。</returns>
+         <param name="colour">コンポーネントを取得するための色。</param>
+         <returns>不透明成分（0 ～ 255）。</returns>
       </member>
       <member name="M:LitDev.LDColours.GetHue(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             色の色相成分を取得します。
          </summary>
-         <param name="colour">コンポーネントを取得するための色です。</param>
+         <param name="colour">コンポーネントを取得するための色。</param>
          <returns>色相成分（0 ～ 360）。</returns>
       </member>
       <member name="M:LitDev.LDColours.GetSaturation(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             色の彩度成分を取得します。
          </summary>
-         <param name="colour">コンポーネントを取得するための色です。</param>
+         <param name="colour">コンポーネントを取得するための色。</param>
          <returns>彩度成分（0 ～ 1）。</returns>
       </member>
       <member name="M:LitDev.LDColours.GetLightness(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             色の明度成分を取得します。
          </summary>
-         <param name="colour">コンポーネントを取得するための色です。</param>
+         <param name="colour">コンポーネントを取得するための色。</param>
          <returns>明度成分（0 ～ 1）。</returns>
       </member>
       <member name="T:LitDev.LDArray">
@@ -2012,7 +2012,7 @@
             入力配列は変更されず、並べ替える配列と同じサイズでインデックス配列を事前に作成する必要があります。
          </summary>
          <param name="array">インデックスの順序ソートを取得するための配列。</param>
-         <param name="index">ソートされた配列のインデックス順を保持する配列です。</param>
+         <param name="index">ソートされた配列のインデックス順を保持する配列。</param>
          <returns>
             成功のためには "FAILED" または ""。
          </returns>
@@ -2173,8 +2173,8 @@
             RichTextBox を追加します。
             ドラッグアンドドロップは、このコントロールに対して自動的に設定されます。
          </summary>
-         <param name="width">RichTextBox の幅です。</param>
-         <param name="height">RichTextBox の高さです。</param>
+         <param name="width">RichTextBox の幅。</param>
+         <param name="height">RichTextBox の高さ。</param>
          <returns>RichTextBox の名前。</returns>
       </member>
       <member name="M:LitDev.LDControls.AddContextMenu(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2404,7 +2404,7 @@
             チェックボックスのチェック状態を取得します。
          </summary>
          <param name="shapeName">状態を取得するためのチェックボックス。</param>
-         <returns>チェックボックスはチェックされた状態です。</returns>
+         <returns>チェックボックスはチェックされた状態。</returns>
       </member>
       <member name="M:LitDev.LDControls.SetCursorToEnd(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -2475,14 +2475,14 @@
             メディアプレーヤーの音量を設定します。
          </summary>
          <param name="shapeName">メディアプレーヤー名。</param>
-         <param name="volume">ボリューム（0 ～ 1）のデフォルトは 0.5 です。</param>
+         <param name="volume">ボリューム（0 ～ 1）のデフォルトは 0.5 。</param>
       </member>
       <member name="M:LitDev.LDControls.MediaPlayerSpeed(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             メディアプレーヤーの再生速度を設定します。
          </summary>
          <param name="shapeName">メディアプレーヤー名。</param>
-         <param name="speed">速度（0 ～ 100）はデフォルト 1（通常の再生）です。</param>
+         <param name="speed">速度（0 ～ 100）はデフォルト 1（通常の再生）。</param>
       </member>
       <member name="M:LitDev.LDControls.MediaPlayerLoad(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -2933,7 +2933,7 @@
             データビューエントリを列でソートします。
          </summary>
          <param name="shapeName">データビューコントロール。</param>
-         <param name="col">並べ替える列番号です。</param>
+         <param name="col">並べ替える列番号。</param>
          <param name="ascending">昇順（"True"）または降順（"False"）に並べ替えます。</param>
          <returns>"SUCCESS" または "FAILED"。</returns>
       </member>
@@ -2978,7 +2978,7 @@
          </summary>
          <param name="shapeName">データビューコントロール。</param>
          <param name="row">行番号。これを 0 に設定すると、交互の行がすべて設定されます。</param>
-         <param name="background">背景色です。</param>
+         <param name="background">背景色。</param>
          <param name="foreground">フォアグラウンドカラー。</param>
          <returns>"SUCCESS" または "FAILED"。</returns>
       </member>
@@ -3469,8 +3469,8 @@
          <summary>
             3DView（GraphicsWindow シェイプ）を追加します。
          </summary>
-         <param name="width">3DView の幅です。</param>
-         <param name="height">3DView の高さです。</param>
+         <param name="width">3DView の幅。</param>
+         <param name="height">3DView の高さ。</param>
          <param name="performance">
             品質のスピードに賛成するフラグ "True" または "False"。
             "True" はビジュアルクリッピング（3DView を幅と高さにクリップする）、ヒットテスト（未使用）、アンチエイリアス（不要）を削除します。
@@ -3514,7 +3514,7 @@
          <summary>
             ジオメトリオブジェクトを追加します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="points">空白またはコロン区切りのポイント座標のリスト。</param>
          <param name="indices">各三角形のインデックスの空白またはコロン区切りリスト（外側の面の場合は反時計回り）。</param>
          <param name="normals">オプションで、各ノードまたは "" の外側の法線のリストを空白またはコロンで区切ったリスト。</param>
@@ -3533,7 +3533,7 @@
             ジオメトリオブジェクトにイメージを追加します。
             ジオメトリ "スキン" は、1 つの画像内に複数のセグメント画像を含むことができる。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">ジオメトリオブジェクト。</param>
          <param name="textures">
             各ノードのテクスチャ座標の空白またはコロン区切りリスト。
@@ -3557,7 +3557,7 @@
          <summary>
             カメラビューの方向と位置を移動します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="yaw">左 / 右回転度（ヨー）。</param>
          <param name="pitch">アップ / ダウンの度合い（度）（ピッチ）。</param>
          <param name="roll">ビュー方向の度合い（回転）に関するスピンビュー。</param>
@@ -3567,7 +3567,7 @@
          <summary>
             カメラの位置をリセットし、方向と上方向ベクトルを表示します（オプション）。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="xPos">カメラの x 位置。</param>
          <param name="yPos">カメラの y 位置。</param>
          <param name="zPos">カメラの z 位置。</param>
@@ -3583,7 +3583,7 @@
             視野角、遠近距離、遠方距離を設定します。
             これらはすべて、基本的な視点のカメラプロパティです。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="nearDistance">
             近いクリッピング距離（例えば壁ヒット検出などの近くの物体を改善することができる）。
             負の値は 0.001 です（デフォルトは 0.125）。
@@ -3601,28 +3601,28 @@
          <summary>
             カメラの位置を取得します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <returns>カメラの位置座標の配列。</returns>
       </member>
       <member name="M:LitDev.LD3DView.GetCameraDirection(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             カメラの方向を取得します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <returns>カメラ方向ベクトルの配列。</returns>
       </member>
       <member name="M:LitDev.LD3DView.GetCameraUpDirection(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             カメラを上に向ける。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <returns>カメラの上方向ベクトルの配列。</returns>
       </member>
       <member name="M:LitDev.LD3DView.AddDirectionalLight(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             指向性光源を追加します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="colour">明るい色。</param>
          <param name="xDir">光の x 方向。</param>
          <param name="yDir">光の y 方向。</param>
@@ -3633,7 +3633,7 @@
          <summary>
             環境光源を追加します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="colour">明るい色。</param>
          <returns>3DView ライトの名前。</returns>
       </member>
@@ -3641,11 +3641,11 @@
          <summary>
             指向性スポット光源を追加します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="colour">明るい色。</param>
-         <param name="xPos">光の x 位置です。</param>
-         <param name="yPos">光の y 位置です。</param>
-         <param name="zPos">光の z 位置です。</param>
+         <param name="xPos">光の x 位置。</param>
+         <param name="yPos">光の y 位置。</param>
+         <param name="zPos">光の z 位置。</param>
          <param name="xDir">光の x 方向。</param>
          <param name="yDir">光の y 方向。</param>
          <param name="zDir">光の z 方向。</param>
@@ -3657,11 +3657,11 @@
          <summary>
             無指向性の点光源を追加します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="colour">明るい色。</param>
-         <param name="xPos">光の x 位置です。</param>
-         <param name="yPos">光の y 位置です。</param>
-         <param name="zPos">光の z 位置です。</param>
+         <param name="xPos">光の x 位置。</param>
+         <param name="yPos">光の y 位置。</param>
+         <param name="zPos">光の z 位置。</param>
          <param name="range">光の範囲。</param>
          <returns>3DView ライトの名前。</returns>
       </member>
@@ -3669,7 +3669,7 @@
          <summary>
             ジオメトリオブジェクトを中心に回転します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">ジオメトリオブジェクト。</param>
          <param name="x">回転するベクトルの X 方向。</param>
          <param name="y">回転するベクトルの Y 方向。</param>
@@ -3680,7 +3680,7 @@
          <summary>
             ジオメトリオブジェクトの中心を回転させます（2 番目の回転）。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">ジオメトリオブジェクト。</param>
          <param name="x">回転するベクトルの X 方向。</param>
          <param name="y">回転するベクトルの Y 方向。</param>
@@ -3691,7 +3691,7 @@
          <summary>
             ジオメトリオブジェクトをその中心（第 3 回転）について回転します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">ジオメトリオブジェクト。</param>
          <param name="x">回転するベクトルの X 方向。</param>
          <param name="y">回転するベクトルの Y 方向。</param>
@@ -3702,7 +3702,7 @@
          <summary>
             ジオメトリオブジェクトの中心を基準にして拡大 / 縮小（ズーム）します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">ジオメトリオブジェクト。</param>
          <param name="scaleX">X スケールファクタ。</param>
          <param name="scaleY">Y スケールファクタ。</param>
@@ -3712,7 +3712,7 @@
          <summary>
             ジオメトリオブジェクトを変換（移動）します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">ジオメトリオブジェクト。</param>
          <param name="dx">X 方向の平行移動。</param>
          <param name="dy">Y 方向の平行移動</param>
@@ -3722,7 +3722,7 @@
          <summary>
             ライトオブジェクトまたはジオメトリオブジェクトに対してアクションを実行します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">ジオメトリまたはライトの名前。</param>
          <param name="action">
             実行するアクション。
@@ -3736,7 +3736,7 @@
          <summary>
             ジオメトリオブジェクトとそのすべてのプロパティの完全なコピーを作成します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">コピーするオブジェクトの名前。</param>
          <returns>新しいコピーされた 3DView オブジェクト名。</returns>
       </member>
@@ -3745,16 +3745,16 @@
             3DView でヒットテストを実行します。
             座標の負の値は、デフォルトで画面中心（カメラビュー）になります。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
-         <param name="x">3DView 内の GraphicsWindow 座標の x 座標です。</param>
-         <param name="y">3DView 内の GraphicsWindow 座標の y 座標です。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
+         <param name="x">3DView 内の GraphicsWindow 座標の x 座標。</param>
+         <param name="y">3DView 内の GraphicsWindow 座標の y 座標。</param>
          <returns>ヒットしたオブジェクト名とその距離を持つ配列、またはヒットしなかった配列。</returns>
       </member>
       <member name="M:LitDev.LD3DView.Freeze(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             ジオメトリオブジェクトをフリーズしてパフォーマンスを少し向上させてください。それを変更することはできません。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">フリーズするオブジェクト。</param>
       </member>
       <member name="M:LitDev.LD3DView.AnimateRotation(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -3762,7 +3762,7 @@
             ジオメトリの回転を軸ベクトルを中心にアニメーション化します。
             これは第 2 の回転を使用し、第 1 の回転は他の軸の回転に対してまだ利用可能である。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">アニメーション化するジオメトリオブジェクト。</param>
          <param name="xDir">回転するベクトルの X 方向。</param>
          <param name="yDir">回転するベクトルの Y 方向。</param>
@@ -3777,7 +3777,7 @@
             ジオメトリの回転を軸ベクトルを中心にアニメーション化します。
             これは第 3 の回転を使用し、第 1 の回転は他の軸の回転に対してまだ利用可能である。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">アニメーション化するジオメトリオブジェクト。</param>
          <param name="xDir">回転するベクトルの X 方向。</param>
          <param name="yDir">回転するベクトルの Y 方向。</param>
@@ -3791,10 +3791,10 @@
          <summary>
             ジオメトリ変換をアニメートします。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">アニメーション化するジオメトリオブジェクト。</param>
          <param name="x">アニメートする X 位置。</param>
-         <param name="y">アニメーションする位置は Y です。</param>
+         <param name="y">アニメーションする位置は Y 。</param>
          <param name="z">アニメーションする Z 位置。</param>
          <param name="duration">アニメーションの長さ（秒）。</param>
       </member>
@@ -3803,7 +3803,7 @@
             ファイルからジオメトリモデルをロードします。
             サポートされている形式には、3ds、lwo、obj、objz、stl、および off があります。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="fileName">
             ロードするファイル。
             多くの場合、同じフォルダ内に同じ名前の画像ファイルなどが必要です。
@@ -3814,7 +3814,7 @@
          <summary>
             （0,0,0）を中心とする球体ジオメトリオブジェクトを追加します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="radius">球の半径。</param>
          <param name="divisions">球の区画で、デフォルトは 10（三角形の数と滑らかさに影響します）。</param>
          <param name="colour">オブジェクトのカラーまたはグラデーションブラシ。</param>
@@ -3831,7 +3831,7 @@
          <summary>
             チューブジオメトリオブジェクトを追加します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="path">空白またはコロン区切りの 3D ポイント座標のリスト。</param>
          <param name="diameter">チューブの直径。</param>
          <param name="divisions">チューブの半径方向の分割（デフォルトは 10）（三角形の数と滑らかさに影響します）。</param>
@@ -3850,7 +3850,7 @@
             回転ジオメトリオブジェクトを追加します。これは、（0,0,0）で始まり上を指すサーフェスです。
             その形状は、設定点（Y、Z）によって定義され、ここで、Y は、0 から表面に沿った垂直距離であり、Z は、回転半径である。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="path">回転形状を記述する 2D 点座標のリストをスペースまたはコロンで区切ったもの。</param>
          <param name="divisions">半径方向の分割、デフォルトは 10（三角形と滑らかさの数に影響します）。</param>
          <param name="colour">オブジェクトのカラーまたはグラデーションブラシ。</param>
@@ -3868,14 +3868,14 @@
             ジオメトリの外側の法線を反転させます。
             たとえば、球の内側のサーフェスを外側のサーフェス（スカイドーム）の代わりに可視のサーフェスにします。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">ジオメトリオブジェクトは、外向きの法線を逆転させます。</param>
       </member>
       <member name="M:LitDev.LD3DView.AddCube(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             （0,0,0）を中心とするキューブジオメトリオブジェクトを追加します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="sideLength">立方体の一辺の長さ。</param>
          <param name="colour">オブジェクトのカラーまたはグラデーションブラシ。</param>
          <param name="materialType">
@@ -3891,7 +3891,7 @@
          <summary>
             （0,0,0）から始まる矢印ジオメトリオブジェクトを追加します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト</param>
          <param name="length">矢印の長さ。</param>
          <param name="diameter">矢印軸の直径。</param>
          <param name="arrowLength">矢頭の長さ。</param>
@@ -3912,7 +3912,7 @@
             （0,0,0）を中心とする円錐を持つジオメトリオブジェクトを追加します。
             シリンダは baseRadius = topRadius の円錐です。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="baseRadius">ベースの半径。</param>
          <param name="topRadius">切り捨てられた場合の上部の半径（デフォルトは 0）。</param>
          <param name="height">コーンの高さ</param>
@@ -3931,7 +3931,7 @@
          <summary>
             （0,0,0）を中心とするピラミッドジオメトリオブジェクトを追加します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="sideLength">ベースの半径。</param>
          <param name="height">コーンの高さ</param>
          <param name="colour">オブジェクトのカラーまたはグラデーションブラシ。</param>
@@ -3948,7 +3948,7 @@
          <summary>
             （0,0,0）を中心とするパイプジオメトリオブジェクトを追加します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="length">パイプの長さ。</param>
          <param name="innerDiameter">パイプの内径。</param>
          <param name="outerDiameter">パイプの外径。</param>
@@ -3967,7 +3967,7 @@
          <summary>
             （0,0,0）を中心とする 20 面体ジオメトリオブジェクトを追加します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="radius">二十面体の半径。</param>
          <param name="colour">オブジェクトのカラーまたはグラデーションブラシ。</param>
          <param name="materialType">
@@ -3983,9 +3983,9 @@
          <summary>
             （0,0,0）を中心とする矩形ジオメトリオブジェクトを追加します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
-         <param name="width">長方形の幅です。</param>
-         <param name="height">長方形の高さです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
+         <param name="width">長方形の幅。</param>
+         <param name="height">長方形の高さ。</param>
          <param name="colour">オブジェクトのカラーまたはグラデーションブラシ。</param>
          <param name="materialType">
             オブジェクトの素材。
@@ -4001,7 +4001,7 @@
             常にカメラに向かって回転するオブジェクトを設定します。
             これは 2 番目と 3 番目の回転を使用します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">ジオメトリオブジェクト。</param>
       </member>
       <member name="M:LitDev.LD3DView.SetCentre(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -4012,11 +4012,11 @@
             ジオメトリ内にある必要はありません。
             座標値が "" に設定されている場合は、デフォルト値が使用されます。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">ジオメトリオブジェクト。</param>
          <param name="x">中心の x 座標。</param>
          <param name="y">中心の y 座標。</param>
-         <param name="z">中心の z 座標です。</param>
+         <param name="z">中心の z 座標。</param>
          <param name="options">
             センター設定を制御するオプション。倍数を設定することができます。"R1R2R3" を押してすべての回転を設定します。
             "R1" 最初の回転変換
@@ -4030,7 +4030,7 @@
             ジオメトリのバウンディングボックス範囲を取得します。
             これは現在の位置です（変換後）。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">ジオメトリオブジェクト。</param>
          <returns>
             次元の配列または "FAILED"
@@ -4046,7 +4046,7 @@
          <summary>
             既存のジオメトリのマテリアルをリセットします。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">ジオメトリオブジェクト。</param>
          <param name="colour">オブジェクトのカラーまたはグラデーションブラシ。</param>
          <param name="materialType">
@@ -4061,7 +4061,7 @@
          <summary>
             既存のジオメトリの変換された（現在の）中心位置を取得します。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">ジオメトリオブジェクト。</param>
          <returns>
             変換された位置または "FAILED" の配列。
@@ -4075,7 +4075,7 @@
             ジオメトリの Y および Z 方向を回転（スワップ）します。
             これは、Z 上の規則で作成されたジオメトリに役立ち、この拡張で使用される Y の上方向に適用されます。
          </summary>
-         <param name="shapeName">3DView オブジェクトです。</param>
+         <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">ジオメトリオブジェクト。</param>
       </member>
       <member name="P:LitDev.LD3DView.SpecularExponent">
@@ -4172,7 +4172,7 @@
             デバイスを初期化して接続する必要があります。
             エンコーディングも設定する必要があります。
          </summary>
-         <returns>受信した文字列、失敗した場合は "" です。</returns>
+         <returns>受信した文字列、失敗した場合は "" 。</returns>
       </member>
       <member name="M:LitDev.LDBlueTooth.SendFile(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -4323,7 +4323,7 @@
          <summary>target pfad、arguments など（IWshRuntimeLibrary）のような lnk / url ショートカットリンクのプロパティを取得します。</summary>
          <param name="shortcut">lnk / url ショートカットリンクファイルの完全パス。</param>
          <param name="property">
-            取得するプロパティ（大文字小文字に依存しない、* Urls の場合）：
+            取得するプロパティ（大文字小文字に依存しない、* は url 用）：
             "ターゲット" ターゲットパス *
             "Args" 引数
             "フォルダ" 作業ディレクトリ
@@ -4520,7 +4520,7 @@
             以前にインクルードされたメソッドを呼び出します。
          </summary>
          <param name="method">メソッド名。</param>
-         <param name="args">メソッド引数、none の場合は ""、1 つの値の場合は 1 つ以上の値の配列。</param>
+         <param name="args">メソッド引数、ない場合は ""、1 つの値の場合は 1 つ以上の値の配列。</param>
          <returns>通話の結果または "FAILED"。</returns>
       </member>
       <member name="M:LitDev.LDInline.Get(Microsoft.SmallBasic.Library.Primitive)">
@@ -4610,7 +4610,7 @@
             追加する値。
          </param>
          <returns>
-            リスト内のアイテムの数。失敗した場合は -1
+            リスト内のアイテムの数。失敗した場合は -1。
          </returns>
       </member>
       <member name="M:LitDev.LDList.Append(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -4624,7 +4624,7 @@
             listName1 に追加する 2 番目のリストの名前。
          </param>
          <returns>
-            リスト内のアイテムの数。失敗した場合は -1
+            リスト内のアイテムの数。失敗した場合は -1。
          </returns>
       </member>
       <member name="M:LitDev.LDList.Count(Microsoft.SmallBasic.Library.Primitive)">
@@ -4635,7 +4635,7 @@
             リストの名前。
          </param>
          <returns>
-            リスト内のアイテムの数。失敗した場合は -1
+            リスト内のアイテムの数。失敗した場合は -1。
          </returns>
       </member>
       <member name="M:LitDev.LDList.RemoveAt(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -4649,7 +4649,7 @@
             削除する値のインデックス。
          </param>
          <returns>
-            リスト内のアイテムの数。失敗した場合は -1
+            リスト内のアイテムの数。失敗した場合は -1。
          </returns>
       </member>
       <member name="M:LitDev.LDList.GetAt(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -4678,7 +4678,7 @@
             設定する値。
          </param>
          <returns>
-            リスト内のアイテムの数。失敗した場合は -1
+            リスト内のアイテムの数。失敗した場合は -1。
          </returns>
       </member>
       <member name="M:LitDev.LDList.InsertAt(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -4695,7 +4695,7 @@
             挿入する値。
          </param>
          <returns>
-            リスト内のアイテムの数。失敗した場合は -1
+            リスト内のアイテムの数。失敗した場合は -1。
          </returns>
       </member>
       <member name="M:LitDev.LDList.IndexOf(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -4732,7 +4732,7 @@
             リストの名前。
          </param>
          <returns>
-            リスト内のアイテムの数。失敗した場合は -1
+            リスト内のアイテムの数。失敗した場合は -1。
          </returns>
       </member>
       <member name="M:LitDev.LDList.Clear(Microsoft.SmallBasic.Library.Primitive)">
@@ -4743,7 +4743,7 @@
             リストの名前。
          </param>
          <returns>
-            リスト内のアイテムの数。失敗した場合は -1
+            リスト内のアイテムの数。失敗した場合は -1。
          </returns>
       </member>
       <member name="M:LitDev.LDList.SortByNumber(Microsoft.SmallBasic.Library.Primitive)">
@@ -4755,7 +4755,7 @@
             リストの名前。
          </param>
          <returns>
-            リスト内のアイテムの数。失敗した場合は -1
+            リスト内のアイテムの数。失敗した場合は -1。
          </returns>
       </member>
       <member name="M:LitDev.LDList.SortByText(Microsoft.SmallBasic.Library.Primitive)">
@@ -4767,7 +4767,7 @@
             リストの名前。
          </param>
          <returns>
-            リスト内のアイテムの数。失敗した場合は -1
+            リスト内のアイテムの数。失敗した場合は -1。
          </returns>
       </member>
       <member name="M:LitDev.LDList.SubList(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -4832,7 +4832,7 @@
             完全一致（大文字小文字を区別しない）"True" または一致するテキストは、リスト "False" に含まれています。
          </param>
          <returns>
-            リスト内のアイテムの数。失敗した場合は -1
+            リスト内のアイテムの数。失敗した場合は -1。
          </returns>
       </member>
       <member name="M:LitDev.LDList.Distinct(Microsoft.SmallBasic.Library.Primitive)">
@@ -4908,7 +4908,7 @@
             既存のファイル "True" の末尾に追加するか、新規ファイル "False" を作成します。
          </param>
          <returns>
-            リスト内のアイテムの数。失敗した場合は -1
+            リスト内のアイテムの数。失敗した場合は -1。
          </returns>
       </member>
       <member name="M:LitDev.LDList.Read(Microsoft.SmallBasic.Library.Primitive)">
@@ -4930,7 +4930,7 @@
             リストの名前。
          </param>
          <returns>
-            リスト内のアイテムの数。失敗した場合は -1
+            リスト内のアイテムの数。失敗した場合は -1。
          </returns>
       </member>
       <member name="M:LitDev.LDList.ToArray(Microsoft.SmallBasic.Library.Primitive)">
@@ -4951,7 +4951,7 @@
             配列インデックスはリストによって無視されます。
          </summary>
          <param name="sbArray">
-            SmallBasic 配列です。
+            SmallBasic 配列。
          </param>
          <returns>作成されたリスト。</returns>
       </member>
@@ -4960,7 +4960,7 @@
             SmallBasic 配列のインデックスをリストにコピーします。
          </summary>
          <param name="sbArray">
-            SmallBasic 配列です。
+            SmallBasic 配列。
          </param>
          <returns>作成されたリスト。</returns>
       </member>
@@ -5034,7 +5034,7 @@
          <summary>
             現在接続しているクライアントのリストを取得します。
          </summary>
-         <returns>現在のクライアント名の配列、または none の場合は "" です。</returns>
+         <returns>現在のクライアント名の配列、または、なしの場合は "" 。</returns>
       </member>
       <member name="P:LitDev.LDClient.Name">
          <summary>
@@ -5119,7 +5119,7 @@
             auto オプションは、サーバーとすべてのクライアントで同じにする必要があります。
          </param>
          <returns>
-            現在の接続パラメータ ip：port（"192.168.1.60:100" など）、または "FAILED" です。
+            現在の接続パラメータ ip：port（"192.168.1.60:100" など）、または "FAILED" 。
             これは、クライアントからの接続に使用するパラメータです。
          </returns>
       </member>
@@ -5127,7 +5127,7 @@
          <summary>
             現在接続しているクライアントのリストを取得します。
          </summary>
-         <returns>現在のクライアント名の配列、または none の場合は "" です。</returns>
+         <returns>現在のクライアント名の配列、または、ない場合は "" 。</returns>
       </member>
       <member name="M:LitDev.LDServer.Stop">
          <summary>
@@ -5453,8 +5453,8 @@
             ListView を追加して、データベースクエリ結果を表示します。
             これは、照会結果の読み取り専用の表示です。
          </summary>
-         <param name="width">ListView の幅です。</param>
-         <param name="height">ListView の高さです。</param>
+         <param name="width">ListView の幅。</param>
+         <param name="height">ListView の高さ。</param>
          <returns>ListView コントロール。</returns>
       </member>
       <member name="M:LitDev.LDDataBase.Command(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -5570,7 +5570,7 @@
          </summary>
          <param name="cypher">暗号化されたテキスト（cypher）。</param>
          <param name="password">暗号化のためのパスワードキー。</param>
-         <returns>元の暗号化されていないテキスト、またはパスワードと暗号化キーが一致しない場合は "" です。</returns>
+         <returns>元の暗号化されていないテキスト、またはパスワードと暗号化キーが一致しない場合は "" 。</returns>
       </member>
       <member name="M:LitDev.LDEncryption.MD5Hash(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -5662,7 +5662,7 @@
          </summary>
          <param name="text">検索するテキスト。</param>
          <param name="find">検索するサブテキスト。</param>
-         <returns>各サブテキストの開始位置を持つ配列、または 0 の場合は 0 です。</returns>
+         <returns>各サブテキストの開始位置を持つ配列、または、ない場合は 0 。</returns>
       </member>
       <member name="M:LitDev.LDText.GetWidth(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -5690,20 +5690,20 @@
          <summary>
             高速文字列オブジェクトを "" にリセットします。
          </summary>
-         <param name="fastString">高速の文字列オブジェクトです。</param>
+         <param name="fastString">高速の文字列オブジェクト。</param>
       </member>
       <member name="M:LitDev.LDText.FastStringAppend(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             高速文字列オブジェクトに文字列値を追加します。
          </summary>
-         <param name="fastString">高速の文字列オブジェクトです。</param>
+         <param name="fastString">高速の文字列オブジェクト。</param>
          <param name="text">追加するテスト。</param>
       </member>
       <member name="M:LitDev.LDText.FastStringGet(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             現在のテキストを高速の文字列で取得します。
          </summary>
-         <param name="fastString">高速の文字列オブジェクトです。</param>
+         <param name="fastString">高速の文字列オブジェクト。</param>
          <returns>現在の高速文字列テキスト。</returns>
       </member>
       <member name="T:LitDev.LDSound">
@@ -5849,7 +5849,7 @@
             バイトのどのビットがセットされているかを示す 1 と 0 の 8 要素配列からバイトを設定します。
          </summary>
          <param name="data">1 と 0 の 8 要素配列（小さいビットが最初）。</param>
-         <returns>バイト番号（0 ～ 255）または失敗した場合は -1</returns>
+         <returns>バイト番号（0 ～ 255）または失敗した場合は -1。</returns>
       </member>
       <member name="M:LitDev.LDHID.FindDevices">
          <summary>
@@ -5901,7 +5901,7 @@
             値 0 は、スクロールバーが表示されないようにします。
          </summary>
          <param name="width">スクロール可能な領域の幅。</param>
-         <param name="height">スクロール可能領域の高さです。</param>
+         <param name="height">スクロール可能領域の高さ。</param>
       </member>
       <member name="M:LitDev.LDScrollBars.Modify(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -6302,7 +6302,7 @@
       </member>
       <member name="P:LitDev.LDGraphicsWindow.State">
          <summary>
-            GraphicsWindow 状態（Normal 0、Minimized 1、Maximized 2）です。
+            GraphicsWindow 状態（Normal 0、Minimized 1、Maximized 2）。
          </summary>
       </member>
       <member name="P:LitDev.LDGraphicsWindow.Icon">
@@ -6452,7 +6452,7 @@
             Web スペリングや代替検索提案の Bing 検索を実行します。
          </summary>
          <param name="search">検索テキスト。</param>
-         <returns>スペルや代替候補の配列、または提案が見つからない場合は "" です。</returns>
+         <returns>スペルや代替候補の配列、または提案が見つからない場合は "" 。</returns>
       </member>
       <member name="M:LitDev.LDSearch.GetProof(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -6460,7 +6460,7 @@
          </summary>
          <param name="text">証明するテキスト。</param>
          <param name="mode">モード "Proof"（長いテキストの場合はデフォルト）または "Spell"（短い単語または単一単語のチェックの場合）。</param>
-         <returns>スペルや他の提案の配列、または提案が見つからない場合は "" です。</returns>
+         <returns>スペルや他の提案の配列、または提案が見つからない場合は "" 。</returns>
       </member>
       <member name="P:LitDev.LDSearch.Count">
          <summary>
@@ -6549,7 +6549,7 @@
             これが最後に呼び出されてから最大間隔まで遅延します。
             偶数の演奏速度を維持するためにゲームループに役立ちます。
          </summary>
-         <param name="delay">最大遅延は ms です。</param>
+         <param name="delay">最大遅延 ms 。</param>
       </member>
       <member name="P:LitDev.LDStopwatch.Frequency">
          <summary>
@@ -7220,7 +7220,7 @@
          <param name="x">テキストの左の位置。</param>
          <param name="y">テキストの先頭位置。</param>
          <param name="colour">
-            テキストの色です。
+            テキストの色。
          </param>
       </member>
       <member name="M:LitDev.LDImage.NormalMap(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -7915,7 +7915,7 @@
             新しい計測ファイルを開いて実行して、それをデバッグしてください。
             問題が見つかったら、オリジナルファイルと再インストゥルメントで修正して修正ファイルをデバッグします。
          </summary>
-         <param name="fileName">インストルメントの Smallbasic ファイル（* .sb）。</param>
+         <param name="fileName">インストルメントの Smallbasic ファイル（*.sb）。</param>
       </member>
       <member name="M:LitDev.LDDebug.Break(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -8013,7 +8013,7 @@
             フォルダ（ディレクトリ）を取得するためのダイアログ。
          </summary>
          <param name="InitialFolder">最初のフォルダ、または最後に選択したフォルダの ""</param>
-         <returns>選択されたフォルダへのフルパス、または選択されていない場合は "" です。</returns>
+         <returns>選択されたフォルダへのフルパス、または選択されていない場合は "" 。</returns>
       </member>
       <member name="M:LitDev.LDDialogs.Font(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -8028,7 +8028,7 @@
             結果 [1] はフォント名
             結果 [2] はフォントサイズ
             result [3] は Font bold（"True" または "False"）です
-            結果 [4] はフォントイタリック（"True" または "False"）です。
+            結果 [4] はフォントイタリック（"True" または "False"）。
          </returns>
       </member>
       <member name="M:LitDev.LDDialogs.Colour">
@@ -8109,7 +8109,7 @@
          <param name="distMean">分布の平均。</param>
          <param name="distSTD">分布の標準偏差。</param>
          <param name="size">ポイント数。</param>
-         <returns>正規分布（Array [x] = y）の 1 次元配列です。</returns>
+         <returns>正規分布（Array [x] = y）の 1 次元配列。</returns>
       </member>
       <member name="M:LitDev.LDStatistics.DistBinomial(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -8126,16 +8126,16 @@
             Uniform 分布を持つ配列を作成します。
          </summary>
          <param name="rangeMin">最小値。</param>
-         <param name="rangeMax">最大値です。</param>
+         <param name="rangeMax">最大値。</param>
          <param name="size">ポイント数。</param>
-         <returns>Uniform 分布の 1D 配列（Array [x] = y）です。</returns>
+         <returns>Uniform 分布の 1D 配列（Array [x] = y）。</returns>
       </member>
       <member name="M:LitDev.LDStatistics.DistTriangular(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             三角分布を持つ配列を作成します。
          </summary>
          <param name="rangeMin">最小値。</param>
-         <param name="rangeMax">最大値です。</param>
+         <param name="rangeMax">最大値。</param>
          <param name="size">ポイント数。</param>
          <returns>三角分布（Array [x] = y）の 1 次元配列。</returns>
       </member>
@@ -9295,7 +9295,7 @@
       </member>
       <member name="P:LitDev.LDGraph.BorderColour">
          <summary>
-            境界線の色です。
+            境界線の色。
          </summary>
       </member>
       <member name="P:LitDev.LDGraph.InteriorColour">
@@ -9305,7 +9305,7 @@
       </member>
       <member name="P:LitDev.LDGraph.TextColour">
          <summary>
-            テキストの色です。
+            テキストの色。
          </summary>
       </member>
       <member name="P:LitDev.LDGraph.AxesColour">
@@ -9357,12 +9357,12 @@
       </member>
       <member name="P:LitDev.LDEvents.FilePath">
          <summary>
-            FileSystem ファイル変更イベントを監視するルートパスです（デフォルトは "C:"）。
+            FileSystem ファイル変更イベントを監視するルートパス（デフォルトは "C:"）。
          </summary>
       </member>
       <member name="P:LitDev.LDEvents.FileFilter">
          <summary>
-            FileSystem ファイル変更イベントのファイルフィルタ（デフォルトは "*.*"）です。
+            FileSystem ファイル変更イベントのファイルフィルタ（デフォルトは "*.*"）。
          </summary>
       </member>
       <member name="P:LitDev.LDEvents.LastFileChanged">
@@ -9787,7 +9787,7 @@
             X 方向には 1 つの形状しか続かない。次のシェイプの設定を解除するには、shapeName を "" に設定します。
          </summary>
          <param name="shapeName">
-            それに続く形や "" です。
+            それに続く形や "" 。
          </param>
          <returns>
             なし。
@@ -9800,7 +9800,7 @@
             Y 方向には 1 つの形状しか続かない。次のシェイプの設定を解除するには、shapeName を "" に設定します。
          </summary>
          <param name="shapeName">
-            それに続く形や "" です。
+            それに続く形や "" 。
          </param>
          <returns>
             なし。
@@ -9814,9 +9814,9 @@
          </summary>
          <param name="shapeName">形状をボックスまたは "" にします。</param>
          <param name="x1">ボックスの左の x 座標。</param>
-         <param name="y1">ボックスの上部 y 座標です。</param>
+         <param name="y1">ボックスの上部 y 座標。</param>
          <param name="x2">ボックスの右の x 座標。</param>
-         <param name="y2">ボックスの下の y 座標です。</param>
+         <param name="y2">ボックスの下の y 座標。</param>
       </member>
       <member name="M:LitDev.LDPhysics.RemoveChain(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -9892,16 +9892,16 @@
             ソリッド境界を設定します（GraphicsWindow の外側の境界を配置すると境界が削除されます）。
          </summary>
          <param name="left">
-            左境界 X 値です。
+            左境界 X 値。
          </param>
          <param name="right">
-            右境界 X 値です。
+            右境界 X 値。
          </param>
          <param name="top">
-            上端の Y 値です。
+            上端の Y 値。
          </param>
          <param name="bottom">
-            底（地面）の境界 Y 値です。
+            底（地面）の境界 Y 値。
          </param>
          <returns>
             なし。
@@ -10200,7 +10200,7 @@
          <param name="posY">爆発の Y 座標。</param>
          <param name="power">爆発力、これは爆発粒子の初期速度です。</param>
          <param name="damping">ブラストのダンピングは、この値が小さいほどブラスト範囲が大きくなります（デフォルトは 10）。</param>
-         <param name="colour">爆発粒子の任意の色です（none の場合は ""）。</param>
+         <param name="colour">爆発粒子の任意の色です（ない場合は ""）。</param>
       </member>
       <member name="M:LitDev.LDPhysics.ToggleMoving(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -10331,7 +10331,7 @@
       </member>
       <member name="P:LitDev.LDPhysics.ChainColour">
          <summary>
-            チェーンに使用される色です。
+            チェーンに使用される色。
          </summary>
       </member>
       <member name="P:LitDev.LDPhysics.LoadImagesAsCircles">
@@ -10346,7 +10346,7 @@
       </member>
       <member name="P:LitDev.LDPhysics.RopeColour">
          <summary>
-            ロープに使用される色です。
+            ロープに使用される色。
          </summary>
       </member>
       <member name="P:LitDev.LDPhysics.Scaling">
@@ -10435,7 +10435,7 @@
             開いているシリアルポートを閉じます。
          </summary>
          <returns>
-            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれかです。
+            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれか。
          </returns>
       </member>
       <member name="M:LitDev.LDCommPort.AvailablePorts">
@@ -10454,7 +10454,7 @@
             ポートに書き込まれるバイト。
          </param>
          <returns>
-            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれかです。
+            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれか。
          </returns>
       </member>
       <member name="M:LitDev.LDCommPort.TXString(Microsoft.SmallBasic.Library.Primitive)">
@@ -10465,7 +10465,7 @@
             送信される文字列値。
          </param>
          <returns>
-            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれかです。
+            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれか。
          </returns>
       </member>
       <member name="M:LitDev.LDCommPort.SetHandshake(Microsoft.SmallBasic.Library.Primitive)">
@@ -10476,7 +10476,7 @@
             "H" はハードウェアフロー制御を、"HX" はハードウェアおよびソフトウェアフロー制御を、"X" はソフトウェア制御を、その他の文字はクリアする。
          </param>
          <returns>
-            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれかです。
+            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれか。
          </returns>
       </member>
       <member name="M:LitDev.LDCommPort.SetEncoding(Microsoft.SmallBasic.Library.Primitive)">
@@ -10488,7 +10488,7 @@
             "Ascii"（デフォルト）、"Unicode"、"UTF7"、"UTF8"、"UTF32" または "BigEndianUnicode"。
          </param>
          <returns>
-            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれかです。
+            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれか。
          </returns>
       </member>
       <member name="M:LitDev.LDCommPort.SetParity(Microsoft.SmallBasic.Library.Primitive)">
@@ -10500,7 +10500,7 @@
             "None"（デフォルト）、"Even"、"Mark"、"Odd" または "Space"。
          </param>
          <returns>
-            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれかです。
+            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれか。
          </returns>
       </member>
       <member name="M:LitDev.LDCommPort.SetDataBits(Microsoft.SmallBasic.Library.Primitive)">
@@ -10513,7 +10513,7 @@
             5 ～ 8（デフォルト）。
          </param>
          <returns>
-            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれかです。
+            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれか。
          </returns>
       </member>
       <member name="M:LitDev.LDCommPort.SetStopBits(Microsoft.SmallBasic.Library.Primitive)">
@@ -10525,7 +10525,7 @@
             "1"（デフォルト）、"None"、"OnePointFive" または "Two"。
          </param>
          <returns>
-            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれかです。
+            "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれか。
          </returns>
       </member>
       <member name="P:LitDev.LDCommPort.LastPort">
@@ -10686,7 +10686,7 @@
             形状の名前。
          </param>
          <param name="x">
-            シェイプを回転させるための X 座標です。
+            シェイプを回転させるための X 座標。
          </param>
          <param name="y">
             シェイプを回転させるための Y 座標。
@@ -10746,7 +10746,7 @@
          <param name="numPoint">ポリゴン面の数。</param>
          <param name="radius">中央からコーナーまでの距離。</param>
          <returns>
-            正多角形の名前です。
+            正多角形の名前。
          </returns>
       </member>
       <member name="M:LitDev.LDShapes.OverlapBox(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -10858,7 +10858,7 @@
             現在の GraphicsWindow フォントが使用されます。
          </param>
          <param name="background">
-            背景色です。
+            背景色。
          </param>
          <param name="foreground">
             フォアグラウンド（ペン）の色。
@@ -10887,16 +10887,16 @@
             以前に作成されたグラデーションまたはイメージブラシ（LDShapes.BrushGradient LDShapes.BrushImage）。
          </param>
          <param name="x">
-            長方形の x 座標です。
+            長方形の x 座標。
          </param>
          <param name="y">
             長方形の y 座標。
          </param>
          <param name="width">
-            長方形の幅です。
+            長方形の幅。
          </param>
          <param name="height">
-            長方形の高さです。
+            長方形の高さ。
          </param>
          <returns>
             なし。
@@ -10910,16 +10910,16 @@
             以前に作成されたグラデーションまたはイメージブラシ（LDShapes.BrushGradient LDShapes.BrushImage）。
          </param>
          <param name="x">
-            楕円の x 座標です。
+            楕円の x 座標。
          </param>
          <param name="y">
-            楕円の y 座標です。
+            楕円の y 座標。
          </param>
          <param name="width">
-            楕円の幅です。
+            楕円の幅。
          </param>
          <param name="height">
-            楕円の高さです。
+            楕円の高さ。
          </param>
          <returns>
             なし。
@@ -10933,16 +10933,16 @@
             以前に作成されたグラデーションまたはイメージブラシ（LDShapes.BrushGradient LDShapes.BrushImage）。
          </param>
          <param name="x">
-            長方形の x 座標です。
+            長方形の x 座標。
          </param>
          <param name="y">
             長方形の y 座標。
          </param>
          <param name="width">
-            長方形の幅です。
+            長方形の幅。
          </param>
          <param name="height">
-            長方形の高さです。
+            長方形の高さ。
          </param>
          <param name="radius">
             丸みを帯びた角の半径。
@@ -11055,7 +11055,7 @@
             形状の幅。
          </param>
          <param name="height">
-            形状の高さです。
+            形状の高さ。
          </param>
          <returns>
             なし。
@@ -11073,7 +11073,7 @@
             形状の幅。
          </param>
          <param name="height">
-            形状の高さです。
+            形状の高さ。
          </param>
          <returns>
             なし。
@@ -11105,7 +11105,7 @@
             形状または制御名。
          </param>
          <returns>
-            シェイプの左端の x 座標です。
+            シェイプの左端の x 座標。
          </returns>
       </member>
       <member name="M:LitDev.LDShapes.GetTop(Microsoft.SmallBasic.Library.Primitive)">
@@ -11117,7 +11117,7 @@
             形状または制御名。
          </param>
          <returns>
-            形状の上端の y 座標です。
+            形状の上端の y 座標。
          </returns>
       </member>
       <member name="M:LitDev.LDShapes.Width(Microsoft.SmallBasic.Library.Primitive)">
@@ -11139,7 +11139,7 @@
             形状または制御名。
          </param>
          <returns>
-            形状は可視の高さです。
+            形状は可視の高さ。
          </returns>
       </member>
       <member name="M:LitDev.LDShapes.SetImage(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -11308,7 +11308,7 @@
             形状の名前。
          </param>
          <returns>
-            0 ～ 100 の値のオブジェクトの不透明度。0 は完全に透明で 100 は完全に不透明です。
+            0 ～ 100 の値のオブジェクトの不透明度。0 は完全に透明で 100 は完全に不透明。
          </returns>
       </member>
       <member name="M:LitDev.LDShapes.ZoomAll(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -11353,7 +11353,7 @@
       <member name="P:LitDev.LDShapes.OverlapDetail">
          <summary>
             オーバーラップメソッドを呼び出した後、このプロパティは交差点に追加の詳細を提供します。
-            結果は次のいずれかです。
+            結果は次のいずれか。
             "空" - 交差点なし
             "FullyContains" -  shape1 は完全に内側にあります 2
             "交差" - 重複しているが、どちらも完全に含まれていない
@@ -11401,10 +11401,10 @@
             アプリケーションの完全なパスを開始する。"C:\Program Files (x86)\Microsoft\Small Basic\SB.exe" と入力します。
          </param>
          <param name="arguments">
-            コマンドに与える引数、ない場合は "" のいずれかです。
+            コマンドに与える引数、ない場合は "" のいずれか。
          </param>
          <returns>
-            開始されたアプリケーションのプロセス ID、失敗した場合は -1、既存のプロセスにアタッチされている場合は -2
+            開始されたアプリケーションのプロセス ID、失敗した場合は -1、既存のプロセスにアタッチされている場合は -2。
          </returns>
       </member>
       <member name="M:LitDev.LDProcess.Stop(Microsoft.SmallBasic.Library.Primitive)">
@@ -11593,7 +11593,7 @@
       </member>
       <member name="M:LitDev.LDMath.ArcTan(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            ArcTan 度です。
+            ArcTan 度。
          </summary>
          <param name="tan">
             角のタン。
@@ -11636,7 +11636,7 @@
             ポイント 2 までの距離。
          </param>
          <param name="angle">
-            角度を 2 度とする角度です。
+            角度を 2 度とする角度。
          </param>
          <returns>
             点 2 の座標を持つ 2 要素配列。
@@ -11754,7 +11754,7 @@
             数値を固定小数点以下の桁数に丸めます。必要に応じて追加のトレーニング 10 進数が追加されます。
          </summary>
          <param name="number">変更する番号。</param>
-         <param name="digits">小数点以下の桁数です。</param>
+         <param name="digits">小数点以下の桁数。</param>
          <returns>変更された番号。</returns>
       </member>
       <member name="P:LitDev.LDMath.E">
@@ -12257,7 +12257,7 @@
       <member name="M:LitDev.Engines.FIP.ContrastStretching(System.Drawing.Bitmap)">
          <summary>
             輝度法を使用して ARGB 画像をグレースケールに変換し、コントラストストレッチ法を使用して明るくします。
-            明るさの最小値と最大値は、デフォルトで 0 ～ 255 です。
+            明るさの最小値と最大値は、デフォルトで 0 ～ 255 。
          </summary>
          <param name="OriginalImage">元の ARGB 画像</param>
          <returns>グレーススケール画像を強調する</returns>
@@ -12265,7 +12265,7 @@
       <member name="M:LitDev.Engines.FIP.ContrastStretching(System.Drawing.Bitmap,System.Int32,System.Int32)">
          <summary>
             輝度法を使用して ARGB 画像をグレースケールに変換し、コントラストストレッチ法を使用して明るくします。
-            明るさの最小値と最大値は、デフォルトで 0 ～ 255 です。
+            明るさの最小値と最大値は、デフォルトで 0 ～ 255 。
          </summary>
          <param name="OriginalImage">元の ARGB 画像</param>
          <param name="RMinSet">使用可能な最小輝度値</param>
@@ -12620,7 +12620,7 @@
       <member name="M:LitDev.Engines.Functions.IowKitGetRevision(System.IntPtr)">
          <summary>
             バック IoWarrior 会社の財のバージョンを返します。
-            上位 2 つのバイトは常に 0 です。
+            上位 2 つのバイトは常に 0 。
             4 桁の 16 進数の有効なあります。現在のソフトウェアバージョン 1.0.2.1 は 0x1021
             返された場合。シリアル番号を持っていないリモートの年齢 IO-Warrior、バック小さいバージョン番号 1.0.1.0 を。
          </summary>
@@ -12708,7 +12708,7 @@
          <param name="IowHandle">IO-Warrior への有効なハンドル。</param>
          <param name="Timeout">
             限度。
-            iowkit.dll 説明で推奨さ 1000 ミリ秒以上です。
+            iowkit.dll 説明で推奨さ 1000 ミリ秒以上。
          </param>
          <returns>成功した場合に TRUE を、失敗した場合には false。</returns>
       </member>
@@ -12722,7 +12722,7 @@
          <param name="IowHandle">IO-Warrior への有効なハンドル。</param>
          <param name="Timeout">
             限度。
-            iowkit.dll 説明で推奨さ 1000 ミリ秒以上です。
+            iowkit.dll 説明で推奨さ 1000 ミリ秒以上。
          </param>
          <returns>成功した場合に TRUE を、失敗した場合には false。</returns>
       </member>
