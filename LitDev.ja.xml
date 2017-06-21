@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <doc>
    <assembly>
-      <name>LitDev 1.2.1 ja</name>
+      <name>LitDev 1.2.2 ja</name>
    </assembly>
    <members>
       <member name="M:Bing.BingSearchContainer.Composite(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
@@ -157,7 +157,7 @@
          <param name="arrayName">配列名。</param>
          <param name="indices">
             カンマ（またはスペース）で区切られたインデックス値のリスト（より遅い）またはインデックス変数名（より速い）。
-            例えば "3,2,6" または "i、j、k"
+            例えば "3,2,6" または "i,j,k"
             これを "" に設定すると、以前に設定されたインデックス変数が使用されます。
          </param>
          <returns>失敗した場合は配列値か "" を返します。</returns>
@@ -580,7 +580,7 @@
          <param name="height">形状の高さ。</param>
          <param name="thickness">矢印の軸の相対的な厚さ、例えば。0.25 です。</param>
          <param name="arrowAngle">矢印の頭の角度（度）。</param>
-         <param name="direction">矢印の方向："上"、"下"、"左" または "右"。</param>
+         <param name="direction">矢印の方向："Up"（上）、"Down"（下）、"Left"（左） または "Right"（右）。</param>
          <returns>形状の名前。</returns>
       </member>
       <member name="M:LitDev.LDFigures.AddCallout(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -590,8 +590,8 @@
          <param name="width">形状の幅。</param>
          <param name="height">形状の高さ。</param>
          <param name="text">コールアウトテキスト。</param>
-         <param name="style">コールアウトスタイル："クラウド"、"楕円"、"長方形"、または "丸みを帯びた輪郭"。</param>
-         <param name="anchor">コールアウトサイズに対するコールアウトアンカーの位置（例："X = 0; Y = 1.25;"）</param>
+         <param name="style">コールアウトスタイル："Cloud"（雲）、"Oval"（楕円）、"Rectangle"（長方形）、または "RoundedRectangle"（角丸長方形）。</param>
+         <param name="anchor">コールアウトサイズに対するコールアウトアンカーの位置（例："X=0;Y=1.25;"）</param>
          <returns>形状の名前。</returns>
       </member>
       <member name="M:LitDev.LDFigures.AddLineArrow(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -602,8 +602,8 @@
          <param name="height">形状の高さ。</param>
          <param name="size">矢印の頭のサイズ（ピクセル単位）。</param>
          <param name="bend">矢印の曲げ量（例えば、0 は直線、0.5 は滑らかに曲がる）。</param>
-         <param name="startArrow">開始矢印のタイプ："なし"、"矢印"、"開く"、"オーバル" または "ステルス"。</param>
-         <param name="endArrow">終わりの矢印のタイプ："なし"、"矢印"、"開く"、"楕円形" または "ステルス"。</param>
+         <param name="startArrow">開始矢印のタイプ："None"（なし）、"Arrow"（矢印）、"Open"（開く）、"Oval"（楕円） または "Stealth"（ステルス）。</param>
+         <param name="endArrow">終わりの矢印のタイプ："None"（なし）、"Arrow"（矢印）、"Open"（開く）、"Oval"（楕円） または "Stealth"（ステルス）。</param>
          <param name="startCorner">開始角位置："BottomLeft"、"BottomRight"、"TopLeft" または "TopRight"。矢印は反対側のコーナーで終了します。</param>
          <returns>形状の名前。</returns>
       </member>
@@ -636,7 +636,7 @@
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             BlurRadius（デフォルトは 5）
-            色（デフォルトでは "黒"）
+            色（デフォルトでは "Black"（黒））
             方向（デフォルトは 315）
             不透明度（デフォルト値 1）
             ShadowDepth（デフォルトは 5）
@@ -676,8 +676,8 @@
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             不飽和度（デフォルトは 0.5）
             ToneAmount（デフォルトは 0.5）
-            LightColor（デフォルト "＃FFE580"）
-            DarkColor（デフォルトでは "＃338000"）
+            LightColor（デフォルト "#FFE580"）
+            DarkColor（デフォルトでは "#338000"）
          </param>
       </member>
       <member name="M:LitDev.LDEffect.Embossed(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -688,7 +688,7 @@
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             金額（デフォルトは 3）
-            色（デフォルトは "グレー"）
+            色（デフォルトは "Gray"（グレー））
             高さ（デフォルトは 0.001）
          </param>
       </member>
@@ -700,7 +700,7 @@
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             金額（デフォルトは 0.5）
-            センター（デフォルトでは "X = 0.5; Y = 0.5;"）
+            センター（デフォルトでは "X=0.5;Y=0.5;"）
             InnerRadius（デフォルトは 0.2）
             OuterRadius（デフォルトは 0.4）
          </param>
@@ -712,7 +712,7 @@
          <param name="shapeName">効果を適用するシェイプ。</param>
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
-            カラー（デフォルトは "白"）
+            カラー（デフォルトは "White"（白））
          </param>
       </member>
       <member name="M:LitDev.LDEffect.Pixelate(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -732,7 +732,7 @@
          <param name="shapeName">効果を適用するシェイプ。</param>
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
-            センター（デフォルトでは "X = 0.5; Y = 0.5;"）
+            センター（デフォルトでは "X=0.5;Y=0.5;"）
             頻度（デフォルトは 40）
             大きさ（デフォルトは 0.1）
             フェーズ（デフォルト 10）
@@ -757,7 +757,7 @@
          <param name="properties">
             プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
             AngleFrequency（デフォルト 45）
-            センター（デフォルトでは "X = 0.5; Y = 0.5;"）
+            センター（デフォルトでは "X=0.5;Y=0.5;"）
             TwistAmount（デフォルトは 10）
          </param>
       </member>
@@ -1059,10 +1059,10 @@
          <param name="style">
             チャートのスタイルは次のとおりです。
             "Pie"（デフォルト）
-            "ドーナツ"
-            "バブル"
-            "バー"
-            "カラム"
+            "Doughnut"（ドーナツ）
+            "Bubble"（バブル）
+            "Bar"（バー）
+            "Column"（カラム）
          </param>
          <param name="scale">チャートの縮尺係数。デフォルトは 1 です。</param>
       </member>
@@ -1076,9 +1076,9 @@
          <param name="lightness">明度（明るさ 0 ～ 1）。デフォルトは 0.5。</param>
          <param name="hsl">
             異なるセグメントに変更するパラメータは次のとおりです。
-            "色相"（デフォルト）の虹色
-            色の濃さが増す "彩度"
-            明るさを増す "明度"
+            "Hue"（色相）（デフォルト）の虹色
+            色の濃さが増す "Saturation"（彩度）
+            明るさを増す "Lightness"（明度）
          </param>
          <param name="start">[0 ～ 1] の範囲のカラーバリエーションの開始値。デフォルトは 0 です。</param>
          <param name="end">[0 ～ 1] の範囲のカラーバリエーションの終了値。デフォルトは 1 です。</param>
@@ -1406,7 +1406,7 @@
          <param name="waveform">
             反復波のためのフォーム。
             これは配列で、インデックスは相対的な増加時間（実際の値は周波数に対して正規化されます）で、値は振幅（-1 対 1）です。
-            三角波の例は、"0 = -1; 1 = 1; 2 = -1;" です。
+            三角波の例は、"0=-1;1=1;2=-1;" です。
          </param>
          <returns>波の名前または失敗時の ""</returns>
       </member>
@@ -1561,7 +1561,7 @@
          <summary>
             現在の XML 文書を Small Basic 配列に変換します。
             配列の構造および深さは、かなり複雑であり得る。
-            各ノードには、オプションの配列 "属性" と "子" または "データ" があります。
+            各ノードには、オプションの配列 "Attributes"（属性） と "Children"（子） または "Data"（データ） があります。
             子ノードがある場合、最初に数字でインデックスされ、同じ名前の複数の子を区切ります。
          </summary>
          <returns>Small Basic 配列または "FAILED"。</returns>
@@ -1576,7 +1576,7 @@
       <member name="P:LitDev.LDxml.NodeType">
          <summary>
             現在のノードの型を取得します。
-            多くのタイプのうちの 1 つであるが、一般的には "要素" または "テキスト" です。
+            多くのタイプのうちの 1 つであるが、一般的には "Element"（要素） または "Text"（テキスト） です。
          </summary>
       </member>
       <member name="P:LitDev.LDxml.NodeName">
@@ -1618,7 +1618,7 @@
          <param name="ftpServerIP">ftp サーバアドレス（または IP）。</param>
          <param name="ftpUserID">ユーザー ID。</param>
          <param name="ftpPassword">ユーザーのパスワード。</param>
-         <returns>非同期の場合、"成功"、"失敗" または "保留"。</returns>
+         <returns>非同期の場合、"SUCCESS"（成功）、"FAILED"（失敗） または "PENDING"（保留）。</returns>
       </member>
       <member name="M:LitDev.LDftp.Download(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -1629,7 +1629,7 @@
          <param name="ftpServerIP">ftp サーバアドレス（または IP）。</param>
          <param name="ftpUserID">ユーザー ID。</param>
          <param name="ftpPassword">ユーザーのパスワード。</param>
-         <returns>非同期の場合、"成功"、"失敗" または "保留"。</returns>
+         <returns>非同期の場合、"SUCCESS"（成功）、"FAILED"（失敗） または "PENDING"（保留）。</returns>
       </member>
       <member name="M:LitDev.LDftp.Delete(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -1639,7 +1639,7 @@
          <param name="ftpServerIP">ftp サーバアドレス（または IP）。</param>
          <param name="ftpUserID">ユーザー ID。</param>
          <param name="ftpPassword">ユーザーのパスワード。</param>
-         <returns>非同期の場合、"成功"、"失敗" または "保留"。</returns>
+         <returns>非同期の場合、"SUCCESS"（成功）、"FAILED"（失敗） または "PENDING"（保留）。</returns>
       </member>
       <member name="M:LitDev.LDftp.ListFiles(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -1658,7 +1658,7 @@
       </member>
       <member name="P:LitDev.LDftp.LastFTPStatus">
          <summary>
-            最後の非同期 FTP ファイルステータス（"成功" または "失敗"）
+            最後の非同期 FTP ファイルステータス（"SUCCESS"（成功） または "FAILED"（失敗））
          </summary>
       </member>
       <member name="P:LitDev.LDftp.UseBinary">
@@ -2093,10 +2093,10 @@
             最初のインデックスは行またはノード番号で、2 番目のインデックスは現在のノードの親ノードです（最上位レベルの場合は 0）。
             配列の値は、現在のノードの表示テキストです。
 
-            ツリー [1] [0] = "レベル1"
-            ツリー [2] [1] = "レベル1 1"
-            ツリー [3] [1] = "レベル1 2"
-            ツリー [4] [0] = "レベル2"
+            ツリー [1] [0] = "Level 1"
+            ツリー [2] [1] = "Level 1 1"
+            ツリー [3] [1] = "Level 1 2"
+            ツリー [4] [0] = "Level 2"
          </param>
          <param name="width">コントロールの幅。</param>
          <param name="height">コントロールの高さ。</param>
@@ -2136,10 +2136,10 @@
             最初のインデックスは行またはノード番号で、2 番目のインデックスは現在のノードの親ノードです（最上位レベルの場合は 0）。
             配列の値は、現在のノードの表示テキストです。
 
-            ツリー [1] [0] = "レベル1"
-            ツリー [2] [1] = "レベル1 1"
-            ツリー [3] [1] = "レベル1 2"
-            ツリー [4] [0] = "レベル2"
+            ツリー [1] [0] = "Level 1"
+            ツリー [2] [1] = "Level 1 1"
+            ツリー [3] [1] = "Level 1 2"
+            ツリー [4] [0] = "Level 2"
          </param>
       </member>
       <member name="M:LitDev.LDControls.TreeViewGetData(Microsoft.SmallBasic.Library.Primitive)">
@@ -2153,10 +2153,10 @@
             最初のインデックスは行またはノード番号で、2 番目のインデックスは現在のノードの親ノードです（最上位レベルの場合は 0）。
             配列の値は、現在のノードの表示テキストです。
 
-            ツリー [1] [0] = "レベル1"
-            ツリー [2] [1] = "レベル1 1"
-            ツリー [3] [1] = "レベル1 2"
-            ツリー [4] [0] = "レベル2"
+            ツリー [1] [0] = "Level 1"
+            ツリー [2] [1] = "Level 1 1"
+            ツリー [3] [1] = "Level 1 2"
+            ツリー [4] [0] = "Level 2"
          </returns>
       </member>
       <member name="M:LitDev.LDControls.TreeViewEdit(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2308,10 +2308,10 @@
 
             最初のインデックスは行またはノード番号で、配列の値は現在のノードの表示テキストです。
 
-            リスト [1] = "オプション1"
-            リスト [2] = "オプション2"
-            リスト [3] = "オプション3"
-            リスト [4] = "オプション4"
+            リスト [1] = "Option 1"
+            リスト [2] = "Option 2"
+            リスト [3] = "Option 3"
+            リスト [4] = "Option 4"
 
             これは LDArray または LDList でもかまいません。
          </param>
@@ -2349,10 +2349,10 @@
 
             最初のインデックスは行またはノード番号で、配列の値は現在のノードの表示テキストです。
 
-            リスト [1] = "オプション1"
-            リスト [2] = "オプション2"
-            リスト [3] = "オプション3"
-            リスト [4] = "オプション4"
+            リスト [1] = "Option 1"
+            リスト [2] = "Option 2"
+            リスト [3] = "Option 3"
+            リスト [4] = "Option 4"
          </param>
          <param name="width">コントロールの幅。</param>
          <param name="height">コントロールのドロップダウンの高さ。</param>
@@ -2380,8 +2380,8 @@
          <param name="mode">
             次のいずれか：
             "Single" - 単一選択（デフォルト）。
-            "複数" - コントロールキーを使用した複数の選択。
-            "拡張" - コントロールとシフトキーを使用した拡張選択。
+            "Multiple"（複数） - コントロールキーを使用した複数の選択。
+            "Extended"（拡張） - コントロールとシフトキーを使用した拡張選択。
          </param>
       </member>
       <member name="M:LitDev.LDControls.AddCheckBox(Microsoft.SmallBasic.Library.Primitive)">
@@ -2458,7 +2458,7 @@
             画像または背景で設定された画像。
             MediaPlayer 用のメディア（有効なメディアがすでにロードされている場合のみ有効）。
          </summary>
-         <param name="shapeName">ドロップまたは "背景" を許可するシェイプ。</param>
+         <param name="shapeName">ドロップまたは "Background"（背景） を許可するシェイプ。</param>
       </member>
       <member name="M:LitDev.LDControls.AddMediaPlayer(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -2536,9 +2536,9 @@
          <param name="shapeName">メディアプレーヤー名。</param>
          <param name="stretch">
             ストレッチ法。使用可能なストレッチオプションは次のとおりです。
-            "なし"（コンテンツは元のサイズを保持します）。
-            "統一"（コンテンツは、ネイティブのアスペクト比を維持しながら宛先のサイズに合わせてサイズ変更されます - デフォルト）。
-            "塗りつぶし"（コンテンツのサイズが目的の寸法を満たすようにリサイズされます。アスペクト比は保持されません）。
+            "None"（なし）（コンテンツは元のサイズを保持します）。
+            "Uniform"（統一）（コンテンツは、ネイティブのアスペクト比を維持しながら宛先のサイズに合わせてサイズ変更されます - デフォルト）。
+            "Fill"（塗りつぶし）（コンテンツのサイズが目的の寸法を満たすようにリサイズされます。アスペクト比は保持されません）。
             "UniformToFill"（コンテンツは、ネイティブのアスペクト比を維持しながら必要に応じてクリッピングすると、コピー先のサイズを満たすようにサイズが変更されます）。
          </param>
       </member>
@@ -2552,10 +2552,10 @@
 
             最初のインデックスは行またはノード番号で、配列の値は現在のノードの表示テキストです。
 
-            リスト [1] = "オプション1"
-            リスト [2] = "オプション2"
-            リスト [3] = "オプション3"
-            リスト [4] = "オプション4"
+            リスト [1] = "Option 1"
+            リスト [2] = "Option 2"
+            リスト [3] = "Option 3"
+            リスト [4] = "Option 4"
 
             これは LDArray または LDList でもかまいません。
          </param>
@@ -2570,10 +2570,10 @@
 
             最初のインデックスは行またはノード番号で、配列の値は現在のノードの表示テキストです。
 
-            リスト [1] = "オプション1"
-            リスト [2] = "オプション2"
-            リスト [3] = "オプション3"
-            リスト [4] = "オプション4"
+            リスト [1] = "Option 1"
+            リスト [2] = "Option 2"
+            リスト [3] = "Option 3"
+            リスト [4] = "Option 4"
          </param>
       </member>
       <member name="M:LitDev.LDControls.AddProgressBar(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2658,19 +2658,19 @@
          <param name="menuList">
             メニュー項目の配列。インデックスはメニュー表示名で、値は親表示名です。
             トップレベルの表示名は "Main" にする必要があります。名前は click イベントで返されるので一意でなければなりません。
-            セパレータは一意でなければならず、選択できないため、" - "、" - "、"---" などです。
+            セパレータは一意でなければならず、選択できないため、"-"、"-"、"---" などです。
 
             menuList [ "File" ] = "Main"
-            menuList [ "Open" ] = "ファイル"
-            menuList [ " - " ] = "ファイル"
+            menuList [ "Open" ] = "File"
+            menuList [ "-" ] = "File"
             menuList [ "Exit" ] = "File"
             menuList [ "Help" ] = "Main"
-            menuList [ "ヘルプを表示]" = "ヘルプ"
+            menuList [ "Show Help"] = "Help"
          </param>
          <param name="iconList">
             オプションのアイコンイメージの配列（URL または ImageList）またはなしの場合は ""。
 
-            iconList [ "File" ] = Program.Directory + "/ file.png"
+            iconList [ "File" ] = Program.Directory + "/file.png"
          </param>
          <param name="checkList">
             チェック可能な項目、または none の項目を識別するためのオプションの配列。
@@ -2711,7 +2711,7 @@
          </summary>
          <param name="shapeName">リストビューコントロール。</param>
          <param name="col">列番号（1 からのインデックス）。</param>
-         <param name="alignment">"左"、"中央" または "右"</param>
+         <param name="alignment">"Left"（左）、"Center"（中央） または "Right"（右）</param>
       </member>
       <member name="M:LitDev.LDControls.ListViewSetRow(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -2987,7 +2987,7 @@
          </summary>
          <param name="shapeName">データビューコントロール。</param>
          <param name="col">列番号。</param>
-         <param name="alignment">"左"、"中央" または "右"</param>
+         <param name="alignment">"Left"（左）、"Center"（中央） または "Right"（右）</param>
          <returns>"SUCCESS" または "FAILED"。</returns>
       </member>
       <member name="M:LitDev.LDControls.SetButtonStyle(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -3057,7 +3057,7 @@
       </member>
       <member name="P:LitDev.LDControls.RichTextBoxFontFamily">
          <summary>
-            例えば、フォントファミリー。"センチュリーゴシック"。
+            例えば、フォントファミリー。"Century Gothic"（センチュリーゴシック）。
             RichTextBoxSelection、RichTextBoxWord または RichTextBoxDefault が呼び出される前にこれを設定します。
          </summary>
       </member>
@@ -3075,7 +3075,7 @@
       </member>
       <member name="P:LitDev.LDControls.RichTextBoxTextAlignment">
          <summary>
-            テキストの配置 "中央" "左" "右" または "正当化"。
+            テキストの配置 "Center"（中央） "Left"（左） "Right"（右） または "Justify"（正当化）。
             AddRichTextBox が呼び出される前にこれを設定します。
          </summary>
       </member>
@@ -3409,7 +3409,7 @@
          <param name="obj">拡張オブジェクト名。</param>
          <param name="method">拡張メソッド名。</param>
          <param name="arguments">引数の配列またはなしの場合は ""。単一の引数は配列内にある必要はありません。</param>
-         <returns>"保留中" または失敗時のエラーメッセージ。</returns>
+         <returns>"PENDING"（保留中） または失敗時のエラーメッセージ。</returns>
       </member>
       <member name="M:LitDev.LDCall.Include(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -4242,7 +4242,7 @@
          <summary>指定されたファイルまたはフォルダの拡張プロパティの値を取得します。</summary>
          <param name="path">完全なファイルパスまたはフォルダパス。</param>
          <param name="infoType">
-            プロパティの ID 番号または名前（たとえば、-1 = "Infotip" / ""、0 = "名前"、1 = "サイズ" など）
+            プロパティの ID 番号または名前（たとえば、-1 = "Infotip" / ""、0 = "Name"（名前）、1 = "Size"（サイズ） など）
             ID の番号と s の下に利用可能なプロパティの名前。'AllDetails'
          </param>
          <returns>
@@ -4253,13 +4253,13 @@
       <member name="M:LitDev.LDShell.GetAllDetailsFor(Microsoft.SmallBasic.Library.Primitive)">
          <summary>指定されたファイルまたはフォルダのすべての利用可能な拡張プロパティを Array として取得します（最大 = 316、-1 = Infotip なし）。</summary>
          <param name="path">完全なファイルパスまたはフォルダパス。</param>
-         <returns>成功すると Array（"property name = value; ..."、Infotip なし）として使用可能なすべての拡張プロパティ、それ以外の場合は "FAILED"</returns>
+         <returns>成功すると Array（"property name=value;..."、Infotip なし）として使用可能なすべての拡張プロパティ、それ以外の場合は "FAILED"</returns>
       </member>
       <member name="M:LitDev.LDShell.GetAllDetailNamesFor(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>指定されたファイルまたはフォルダの利用可能なすべての拡張プロパティの名前を Array として取得します（最大 316、w / o -1 = Infotip）。</summary>
          <param name="path">完全なファイルパスまたはフォルダパス。</param>
          <param name="step1">スープで 1 を示しますか？"True" または "False"（デフォルト、実プロパティ ID）。</param>
-         <returns>成功した場合は Array（"idx =プロパティ名; ..."、Infotip なし）として利用可能なすべての拡張プロパティの名前、そうでない場合は "FAILED"。</returns>
+         <returns>成功した場合は Array（"idx=property name;..."、Infotip なし）として利用可能なすべての拡張プロパティの名前、そうでない場合は "FAILED"。</returns>
       </member>
       <member name="M:LitDev.LDShell.GetAllVerbsFor(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -4267,7 +4267,7 @@
             'ApplyVerbOn' の下の動詞のファイル / フォルダへの適用。
          </summary>
          <param name="path">完全なファイルパスまたはフォルダパス。</param>
-         <returns>成功するとすべての利用可能な動詞を配列として（"idx = verb; ..."、w / o ' ＆ '）、そうでなければ "FAILED"。</returns>
+         <returns>成功するとすべての利用可能な動詞を配列として（"idx=verb;..."、w / o ' ＆ '）、そうでなければ "FAILED"。</returns>
       </member>
       <member name="M:LitDev.LDShell.ApplyVerbOn(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -4282,14 +4282,14 @@
          <summary>ターゲットの pfad、引数などの lnk / url ショートカットリンクのプロパティを取得します。</summary>
          <param name="shortcut">lnk / url ショートカットリンクファイルの完全パス。</param>
          <param name="property">
-            取得するプロパティ（大文字小文字に依存しない、* Urls の場合）：
-            "ターゲット" ターゲットパス *
+            取得するプロパティ（大文字小文字に依存しない、* は url の場合）：
+            "Target"（ターゲット） ターゲットパス *
             "Args" 引数
-            "フォルダ" 作業ディレクトリ
+            "Folder"（フォルダ） 作業ディレクトリ
             "Desc" コメント *
             "HotKey" ショートカットキーの櫛 *（デフォルト：0）
-            "スタイル" ウィンドウスタイル *（通常 1、最大 3、最小 7 分）
-            "アイコン" アイコンのパス
+            "Style"（スタイル） ウィンドウスタイル *（通常 1、最大 3、最小 7 分）
+            "Icon"（アイコン） アイコンのパス
          </param>
          <returns>利用可能な場合はプロパティの値、または "" 失敗した場合は "FAILED"</returns>
       </member>
@@ -4323,13 +4323,13 @@
          <param name="shortcut">lnk / url ショートカットリンクファイルの完全パス。</param>
          <param name="property">
             取得するプロパティ（大文字小文字に依存しない、* は url 用）：
-            "ターゲット" ターゲットパス *
+            "Target"（ターゲット） ターゲットパス *
             "Args" 引数
-            "フォルダ" 作業ディレクトリ
+            "Folder"（フォルダ） 作業ディレクトリ
             "Desc" コメント *
             "HotKey" ショートカットキーの櫛 *（デフォルト：0）
-            "スタイル" ウィンドウスタイル *（通常 1、最大 3、最小 7 分）
-            "アイコン" アイコンパス、Idx（デフォルト：、0）
+            "Style"（スタイル） ウィンドウスタイル *（通常 1、最大 3、最小 7 分）
+            "Icon"（アイコン） アイコンパス、Idx（デフォルト：、0）
          </param>
          <returns>利用可能な場合はプロパティの値、または "" 失敗した場合は "FAILED"</returns>
       </member>
@@ -4442,19 +4442,19 @@
          </example>
       </member>
       <member name="P:LitDev.LDShell.AllDetails">
-         <summary>使用可能なすべての拡張プロパティを Array（"idx =プロパティ名;"、-1 = Infotip、0 = Name、.. ～ 286 = 合計ビットレート（または全ビットレート））として取得します。</summary>
+         <summary>使用可能なすべての拡張プロパティを Array（"idx=property name;"、-1 = Infotip、0 = Name、.. ～ 286 = 合計ビットレート（または全ビットレート））として取得します。</summary>
       </member>
       <member name="P:LitDev.LDShell.DTIconsOn">
          <summary>デスクトップアイコンが現在表示されている天気を取得します（"True" または "False"）。</summary>
       </member>
       <member name="P:LitDev.LDShell.SpecialFolderConstants">
-         <summary>すべての CSIDL 番号とその特別な System / Shell フォルダ名のリストを Array（"csidl = folder name;"）として取得します。</summary>
+         <summary>すべての CSIDL 番号とその特別な System / Shell フォルダ名のリストを Array（"csidl=folder name;"）として取得します。</summary>
       </member>
       <member name="P:LitDev.LDShell.SpecialFolderPaths">
-         <summary>すべての特殊な System / Shell フォルダ名とそのフォルダパスのリストを Array（"folder name = path;"）として取得します。</summary>
+         <summary>すべての特殊な System / Shell フォルダ名とそのフォルダパスのリストを Array（"folder name=path;"）として取得します。</summary>
       </member>
       <member name="P:LitDev.LDShell.SpecialFolders">
-         <summary>すべての特別なシステムフォルダのリストを Array（"folder name = path;"）として取得します。シェルフォルダの場合 'SpecialFolderPaths'</summary>
+         <summary>すべての特別なシステムフォルダのリストを Array（"folder name=path;"）として取得します。シェルフォルダの場合 'SpecialFolderPaths'</summary>
       </member>
       <member name="P:LitDev.LDShell.Version">
          <summary>この拡張機能の現在のファイルバージョンを取得します（それ以外の場合は 0.0.0.0）。</summary>
@@ -4978,7 +4978,7 @@
             サーバー接続の ip：port（例："192.168.1.60:100"）。
             この値は、LDServer.Start によって返されます。
          </param>
-         <returns>"使用可能" または "使用不可"</returns>
+         <returns>"AVAILABLE"（使用可能） または "UNAVAILABLE"（使用不可）</returns>
       </member>
       <member name="M:LitDev.LDClient.Connect(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -5001,14 +5001,14 @@
          <summary>
             クライアントをサーバーから切断します。
          </summary>
-         <returns>"成功"、"失敗"、または "未接続"</returns>
+         <returns>"SUCCESS"（成功）、"FAILED"（失敗）、または "NOT_CONNECTED"（未接続）</returns>
       </member>
       <member name="M:LitDev.LDClient.SendMessage(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             サーバーにメッセージを送信します。
          </summary>
          <param name="message">メッセージは、配列を含む任意の変数であってもよい。</param>
-         <returns>"成功"、"失敗"、または "未接続"</returns>
+         <returns>"SUCCESS"（成功）、"FAILED"（失敗）、または "NOT_CONNECTED"（未接続）</returns>
       </member>
       <member name="M:LitDev.LDClient.UpdateDynamic(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -5417,7 +5417,7 @@
             これは、SQL メソッドの前に呼び出される必要があります。
             疑わしい場合は SQLite を使用して、SqlServer サービスが実行されていて、資格情報を持つデータベースが既に作成されている必要があります。
          </summary>
-         <param name="server">SqlServer サーバー（例："（local）\ SQLEXPRESS"）。</param>
+         <param name="server">SqlServer サーバー（例："(local)\SQLEXPRESS"）。</param>
          <param name="database">SqlServer データベース名。</param>
          <returns>データベースを識別するラベル。</returns>
       </member>
@@ -5438,7 +5438,7 @@
             これは、SQL メソッドの前に呼び出される必要があります。
             疑わしい場合は、SQLite を使用して、Odbc サービスが実行されていて、資格情報を持つデータベースがすでに作成されている必要があります。
          </summary>
-         <param name="driver">Odbc ドライバ（例："{MySQL ODBC 3.51ドライバ}"）。</param>
+         <param name="driver">Odbc ドライバ（例："{MySQL ODBC 3.51 Driver}"）。</param>
          <param name="server">Odbc サーバー（"localhost" など）。</param>
          <param name="port">Odbc ポート番号。</param>
          <param name="user">Odbc ユーザー名。</param>
@@ -5774,7 +5774,7 @@
             音楽ファイルの再生時間を取得します。
          </summary>
          <param name="fileName">
-            例えば、音楽ファイルのフルパス。"C：\ Users \ Public \ Music \ song.mp3" と入力します。
+            例えば、音楽ファイルのフルパス。"C:\Users\Public\Music\song.mp3" と入力します。
          </param>
          <returns>
             ファイルの再生時間（秒単位）（失敗した場合は 0）。
@@ -5788,7 +5788,7 @@
             音量レベルを変更する以下のオプションのいずれか。
             "Up" は音量を上げます。
             "Down" は音量を下げます。
-            "ミュート" は、ミュートとミュート解除の音量を切り替えます。
+            "Mute"（ミュート） は、ミュートとミュート解除の音量を切り替えます。
          </param>
       </member>
       <member name="T:LitDev.LDHID">
@@ -6036,7 +6036,7 @@
             ウィンドウにキーを送信します。これは、キーをウィンドウに入力するのと同じです。
          </summary>
          <param name="window">例えば、ウィンドウタイトル。TextWindow.Title または GraphicsWindow.Title。</param>
-         <param name="key">たとえば送信するキー。"戻る"</param>
+         <param name="key">たとえば送信するキー。"Return"（戻る）</param>
       </member>
       <member name="M:LitDev.LDTextWindow.Hide">
          <summary>
@@ -6676,9 +6676,9 @@
             "smtp.live.com"（Hotmail）
             "smtp.mail.yahoo.com"
 
-            "From、Password、およびRecipient" プロパティの最小値を最初に設定する必要があります。
+            "From, Password and Recipient"（送信元、パスワード、および受信先） プロパティの最小値を最初に設定する必要があります。
             "From" および "Password" のプロパティは、クライアントの電子メールの資格情報でなければなりません。
-            さらに、"件名と本文" プロパティを設定する必要があります。
+            さらに、"Subject and Body"（件名と本文） プロパティを設定する必要があります。
             "Attachment" プロパティはオプションで完全なファイルパスに設定することができます。
 
             1 分あたり 1 メールは送信できません。
@@ -6867,11 +6867,11 @@
          <param name="matrix">
             5×5 の 2D マトリックス。
             セピア例：
-            マトリクス [1] = "1 = 0.393; 2 = 0.349; 3 = 0.272; 4 = 0; 5 = 0"
-            行列 [2] = "1 = 0.769; 2 = 0.686; 3 = 0.534; 4 = 0; 5 = 0"
-            マトリクス [3] = "1 = 0.189; 2 = 0.168; 3 = 0.131; 4 = 0; 5 = 0"
-            マトリクス [4] = "1 = 0; 2 = 0; 3 = 0; 4 = 1; 5 = 0"
-            マトリクス [5] = "1 = 0; 2 = 0; 3 = 0; 4 = 0; 5 = 1"
+            マトリクス [1] = "1=0.393;2=0.349;3=0.272;4=0;5=0"
+            行列 [2] = "1=0.769;2=0.686;3=0.534;4=0;5=0"
+            マトリクス [3] = "1=0.189;2=0.168;3=0.131;4=0;5=0"
+            マトリクス [4] = "1=0;2=0;3=0;4=1;5=0"
+            マトリクス [5] = "1=0;2=0;3=0;4=0;5=1"
          </param>
       </member>
       <member name="M:LitDev.LDImage.Rotate(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -7550,7 +7550,7 @@
             個々の音符を演奏します（マルチチャンネル楽器を許可します）。
          </summary>
          <param name="octave">オクターブ（0 ～ 8）。</param>
-         <param name="note">メモ（"A"、"F＃"、"B-" など）。</param>
+         <param name="note">メモ（"A"、"F#"、"B-" など）。</param>
          <param name="channel">MIDI チャンネル（1 ～ 16）。</param>
          <returns>再生されているノート値。</returns>
       </member>
@@ -7985,8 +7985,8 @@
          </summary>
          <param name="extension">
             ファイルタイプ拡張子。"sb"。
-            これは、"1 = png; 2 = jpg;" のような拡張タイプの配列であってもよい。
-            拡張子に "|" それは "Images | * .bmp; *。jpg; *。gif; *。png |すべてのファイル（*。*）| *。*" のように直接使用されます。
+            これは、"1=png;2=jpg;" のような拡張タイプの配列であってもよい。
+            拡張子に "|" それは "Images|*.bmp;*.jpg;*.gif;*.png|All files (*.*)|*.*" のように直接使用されます。
          </param>
          <param name="folder">
             ダイアログを開くための最初のフォルダは "" とすることができます。
@@ -7999,8 +7999,8 @@
          </summary>
          <param name="extension">
             ファイルタイプ拡張子。"sb"。
-            これは、"1 = png; 2 = jpg;" のような拡張タイプの配列であってもよい。
-            拡張子に "|" それは "Images | * .bmp; *。jpg; *。gif; *。png |すべてのファイル（*。*）| *。*" のように直接使用されます。
+            これは、"1=png;2=jpg;" のような拡張タイプの配列であってもよい。
+            拡張子に "|" それは "Images|*.bmp;*.jpg;*.gif;*.png|All files (*.*)|*.*" のように直接使用されます。
          </param>
          <param name="folder">
             ダイアログを開くための最初のフォルダは "" とすることができます。
@@ -8054,7 +8054,7 @@
          </summary>
          <param name="text">ダイアログのテキスト質問。</param>
          <param name="title">ダイアログのタイトル。</param>
-         <returns>"はい"、"いいえ" または "キャンセル"</returns>
+         <returns>"Yes"（はい）、"No"（いいえ） または "Cancel"（キャンセル）</returns>
       </member>
       <member name="P:LitDev.LDDialogs.LastRightClickMenuItem">
          <summary>
@@ -8781,7 +8781,7 @@
             キーがダウンしている場合に取得します。
             簡略化されたキーボードゲームコントロールに役立ちます。
          </summary>
-         <param name="key">州を倒すための鍵、例えば "スペース"。</param>
+         <param name="key">州を倒すための鍵、例えば "Space"（スペース）。</param>
          <returns>キーダウン状態（"True" または "False"）</returns>
       </member>
       <member name="M:LitDev.LDUtilities.FontList">
@@ -8840,17 +8840,17 @@
          </summary>
          <param name="listName">
             マップ（リスト）タイプ、有効な listNames（大文字と小文字を区別する）は次のとおりです。
-            "ボタン"
-            "テキストボックス"
-            "イメージリスト"
-            "楕円"
-            "画像"
-            "ライン"
-            "矩形"
-            "テキスト"
-            "三角形"
-            "ポリゴン"
-            "コントロール"
+            "Button"（ボタン）
+            "TextBox"（テキストボックス）
+            "ImageList"（イメージリスト）
+            "Ellipse"（楕円）
+            "Image"（画像）
+            "Line"（ライン）
+            "Rectangle"（矩形）
+            "Text"（テキスト）
+            "Triangle"（三角形）
+            "Polygon"（ポリゴン）
+            "Control"（コントロール）
          </param>
          <returns>使用される次のオブジェクトインデックス（失敗時に 0）。</returns>
       </member>
@@ -8883,7 +8883,7 @@
       <member name="P:LitDev.LDUtilities.CSVDeliminator">
          <summary>
             CSV ファイルの読み書き用の 1 文字の区切り文字
-            デフォルト "、"
+            デフォルト ","
          </summary>
       </member>
       <member name="P:LitDev.LDUtilities.NetworkURL">
@@ -9371,7 +9371,7 @@
       </member>
       <member name="P:LitDev.LDEvents.LastFileChangeType">
          <summary>
-            最後のファイル変更タイプ（"作成済み"、"変更済み" または "削除済み"）。
+            最後のファイル変更タイプ、"Created"（作成済み）、"Changed"（変更済み） または "Deleted"（削除済み）。
          </summary>
       </member>
       <member name="P:LitDev.LDEvents.LastError">
@@ -9611,7 +9611,7 @@
             衝突をチェックするための形状。
          </param>
          <returns>
-            すべての形状の配列が衝突しました（静的な障害物の場合は空 "または" 壁 " かもしれません）。
+            すべての形状の配列が衝突しました（静的な障害物の場合は空 "" または "Wall"（壁）かもしれません）。
          </returns>
       </member>
       <member name="M:LitDev.LDPhysics.GetInertia(Microsoft.SmallBasic.Library.Primitive)">
@@ -9963,7 +9963,7 @@
          </param>
          <param name="mask">
             このシェイプが衝突するグループの配列（デフォルトではすべてのグループ 0,1,2、..、14,15）。
-            形状がグループ 0、1、および 4 とだけ相互作用できるようにするには、"1 = 0; 2 = 1; 3 = 4;" となります。
+            形状がグループ 0、1、および 4 とだけ相互作用できるようにするには、"1=0;2=1;3=4;" となります。
          </param>
          <returns>
             なし。
@@ -10163,7 +10163,7 @@
             BrakeStraighten（より高い値は制動中により速く操舵を回復する）
          </summary>
          <param name="shapeName">タイヤの形状。</param>
-         <returns>プロパティ名でインデックスされたプロパティの配列。"滑り止め"。</returns>
+         <returns>プロパティ名でインデックスされたプロパティの配列。"AntiSkid"（滑り止め）。</returns>
       </member>
       <member name="M:LitDev.LDPhysics.SetTireProperties(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -10189,7 +10189,7 @@
             クラッシュ（値はインパクトの速度）
          </summary>
          <param name="shapeName">タイヤの形状。</param>
-         <returns>情報名でインデックスされた情報の配列。"スキッド"。</returns>
+         <returns>情報名でインデックスされた情報の配列。"Skid"（スキッド）。</returns>
       </member>
       <member name="M:LitDev.LDPhysics.AddExplosion(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -10235,13 +10235,13 @@
          <param name="type">
             以下のジョイントタイプのいずれか。
 
-            "距離" - 形状間の固定距離を維持します。
-            "歯車" -  2 つの形状のプリズムまたは回転ジョイント（以前に作成したもの）をリンクします。
-            "線" - 最初に図形を結ぶ線に沿って図形を移動します。
+            "Distance"（距離） - 形状間の固定距離を維持します。
+            "Gear"（歯車） -  2 つの形状のプリズムまたは回転ジョイント（以前に作成したもの）をリンクします。
+            "Line"（線） - 最初に図形を結ぶ線に沿って図形を移動します。
             "Mouse" - シェイプをマウスの後に移動します（両方のシェイプ名は同じにする必要があります）。
             "Prismatic_H" -  2 つの図形の間の線に沿って図形を垂直に移動します。
             "Prismatic_V" -  2 つの図形の間の線に沿って図形を水平に移動します。
-            "プーリー" - プーリーシステムで、一方の形状が下に動くにつれて上に移動し、最初にプーリーの動きの極端な点で形状を位置決めします。
+            "Pulley"（プーリー） - プーリーシステムで、一方の形状が下に動くにつれて上に移動し、最初にプーリーの動きの極端な点で形状を位置決めします。
             "Revolute" - 形状はお互いに回転することができます。
          </param>
          <param name="collide">
@@ -10250,13 +10250,13 @@
          <param name="parameters">
             オプションのパラメータ（デフォルトは ""）、複数のパラメータは配列にあります。
 
-            "距離" - 減衰比（デフォルトは 0）
-            "歯車" - 歯車比、第 1 関節、第 2 関節（デフォルト 1、関節の自動検出）
-            "線" -  X 方向、Y 方向、下側平行移動、上側平行移動（形状を結ぶデフォルトの線、制限なし）
-            "マウス" - 最大加速、減衰比（デフォルト 10000,0.7）
+            "Distance"（距離） - 減衰比（デフォルトは 0）
+            "Gear"（歯車） - 歯車比、第 1 関節、第 2 関節（デフォルト 1、関節の自動検出）
+            "Line"（線） -  X 方向、Y 方向、下側平行移動、上側平行移動（形状を結ぶデフォルトの線、制限なし）
+            "Mouse"（マウス） - 最大加速、減衰比（デフォルト 10000,0.7）
             "Prismatic_H" -  X 方向、Y 方向、下側平行移動、上側平行移動（デフォルト 1,0、無制限）
             "Prismatic_V" -  X 方向、Y 方向、下側平行移動、上側平行移動（デフォルトは 0,1、無限）
-            "プーリ" - プーリ比（ブロックとタックル）（デフォルトは 1）
+            "Pulley"（プーリ） - プーリ比（ブロックとタックル）（デフォルトは 1）
             "Revolute" - 低い角度、上の角度（デフォルトなし）
          </param>
          <returns>
@@ -10303,7 +10303,7 @@
          <param name="angle">チェックする角度（度）。これは角度の配列でもあります。</param>
          <param name="distance">確認する最大距離。</param>
          <returns>
-            その距離に等しい値を持つ形状名（静的障害物の場合は "壁"）によってインデックスされた結果の配列。
+            その距離に等しい値を持つ形状名（静的障害物の場合は "Wall"（壁））によってインデックスされた結果の配列。
             図形はソートされ、最も近いものが最初にリストされます。
             入力角度の配列を使用すると、各角度に最も近い形状のみが返され、値は距離ではなく角度です。
          </returns>
@@ -10395,7 +10395,7 @@
             整数ボーレート、たとえば 9600。
          </param>
          <returns>
-            エラーメッセージ "成功"、"NOSERIALPORTS"、"PORTNOTFOUND" または "CONNECTIONFAILED"。
+            エラーメッセージ "SUCCESS"（成功）、"NOSERIALPORTS"、"PORTNOTFOUND" または "CONNECTIONFAILED"。
          </returns>
       </member>
       <member name="M:LitDev.LDCommPort.SwapPort(Microsoft.SmallBasic.Library.Primitive)">
@@ -10521,7 +10521,7 @@
          </summary>
          <param name="stopBits">
             停止ビット：
-            "1"（デフォルト）、"None"、"OnePointFive" または "Two"。
+            "One"（デフォルト）、"None"、"OnePointFive" または "Two"。
          </param>
          <returns>
             "SUCCESS"、"NOCONNECTION"、"FAILED" のいずれか。
@@ -11353,9 +11353,9 @@
          <summary>
             オーバーラップメソッドを呼び出した後、このプロパティは交差点に追加の詳細を提供します。
             結果は次のいずれか。
-            "空" - 交差点なし
+            "Empty"（空） - 交差点なし
             "FullyContains" -  shape1 は完全に内側にあります 2
-            "交差" - 重複しているが、どちらも完全に含まれていない
+            "Intersects"（交差） - 重複しているが、どちらも完全に含まれていない
             "FullyInside" -  shape2 は完全に内側にあります 1
          </summary>
       </member>
@@ -11518,7 +11518,7 @@
             シェイプ名（通常はテキストボックス）。
          </param>
          <returns>
-            成功または失敗に応じて "真" または "偽"。
+            成功または失敗に応じて "True"（真） または "False"（偽）。
          </returns>
       </member>
       <member name="M:LitDev.LDFocus.GetFocus">
@@ -11721,7 +11721,7 @@
             JScript コマンド 'eval' が使用されているため、より複雑な JScript 操作が可能です（LDInline も参照してください）。
             後で TextWindow を使用する必要がある場合は、このメソッドを使用する前に TextWindow を表示する必要があります。
          </summary>
-         <param name="expression">評価する式。"（9/6）+ 3" または "2.1&gt; 1.5" となる。</param>
+         <param name="expression">評価する式。"(9/6) + 3" または "2.1 &gt; 1.5" となる。</param>
          <returns>評価された結果。</returns>
       </member>
       <member name="M:LitDev.LDMath.Evaluate2(Microsoft.SmallBasic.Library.Primitive)">
@@ -11737,7 +11737,7 @@
             文字列式をブール値 "True" または "False"（可能であれば）に評価します。
             TextWindow でうまく動作する Evaluate の代替方法。
          </summary>
-         <param name="expression">ブール値に評価する式。"21.3&gt; 16"。</param>
+         <param name="expression">ブール値に評価する式。"21.3 &gt; 16"。</param>
          <returns>評価結果（"True" または "False"）。</returns>
       </member>
       <member name="M:LitDev.LDMath.FixSigFig(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -12737,7 +12737,7 @@
       </member>
       <member name="M:LitDev.Engines.Functions.IowKitWrite(System.IntPtr,System.UInt32,System.Byte[],System.UInt32)">
          <summary>
-            "長さ" を書き込みバイトは IO-Warrior の "numPipe" データチャネルで示す方向に
+            "length"（長さ）を書き込みバイトは IO-Warrior の "numPipe" データチャネルで示す方向に
             される。有効なレポート以外は、バイトの適切な数とから
             からなります選択されたデータチャネルが送信されたレポート ID が
             機能を失敗し受け入れた。
@@ -12967,7 +12967,7 @@
          <summary>CreateFile：重複した操作のハンドルを開く</summary>
       </member>
       <member name="F:LitDev.Engines.Win32Usb.OPEN_EXISTING">
-         <summary>CreateFile："作成する" リソースが存在する必要があります</summary>
+         <summary>CreateFile："created"（作成する）リソースが存在する必要があります</summary>
       </member>
       <member name="F:LitDev.Engines.Win32Usb.ERROR_IO_PENDING">
          <summary>ReadFile / WriteFile：重複した操作が不完全です。</summary>

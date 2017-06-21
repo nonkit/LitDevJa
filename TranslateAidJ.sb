@@ -1,10 +1,10 @@
 ' Translate Aid J
-' Version 1.2.1
+' Version 1.2.2
 ' Copyright © 2017 Nonki Takahashi.  The MIT License.
-' Last update 2017-06-20
+' Last update 2017-06-21
 
 debug = "False"
-title = "Translate Aid J 1.2.1"
+title = "Translate Aid J 1.2.2"
 GraphicsWindow.Title = title
 Not = "False=True;True=False;"
 CR = Text.GetCharacter(13)
@@ -32,6 +32,26 @@ While "True"
         result[lang] = LDxml.FirstChild()
         ShowNode()
       EndFor
+    ElseIf menu = "Literal" Then
+      For lang = 1 To 2
+        LDxml.Switch(name[lang])
+        FirstNode()
+      EndFor
+      cont = "True"
+      While cont
+        For lang = 1 To 2
+          LDxml.Switch(name[lang])
+          FindNext()
+          GetLiteral()
+        EndFor
+        If lvl[2] = 1 Then
+          cont = "False"
+        Else
+          RestoreLiteral()
+          lang = 2
+          UpdateNode()
+        EndIf
+      EndWhile
     ElseIf menu = "Next" Then
       For lang = 1 To 2
         LDxml.Switch(name[lang])
@@ -107,6 +127,18 @@ While "True"
     Program.Delay(200)
   EndIf
 EndWhile
+
+Sub CheckHalfWidth
+  halfWidth = "True"
+  For p = 1 To Text.GetLength(word)
+    c = Text.GetSubText(word, p, 1)
+    code = Text.GetCharacterCode(c)
+    If 255 < code Then
+      halfWidth = "False"
+      p = Text.GetLength(word) + 1 
+    EndIf
+  EndFor
+EndSub
 
 Sub DumpNode
   t = ""
@@ -269,6 +301,7 @@ Sub Form
   menuList["Auto"] = "Main"
   menuList["Quote"] = "Auto"
   menuList["Space"] = "Auto"
+  menuList["Literal"] = "Auto"
   LDControls.AddMenu(gw, 20, menuList, "", "")
   yOffset = "1=20;2=210;"
   For lang = 1 To 2
@@ -341,6 +374,38 @@ Sub GetHalfWidthWord
   EndIf
 EndSub
 
+Sub GetLiteral
+  literal[lang] = ""
+  i = 0
+  p = 1
+  len = Text.GetLength(saved[lang])
+  SkipSpace()
+  While p <= len
+    ' find open double quote
+    q = Text.GetIndexOf(Text.GetSubTextToEnd(saved[lang], p), WQ)
+    If q = 0 Then
+      ' not found
+      p = len + 1 ' exit While
+    Else
+      ' found open double quote
+      p = p + q
+      ' find close double quote
+      q = Text.GetIndexOf(Text.GetSubTextToEnd(saved[lang], p), WQ)
+      If q = 0 Then
+        ' not found
+        p = len + 1 ' exit While
+      Else
+        ' found close double quote
+        If 1 < q Then
+          i = i + 1
+          literal[lang][i] = Text.GetSubText(saved[lang], p, q - 1)
+        EndIf
+        p = p + q
+      EndIf
+    EndIf
+  EndWhile
+EndSub
+
 Sub OnMenuClicked
   menuClicked = "True"
   menu = LDControls.LastMenuItem
@@ -350,6 +415,37 @@ Sub Open
   name[lang] = LDxml.Open(path[lang])
   Shapes.SetText(textName[lang], name[lang])
   FirstNode()
+EndSub
+
+Sub RestoreLiteral
+  inner[2] = saved[2]
+  If (literal[2] <> "") And (literal[1] <> literal[2]) Then
+    For lang = 1 To 2
+      nLiteral[lang] = Array.GetItemCount(literal[lang])
+    EndFor
+    If nLiteral[1] = nLiteral[2] Then
+      For i = 1 To nLiteral[2]
+        word = literal[2][i]
+        CheckHalfWidth()
+        If halfWidth Then
+          If literal[1][i] <> literal[2][i] Then
+            inner[2] = LDText.Replace(inner[2], literal[2][i], literal[1][i])
+          EndIf
+        Else  ' full width
+          inner[2] = LDText.Replace(inner[2], literal[2][i] + WQ, literal[1][i] + WQ + "（" + literal[2][i] + "）")
+        EndIf
+      EndFor
+    EndIf
+  EndIf
+  If debug Then
+    If (saved[2] <> inner[2]) Then
+      TextWindow.WriteLine("saved=" + saved[2])
+      TextWindow.WriteLine("inner=" + inner[2])
+    EndIf
+    If sib[1] <> sib[2] Then
+      TextWindow.Pause()
+    EndIf
+  EndIf
 EndSub
 
 Sub ShowNode
