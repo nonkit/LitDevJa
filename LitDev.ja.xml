@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <doc>
   <assembly>
     <name>LitDev 1.2.1 ja</name>
@@ -1072,8 +1072,8 @@
       </summary>
       <param name="chartName">チャート名。</param>
       <param name="hue">色相（カラー 0 ～ 360）、デフォルトは 0（赤色）。</param>
-      <param name="saturation">彩度（強度 0 ～ 1）。デフォルトは 0.5 です。</param>
-      <param name="lightness">明度（明るさ 0 ～ 1）。デフォルトは 0.5 です。</param>
+      <param name="saturation">彩度（強度 0 ～ 1）。デフォルトは 0.5 。</param>
+      <param name="lightness">明度（明るさ 0 ～ 1）。デフォルトは 0.5 。</param>
       <param name="hsl">
         異なるセグメントに変更するパラメータは次のとおりです。
         "色相"（デフォルト）の虹色
@@ -8953,7 +8953,7 @@
       <param name="cursor">
         CreateCursor またはで作成されたカーソル
         このオブジェクト内の標準カーソル（例えば、"ArrowCD"）、または
-        カーソルとして使用する * .cur ファイルまたは * .ani ファイルへのフルパス。
+        カーソルとして使用する *.cur ファイルまたは *.ani ファイルへのフルパス。
       </param>
     </member>
     <member name="M:LitDev.LDCursors.SetShapeCursor(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -8964,7 +8964,7 @@
       <param name="cursor">
         CreateCursor またはで作成されたカーソル
         このオブジェクト内の標準カーソル（例えば、"ArrowCD"）、または
-        カーソルとして使用する * .cur ファイルまたは * .ani ファイルへのフルパス。
+        カーソルとして使用する *.cur ファイルまたは *.ani ファイルへのフルパス。
       </param>
     </member>
     <member name="M:LitDev.LDCursors.None">
@@ -9357,12 +9357,12 @@
     </member>
     <member name="P:LitDev.LDEvents.FilePath">
       <summary>
-        FileSystem ファイル変更イベントを監視するルートパスです（デフォルトは "C："）。
+        FileSystem ファイル変更イベントを監視するルートパスです（デフォルトは "C:"）。
       </summary>
     </member>
     <member name="P:LitDev.LDEvents.FileFilter">
       <summary>
-        FileSystem ファイル変更イベントのファイルフィルタ（デフォルトは "*。*"）です。
+        FileSystem ファイル変更イベントのファイルフィルタ（デフォルトは "*.*"）です。
       </summary>
     </member>
     <member name="P:LitDev.LDEvents.LastFileChanged">
@@ -12588,7 +12588,7 @@
     <member name="M:LitDev.Engines.Functions.IowKitCloseDevice(System.IntPtr)">
       <summary>
         メソッド IowKitCloseDevice は
-        所与のハンドルによって制御される IO 戦士を閉じる。
+        所与のハンドルによって制御される IO-Warrior を閉じる。
       </summary>
       <param name="IowHandle">IO-Warrior への有効なハンドル。</param>
     </member>
@@ -12645,13 +12645,13 @@
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitRead(System.IntPtr,System.UInt32,System.Byte[],System.UInt32)">
       <summary>
-        は IO-Warrior からデータを読み込みます。ブロックによって IO 戦士の入力における変化が regisriert。非ブロッキング
+        は IO-Warrior からデータを読み込みます。ブロックによって IO-Warrior の入力における変化が regisriert。非ブロッキング
         はれるまでスレッドを呼び出す機能ブロックは
         は IowKitReadNonBlocking を呼び出すことによって行うことができる READ（）。
         データは、報告書の形で到着します。レポートの詳細な説明は、それぞれの IO-Warrior のデータシートに見つけること
         れる。
       </summary>
-      <param name="IowHandle">IO 戦士への有効なハンドル。</param>
+      <param name="IowHandle">IO-Warrior への有効なハンドル。</param>
       <param name="numPipe">
         データチャネルはから読み取ることができます。0 から
         IOWKIT_MAX_PIPES-1
@@ -12667,7 +12667,7 @@
         、使用可能なデータがないとき、ブロックされていないため、
         IO-Warrior の入力では変更されていない。
       </summary>
-      <param name="IowHandle">IO 戦士への有効なハンドル。</param>
+      <param name="IowHandle">IO-Warrior への有効なハンドル。</param>
       <param name="numPipe">
         データチャネルはから読み取ることができます。0 から
         IOWKIT_MAX_PIPES-1
@@ -12686,7 +12686,7 @@
         ブロック以上 32 ビットバック
         あります。
       </summary>
-      <param name="IowHandle">IO 戦士への有効なハンドル。</param>
+      <param name="IowHandle">IO-Warrior への有効なハンドル。</param>
       <param name="IoPinStatus">端子の状態を格納するためのターゲット・データ・フィールド。</param>
       <returns>
         新しいデータが収集されていないか、渡されたハンドルが動作していない
@@ -12705,7 +12705,7 @@
         （例えば I2C バスライト
         または読み取り）に送信されます。
       </summary>
-      <param name="IowHandle">IO 戦士への有効なハンドル。</param>
+      <param name="IowHandle">IO-Warrior への有効なハンドル。</param>
       <param name="Timeout">
         限度。
         iowkit.dll 説明で推奨さ 1000 ミリ秒以上です。
@@ -12715,11 +12715,11 @@
     <member name="M:LitDev.Engines.Functions.IowKitSetWriteTimeout(System.IntPtr,System.UInt32)">
       <summary>
         が IowKitWrite を。
-        IO 戦士への書き込みアクセス中にタイムアウトに固定限界を示すデータが所定の制限
+        IO-Warrior への書き込みアクセス中にタイムアウトに固定限界を示すデータが所定の制限
         内に書き込むことができない場合に失敗します。タイプミスは非定型です。近くに接続し、ハードウェアをチェックし、
         エラーが発生したとき。
       </summary>
-      <param name="IowHandle">IO 戦士への有効なハンドル。</param>
+      <param name="IowHandle">IO-Warrior への有効なハンドル。</param>
       <param name="Timeout">
         限度。
         iowkit.dll 説明で推奨さ 1000 ミリ秒以上です。
@@ -12732,18 +12732,18 @@
         指定されたデータ・チャンネル（管）の上のすべての進行中のデータ転送動作を終了します
         が戻るまで受信することができます。
       </summary>
-      <param name="IowHandle">IO 戦士への有効なハンドル。</param>
+      <param name="IowHandle">IO-Warrior への有効なハンドル。</param>
       <param name="numPipe">データチャネルの数。</param>
       <returns>成功した場合は true、それ以外の場合は false。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitWrite(System.IntPtr,System.UInt32,System.Byte[],System.UInt32)">
       <summary>
-        "長さ" を書き込みバイトは IO 戦士の "numPipe" データチャネルで示す方向に
+        "長さ" を書き込みバイトは IO-Warrior の "numPipe" データチャネルで示す方向に
         される。有効なレポート以外は、バイトの適切な数とから
         からなります選択されたデータチャネルが送信されたレポート ID が
         機能を失敗し受け入れた。
       </summary>
-      <param name="IowHandle">IO 戦士への有効なハンドル。</param>
+      <param name="IowHandle">IO-Warrior への有効なハンドル。</param>
       <param name="numPipe">データチャネルがロードされます。</param>
       <param name="buffer">バッファは、データが書き込まれるように、調製します。</param>
       <param name="length">書き込まれるバイト数。</param>
@@ -12755,7 +12755,7 @@
         戦士の機能を実行するために Keie スレッドを使用して常にため、0
         を統合しています。
       </summary>
-      <param name="IowHandle">IO 戦士への有効なハンドル。</param>
+      <param name="IowHandle">IO-Warrior への有効なハンドル。</param>
       <returns>現在のスレッドに処理するか、または失敗の 0。</returns>
     </member>
     <member name="M:LitDev.Engines.Functions.IowKitVersion">
