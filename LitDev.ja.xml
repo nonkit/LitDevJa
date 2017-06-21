@@ -95,7 +95,7 @@
          <summary>
             このオブジェクトは、配列に値を格納する別の高速な方法を提供します。
             1 次元、2 次元、3 次元以上の高次元配列を扱うことができ、配列をファイルに読み書きするためのメソッド（CSV 形式など）を持っています。
-            スモールベーシックアレイと同じように、配列内のさまざまな行が異なる次元または要素数（ジャグ配列）を持つことも可能です。
+            Small Basic 配列と同じように、配列内のさまざまな行が異なる次元または要素数（ジャグ配列）を持つことも可能です。
             内部的には、配列の次元またはサイズを最初に設定する必要がないように、サイズを拡大できるリストを使用します。
             インデックス付けは、1 から始まる整数です。
             1D 配列の場合、追加のソート方法があるので、LDList を使用することをお勧めします。
@@ -197,7 +197,7 @@
          <param name="arrayName">配列名。</param>
          <param name="indices">
             コンマ（またはスペース）で区切られたインデックスのリスト。
-            例えば第 1 次元では ""、第 1 次元では 3 番目の要素の第 2 次元では "3" 。
+            例えば第 1 次元では ""、第 1 次元では 3 番目の要素の第 2 次元では "3"。
          </param>
          <returns>ディメンションサイズ。</returns>
       </member>
@@ -241,7 +241,7 @@
       <member name="M:LitDev.LDFastArray.ReadCSV(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             CSV（カンマ区切り値）ファイルを 2D FastArray 配列に読み込みます。
-            デリミネータは、ユーティリティを使用してコンマから変更することができます .CSVDeliminator
+            区切り文字は、LDUtilities.CSVDeliminator を使用してコンマから変更することができます。
          </summary>
          <param name="fileName">CSV ファイルのフルパス。</param>
          <returns>CSV ファイルをインポートした 2D FastArray または ""。</returns>
@@ -249,7 +249,7 @@
       <member name="M:LitDev.LDFastArray.WriteCSV(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             2D FastArray 配列を CSV（カンマ区切り値）ファイルに書き込みます。
-            デリミネータは、ユーティリティを使用してコンマから変更することができます .CSVDeliminator
+            区切り文字は、LDUtilities.CSVDeliminator を使用してコンマから変更することができます。
          </summary>
          <param name="arrayName">2D 配列名。</param>
          <param name="fileName">CSV ファイルのフルパス。</param>
@@ -257,9 +257,9 @@
       <member name="M:LitDev.LDFastArray.CreateFromValues(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             SmallBasic 配列を FastArray 配列に変換します。
-            スモールベーシック配列のすべてのインデックスは連続した整数インデックスに置き換えられます。
+            Small Basic 配列のすべてのインデックスは連続した整数インデックスに置き換えられます。
          </summary>
-         <param name="sbArray">スモールベーシックアレイ。</param>
+         <param name="sbArray">Small Basic 配列。</param>
          <returns>新しい FastArray または ""。</returns>
       </member>
       <member name="M:LitDev.LDFastArray.CreateFromIndices(Microsoft.SmallBasic.Library.Primitive)">
@@ -267,7 +267,7 @@
             SmallBasic 配列（最大 3 次元）を FastArray 配列に変換します。
             このメソッドは、Small Basic 配列インデックスのみを含む配列を作成します。
          </summary>
-         <param name="sbArray">スモールベーシックアレイ。</param>
+         <param name="sbArray">Small Basic 配列。</param>
          <returns>新しい FastArray または ""。</returns>
       </member>
       <member name="M:LitDev.LDFastArray.ToArray(Microsoft.SmallBasic.Library.Primitive)">
@@ -275,7 +275,7 @@
             FastArray 配列を Small Basic 配列に変換します。
          </summary>
          <param name="arrayName">配列名。</param>
-         <returns>スモールベーシック配列または ""。</returns>
+         <returns>Small Basic 配列または ""。</returns>
       </member>
       <member name="M:LitDev.LDFastArray.Collapse(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -296,7 +296,7 @@
       <member name="M:LitDev.LDFastArray.Write(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             配列をファイルに保存します。
-            配列が 1D で、テキストとして書き込まれている場合、各エントリは単に索引付けされていない行に書き込まれます。
+            配列が 1D で、テキストとして書き込まれている場合、各エントリは単にインデックスされていない行に書き込まれます。
          </summary>
          <param name="arrayName">配列名。</param>
          <param name="fileName">ファイルの絶対パス。</param>
@@ -446,44 +446,44 @@
       <member name="T:LitDev.LDUnits">
          <summary>
             一般的な編集可能な単位変換システム。
-            すべての単位と寸法は大文字と小文字が区別されます。
+            すべての単位と次元は大文字と小文字が区別されます。
             基本単位は、単一の次元と名前で構成され、すべて独立しています。
-            派生単位は、基本単位または他の派生単位からなる記述、名前、および単位定義、およびオプションの加算項（通常は 0）で構成されます。
-            単位は分割によって解析されます。/ +  - と * を使用して、導出された単位変換、ブラケット付き（）の項を再帰的に解決します。
-            値（特に、小数点 "。" または " - " を含むもの）は、（）内に含める必要があります。
-            ユニットの先頭に接頭辞または数値を付けることができます（たとえば、mili は 0.001、K は kilo 1000 など）。
-            どのユニットにも電源を供給することができます。
-            典型的な単位は "マイル/時"、"m / s2" または "MJ /日" などであり、ベースユニットと派生ユニットの任意の組み合わせとすることができる。
-            次元的に同じユニユーアのペアは変換できます。
-            加法的な値は、非複合単位変換（例えば、C から F への変換）にのみ使用されます。
-            プレフィックス単位が不明瞭にならないようにするには、完全なプレフィックス名を使用します（たとえば、min は 60 秒または 0.001 インチになります。後者はミリインチにする必要があります）。
+            組立単位は、基本単位または他の組立単位からなる記述、名前、および単位定義、およびオプションの加算項（通常は 0）で構成されます。
+            単位は分割によって解析されます。/ + - と * を使用して、かっこ付き（）の項を優先し、組立単位の変換を再帰的に行います。
+            値（特に、小数点 "." またはマイナス "-" を含むもの）は、（）内に含める必要があります。
+            単位の先頭に接頭辞または数値を前置することができます（たとえば、m は mili 0.001、K は kilo 1000 など）。
+            どの単位にも累乗の指数を後置することができます。
+            典型的な単位は "mile/hr"、"m/s2" または "MJ/day" などであり、基本単位と組立単位の任意の組み合わせとすることができます。
+            次元的に同じ単位のペアであれば変換できます。
+            加算値は、非複合単位の変換（例えば、C から F への変換）にのみ使用されます。
+            接頭辞単位が不明瞭にならないようにするには、完全な接頭辞名を使用します（たとえば、min は 60 seconds または 0.001 inches は miliin にする必要があります）。
             通貨換算は毎日更新されます。
          </summary>
       </member>
       <member name="M:LitDev.LDUnits.Convert(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            あるユニットから別のユニットに値を変換する。
+            ある単位から別の単位に値を変換する。
          </summary>
          <param name="value">変換する値。</param>
-         <param name="fromUnit">変換元の単位。</param>
-         <param name="toUnit">変換する単位。</param>
+         <param name="fromUnit">変換前の単位。</param>
+         <param name="toUnit">変換後の単位。</param>
          <returns>
-            変換された値または "FAILED"（通常、存在しない単位または不一致の次元）。
+            変換された値または "FAILED"（通常、存在しない単位または次元の不一致）。
          </returns>
       </member>
       <member name="M:LitDev.LDUnits.GetErrors">
          <summary>
-            変換が失敗した場合、または追加されたユニットまたは定数の競合が見つかった場合は、エラーメッセージの配列を取得します。
+            変換が失敗した場合、または追加された単位または定数の競合が見つかった場合に、エラーメッセージの配列を取得します。
          </summary>
          <returns>エラーメッセージまたは "" の配列。</returns>
       </member>
       <member name="M:LitDev.LDUnits.GetDimensions(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            ユニットのディメンションの配列を取得します。
+            単位の次元の配列を取得します。
          </summary>
-         <param name="unit">ユニットの dimensins を取得する。</param>
+         <param name="unit">次元を取得する単位。</param>
          <returns>
-            次元の大きさまたは次元の値または "" で索引付けされた配列。
+            次元でインデックスされ次数の値を持つ配列または ""。
          </returns>
       </member>
       <member name="M:LitDev.LDUnits.GetBaseUnits">
@@ -492,16 +492,16 @@
          </summary>
          <returns>
             使用可能な基本単位の配列で、単位の次元で示されます。
-            配列の値は基本単位の名前です。
+            配列の値は基本単位の次元の名前です。
          </returns>
       </member>
       <member name="M:LitDev.LDUnits.GetDerivedUnits">
          <summary>
-            現在の派生ユニットのリストを取得します。
+            現在の組立単位のリストを取得します。
          </summary>
          <returns>
-            利用可能な派生ユニットの配列。ユニット名で（記述）を添えています。
-            配列の値は、変換に使用されるベース（または派生単位）です。
+            利用可能な組立単位名でインデックスされた配列。
+            配列の値は、基本単位（または組立単位）で表され（説明）が添えられます。
          </returns>
       </member>
       <member name="M:LitDev.LDUnits.GetConstants">
@@ -509,7 +509,7 @@
             現在の定数のリストを取得します。
          </summary>
          <returns>
-            利用可能な定数の配列。定数名で（description）を添えて索引付けされています。
+            定数名に（説明）を添えてインデックスされた、利用可能な定数の配列。
             配列の値は定数値です。
          </returns>
       </member>
@@ -518,42 +518,42 @@
             現在の接頭辞のリストを取得します。
          </summary>
          <returns>
-            プレフィックス名で索引付けされた利用可能なプリフィックスの配列。
+            接頭辞名でインデックスされた利用可能な接頭辞の配列。
             配列の値は接頭辞の値です。
          </returns>
       </member>
       <member name="M:LitDev.LDUnits.AddBaseUnit(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            システムにベースユニットを追加します。
+            システムに基本単位を追加します。
          </summary>
-         <param name="dimension">ベースユニットの寸法（例：TEMPERATURE）。</param>
-         <param name="name">ユニット名（既存のユニット名には注意しないでください）。</param>
+         <param name="dimension">基本単位の次元（例：TEMPERATURE）。</param>
+         <param name="name">単位名（既存の単位名と衝突しないよう注意）。</param>
       </member>
       <member name="M:LitDev.LDUnits.AddDerivedUnit(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            派生ユニットをシステムに追加します。
+            組立単位をシステムに追加します。
          </summary>
-         <param name="description">オプションで、派生ユニットの長い名前または説明。</param>
-         <param name="name">ユニット名（既存のユニット名には注意しないでください）。</param>
-         <param name="units">導出されたユニット定義。</param>
+         <param name="description">オプションで、組立単位の長い名前または説明。</param>
+         <param name="name">単位名（既存の単位名と衝突しないよう注意）。</param>
+         <param name="units">組立単位の定義。</param>
          <param name="add">オプションの加算項。</param>
       </member>
       <member name="M:LitDev.LDUnits.AddConstant(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            システムに無次元定数を追加します。
+            システムに次元のない定数を追加します。
          </summary>
          <param name="description">オプションの長い名前または定数の説明。</param>
-         <param name="name">定数名（既存の定数名には慎重ではないので注意してください）。</param>
-         <param name="value">導出された定数。</param>
+         <param name="name">定数名（既存の定数名と衝突しないよう注意）。</param>
+         <param name="value">定数の値。</param>
       </member>
       <member name="M:LitDev.LDUnits.Export">
          <summary>
-            現在のユニットシステムをファイル（現在のプログラムフォルダの units.txt）にエクスポートします。
+            現在の単位系をファイル（現在のプログラムフォルダの units.txt）にエクスポートします。
          </summary>
       </member>
       <member name="M:LitDev.LDUnits.Import">
          <summary>
-            ファイルから単位システムをインポートします（現在のプログラムフォルダ内の units.txt）。
+            ファイル（現在のプログラムフォルダの units.txt）から単位系をインポートします。
          </summary>
       </member>
       <member name="T:LitDev.LDFigures">
@@ -578,7 +578,7 @@
          </summary>
          <param name="width">形状の幅。</param>
          <param name="height">形状の高さ。</param>
-         <param name="thickness">矢印の軸の相対的な厚さ、例えば。0.25 である。</param>
+         <param name="thickness">矢印の軸の相対的な厚さ、例えば。0.25 です。</param>
          <param name="arrowAngle">矢印の頭の角度（度）。</param>
          <param name="direction">矢印の方向："上"、"下"、"左" または "右"。</param>
          <returns>形状の名前。</returns>
@@ -876,10 +876,10 @@
       <member name="M:LitDev.LDLogic.XOr(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             XOr（排他的論理和）演算子。
-            XOr（"True"、"True"）= "False"
-            XOr（"False"、"False"）= "False"
-            XOr（"True"、"False"）= "True"
-            XOr（"False"、"True"）= "True"
+            XOr("True","True") = "False"
+            XOr("False","False") = "False"
+            XOr("True","False") = "True"
+            XOr("False","True") = "True"
          </summary>
          <param name="value1">最初の値（"True" または "False"）。</param>
          <param name="value2">2 番目の値（"True" または "False"）。</param>
@@ -887,7 +887,7 @@
       </member>
       <member name="M:LitDev.LDLogic.LT(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            オペレータ以下。
+            より小さい演算子。
             value1 が value2 より小さいかどうかをチェックします。
             また、字句の比較が行われる文字列に対しても機能します。
          </summary>
@@ -917,7 +917,7 @@
       </member>
       <member name="M:LitDev.LDLogic.GE(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            より大きいまたは等しい演算子。
+            より大きいか等しい演算子。
             value1 が value2 以上かどうかをチェックします。
             また、字句の比較が行われる文字列に対しても機能します。
          </summary>
@@ -1072,8 +1072,8 @@
          </summary>
          <param name="chartName">チャート名。</param>
          <param name="hue">色相（カラー 0 ～ 360）、デフォルトは 0（赤色）。</param>
-         <param name="saturation">彩度（強度 0 ～ 1）。デフォルトは 0.5 。</param>
-         <param name="lightness">明度（明るさ 0 ～ 1）。デフォルトは 0.5 。</param>
+         <param name="saturation">彩度（強度 0 ～ 1）。デフォルトは 0.5。</param>
+         <param name="lightness">明度（明るさ 0 ～ 1）。デフォルトは 0.5。</param>
          <param name="hsl">
             異なるセグメントに変更するパラメータは次のとおりです。
             "色相"（デフォルト）の虹色
@@ -1097,7 +1097,6 @@
             "オーバーレイ" の名前がチャートの上に重なる
             グラフの上に重なるパーセント値
             "Legend_Percent"（既定値）別の凡例と割合のオーバーレイチャート
-            "
          </param>
          <param name="background">凡例ラベルのテキストの背景色は "True" または "False"（デフォルト）です。</param>
       </member>
@@ -1153,7 +1152,7 @@
          <param name="real">FFT を計算するための実際の値の配列。</param>
          <returns>
             複素数データ（実振幅と虚数位相）の配列、または "FAILED"。
-            各複合対について、インデックスは実数部であり、値は虚数部である。
+            各複合対について、インデックスは実数部であり、値は虚数部です。
          </returns>
       </member>
       <member name="M:LitDev.LDMathX.FFTInverse(Microsoft.SmallBasic.Library.Primitive)">
@@ -1162,7 +1161,7 @@
          </summary>
          <param name="complex">
             複素数データの配列（実振幅と虚数位相）。
-            各複合対について、インデックスは実数部であり、値は虚数部である。
+            各複合対について、インデックスは実数部であり、値は虚数部です。
          </param>
          <returns>逆 FFT 値または "FAILED" の配列。</returns>
       </member>
@@ -1172,7 +1171,7 @@
          </summary>
          <param name="complex">
             複素数データの配列（実振幅と虚数位相）。
-            各複合対について、インデックスは実数部であり、値は虚数部である。
+            各複合対について、インデックスは実数部であり、値は虚数部です。
          </param>
          <returns>データの実数部分の配列、または "FAILED"。</returns>
       </member>
@@ -1182,7 +1181,7 @@
          </summary>
          <param name="complex">
             複素数データの配列（実振幅と虚数位相）。
-            各複合対について、インデックスは実数部であり、値は虚数部である。
+            各複合対について、インデックスは実数部であり、値は虚数部です。
          </param>
          <returns>データの虚数部分の配列、または "FAILED"。</returns>
       </member>
@@ -1194,7 +1193,7 @@
          <param name="imaginary">虚偽のデータの配列。</param>
          <returns>
             複素数データ（実振幅と虚数位相）の配列、"MISMATCH" または "FAILED"。
-            各複合対について、インデックスは実数部であり、値は虚数部である。
+            各複合対について、インデックスは実数部であり、値は虚数部です。
          </returns>
       </member>
       <member name="T:LitDev.LDResources">
@@ -1407,7 +1406,7 @@
          <param name="waveform">
             反復波のためのフォーム。
             これは配列で、インデックスは相対的な増加時間（実際の値は周波数に対して正規化されます）で、値は振幅（-1 対 1）です。
-            三角波の例は、"0 = -1; 1 = 1; 2 = -1;" である。
+            三角波の例は、"0 = -1; 1 = 1; 2 = -1;" です。
          </param>
          <returns>波の名前または失敗時の ""</returns>
       </member>
@@ -1561,11 +1560,11 @@
       <member name="M:LitDev.LDxml.ToArray">
          <summary>
             現在の XML 文書を Small Basic 配列に変換します。
-            アレイの構造および深さは、かなり複雑であり得る。
+            配列の構造および深さは、かなり複雑であり得る。
             各ノードには、オプションの配列 "属性" と "子" または "データ" があります。
-            子ノードがある場合、最初に数字で索引付けされ、同じ名前の複数の子を区切ります。
+            子ノードがある場合、最初に数字でインデックスされ、同じ名前の複数の子を区切ります。
          </summary>
-         <returns>スモールベーシックアレイまたは "FAILED"。</returns>
+         <returns>Small Basic 配列または "FAILED"。</returns>
       </member>
       <member name="M:LitDev.LDxml.FromArray(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -1577,7 +1576,7 @@
       <member name="P:LitDev.LDxml.NodeType">
          <summary>
             現在のノードの型を取得します。
-            多くのタイプのうちの 1 つであるが、一般的には "要素" または "テキスト" である。
+            多くのタイプのうちの 1 つであるが、一般的には "要素" または "テキスト" です。
          </summary>
       </member>
       <member name="P:LitDev.LDxml.NodeName">
@@ -1650,7 +1649,7 @@
          <param name="ftpServerIP">ftp サーバアドレス（または IP）。</param>
          <param name="ftpUserID">ユーザー ID。</param>
          <param name="ftpPassword">ユーザーのパスワード。</param>
-         <returns>ファイル名とフォルダ名の配列、または "FAILED"。配列はファイル名で索引付けされ、値には追加情報が含まれます。</returns>
+         <returns>ファイル名とフォルダ名の配列、または "FAILED"。配列はファイル名でインデックスされ、値には追加情報が含まれます。</returns>
       </member>
       <member name="P:LitDev.LDftp.LastFTPFile">
          <summary>
@@ -1952,7 +1951,7 @@
       </member>
       <member name="M:LitDev.LDArray.Copy(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            あるアレイを別のアレイにコピーします。
+            ある配列を別の配列にコピーします。
             2 つの配列の次元は同じでなければなりません。
          </summary>
          <param name="array1">
@@ -2057,7 +2056,7 @@
          <summary>
             Small Basic 配列のインデックスから新しい配列を作成します。
          </summary>
-         <param name="sbArray">SB アレイ。</param>
+         <param name="sbArray">Small Basic 配列。</param>
          <returns>
             新しい配列または "FAILED"。
          </returns>
@@ -2066,16 +2065,16 @@
          <summary>
             Small Basic 配列の値から新しい配列を作成します。
          </summary>
-         <param name="sbArray">SB アレイ。</param>
+         <param name="sbArray">Small Basic 配列。</param>
          <returns>
             新しい配列または "FAILED"。
          </returns>
       </member>
       <member name="M:LitDev.LDArray.GetIndex(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            SB 配列内の値の最初の出現のインデックスを取得します。
+            Small Basic 配列内の値の最初の出現のインデックスを取得します。
          </summary>
-         <param name="sbArray">SB アレイ。</param>
+         <param name="sbArray">Small Basic 配列。</param>
          <param name="value">検索する値。</param>
          <returns>配列内の値のインデックス。存在しない場合は ""、または "FAILED" の場合。</returns>
       </member>
@@ -2475,7 +2474,7 @@
             メディアプレーヤーの音量を設定します。
          </summary>
          <param name="shapeName">メディアプレーヤー名。</param>
-         <param name="volume">ボリューム（0 ～ 1）のデフォルトは 0.5 。</param>
+         <param name="volume">ボリューム（0 ～ 1）のデフォルトは 0.5。</param>
       </member>
       <member name="M:LitDev.LDControls.MediaPlayerSpeed(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -2720,7 +2719,7 @@
          </summary>
          <param name="shapeName">リストビューコントロール。</param>
          <param name="row">
-            行番号（1 から索引付け）。
+            行番号（1 からインデックス）。
             行番号が現在の行数より大きい場合、新しい行が追加されます。それ以外の場合は、行データが上書きされます。
          </param>
          <param name="values">値の配列（各列に 1 つ）。</param>
@@ -2730,7 +2729,7 @@
             リストビューコントロールから 1 行のデータを取得します。
          </summary>
          <param name="shapeName">リストビューコントロール。</param>
-         <param name="row">行番号（1 から索引付け）。</param>
+         <param name="row">行番号（1 からインデックス）。</param>
          <returns>値の配列（各列に 1 つずつ）または失敗した場合には ""</returns>
       </member>
       <member name="M:LitDev.LDControls.ListViewRowCount(Microsoft.SmallBasic.Library.Primitive)">
@@ -2746,7 +2745,7 @@
          </summary>
          <param name="shapeName">リストビューコントロール。</param>
          <param name="row">
-            行番号（1 から索引付け）。
+            行番号（1 からインデックス）。
             行番号が現在の行数より大きい場合、何も処理は行われません。
          </param>
       </member>
@@ -3341,7 +3340,7 @@
             変数 "args" は、プログラムの開始時に "" に設定する必要があります。
             入力パラメータは変更されず、"args" と "return" はリターン時に "" に設定されます。
          </summary>
-         <param name="funcName">スモールベーシックサブ名。</param>
+         <param name="funcName">Small Basic サブ名。</param>
          <param name="arg1">入力値（配列でもよい）。</param>
          <returns>関数の結果は、オプションの変数 "return" またはエラーメッセージに保持されます。</returns>
       </member>
@@ -3760,7 +3759,7 @@
       <member name="M:LitDev.LD3DView.AnimateRotation(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             ジオメトリの回転を軸ベクトルを中心にアニメーション化します。
-            これは第 2 の回転を使用し、第 1 の回転は他の軸の回転に対してまだ利用可能である。
+            これは第 2 の回転を使用し、第 1 の回転は他の軸の回転に対してまだ利用可能です。
          </summary>
          <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">アニメーション化するジオメトリオブジェクト。</param>
@@ -3775,7 +3774,7 @@
       <member name="M:LitDev.LD3DView.AnimateRotation2(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             ジオメトリの回転を軸ベクトルを中心にアニメーション化します。
-            これは第 3 の回転を使用し、第 1 の回転は他の軸の回転に対してまだ利用可能である。
+            これは第 3 の回転を使用し、第 1 の回転は他の軸の回転に対してまだ利用可能です。
          </summary>
          <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">アニメーション化するジオメトリオブジェクト。</param>
@@ -3794,7 +3793,7 @@
          <param name="shapeName">3DView オブジェクト。</param>
          <param name="geometryName">アニメーション化するジオメトリオブジェクト。</param>
          <param name="x">アニメートする X 位置。</param>
-         <param name="y">アニメーションする位置は Y 。</param>
+         <param name="y">アニメーションする位置は Y。</param>
          <param name="z">アニメーションする Z 位置。</param>
          <param name="duration">アニメーションの長さ（秒）。</param>
       </member>
@@ -3848,7 +3847,7 @@
       <member name="M:LitDev.LD3DView.AddRevolute(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             回転ジオメトリオブジェクトを追加します。これは、（0,0,0）で始まり上を指すサーフェスです。
-            その形状は、設定点（Y、Z）によって定義され、ここで、Y は、0 から表面に沿った垂直距離であり、Z は、回転半径である。
+            その形状は、設定点（Y、Z）によって定義され、ここで、Y は、0 から表面に沿った垂直距離であり、Z は、回転半径です。
          </summary>
          <param name="shapeName">3DView オブジェクト。</param>
          <param name="path">回転形状を記述する 2D 点座標のリストをスペースまたはコロンで区切ったもの。</param>
@@ -4172,7 +4171,7 @@
             デバイスを初期化して接続する必要があります。
             エンコーディングも設定する必要があります。
          </summary>
-         <returns>受信した文字列、失敗した場合は "" 。</returns>
+         <returns>受信した文字列、失敗した場合は ""。</returns>
       </member>
       <member name="M:LitDev.LDBlueTooth.SendFile(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -4596,7 +4595,7 @@
          <summary>
             このオブジェクトは、アイテムが追加または削除されるときに並べ替える配列のような値を格納する方法を提供します。
             リストは、整数で索引を付けてさまざまな操作を実行できる効率的な配列ストア（SmallBasic 配列よりもはるかに高速）です。
-            リストが変更されると、索引付けは自動的に更新され（1 から索引付けされます）。
+            リストが変更されると、インデックスは自動的に更新され（1 からインデックスされます）。
          </summary>
       </member>
       <member name="M:LitDev.LDList.Add(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -4942,7 +4941,7 @@
             リストの名前。
          </param>
          <returns>
-            スモールベーシックアレイ。
+            Small Basic 配列。
          </returns>
       </member>
       <member name="M:LitDev.LDList.CreateFromValues(Microsoft.SmallBasic.Library.Primitive)">
@@ -5018,7 +5017,7 @@
             この方法では、クライアントに格納されている最後に更新されたクライアントデータが使用されるため、高速です。
          </summary>
          <param name="data">このクライアントが他のクライアントに伝播するためのデータ。</param>
-         <returns>既存のすべてのクライアントの現在のデータでクライアント名で索引付けされた配列。</returns>
+         <returns>既存のすべてのクライアントの現在のデータでクライアント名でインデックスされた配列。</returns>
       </member>
       <member name="M:LitDev.LDClient.UpdateStatic(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -5028,13 +5027,13 @@
             すべてのクライアントデータが完全に同期されることを保証します。
          </summary>
          <param name="data">このクライアントが他のクライアントに伝播するためのデータ。</param>
-         <returns>既存のすべてのクライアントの現在のデータでクライアント名で索引付けされた配列。</returns>
+         <returns>既存のすべてのクライアントの現在のデータでクライアント名でインデックスされた配列。</returns>
       </member>
       <member name="M:LitDev.LDClient.GetClients">
          <summary>
             現在接続しているクライアントのリストを取得します。
          </summary>
-         <returns>現在のクライアント名の配列、または、なしの場合は "" 。</returns>
+         <returns>現在のクライアント名の配列、または、なしの場合は ""。</returns>
       </member>
       <member name="P:LitDev.LDClient.Name">
          <summary>
@@ -5119,7 +5118,7 @@
             auto オプションは、サーバーとすべてのクライアントで同じにする必要があります。
          </param>
          <returns>
-            現在の接続パラメータ ip：port（"192.168.1.60:100" など）、または "FAILED" 。
+            現在の接続パラメータ ip：port（"192.168.1.60:100" など）、または "FAILED"。
             これは、クライアントからの接続に使用するパラメータです。
          </returns>
       </member>
@@ -5127,7 +5126,7 @@
          <summary>
             現在接続しているクライアントのリストを取得します。
          </summary>
-         <returns>現在のクライアント名の配列、または、ない場合は "" 。</returns>
+         <returns>現在のクライアント名の配列、または、ない場合は ""。</returns>
       </member>
       <member name="M:LitDev.LDServer.Stop">
          <summary>
@@ -5478,7 +5477,7 @@
          <param name="listview">クエリ結果を取り込むための ListView またはなしの場合は ""。</param>
          <param name="getRecords">
             オプションで結果の配列を返します（"True" または "False"）。
-            スモールベーシックでは、多次元の大規模配列が遅いことを覚えておいてください。
+            Small Basic では、多次元の大規模配列が遅いことを覚えておいてください。
          </param>
          <returns>オプションの結果配列または ""</returns>
       </member>
@@ -5570,7 +5569,7 @@
          </summary>
          <param name="cypher">暗号化されたテキスト（cypher）。</param>
          <param name="password">暗号化のためのパスワードキー。</param>
-         <returns>元の暗号化されていないテキスト、またはパスワードと暗号化キーが一致しない場合は "" 。</returns>
+         <returns>元の暗号化されていないテキスト、またはパスワードと暗号化キーが一致しない場合は ""。</returns>
       </member>
       <member name="M:LitDev.LDEncryption.MD5Hash(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -5662,7 +5661,7 @@
          </summary>
          <param name="text">検索するテキスト。</param>
          <param name="find">検索するサブテキスト。</param>
-         <returns>各サブテキストの開始位置を持つ配列、または、ない場合は 0 。</returns>
+         <returns>各サブテキストの開始位置を持つ配列、または、ない場合は 0。</returns>
       </member>
       <member name="M:LitDev.LDText.GetWidth(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -5857,7 +5856,7 @@
          </summary>
          <returns>
             見つかったすべてのデバイスの 2D 配列。
-            最初の次元は、1 から索引付けされたデバイスです。
+            最初の次元は、1 からインデックスされたデバイスです。
             2 番目の次元は、VID、PID、デバイス記述の 16 進値を保持する "VID"、"PID"、"Description" です。
          </returns>
       </member>
@@ -6452,7 +6451,7 @@
             Web スペリングや代替検索提案の Bing 検索を実行します。
          </summary>
          <param name="search">検索テキスト。</param>
-         <returns>スペルや代替候補の配列、または提案が見つからない場合は "" 。</returns>
+         <returns>スペルや代替候補の配列、または提案が見つからない場合は ""。</returns>
       </member>
       <member name="M:LitDev.LDSearch.GetProof(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -6460,7 +6459,7 @@
          </summary>
          <param name="text">証明するテキスト。</param>
          <param name="mode">モード "Proof"（長いテキストの場合はデフォルト）または "Spell"（短い単語または単一単語のチェックの場合）。</param>
-         <returns>スペルや他の提案の配列、または提案が見つからない場合は "" 。</returns>
+         <returns>スペルや他の提案の配列、または提案が見つからない場合は ""。</returns>
       </member>
       <member name="P:LitDev.LDSearch.Count">
          <summary>
@@ -6549,7 +6548,7 @@
             これが最後に呼び出されてから最大間隔まで遅延します。
             偶数の演奏速度を維持するためにゲームループに役立ちます。
          </summary>
-         <param name="delay">最大遅延 ms 。</param>
+         <param name="delay">最大遅延 ms。</param>
       </member>
       <member name="P:LitDev.LDStopwatch.Frequency">
          <summary>
@@ -6818,14 +6817,14 @@
             カラーピクセル値の最小、最大、平均、および STD を取得します。
          </summary>
          <param name="image">ImageList イメージ。</param>
-         <returns>R、G、B の "Min"、"Max"、"Mean"、"STD" および 1,2,3 で索引付けされた統計値の配列（0 ～ 255）。</returns>
+         <returns>R、G、B の "Min"、"Max"、"Mean"、"STD" および 1,2,3 でインデックスされた統計値の配列（0 ～ 255）。</returns>
       </member>
       <member name="M:LitDev.LDImage.Histogram(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             カラーピクセル値のヒストグラムを取得します。
          </summary>
          <param name="image">ImageList イメージ。</param>
-         <returns>R、G、B および 0 ～ 255 の 1,2,3 で索引付けされた色ヒストグラムの配列。</returns>
+         <returns>R、G、B および 0 ～ 255 の 1,2,3 でインデックスされた色ヒストグラムの配列。</returns>
       </member>
       <member name="M:LitDev.LDImage.AddImages(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -8013,7 +8012,7 @@
             フォルダ（ディレクトリ）を取得するためのダイアログ。
          </summary>
          <param name="InitialFolder">最初のフォルダ、または最後に選択したフォルダの ""</param>
-         <returns>選択されたフォルダへのフルパス、または選択されていない場合は "" 。</returns>
+         <returns>選択されたフォルダへのフルパス、または選択されていない場合は ""。</returns>
       </member>
       <member name="M:LitDev.LDDialogs.Font(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -8350,7 +8349,7 @@
       <member name="M:LitDev.LDFile.ReadCSV(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             CSV（カンマ区切り値）ファイルを配列に読み込みます。
-            デリミネータは、ユーティリティを使用してコンマから変更することができます .CSVDeliminator
+            区切り文字は、LDUtilities.CSVDeliminator を使用してコンマから変更することができます。
          </summary>
          <param name="fileName">
             CSV ファイルのフルパス。
@@ -8362,7 +8361,7 @@
       <member name="M:LitDev.LDFile.ReadCSVTransposed(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             CSV（カンマ区切り値）ファイルを配列に読み込みます。転置（行と列の入れ替え）。
-            デリミネータは、ユーティリティを使用してコンマから変更することができます .CSVDeliminator
+            区切り文字は、LDUtilities.CSVDeliminator を使用してコンマから変更することができます。
          </summary>
          <param name="fileName">
             CSV ファイルのフルパス。
@@ -8374,7 +8373,7 @@
       <member name="M:LitDev.LDFile.WriteCSV(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             2D 配列を CSV（カンマ区切り値）ファイルに書き込む。
-            デリミネータは、ユーティリティを使用してコンマから変更することができます .CSVDeliminator
+            区切り文字は、LDUtilities.CSVDeliminator を使用してコンマから変更することができます。
          </summary>
          <param name="fileName">
             CSV ファイルのフルパス。
@@ -8800,7 +8799,7 @@
       <member name="M:LitDev.LDUtilities.IsNumber(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             入力が SmallBasic によって数値として扱われるかどうかをテストします。
-            これはカルチャ不変の番号です（例："3.14" ではなく、"3,14" または "24x" である。
+            これはカルチャ不変の番号です（例："3.14" ではなく、"3,14" または "24x" です。
          </summary>
          <param name="input">テストする入力。</param>
          <returns>"True" または "False"</returns>
@@ -8810,7 +8809,7 @@
             現在の文化で表現された数字を取得します。
             数値は計算で数値として扱うためにはカルチャ不変でなければなりません。
             現在のカルチャー番号は、入力または出力方法です。
-            例えば、"3.14" は文化不変であり、"3,14" はフランス文化である。
+            例えば、"3.14" は文化不変であり、"3,14" はフランス文化です。
          </summary>
          <param name="input">文化不変数。</param>
          <returns>現在のカルチャーで表現された数字または失敗したときの入力。</returns>
@@ -8820,7 +8819,7 @@
             文化不変式で表現された数を取得します。
             数値は計算で数値として扱うためにはカルチャ不変でなければなりません。
             現在のカルチャー番号は、入力または出力方法です。
-            例えば、"3.14" は文化不変であり、"3,14" はフランス文化である。
+            例えば、"3.14" は文化不変であり、"3,14" はフランス文化です。
          </summary>
          <param name="input">現在の文化で表現されている数字。</param>
          <returns>文化不変の形式で表現された数または失敗時の入力数。</returns>
@@ -8883,7 +8882,7 @@
       </member>
       <member name="P:LitDev.LDUtilities.CSVDeliminator">
          <summary>
-            CSV ファイルの読み書き用の 1 文字のデリミネータ
+            CSV ファイルの読み書き用の 1 文字の区切り文字
             デフォルト "、"
          </summary>
       </member>
@@ -9278,8 +9277,8 @@
          </param>
          <param name="order">
             トレンドラインの多項式次数。
-            1 は線形である。
-            2 は 2 次である。
+            1 は線形です。
+            2 は 2 次です。
          </param>
          <returns>プロットされる傾向を保持するデータ配列。</returns>
       </member>
@@ -9743,7 +9742,7 @@
 
             Box2D が難しかった 1 つの問題は、偏向されずに他の図形を "トンネル" することができる小さな動きの速いオブジェクトです（SetBullet オプションを参照）。
 
-            別の問題は、非常に異なるサイズ、したがって質量、特にそれらが互いに接続されたときの大きな形状の形状である。これらの密度を変更する必要があるかもしれません（Anchor オプションはこれを少し自動化しようとしています）。さもなければ、デフォルト密度 1 が良いです。余りにも多くの形を一緒に接続する誘惑に抵抗する。
+            別の問題は、非常に異なるサイズ、したがって質量、特にそれらが互いに接続されたときの大きな形状の形状です。これらの密度を変更する必要があるかもしれません（Anchor オプションはこれを少し自動化しようとしています）。さもなければ、デフォルト密度 1 が良いです。余りにも多くの形を一緒に接続する誘惑に抵抗する。
 
             TimestepControl の設定を使用していくつかの "難しい" モデルの安定性を向上させることは可能かもしれませんが、デフォルトはほとんどの場合よく見えます。
 
@@ -9787,7 +9786,7 @@
             X 方向には 1 つの形状しか続かない。次のシェイプの設定を解除するには、shapeName を "" に設定します。
          </summary>
          <param name="shapeName">
-            それに続く形や "" 。
+            それに続く形や ""。
          </param>
          <returns>
             なし。
@@ -9800,7 +9799,7 @@
             Y 方向には 1 つの形状しか続かない。次のシェイプの設定を解除するには、shapeName を "" に設定します。
          </summary>
          <param name="shapeName">
-            それに続く形や "" 。
+            それに続く形や ""。
          </param>
          <returns>
             なし。
@@ -10138,7 +10137,7 @@
             タイヤの形を動かす、前方または後方の力を加える。
          </summary>
          <param name="shapeName">移動するタイヤの形状。</param>
-         <param name="force">適用する力は正、前方は負である。</param>
+         <param name="force">適用する力は正、前方は負です。</param>
       </member>
       <member name="M:LitDev.LDPhysics.BrakeTire(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -10190,7 +10189,7 @@
             クラッシュ（値はインパクトの速度）
          </summary>
          <param name="shapeName">タイヤの形状。</param>
-         <returns>情報名で索引付けされた情報の配列。"スキッド"。</returns>
+         <returns>情報名でインデックスされた情報の配列。"スキッド"。</returns>
       </member>
       <member name="M:LitDev.LDPhysics.AddExplosion(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -10304,7 +10303,7 @@
          <param name="angle">チェックする角度（度）。これは角度の配列でもあります。</param>
          <param name="distance">確認する最大距離。</param>
          <returns>
-            その距離に等しい値を持つ形状名（静的障害物の場合は "壁"）によって索引付けされた結果の配列。
+            その距離に等しい値を持つ形状名（静的障害物の場合は "壁"）によってインデックスされた結果の配列。
             図形はソートされ、最も近いものが最初にリストされます。
             入力角度の配列を使用すると、各角度に最も近い形状のみが返され、値は距離ではなく角度です。
          </returns>
@@ -11423,7 +11422,7 @@
             システムプロセスのリストを取得します。
          </summary>
          <returns>
-            プロセス ID で索引付けされたすべてのシステム・プロセス名の配列。
+            プロセス ID でインデックスされたすべてのシステム・プロセス名の配列。
          </returns>
       </member>
       <member name="T:LitDev.LDSpeech">
@@ -12093,7 +12092,7 @@
             画像をシフトした倍精度の配列に変換します。
          </summary>
          <param name="OriginalImage">元の ARGB 画像</param>
-         <returns>シフトアレイ</returns>
+         <returns>シフト配列</returns>
       </member>
       <member name="M:LitDev.Engines.FIP.DFT(System.Drawing.Bitmap)">
          <summary>
@@ -12238,7 +12237,7 @@
             カラー画像ヒストグラムを返します。
          </summary>
          <param name="OriginalImage">元の ARGB 画像</param>
-         <returns>画像ヒストグラム（寸法 0 はカラーコード（0  - &gt; 赤、1  - &gt; 緑、2  - &gt; 青）、寸法 1  - 各位置は輝度レベルに対応）</returns>
+         <returns>画像ヒストグラム（次元 0 はカラーコード（0  - &gt; 赤、1  - &gt; 緑、2  - &gt; 青）、次元 1  - 各位置は輝度レベルに対応）</returns>
       </member>
       <member name="M:LitDev.Engines.FIP.MinBrightness(System.Drawing.Bitmap)">
          <summary>
@@ -12257,7 +12256,7 @@
       <member name="M:LitDev.Engines.FIP.ContrastStretching(System.Drawing.Bitmap)">
          <summary>
             輝度法を使用して ARGB 画像をグレースケールに変換し、コントラストストレッチ法を使用して明るくします。
-            明るさの最小値と最大値は、デフォルトで 0 ～ 255 。
+            明るさの最小値と最大値は、デフォルトで 0 ～ 255。
          </summary>
          <param name="OriginalImage">元の ARGB 画像</param>
          <returns>グレーススケール画像を強調する</returns>
@@ -12265,7 +12264,7 @@
       <member name="M:LitDev.Engines.FIP.ContrastStretching(System.Drawing.Bitmap,System.Int32,System.Int32)">
          <summary>
             輝度法を使用して ARGB 画像をグレースケールに変換し、コントラストストレッチ法を使用して明るくします。
-            明るさの最小値と最大値は、デフォルトで 0 ～ 255 。
+            明るさの最小値と最大値は、デフォルトで 0 ～ 255。
          </summary>
          <param name="OriginalImage">元の ARGB 画像</param>
          <param name="RMinSet">使用可能な最小輝度値</param>
@@ -12620,7 +12619,7 @@
       <member name="M:LitDev.Engines.Functions.IowKitGetRevision(System.IntPtr)">
          <summary>
             バック IoWarrior 会社の財のバージョンを返します。
-            上位 2 つのバイトは常に 0 。
+            上位 2 つのバイトは常に 0。
             4 桁の 16 進数の有効なあります。現在のソフトウェアバージョン 1.0.2.1 は 0x1021
             返された場合。シリアル番号を持っていないリモートの年齢 IO-Warrior、バック小さいバージョン番号 1.0.1.0 を。
          </summary>
@@ -12682,7 +12681,7 @@
             直接の接続された IO-Warrior の入力端子の状態を読み込み。ピンの変化が前
             ブロックによって登録された場合、関数が True を返す。
             同時に入力の画像が !! ターゲット・データ・フィールドの値
-            注意として入手可能である。この機能は、IO-Warrior 56 で動作しません。
+            注意として入手可能です。この機能は、IO-Warrior 56 で動作しません。
             ブロック以上 32 ビットバック
             あります。
          </summary>
