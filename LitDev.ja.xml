@@ -619,26 +619,26 @@
       </member>
       <member name="T:LitDev.LDEffect">
          <summary>
-            任意のシェイプまたはコントロールに視覚効果を適用します。
+            任意の図形またはコントロールに視覚効果を適用します。
          </summary>
       </member>
       <member name="M:LitDev.LDEffect.Clear(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             エフェクトをクリアします。
          </summary>
-         <param name="shapeName">エフェクトをクリアするシェイプ。</param>
+         <param name="shapeName">エフェクトをクリアする図形。</param>
       </member>
       <member name="M:LitDev.LDEffect.DropShaddow(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             ドロップシャドーエフェクトを適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプ。</param>
+         <param name="shapeName">効果を適用する図形。</param>
          <param name="properties">
-            プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
+            プロパティ名でインデックスされた任意のプロパティの配列（ないときは ""）：
             BlurRadius（デフォルトは 5）
-            色（デフォルトでは "Black"（黒））
-            方向（デフォルトは 315）
-            不透明度（デフォルト値 1）
+            Color（色、デフォルトでは "Black" - 黒）
+            Direction（方向、デフォルトは 315）
+            Opacity（不透明度、デフォルト値 1）
             ShadowDepth（デフォルトは 5）
          </param>
       </member>
@@ -646,35 +646,35 @@
          <summary>
             ぼかし効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプ。</param>
+         <param name="shapeName">効果を適用する図形。</param>
          <param name="properties">
-            プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
-            KernelType（デフォルトの "Gaussian" または "Box"）
-            半径（デフォルトは 5）
+            プロパティ名でインデックスされた任意のプロパティの配列（ないときは ""）：
+            KernelType（デフォルト "Gaussian" または "Box"）
+            Radius（半径、デフォルトは 5）
          </param>
       </member>
       <member name="M:LitDev.LDEffect.Bloom(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             ブルーム効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプ。</param>
+         <param name="shapeName">効果を適用する図形。</param>
          <param name="properties">
-            プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
+            プロパティ名でインデックス付けされた任意のプロパティの配列（ないときは ""）：
             BaseIntensity（デフォルトは 1）
             BaseSaturation（デフォルト 1）
             BloomIntensity（デフォルトは 1.25）
             BloomSaturation（デフォルトは 1）
-            しきい値（デフォルトは 0.25）
+            Threshold（しきい値、デフォルトは 0.25）
          </param>
       </member>
       <member name="M:LitDev.LDEffect.ColourTone(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             色調効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプ。</param>
+         <param name="shapeName">効果を適用する図形。</param>
          <param name="properties">
-            プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
-            不飽和度（デフォルトは 0.5）
+            プロパティ名でインデックス付けされた任意のプロパティの配列（ないときは ""）：
+            Desaturation（不飽和度、デフォルトは 0.5）
             ToneAmount（デフォルトは 0.5）
             LightColor（デフォルト "#FFE580"）
             DarkColor（デフォルトでは "#338000"）
@@ -684,67 +684,67 @@
          <summary>
             浮き彫り効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプ。</param>
+         <param name="shapeName">効果を適用する図形。</param>
          <param name="properties">
-            プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
-            金額（デフォルトは 3）
-            色（デフォルトは "Gray"（グレー））
-            高さ（デフォルトは 0.001）
+            プロパティ名でインデックス付けされた任意のプロパティの配列（ないときは ""）：
+            Amount（量、デフォルトは 3）
+            Color（色、デフォルトは "Gray" - グレー）
+            Height（高さ、デフォルトは 0.001）
          </param>
       </member>
       <member name="M:LitDev.LDEffect.Magnify(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             拡大効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプ。</param>
+         <param name="shapeName">効果を適用する図形。</param>
          <param name="properties">
-            プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
-            金額（デフォルトは 0.5）
-            センター（デフォルトでは "X=0.5;Y=0.5;"）
-            InnerRadius（デフォルトは 0.2）
-            OuterRadius（デフォルトは 0.4）
+            プロパティ名でインデックス付けされた任意のプロパティの配列（ないときは ""）：
+            Amount（量、デフォルトは 0.5）
+            Center（中心、デフォルトでは "X=0.5;Y=0.5;"）
+            InnerRadius（内径、デフォルトは 0.2）
+            OuterRadius（外径、デフォルトは 0.4）
          </param>
       </member>
       <member name="M:LitDev.LDEffect.Monochrome(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             モノクロ効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプ。</param>
+         <param name="shapeName">効果を適用する図形。</param>
          <param name="properties">
-            プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
-            カラー（デフォルトは "White"（白））
+            プロパティ名でインデックス付けされた任意のプロパティの配列（ないときは ""）：
+            Color（色、デフォルトは "White" - 白）
          </param>
       </member>
       <member name="M:LitDev.LDEffect.Pixelate(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             ピクセル効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプ。</param>
+         <param name="shapeName">効果を適用する図形。</param>
          <param name="properties">
-            プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
-            ピクセル化（デフォルトは 0.75）
+            プロパティ名でインデックス付けされた任意のプロパティの配列（ないときは ""）：
+            Pixelation（ピクセル化、デフォルトは 0.75）
          </param>
       </member>
       <member name="M:LitDev.LDEffect.Ripple(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             リップル効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプ。</param>
+         <param name="shapeName">効果を適用する図形。</param>
          <param name="properties">
-            プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
-            センター（デフォルトでは "X=0.5;Y=0.5;"）
-            頻度（デフォルトは 40）
-            大きさ（デフォルトは 0.1）
-            フェーズ（デフォルト 10）
+            プロパティ名でインデックス付けされた任意のプロパティの配列（ないときは ""）：
+            Center（中心、デフォルトでは "X=0.5;Y=0.5;"）
+            Freequency（頻度、デフォルトは 40）
+            Magnitude（大きさ、デフォルトは 0.1）
+            Phase（フェーズ、デフォルト 10）
          </param>
       </member>
       <member name="M:LitDev.LDEffect.Sharpen(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             シャープ効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプ。</param>
+         <param name="shapeName">効果を適用する図形。</param>
          <param name="properties">
-            プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
+            プロパティ名でインデックス付けされた任意のプロパティの配列（ないときは ""）：
             金額（デフォルトは 2）
             高さ（デフォルト 0.0005）
          </param>
@@ -753,11 +753,11 @@
          <summary>
             渦巻き効果を適用します。
          </summary>
-         <param name="shapeName">効果を適用するシェイプ。</param>
+         <param name="shapeName">効果を適用する図形。</param>
          <param name="properties">
-            プロパティ名でインデックス付けされた任意の（"" のための）プロパティの配列：
+            プロパティ名でインデックス付けされた任意のプロパティの配列（ないときは ""）：
             AngleFrequency（デフォルト 45）
-            センター（デフォルトでは "X=0.5;Y=0.5;"）
+            Center（中心、デフォルトでは "X=0.5;Y=0.5;"）
             TwistAmount（デフォルトは 10）
          </param>
       </member>
@@ -836,8 +836,8 @@
             論理演算。
             これらのオプションで使用する式を評価するには、LDMath.Evaluate3 を使用します。
             例：
-            入力 = 3.1
-            result = LDLogic.Switch（LDMath.Evaluate3（input + "&lt;5"）、"OK"、"New input required"）
+            input = 3.1
+            result = LDLogic.Switch(LDMath.Evaluate3(input + "&lt;5"),"OK","New input required")
          </summary>
       </member>
       <member name="M:LitDev.LDLogic.Not(Microsoft.SmallBasic.Library.Primitive)">
@@ -1036,7 +1036,7 @@
          </summary>
          <param name="width">グラフの幅。</param>
          <param name="height">チャートの高さ。</param>
-         <returns>チャートのシェイプ名。</returns>
+         <returns>チャートの図形名。</returns>
       </member>
       <member name="M:LitDev.LDChart.SetData(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -1046,9 +1046,9 @@
          <param name="data">
             設定するデータ（1D 配列）は、項目名です。
             例：
-            データ [ "Fred" ] = 25
-            データ [ "Mary" ] = 15
-            データ [ "John" ] = 40
+            data["Fred"] = 25
+            data["Mary"] = 15
+            data["John"] = 40
          </param>
       </member>
       <member name="M:LitDev.LDChart.Properties(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -1077,8 +1077,8 @@
          <param name="hsl">
             異なるセグメントに変更するパラメータは次のとおりです。
             "Hue"（色相）（デフォルト）の虹色
-            色の濃さが増す "Saturation"（彩度）
-            明るさを増す "Lightness"（明度）
+            "Saturation"（彩度）色の濃さが増す
+            "Lightness"（明度）明るさを増す
          </param>
          <param name="start">[0 ～ 1] の範囲のカラーバリエーションの開始値。デフォルトは 0 です。</param>
          <param name="end">[0 ～ 1] の範囲のカラーバリエーションの終了値。デフォルトは 1 です。</param>
@@ -1092,10 +1092,10 @@
          <param name="scale">凡例とテキストラベルの縮尺係数、デフォルトは 1</param>
          <param name="legend">
             凡例スタイルは、次のとおりです。
-            "なし" 伝説なし
-            "伝説" 別の伝説
-            "オーバーレイ" の名前がチャートの上に重なる
-            グラフの上に重なるパーセント値
+            "なし" 凡例なし
+            "Legend" セパレート凡例
+            "Overlay" の名前がチャートの上に重なる
+            "Percent" グラフの上に重なるパーセント値
             "Legend_Percent"（既定値）別の凡例と割合のオーバーレイチャート
          </param>
          <param name="background">凡例ラベルのテキストの背景色は "True" または "False"（デフォルト）です。</param>
@@ -1420,10 +1420,10 @@
             高調波振幅。
             これは配列で、インデックスは基本周波数（2、3 など）の高調波倍数であり、値は高調波の相対振幅です。
             方形波は、（https://en.wikipedia.org/wiki/Square_wave）によって形成することができます：
-            i = 3 ～ 21 の場合ステップ 2
-            ハーモニクス [i] = 1 / i
+            For i = 3 To 21 Step 2
+              harmonics[i] = 1/i
             EndFor
-            squareWave = LDWaveForm.PlayHarmonics（256,1000、高調波）
+            squareWave = LDWaveForm.PlayHarmonics(256,1000,harmonics)
          </param>
          <returns>波の名前または失敗時の ""</returns>
       </member>
@@ -1465,7 +1465,7 @@
       </member>
       <member name="P:LitDev.LDWaveForm.Amplitude">
          <summary>
-            信号の振幅（最大値は 2 ^ 15 = 32768、デフォルトは 20262）。
+            信号の振幅（最大値は 2^15 = 32768、デフォルトは 20262）。
          </summary>
       </member>
       <member name="T:LitDev.LDxml">
@@ -1681,35 +1681,35 @@
       <member name="T:LitDev.LDFastShapes">
          <summary>
             標準の Small Basic Shape 操作よりも高速な Shape メソッド。
-            これは、主に、ゲームループで更新された多数の図形がある場合のシェイプ移動用です。
-            主なシェイプコマンドのみがサポートされています。これは、頻繁に何回も繰り返されるものなので、サポートされています。
-            最初にシェイプを作成してから登録し（ShapeIndex）、他のメソッドで使用される整数インデックスを返す必要があります。
+            これは、主に、ゲームループで更新された多数の図形がある場合の図形移動用です。
+            主な図形コマンドのみがサポートされています。これは、頻繁に何回も繰り返されるものなので、サポートされています。
+            最初に図形を作成してから登録し（ShapeIndex）、他のメソッドで使用される整数インデックスを返す必要があります。
             すべての変更が一緒に処理されるときに（Update）が呼び出されるまで、変更の視覚的な更新は行われません。
             パフォーマンスの向上は、整数インデックス作成とバッチ更新の両方からもたらされます。
          </summary>
       </member>
       <member name="M:LitDev.LDFastShapes.ShapeIndex(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            このオブジェクトで使用するシェイプを登録します。
+            このオブジェクトで使用する図形を登録します。
             このコマンドは潜在的に遅いため、時間的に重要な視覚的な更新が行われる前に呼び出される必要があります。
             モーションがシミュレートされる前にすべての形状を作成して登録する。
          </summary>
          <param name="shapeName">作成された図形の名前。</param>
          <returns>
             このオブジェクトの他のメソッドで使用するインデックスです。
-            インデックスは 1 から始まる整数で、登録された各シェイプごとにインクリメントされます。
+            インデックスは 1 から始まる整数で、登録された各図形ごとにインクリメントされます。
             -1 はエラーです。
          </returns>
       </member>
       <member name="M:LitDev.LDFastShapes.Update">
          <summary>
             前回の更新以降に変更されたこのオブジェクトによって設定された図形のすべてのプロパティを更新します。
-            このメソッドが呼び出されるまで、シェイプは視覚的に更新されません。
+            このメソッドが呼び出されるまで、図形は視覚的に更新されません。
          </summary>
       </member>
       <member name="M:LitDev.LDFastShapes.Move(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            指定された名前のシェイプを新しい位置に移動します。
+            指定された名前の図形を新しい位置に移動します。
          </summary>
          <param name="index">
             移動する図形のインデックス（ShapeIndex から返されます）。
@@ -1723,32 +1723,32 @@
       </member>
       <member name="M:LitDev.LDFastShapes.GetLeft(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            指定されたシェイプの左座標を取得します。
+            指定された図形の左座標を取得します。
          </summary>
          <param name="index">
-            シェイプのインデックス（ShapeIndex によって返される）。
+            図形のインデックス（ShapeIndex によって返される）。
          </param>
          <returns>
-            シェイプの左座標。
+            図形の左座標。
          </returns>
       </member>
       <member name="M:LitDev.LDFastShapes.GetTop(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            指定されたシェイプの上の座標を取得します。
+            指定された図形の上の座標を取得します。
          </summary>
          <param name="index">
-            シェイプのインデックス（ShapeIndex によって返される）。
+            図形のインデックス（ShapeIndex によって返される）。
          </param>
          <returns>
-            シェイプの上の座標。
+            図形の上の座標。
          </returns>
       </member>
       <member name="M:LitDev.LDFastShapes.SetOpacity(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            シェイプがどのように不透明にレンダリングされるかを設定します。
+            図形がどのように不透明にレンダリングされるかを設定します。
          </summary>
          <param name="index">
-            シェイプのインデックス（ShapeIndex によって返される）。
+            図形のインデックス（ShapeIndex によって返される）。
          </param>
          <param name="level">
             0 ～ 100 の不透明度レベル。0 は完全に透明で 100 は完全に不透明です。
@@ -1756,10 +1756,10 @@
       </member>
       <member name="M:LitDev.LDFastShapes.GetOpacity(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            シェイプの不透明度を取得します。
+            図形の不透明度を取得します。
          </summary>
          <param name="index">
-            シェイプのインデックス（ShapeIndex によって返される）。
+            図形のインデックス（ShapeIndex によって返される）。
          </param>
          <returns>
             0 ～ 100 の値のオブジェクトの不透明度。0 は完全に透明で 100 は完全に不透明です。
@@ -1767,10 +1767,10 @@
       </member>
       <member name="M:LitDev.LDFastShapes.Rotate(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            指定された名前のシェイプを指定された角度に回転します。
+            指定された名前の図形を指定された角度に回転します。
          </summary>
          <param name="index">
-            シェイプのインデックス（ShapeIndex によって返される）。
+            図形のインデックス（ShapeIndex によって返される）。
          </param>
          <param name="angle">
             形状を回転させる角度。
@@ -1778,10 +1778,10 @@
       </member>
       <member name="M:LitDev.LDFastShapes.Zoom(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            指定したズームレベルを使用してシェイプをスケールします。
+            指定したズームレベルを使用して図形をスケールします。
          </summary>
          <param name="index">
-            シェイプのインデックス（ShapeIndex によって返される）。
+            図形のインデックス（ShapeIndex によって返される）。
          </param>
          <param name="scaleX">
             x 軸ズームレベル。
@@ -1792,10 +1792,10 @@
       </member>
       <member name="M:LitDev.LDFastShapes.HideShape(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            既に追加されたシェイプを非表示にします。
+            既に追加された図形を非表示にします。
          </summary>
          <param name="index">
-            シェイプのインデックス（ShapeIndex によって返される）。
+            図形のインデックス（ShapeIndex によって返される）。
          </param>
       </member>
       <member name="M:LitDev.LDFastShapes.ShowShape(Microsoft.SmallBasic.Library.Primitive)">
@@ -1803,7 +1803,7 @@
             以前は隠した図形を表示します。
          </summary>
          <param name="index">
-            シェイプのインデックス（ShapeIndex によって返される）。
+            図形のインデックス（ShapeIndex によって返される）。
          </param>
       </member>
       <member name="T:LitDev.LDColours">
@@ -2093,20 +2093,20 @@
             最初のインデックスは行またはノード番号で、2 番目のインデックスは現在のノードの親ノードです（最上位レベルの場合は 0）。
             配列の値は、現在のノードの表示テキストです。
 
-            ツリー [1] [0] = "Level 1"
-            ツリー [2] [1] = "Level 1 1"
-            ツリー [3] [1] = "Level 1 2"
-            ツリー [4] [0] = "Level 2"
+            tree[1][0] = "Level 1"
+            tree[2][1] = "Level 1 1"
+            tree[3][1] = "Level 1 2"
+            tree[4][0] = "Level 2"
          </param>
          <param name="width">コントロールの幅。</param>
          <param name="height">コントロールの高さ。</param>
-         <returns>ツリービューのシェイプ名。</returns>
+         <returns>ツリービューの図形名。</returns>
       </member>
       <member name="M:LitDev.LDControls.TreeViewExpand(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             入力ノードの下のツリービューでノードを展開 / 折りたたむ。
          </summary>
-         <param name="shapeName">ツリービューのシェイプ名。</param>
+         <param name="shapeName">ツリービューの図形名。</param>
          <param name="node">展開 / 崩壊するノード番号、0 はすべてのノードを漸増 / 崩壊させる。</param>
          <param name="expand">"True" または "False" を展開または折りたたむ</param>
          <param name="recursive">再帰的にノードを展開 / 折りたたむ（すべての子ノード）"True" または "False"</param>
@@ -2115,7 +2115,7 @@
          <summary>
             ツリービュー内のノードを選択します。
          </summary>
-         <param name="shapeName">ツリービューのシェイプ名。</param>
+         <param name="shapeName">ツリービューの図形名。</param>
          <param name="node">選択するノード。</param>
       </member>
       <member name="M:LitDev.LDControls.TreeViewGetSelected(Microsoft.SmallBasic.Library.Primitive)">
@@ -2129,41 +2129,41 @@
          <summary>
             ツリービューツリーを置き換えます。
          </summary>
-         <param name="shapeName">ツリービューのシェイプ名。</param>
+         <param name="shapeName">ツリービューの図形名。</param>
          <param name="tree">
             ツリービューデータを含む 2D 配列。
 
             最初のインデックスは行またはノード番号で、2 番目のインデックスは現在のノードの親ノードです（最上位レベルの場合は 0）。
             配列の値は、現在のノードの表示テキストです。
 
-            ツリー [1] [0] = "Level 1"
-            ツリー [2] [1] = "Level 1 1"
-            ツリー [3] [1] = "Level 1 2"
-            ツリー [4] [0] = "Level 2"
+            tree[1][0] = "Level 1"
+            tree[2][1] = "Level 1 1"
+            tree[3][1] = "Level 1 2"
+            tree[4][0] = "Level 2"
          </param>
       </member>
       <member name="M:LitDev.LDControls.TreeViewGetData(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             ツリービューツリーからデータを取得します。
          </summary>
-         <param name="shapeName">ツリービューのシェイプ名。</param>
+         <param name="shapeName">ツリービューの図形名。</param>
          <returns>
             ツリービューデータを含む 2D 配列。
 
             最初のインデックスは行またはノード番号で、2 番目のインデックスは現在のノードの親ノードです（最上位レベルの場合は 0）。
             配列の値は、現在のノードの表示テキストです。
 
-            ツリー [1] [0] = "Level 1"
-            ツリー [2] [1] = "Level 1 1"
-            ツリー [3] [1] = "Level 1 2"
-            ツリー [4] [0] = "Level 2"
+            tree[1][0] = "Level 1"
+            tree[2][1] = "Level 1 1"
+            tree[3][1] = "Level 1 2"
+            tree[4][0] = "Level 2"
          </returns>
       </member>
       <member name="M:LitDev.LDControls.TreeViewEdit(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             ツリービューノードの編集可能なステータスを変更します。
          </summary>
-         <param name="shapeName">ツリービューのシェイプ名。</param>
+         <param name="shapeName">ツリービューの図形名。</param>
          <param name="node">選択するノード。</param>
          <param name="editable">編集可能な TextBox を "True" にしたり、編集不可能な "False" にします。</param>
       </member>
@@ -2178,9 +2178,9 @@
       </member>
       <member name="M:LitDev.LDControls.AddContextMenu(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            コンテキストメニューをサポートするコントロールまたはシェイプの右クリックコンテキストメニューを追加します。
+            コンテキストメニューをサポートするコントロールまたは図形の右クリックコンテキストメニューを追加します。
          </summary>
-         <param name="shapeName">コントロール名またはシェイプ名。</param>
+         <param name="shapeName">コントロール名または図形名。</param>
          <param name="items">コンテキストメニュー項目の選択テキストの配列。</param>
          <param name="images">
             オプションの画像アイコンの配列。いずれかまたはすべてが "" である可能性があります。
@@ -2308,22 +2308,22 @@
 
             最初のインデックスは行またはノード番号で、配列の値は現在のノードの表示テキストです。
 
-            リスト [1] = "Option 1"
-            リスト [2] = "Option 2"
-            リスト [3] = "Option 3"
-            リスト [4] = "Option 4"
+            list[1] = "Option 1"
+            list[2] = "Option 2"
+            list[3] = "Option 3"
+            list[4] = "Option 4"
 
             これは LDArray または LDList でもかまいません。
          </param>
          <param name="width">コントロールの幅。</param>
          <param name="height">コントロールの高さ。</param>
-         <returns>リストボックスのシェイプ名。</returns>
+         <returns>リストボックスの図形名。</returns>
       </member>
       <member name="M:LitDev.LDControls.ListBoxSelect(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             リストボックス内の 1 つまたは複数のノードを選択します。
          </summary>
-         <param name="shapeName">リストボックスのシェイプ名。</param>
+         <param name="shapeName">リストボックスの図形名。</param>
          <param name="node">
             選択するノード番号。
             選択モードが単一でない場合は、ノードの配列になります（ListBoxSelectionMode を参照）。
@@ -2349,20 +2349,20 @@
 
             最初のインデックスは行またはノード番号で、配列の値は現在のノードの表示テキストです。
 
-            リスト [1] = "Option 1"
-            リスト [2] = "Option 2"
-            リスト [3] = "Option 3"
-            リスト [4] = "Option 4"
+            list[1] = "Option 1"
+            list[2] = "Option 2"
+            list[3] = "Option 3"
+            list[4] = "Option 4"
          </param>
          <param name="width">コントロールの幅。</param>
          <param name="height">コントロールのドロップダウンの高さ。</param>
-         <returns>コンボボックスのシェイプ名。</returns>
+         <returns>コンボボックスの図形名。</returns>
       </member>
       <member name="M:LitDev.LDControls.ComboBoxSelect(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             コンボボックス内のノードを選択します。
          </summary>
-         <param name="shapeName">コンボボックスのシェイプ名。</param>
+         <param name="shapeName">コンボボックスの図形名。</param>
          <param name="node">選択するノード。</param>
       </member>
       <member name="M:LitDev.LDControls.ComboBoxGetSelected(Microsoft.SmallBasic.Library.Primitive)">
@@ -2389,13 +2389,13 @@
             チェックボックスのダイアログコントロールを追加します。
          </summary>
          <param name="title">コントロールのタイトル。</param>
-         <returns>チェックボックスのシェイプ名。</returns>
+         <returns>チェックボックスの図形名。</returns>
       </member>
       <member name="M:LitDev.LDControls.CheckBoxState(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             チェックボックスのチェック状態を設定します。
          </summary>
-         <param name="shapeName">チェックボックスのシェイプ名。</param>
+         <param name="shapeName">チェックボックスの図形名。</param>
          <param name="state">チェックボックスのチェック状態（"True" または "False"）。</param>
       </member>
       <member name="M:LitDev.LDControls.CheckBoxGetState(Microsoft.SmallBasic.Library.Primitive)">
@@ -2410,20 +2410,20 @@
             カーソルキャレットをテキストボックスまたはリッチテキストボックスの末尾までスクロールします。
             これは、複数行テキストボックスまたはリッチテキストボックス用です。
          </summary>
-         <param name="shapeName">テキストボックスのシェイプ名。</param>
+         <param name="shapeName">テキストボックスの図形名。</param>
       </member>
       <member name="M:LitDev.LDControls.SetCursorPosition(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             カーソルキャレットをテキストボックス内の指定された位置に設定します。
          </summary>
-         <param name="shapeName">テキストボックスのシェイプ名。</param>
+         <param name="shapeName">テキストボックスの図形名。</param>
          <param name="position">カーソル文字の位置（0 が最初の文字の前にあるか、たとえば 1000 などの大きな値がカーソルを最後に設定します）。</param>
       </member>
       <member name="M:LitDev.LDControls.SetSpellCheck(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             テキストボックスまたはリッチテキストボックスのスペルチェックを設定します。
          </summary>
-         <param name="shapeName">textbox または richtextbox のシェイプ名。</param>
+         <param name="shapeName">textbox または richtextbox の図形名。</param>
          <param name="state">"True" または "False"</param>
       </member>
       <member name="M:LitDev.LDControls.AddRadioButton(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2450,7 +2450,7 @@
       </member>
       <member name="M:LitDev.LDControls.AllowDrop(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            ドラッグ＆ドロップができるようにシェイプを設定します。
+            ドラッグ＆ドロップができるように図形を設定します。
             現在、ドロップされたファイルを処理するために FileDropped イベントを使用せずに実装されているのは以下のものだけです：
             TextBox へのファイルパス（または MultiLineTextBox へのファイルパス）。
             RichTextBox でファイルが開かれました。
@@ -2458,7 +2458,7 @@
             画像または背景で設定された画像。
             MediaPlayer 用のメディア（有効なメディアがすでにロードされている場合のみ有効）。
          </summary>
-         <param name="shapeName">ドロップまたは "Background"（背景） を許可するシェイプ。</param>
+         <param name="shapeName">ドロップまたは "Background"（背景） を許可する図形。</param>
       </member>
       <member name="M:LitDev.LDControls.AddMediaPlayer(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -2546,16 +2546,16 @@
          <summary>
             リストボックスリストを置き換えます。
          </summary>
-         <param name="shapeName">リストボックスのシェイプ名。</param>
+         <param name="shapeName">リストボックスの図形名。</param>
          <param name="list">
             リストボックスデータを含む配列。
 
             最初のインデックスは行またはノード番号で、配列の値は現在のノードの表示テキストです。
 
-            リスト [1] = "Option 1"
-            リスト [2] = "Option 2"
-            リスト [3] = "Option 3"
-            リスト [4] = "Option 4"
+            list[1] = "Option 1"
+            list[2] = "Option 2"
+            list[3] = "Option 3"
+            list[4] = "Option 4"
 
             これは LDArray または LDList でもかまいません。
          </param>
@@ -2564,16 +2564,16 @@
          <summary>
             コンボボックスのリストを置き換えます。
          </summary>
-         <param name="shapeName">コンボボックスのシェイプ名。</param>
+         <param name="shapeName">コンボボックスの図形名。</param>
          <param name="list">
             コンボボックスデータを含む配列。
 
             最初のインデックスは行またはノード番号で、配列の値は現在のノードの表示テキストです。
 
-            リスト [1] = "Option 1"
-            リスト [2] = "Option 2"
-            リスト [3] = "Option 3"
-            リスト [4] = "Option 4"
+            list[1] = "Option 1"
+            list[2] = "Option 2"
+            list[3] = "Option 3"
+            list[4] = "Option 4"
          </param>
       </member>
       <member name="M:LitDev.LDControls.AddProgressBar(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2599,20 +2599,20 @@
          <param name="width">コントロールの幅。</param>
          <param name="height">コントロールの高さ。</param>
          <param name="orientation">水平または垂直（"H" または "V"）。</param>
-         <returns>スライダシェイプの名前。</returns>
+         <returns>スライダ図形の名前。</returns>
       </member>
       <member name="M:LitDev.LDControls.SliderValue(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             スライダの値（位置）を設定します。
          </summary>
-         <param name="shapeName">スライダシェイプの名前。</param>
+         <param name="shapeName">スライダ図形の名前。</param>
          <param name="value">スライダの値（0 ～ 100）。</param>
       </member>
       <member name="M:LitDev.LDControls.SliderGetValue(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             スライダの値（位置）を取得します。
          </summary>
-         <param name="shapeName">スライダシェイプの名前。</param>
+         <param name="shapeName">スライダ図形の名前。</param>
          <returns>スライダの値（0 ～ 100）。</returns>
       </member>
       <member name="M:LitDev.LDControls.AddPasswordBox(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2632,7 +2632,7 @@
          </summary>
          <param name="width">コントロールの幅。</param>
          <param name="height">コントロールの高さ。</param>
-         <returns>ドキュメントビューアのシェイプ名。</returns>
+         <returns>ドキュメントビューアの図形名。</returns>
       </member>
       <member name="M:LitDev.LDControls.DocumentViewerLoadXPS(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -2645,7 +2645,7 @@
          <summary>
             メニュー項目のチェック状態を取得します。
          </summary>
-         <param name="shapeName">メニューシェイプ名。</param>
+         <param name="shapeName">メニュー図形名。</param>
          <param name="itemName">メニュー項目名。</param>
          <returns>"True" または "False"。</returns>
       </member>
@@ -2658,27 +2658,27 @@
          <param name="menuList">
             メニュー項目の配列。インデックスはメニュー表示名で、値は親表示名です。
             トップレベルの表示名は "Main" にする必要があります。名前は click イベントで返されるので一意でなければなりません。
-            セパレータは一意でなければならず、選択できないため、"-"、"-"、"---" などです。
+            セパレータは一意でなければならず、選択できないため、"-"、"--"、"---" などです。
 
-            menuList [ "File" ] = "Main"
-            menuList [ "Open" ] = "File"
-            menuList [ "-" ] = "File"
-            menuList [ "Exit" ] = "File"
-            menuList [ "Help" ] = "Main"
-            menuList [ "Show Help"] = "Help"
+            menuList["File"] = "Main"
+            menuList["Open"] = "File"
+            menuList["-"] = "File"
+            menuList["Exit"] = "File"
+            menuList["Help"] = "Main"
+            menuList["Show Help"] = "Help"
          </param>
          <param name="iconList">
             オプションのアイコンイメージの配列（URL または ImageList）またはなしの場合は ""。
 
-            iconList [ "File" ] = Program.Directory + "/file.png"
+            iconList["File"] = Program.Directory+"/file.png"
          </param>
          <param name="checkList">
             チェック可能な項目、または none の項目を識別するためのオプションの配列。
             値は、最初にチェックされた状態 "True" または "False" です。
 
-            checkList [ "Show Help" ] = "True"
+            checkList["Show Help"] = "True"
          </param>
-         <returns>メニューシェイプ名。</returns>
+         <returns>メニュー図形名。</returns>
       </member>
       <member name="M:LitDev.LDControls.MenuBackground(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -2686,7 +2686,7 @@
             メインのトップメニューは、LDShapes.BrushColour で個別に着色することができます。
             セパレータは色付けされておらず、しばしばトップメニューに色付けするのが最善の方法です。
          </summary>
-         <param name="shapeName">メニューシェイプ名。</param>
+         <param name="shapeName">メニュー図形名。</param>
          <param name="colour">背景色です。</param>
       </member>
       <member name="M:LitDev.LDControls.TextBoxTab(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2703,7 +2703,7 @@
          <param name="width">コントロールの幅。</param>
          <param name="height">コントロールの高さ。</param>
          <param name="headings">リストビューの見出しの配列。</param>
-         <returns>リストビューのシェイプ名。</returns>
+         <returns>リストビューの図形名。</returns>
       </member>
       <member name="M:LitDev.LDControls.ListViewColAlignment(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -2759,7 +2759,7 @@
          <summary>
             リストビューを編集可能な状態に変更します。
          </summary>
-         <param name="shapeName">リストビューのシェイプ名。</param>
+         <param name="shapeName">リストビューの図形名。</param>
          <param name="editable">編集可能なテキストボックスまたは編集不可能な TextBlock の "True"。</param>
       </member>
       <member name="M:LitDev.LDControls.TextBoxReadOnly(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -2778,7 +2778,7 @@
          <param name="width">コントロールの幅。</param>
          <param name="height">コントロールの高さ。</param>
          <param name="headings">データビューの見出しの配列。</param>
-         <returns>データビューのシェイプ名。</returns>
+         <returns>データビューの図形名。</returns>
       </member>
       <member name="M:LitDev.LDControls.DataViewGetSelected(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -2787,7 +2787,7 @@
          <param name="shapeName">データビューコントロール。</param>
          <returns>
             選択された行と列の 2 次元配列。
-            セル [1] [1] = 行、セル [1] [2] = 列。
+            cells[1][1] = 行、cells[1][2] = 列。
          </returns>
       </member>
       <member name="M:LitDev.LDControls.DataViewSetFocus(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -3022,7 +3022,7 @@
       </member>
       <member name="P:LitDev.LDControls.LastContextItem">
          <summary>
-            最後に選択したシェイプまたはコントロールの右クリックコンテキストメニュー項目のインデックス。
+            最後に選択した図形またはコントロールの右クリックコンテキストメニュー項目のインデックス。
          </summary>
       </member>
       <member name="P:LitDev.LDControls.RichTextBoxIndentToTab">
@@ -3241,7 +3241,7 @@
       </member>
       <member name="E:LitDev.LDControls.ContextMenuClicked">
          <summary>
-            シェイプまたはコントロールの右クリックコンテキストメニュー項目が選択されたときのイベント。
+            図形またはコントロールの右クリックコンテキストメニュー項目が選択されたときのイベント。
          </summary>
       </member>
       <member name="E:LitDev.LDControls.RichTextBoxTextTyped">
@@ -3466,7 +3466,7 @@
       </member>
       <member name="M:LitDev.LD3DView.AddView(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            3DView（GraphicsWindow シェイプ）を追加します。
+            3DView（GraphicsWindow 図形）を追加します。
          </summary>
          <param name="width">3DView の幅。</param>
          <param name="height">3DView の高さ。</param>
@@ -4021,7 +4021,7 @@
             "R1" 最初の回転変換
             "R2" 第 2 回転変換
             "R3" 第 3 回転変換
-            "S" スケール変換
+            "S"  スケール変換
          </param>
       </member>
       <member name="M:LitDev.LD3DView.BoundingBox(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -4033,12 +4033,12 @@
          <param name="geometryName">ジオメトリオブジェクト。</param>
          <returns>
             次元の配列または "FAILED"
-            array [1] = sizeX（width）
-            配列 [2] = サイズ Y（高さ）
-            配列 [3] = サイズ Z（深さ）
-            配列 [4] = X（Xmin）
-            配列 [5] = Y（Ymin）
-            配列 [6] = Z（Zmin）
+            array[1] = sizeX '幅
+            array[2] = sizeY '高さ
+            array[3] = sizeZ '深さ
+            array[4] = X '最小 X
+            array[5] = Y '最小 Y
+            array[6] = Z '最小 Z
          </returns>
       </member>
       <member name="M:LitDev.LD3DView.ResetMaterial(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -4064,9 +4064,9 @@
          <param name="geometryName">ジオメトリオブジェクト。</param>
          <returns>
             変換された位置または "FAILED" の配列。
-            配列 [1] = X（Xcen）
-            配列 [2] = Y（Ycen）
-            配列 [3] = Z（Zcen）
+            array[1] = X '中心 X
+            array[2] = Y '中心 Y
+            array[3] = Z '中心 Z
          </returns>
       </member>
       <member name="M:LitDev.LD3DView.SwapUpDirection(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -4242,8 +4242,8 @@
          <summary>指定されたファイルまたはフォルダの拡張プロパティの値を取得します。</summary>
          <param name="path">完全なファイルパスまたはフォルダパス。</param>
          <param name="infoType">
-            プロパティの ID 番号または名前（たとえば、-1 = "Infotip" / ""、0 = "Name"（名前）、1 = "Size"（サイズ） など）
-            ID の番号と s の下に利用可能なプロパティの名前。'AllDetails'
+            プロパティの ID 番号または名前（たとえば、-1="Infotip"、0="名前"、1="サイズ" など）
+            ID の番号は LDShell.AllDetails で得られる利用可能なプロパティの名前。
          </param>
          <returns>
             利用可能な場合はプロパティの値、そうでない場合は "" です。失敗した場合（たとえば、パスが見つからない場合）は "FAILED"
@@ -4251,28 +4251,28 @@
          </returns>
       </member>
       <member name="M:LitDev.LDShell.GetAllDetailsFor(Microsoft.SmallBasic.Library.Primitive)">
-         <summary>指定されたファイルまたはフォルダのすべての利用可能な拡張プロパティを Array として取得します（最大 = 316、-1 = Infotip なし）。</summary>
+         <summary>指定されたファイルまたはフォルダのすべての利用可能な拡張プロパティを配列として取得します（最大=316、-1=Infotip を除く）。</summary>
          <param name="path">完全なファイルパスまたはフォルダパス。</param>
-         <returns>成功すると Array（"property name=value;..."、Infotip なし）として使用可能なすべての拡張プロパティ、それ以外の場合は "FAILED"</returns>
+         <returns>成功すると配列（"property name=value;..."、Infotip を除く）として使用可能なすべての拡張プロパティ、それ以外の場合は "FAILED"。</returns>
       </member>
       <member name="M:LitDev.LDShell.GetAllDetailNamesFor(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
-         <summary>指定されたファイルまたはフォルダの利用可能なすべての拡張プロパティの名前を Array として取得します（最大 316、w / o -1 = Infotip）。</summary>
+         <summary>指定されたファイルまたはフォルダの利用可能なすべての拡張プロパティの名前を配列として取得します（最大 316、-1=Infotip を除く）。</summary>
          <param name="path">完全なファイルパスまたはフォルダパス。</param>
-         <param name="step1">スープで 1 を示しますか？"True" または "False"（デフォルト、実プロパティ ID）。</param>
-         <returns>成功した場合は Array（"idx=property name;..."、Infotip なし）として利用可能なすべての拡張プロパティの名前、そうでない場合は "FAILED"。</returns>
+         <param name="step1">インデックスを 1 ステップにするか？ "True" または "False"（デフォルト、実際のプロパティ ID）。</param>
+         <returns>成功した場合は配列（"idx=property name;..."、Infotip なし）として利用可能なすべての拡張プロパティの名前、そうでない場合は "FAILED"。</returns>
       </member>
       <member name="M:LitDev.LDShell.GetAllVerbsFor(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            指定したファイルタイプまたはフォルダの使用可能なすべての動詞（コンテキストメニュー項目）を Array として取得します。
-            'ApplyVerbOn' の下の動詞のファイル / フォルダへの適用。
+            指定したファイルタイプまたはフォルダの使用可能なすべての動詞（コンテキストメニュー項目）を配列として取得します。
+            LDShell.ApplyVerbOn の下の動詞のファイル / フォルダへの適用。
          </summary>
          <param name="path">完全なファイルパスまたはフォルダパス。</param>
-         <returns>成功するとすべての利用可能な動詞を配列として（"idx=verb;..."、w / o ' ＆ '）、そうでなければ "FAILED"。</returns>
+         <returns>成功するとすべての利用可能な動詞を配列として（"idx=verb;..."、'＆' を除く）、そうでなければ "FAILED"。</returns>
       </member>
       <member name="M:LitDev.LDShell.ApplyVerbOn(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             与えられたファイルまたはフォルダの動詞（コンテキストメニュー項目）を適用します。
-            'GetAllVerbsFor' の下にある利用可能な動詞のリスト（ファイルタイプまたはフォルダ用）。
+            LDShell.GetAllVerbsFor の下にある利用可能な動詞のリスト（ファイルタイプまたはフォルダ用）。
          </summary>
          <param name="path">完全なファイルパスまたはフォルダパス。</param>
          <param name="verb">適用する動詞（大文字と小文字の区別なし）</param>
@@ -4360,20 +4360,20 @@
       </member>
       <member name="M:LitDev.LDShell.SpecialFolderList(Microsoft.SmallBasic.Library.Primitive)">
          <summary>特殊なシステム / シェルフォルダ内のすべての項目を取得します（上位レベルのみ）。</summary>
-         <param name="csidl">システムフォルダの CSIDL 番号（0 ～ 47、s。SpecialFolderConstants の下にある利用可能なフォルダの定数および名前）。</param>
+         <param name="csidl">システムフォルダの CSIDL 番号（0 ～ 47、LDShell.SpecialFolderConstants の下にある利用可能なフォルダの定数および名前）。</param>
          <returns>成功した場合はシステムフォルダ内のすべてのオブジェクトの名前（上位レベルのみ）、それ以外の場合は "FAILED"。</returns>
          <example>
             http://msdn.microsoft.com/library/bb774096.aspx
-            例えば。CSIDL：
-            3 コントロールパネル
-            5 マイドキュメント
-            8 最近の
-            9 SendTo
-            10 RecBin
-            16 デスクトップフォルダ
-            17 コンピュータ
-            20 フォント
-            32 Temp Inet ファイル
+            例えば、CSIDL は：
+             3 すべてのコントロール パネル項目
+             5 ドキュメント
+             8 最近使った項目
+             9 SendTo
+            10 ごみ箱
+            16 デスクトップ
+            17 PC
+            20 Fonts
+            32 INetCache
          </example>
       </member>
       <member name="M:LitDev.LDShell.ShowDesktop">
@@ -4435,26 +4435,26 @@
          <returns>成功した場合は "True" または "False"、それ以外の場合は "FAILED"。</returns>
          <example>
             http://msdn.microsoft.com/library/windows/desktop/gg537739.aspx
-            ShowAllObjects = SBShell.GetSetting（1）
-            ShowExtensions = SBShell.GetSetting（2）
-            ShowInfoTip = SBShell.GetSetting（8192）
-            ShowSuperHidden = SBShell.GetSetting（262144）
+            ShowAllObjects = SBShell.GetSetting(1)
+            ShowExtensions = SBShell.GetSetting(2)
+            ShowInfoTip = SBShell.GetSetting(8192)
+            ShowSuperHidden = SBShell.GetSetting(262144)
          </example>
       </member>
       <member name="P:LitDev.LDShell.AllDetails">
-         <summary>使用可能なすべての拡張プロパティを Array（"idx=property name;"、-1 = Infotip、0 = Name、.. ～ 286 = 合計ビットレート（または全ビットレート））として取得します。</summary>
+         <summary>使用可能なすべての拡張プロパティを配列（"idx=property name;"、-1=Infotip、0=Name、.. ～ 286=合計ビットレート（または全ビットレート））として取得します。</summary>
       </member>
       <member name="P:LitDev.LDShell.DTIconsOn">
          <summary>デスクトップアイコンが現在表示されている天気を取得します（"True" または "False"）。</summary>
       </member>
       <member name="P:LitDev.LDShell.SpecialFolderConstants">
-         <summary>すべての CSIDL 番号とその特別な System / Shell フォルダ名のリストを Array（"csidl=folder name;"）として取得します。</summary>
+         <summary>すべての CSIDL 番号とその特別な System / Shell フォルダ名のリストを配列（"csidl=folder name;"）として取得します。</summary>
       </member>
       <member name="P:LitDev.LDShell.SpecialFolderPaths">
-         <summary>すべての特殊な System / Shell フォルダ名とそのフォルダパスのリストを Array（"folder name=path;"）として取得します。</summary>
+         <summary>すべての特殊な System / Shell フォルダ名とそのフォルダパスのリストを配列（"folder name=path;"）として取得します。</summary>
       </member>
       <member name="P:LitDev.LDShell.SpecialFolders">
-         <summary>すべての特別なシステムフォルダのリストを Array（"folder name=path;"）として取得します。シェルフォルダの場合 'SpecialFolderPaths'</summary>
+         <summary>すべての特別なシステムフォルダのリストを配列（"folder name=path;"）として取得します。シェルフォルダの場合 'SpecialFolderPaths'</summary>
       </member>
       <member name="P:LitDev.LDShell.Version">
          <summary>この拡張機能の現在のファイルバージョンを取得します（それ以外の場合は 0.0.0.0）。</summary>
@@ -5827,7 +5827,7 @@
          <summary>
             VID と PID から HID 接続デバイスを追加します。
             VID と PID は 4 文字（16 進数）の値で、次の場所から検索できます。
-            デバイスマネージャー - &gt; プロパティー - &gt; 詳細 - &gt; ハードウェア ID
+            デバイスマネージャー -&gt; プロパティ -&gt; 詳細 -&gt; ハードウェア ID
             例：HID \ VID_046D PID_C215 REV_0204 には、VID "046D" と PID "C215" があります。
             一度だけデバイスを追加してください。
          </summary>
@@ -6223,7 +6223,7 @@
       <member name="M:LitDev.LDGraphicsWindow.GetPixel(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             指定された x 座標と y 座標のピクセルの色を取得します。
-            このメソッドは、背景、図形、およびシェイプのレイヤーで機能します。
+            このメソッドは、背景、図形、および図形のレイヤーで機能します。
          </summary>
          <param name="x">
             ピクセルの x 座標。
@@ -6258,8 +6258,8 @@
       </member>
       <member name="M:LitDev.LDGraphicsWindow.Reposition(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            GraphicsWindow 内のすべてのシェイプとコントロールを拡大縮小して移動します。
-            このメソッドはシェイプではなくビューのサイズを変更して移動するため、位置やその他のプロパティは変更されずに再配置された領域内で拡大 / 縮小されたように見えます。
+            GraphicsWindow 内のすべての図形とコントロールを拡大縮小して移動します。
+            このメソッドは図形ではなくビューのサイズを変更して移動するため、位置やその他のプロパティは変更されずに再配置された領域内で拡大 / 縮小されたように見えます。
             たとえば、Shapes.GetLeft はビューが再配置されても変更されず、GraphicsWindow.MouseX は再配置されたビューを基準として座標をレポートします。
             ビュー全体が GrapicsWindow 内の図形のように再配置されたとします。
             ビュー座標（vX、vY）と GraphicsWindow 座標（gwX、gwY）の間の変換は次のようになります。
@@ -6275,7 +6275,7 @@
       </member>
       <member name="M:LitDev.LDGraphicsWindow.Animate(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            スムーズなアニメーションで GraphicsWindow 内のすべてのシェイプとコントロールを拡大縮小して移動します。
+            スムーズなアニメーションで GraphicsWindow 内のすべての図形とコントロールを拡大縮小して移動します。
             これは、移動がアニメートされる点を除いて、再配置方法と同じです。
          </summary>
          <param name="scaleX">ビューの X 方向のスケーリング</param>
@@ -6867,11 +6867,11 @@
          <param name="matrix">
             5×5 の 2D マトリックス。
             セピア例：
-            マトリクス [1] = "1=0.393;2=0.349;3=0.272;4=0;5=0"
-            行列 [2] = "1=0.769;2=0.686;3=0.534;4=0;5=0"
-            マトリクス [3] = "1=0.189;2=0.168;3=0.131;4=0;5=0"
-            マトリクス [4] = "1=0;2=0;3=0;4=1;5=0"
-            マトリクス [5] = "1=0;2=0;3=0;4=0;5=1"
+            matrix[1] = "1=0.393;2=0.349;3=0.272;4=0;5=0"
+            matrix[2] = "1=0.769;2=0.686;3=0.534;4=0;5=0"
+            matrix[3] = "1=0.189;2=0.168;3=0.131;4=0;5=0"
+            matrix[4] = "1=0;2=0;3=0;4=1;5=0"
+            matrix[5] = "1=0;2=0;3=0;4=0;5=1"
          </param>
       </member>
       <member name="M:LitDev.LDImage.Rotate(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -7228,7 +7228,7 @@
          </summary>
          <param name="shapeName">
             画像形状法線マップ（R、G、B 色は 3D 画像の法線ベクトルを表す）。
-            これは、法線マップイメージを含む Shapes.AddImage を使用して作成されたイメージシェイプです。
+            これは、法線マップイメージを含む Shapes.AddImage を使用して作成されたイメージ図形です。
          </param>
          <param name="sourceX">画像に対する光源の x 位置。</param>
          <param name="sourceY">画像に対する光源の y 位置。</param>
@@ -7480,7 +7480,7 @@
       <member name="M:LitDev.LDMatrix.Transpose(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             行列の転置を計算します。
-            行列と転置の行数と列数は逆にする必要があります（cols = 行とその逆）。
+            行列と転置の行数と列数は逆にする必要があります（列 = 行かつその逆）。
          </summary>
          <param name="matrix">転置する行列。</param>
          <param name="transpose">結果の転置行列。</param>
@@ -7527,7 +7527,7 @@
          <example>
             <code>
                LDMusic.Instrument = LDMusic.Xylophone
-               LDMusic.PlayMusic（"O5 C8 C8 G8 G8 A8 A8 G4 F8 F8 E8 E8 D8 D8 C2"）
+               LDMusic.PlayMusic("O5 C8 C8 G8 G8 A8 A8 G4 F8 F8 E8 E8 D8 D8 C2")
             </code>
          </example>
       </member>
@@ -7725,7 +7725,7 @@
       </member>
       <member name="M:LitDev.LDWebCam.Start(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            ウェブカメラ表示オブジェクトを開始します（SmallBasic シェイプ）。これを複数回呼び出すと、同じ Web カメラ画像の複数のコピーが生成されます。
+            ウェブカメラ表示オブジェクトを開始します（SmallBasic 図形）。これを複数回呼び出すと、同じ Web カメラ画像の複数のコピーが生成されます。
 
             このオブジェクトは、標準の Shapes メソッドを使用して移動、回転、回転などができます。
 
@@ -8108,7 +8108,7 @@
          <param name="distMean">分布の平均。</param>
          <param name="distSTD">分布の標準偏差。</param>
          <param name="size">ポイント数。</param>
-         <returns>正規分布（Array [x] = y）の 1 次元配列。</returns>
+         <returns>正規分布の 1 次元配列（Array[x] = y）。</returns>
       </member>
       <member name="M:LitDev.LDStatistics.DistBinomial(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -8118,7 +8118,7 @@
          </summary>
          <param name="n">試行回数</param>
          <param name="p">各試行の成功の確率。</param>
-         <returns>二項分布の 1D 配列、k 個の成功確率の確率（配列 [k] = y）。</returns>
+         <returns>二項分布の 1D 配列、k 個の成功確率の確率（Array[k] = y）。</returns>
       </member>
       <member name="M:LitDev.LDStatistics.DistUniform(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -8127,7 +8127,7 @@
          <param name="rangeMin">最小値。</param>
          <param name="rangeMax">最大値。</param>
          <param name="size">ポイント数。</param>
-         <returns>Uniform 分布の 1D 配列（Array [x] = y）。</returns>
+         <returns>Uniform 分布の 1D 配列（Array[x] = y）。</returns>
       </member>
       <member name="M:LitDev.LDStatistics.DistTriangular(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -8136,20 +8136,20 @@
          <param name="rangeMin">最小値。</param>
          <param name="rangeMax">最大値。</param>
          <param name="size">ポイント数。</param>
-         <returns>三角分布（Array [x] = y）の 1 次元配列。</returns>
+         <returns>三角分布の 1 次元配列（Array[x] = y）。</returns>
       </member>
       <member name="M:LitDev.LDStatistics.Integrate(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             1D データ配列の積分を計算します。
          </summary>
-         <param name="array">積分する配列（array [x] = y）。</param>
+         <param name="array">積分する配列（array[x] = y）。</param>
          <returns>入力配列の Integral の 1D 配列。</returns>
       </member>
       <member name="M:LitDev.LDStatistics.Differentiate(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             1D データ配列の導関数を計算します。
          </summary>
-         <param name="array">差別化する配列（配列 [x] = y）。</param>
+         <param name="array">差別化する配列（array[x] = y）。</param>
          <returns>入力配列の導関数の 1D 配列。</returns>
       </member>
       <member name="M:LitDev.LDStatistics.InterpolateY(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -8158,7 +8158,7 @@
 
             x の値は単調増加するはずです。
          </summary>
-         <param name="array">補間する配列（配列 [x] = y）。</param>
+         <param name="array">補間する配列（array[x] = y）。</param>
          <param name="x">x の値（x 値の配列でもよい）。</param>
          <returns>補間された値 y または y 値の配列。</returns>
       </member>
@@ -8168,7 +8168,7 @@
 
             y の値は x で単調増加するはずです。
          </summary>
-         <param name="array">補間する配列（配列 [x] = y）。</param>
+         <param name="array">補間する配列（array[x] = y）。</param>
          <param name="y">y の値（y 値の配列でもよい）。</param>
          <returns>補間された値 x または x 値の配列。</returns>
       </member>
@@ -8179,7 +8179,7 @@
          <param name="array">周波数分布を作成する配列。</param>
          <param name="bins">データにまたがるビンの数。</param>
          <param name="normalised">周波数を正規化して 1 に統合するか（"True" または "False"）。</param>
-         <returns>周波数分布を配列として返します（array [bin] = frequency）。</returns>
+         <returns>周波数分布を配列として返します（array[bin] = frequency）。</returns>
       </member>
       <member name="P:LitDev.LDStatistics.Sum">
          <summary>
@@ -8957,7 +8957,7 @@
       </member>
       <member name="M:LitDev.LDCursors.SetShapeCursor(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            マウスがシェイプ上にあるときにシェイプまたはコントロールのカーソルを設定します。
+            マウスが図形上にあるときに図形またはコントロールのカーソルを設定します。
          </summary>
          <param name="shapeName">形状または制御名。</param>
          <param name="cursor">
@@ -9091,10 +9091,10 @@
             X 座標データと Y 座標データを保持する配列。
 
             例えば、点（0,1）と（2,3）を持つ線は、
-            データ [0] = 1
-            データ [2] = 3
+            data[0] = 1
+            data[2] = 3
 
-            より一般的には、data [x] = y。
+            より一般的には、data[x] = y。
          </param>
          <param name="colour">
             シリーズデータの色。
@@ -9118,10 +9118,10 @@
             X 座標データと Y 座標データを保持する配列。
 
             例えば、点（0,1）と（2,3）を持つ線は、
-            データ [0] = 1
-            データ [2] = 3
+            data[0] = 1
+            data[2] = 3
 
-            より一般的には、data [x] = y。
+            より一般的には、data[x] = y。
          </param>
          <param name="colour">
             シリーズデータの色。
@@ -9145,10 +9145,10 @@
             X 座標データと Y 座標データを保持する配列。
 
             例えば、点（0,1）と（2,3）を持つ線は、
-            データ [0] = 1
-            データ [2] = 3
+            data[0] = 1
+            data[2] = 3
 
-            より一般的には、data [x] = y。
+            より一般的には、data[x] = y。
          </param>
          <param name="colour">
             シリーズデータの色。
@@ -9244,9 +9244,9 @@
             各一連のデータは、（ユニークな）X 値を返す配列インデックスと Y 値を表す配列値を持つ SmallBasic 配列です。
 
             例えば：
-            データ [1] = 5
-            データ [2] = 8
-            データ [3] = 3
+            data[1] = 5
+            data[2] = 8
+            data[3] = 3
 
             最初に AddGraph でグラフオブジェクトを作成し、AddSeriesLine、AddSeriesHistogram または AddSeriesPoints でシリーズを追加します。
 
@@ -9270,10 +9270,10 @@
             X 座標データと Y 座標データを保持する配列。
 
             例えば、点（0,1）と（2,3）を持つ線は、
-            データ [0] = 1
-            データ [2] = 3
+            data[0] = 1
+            data[2] = 3
 
-            より一般的には、data [x] = y。
+            より一般的には、data[x] = y。
          </param>
          <param name="order">
             トレンドラインの多項式次数。
@@ -9289,7 +9289,7 @@
          <returns>
             トレンドラインの多項式係数の配列 'coef'。
             配列内の係数の数は、トレンドを作成するために使用された順序（order + 1）よりも 1 つ大きく、0 からインデックスされます。
-            y = coef [0] + coef [1] x + coef [2] x ^ 2 ...
+            y = coef[0] + coef[1]x + coef[2]x^2 ...
          </returns>
       </member>
       <member name="P:LitDev.LDGraph.BorderColour">
@@ -9428,7 +9428,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.AddFixedAnchor(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            固定されたアンカーポイントとして使用するための新しい小さくて透明なシェイプを追加します。
+            固定されたアンカーポイントとして使用するための新しい小さくて透明な図形を追加します。
          </summary>
          <param name="posX">
             アンカーの X 座標。
@@ -9442,7 +9442,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.AddFixedShape(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            フィジカルエンジンに既存の SmallBasic シェイプを追加します。フィーチャに影響を与える摩擦や反発を伴う固定（非動的）シェイプとして追加します。
+            フィジカルエンジンに既存の SmallBasic 図形を追加します。フィーチャに影響を与える摩擦や反発を伴う固定（非動的）図形として追加します。
          </summary>
          <param name="shapeName">
             形状の名前。
@@ -9459,7 +9459,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.AddInactiveShape(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            既存の SmallBasic シェイプを物理エンジンに追加するには、PanView メソッドでのみ動作する非アクティブ（非インタラクティブで非インタラクティブな）シェイプとして追加します。
+            既存の SmallBasic 図形を物理エンジンに追加するには、PanView メソッドでのみ動作する非アクティブ（非インタラクティブで非インタラクティブな）図形として追加します。
          </summary>
          <param name="shapeName">
             形状の名前。
@@ -9470,7 +9470,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.AddMovingAnchor(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            移動するアンカーポイントとして使用するために、新しい小さな透明な高密度のシェイプを追加します。
+            移動するアンカーポイントとして使用するために、新しい小さな透明な高密度の図形を追加します。
          </summary>
          <param name="posX">
             アンカーの X 座標。
@@ -9484,7 +9484,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.AddMovingShape(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            既存の SmallBasic シェイプを物理エンジンに移動（動的）シェイプとして追加します。
+            既存の SmallBasic 図形を物理エンジンに移動（動的）図形として追加します。
          </summary>
          <param name="shapeName">
             形状の名前。
@@ -9522,10 +9522,10 @@
             2 つの図形を 1 つの図形として一緒に移動します。それらの形状は遠隔のジョイントと接続されており、ヒットした場合には少しぐらつくことがあります。
          </summary>
          <param name="shape1">
-            最初のシェイプ名。
+            最初の図形名。
          </param>
          <param name="shape2">
-            2 番目のシェイプ名。
+            2 番目の図形名。
          </param>
          <returns>
             なし。
@@ -9536,10 +9536,10 @@
             2 つの図形を 1 つとして一緒に動くように接続しますが、図形は互いに回転します。
          </summary>
          <param name="shape1">
-            最初のシェイプ名。
+            最初の図形名。
          </param>
          <param name="shape2">
-            2 番目のシェイプ名。
+            2 番目の図形名。
          </param>
          <returns>
             なし。
@@ -9550,10 +9550,10 @@
             以前に添付された 2 つの図形を切断します。
          </summary>
          <param name="shape1">
-            最初のシェイプ名。
+            最初の図形名。
          </param>
          <param name="shape2">
-            2 番目のシェイプ名。
+            2 番目の図形名。
          </param>
          <returns>
             なし。
@@ -9561,7 +9561,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.DisconnectShape(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            シェイプを削除せずにフィジックスエンジンからシェイプを切断します。
+            図形を削除せずにフィジックスエンジンから図形を切断します。
          </summary>
          <param name="shapeName">
             形状の名前。
@@ -9605,7 +9605,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.GetCollisions(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            指定されたシェイプが最後の DoTimestep（）の間に衝突したすべてのシェイプの配列を取得します。
+            指定された図形が最後の DoTimestep（）の間に衝突したすべての図形の配列を取得します。
          </summary>
          <param name="shapeName">
             衝突をチェックするための形状。
@@ -9649,7 +9649,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.GetContacts(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            指定された接点の距離内で衝突したシェイプのリストを取得します。
+            指定された接点の距離内で衝突した図形のリストを取得します。
          </summary>
          <param name="posX">
             確認する接触位置の X 座標。
@@ -9718,13 +9718,13 @@
       </member>
       <member name="M:LitDev.LDPhysics.GroupShapes(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            2 つの図形をしっかりとグループ化して一緒に動かします。Shape1 が shape2 に追加されて 1 つのシェイプとして機能します。
+            2 つの図形をしっかりとグループ化して一緒に動かします。Shape1 が shape2 に追加されて 1 つの図形として機能します。
          </summary>
          <param name="shape1">
-            最初のシェイプ名。
+            最初の図形名。
          </param>
          <param name="shape2">
-            2 番目のシェイプ名。
+            2 番目の図形名。
          </param>
          <returns>
             なし。
@@ -9736,7 +9736,7 @@
 
             拡張機能は Box2D（http://box2d.org）をエンジンとして使用し、SmallBasic のグラフィックス機能との間のインターフェイスを提供します。
 
-            物理エンジンに接続されているシェイプだけがモーション物理に参加します。たとえば、通常のシェイプ（たとえば、ガンを物理エンジンに接続しないなど）を追加することができます。図形がエンジンに接続されたら、拡張機能によって提供される方法でのみ図形と対話するのが最善です。すべての位置は SmallBasic GraphicsWindow ピクセルにあり、シェイプセンターを参照します。
+            物理エンジンに接続されている図形だけがモーション物理に参加します。たとえば、通常の図形（たとえば、ガンを物理エンジンに接続しないなど）を追加することができます。図形がエンジンに接続されたら、拡張機能によって提供される方法でのみ図形と対話するのが最善です。すべての位置は SmallBasic GraphicsWindow ピクセルにあり、図形センターを参照します。
 
             画像とテキストの形は長方形として扱われ、楕円は円として扱われます。三角形と凸多角形のサポートもありますが、線はありません。LoadImagesAsCircles プロパティを "True" に設定することで、画像を円として扱うことができます。
 
@@ -9783,7 +9783,7 @@
          <summary>
             ビューの X 位置に固定された形状を設定します。
             これは PanView と似ていますが、ビューが一定の視覚的 X 位置に指定された形状を維持するように自動的にパンする点が異なります。
-            X 方向には 1 つの形状しか続かない。次のシェイプの設定を解除するには、shapeName を "" に設定します。
+            X 方向には 1 つの形状しか続かない。次の図形の設定を解除するには、shapeName を "" に設定します。
          </summary>
          <param name="shapeName">
             それに続く形や ""。
@@ -9796,7 +9796,7 @@
          <summary>
             ビューの Y 位置に固定された形状を設定します。
             これは、ビューが一定の視覚的 Y 位置に指定された形状を維持するように自動的にパンする点を除いて、PanView と似ています。
-            Y 方向には 1 つの形状しか続かない。次のシェイプの設定を解除するには、shapeName を "" に設定します。
+            Y 方向には 1 つの形状しか続かない。次の図形の設定を解除するには、shapeName を "" に設定します。
          </summary>
          <param name="shapeName">
             それに続く形や ""。
@@ -9808,8 +9808,8 @@
       <member name="M:LitDev.LDPhysics.BoxShape(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             ビュー内のボックス内に残るように図形を設定します。
-            これは、ビューが自動的にパンして、指定されたシェイプを GraphicsWindow のボックス領域内に保持することを除いて、PanView と似ています。
-            ボックスに入れることができるのは 1 つの形だけです。シェイプボックスの設定を解除するには、shapeName を "" に設定します。
+            これは、ビューが自動的にパンして、指定された図形を GraphicsWindow のボックス領域内に保持することを除いて、PanView と似ています。
+            ボックスに入れることができるのは 1 つの形だけです。図形ボックスの設定を解除するには、shapeName を "" に設定します。
          </summary>
          <param name="shapeName">形状をボックスまたは "" にします。</param>
          <param name="x1">ボックスの左の x 座標。</param>
@@ -9849,7 +9849,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.RemoveShape(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            シェイプを削除します。
+            図形を削除します。
          </summary>
          <param name="shapeName">
             形状の名前。
@@ -9919,7 +9919,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.SetDamping(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            シェイプの減衰係数を設定します（デフォルトは 0）。
+            図形の減衰係数を設定します（デフォルトは 0）。
          </summary>
          <param name="shapeName">
             変更する形状。
@@ -9953,7 +9953,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.SetGroup(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            どのスプライトが他のシェイプと相互作用（衝突）するかを制御します。
+            どのスプライトが他の図形と相互作用（衝突）するかを制御します。
          </summary>
          <param name="shapeName">
             変更する形状。
@@ -9962,7 +9962,7 @@
             現在の図形が属するグループ（デフォルトは 0）。これは 0 ～ 15 の整数でなければなりません。
          </param>
          <param name="mask">
-            このシェイプが衝突するグループの配列（デフォルトではすべてのグループ 0,1,2、..、14,15）。
+            この図形が衝突するグループの配列（デフォルトではすべてのグループ 0,1,2、..、14,15）。
             形状がグループ 0、1、および 4 とだけ相互作用できるようにするには、"1=0;2=1;3=4;" となります。
          </param>
          <returns>
@@ -10101,13 +10101,13 @@
       </member>
       <member name="M:LitDev.LDPhysics.UngroupShapes(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            シェイプグループのペアを削除します。
+            図形グループのペアを削除します。
          </summary>
          <param name="shape1">
-            最初のシェイプ名。
+            最初の図形名。
          </param>
          <param name="shape2">
-            2 番目のシェイプ名。
+            2 番目の図形名。
          </param>
          <returns>
             なし。
@@ -10203,21 +10203,21 @@
       </member>
       <member name="M:LitDev.LDPhysics.ToggleMoving(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            移動するシェイプを固定し、固定シェイプを固定シェイプに切り替えます。
+            移動する図形を固定し、固定図形を固定図形に切り替えます。
             また、このメソッドは、移動または固定されている場合は、回転をオンまたはオフに設定して一致させます。
          </summary>
          <param name="shapeName">形状の名前。</param>
       </member>
       <member name="M:LitDev.LDPhysics.ToggleRotation(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            回転しないようにシェイプを切り替えたり、シェイプを回転しないように切り替えたりします。
-            このメソッドは、固定および移動シェイプの回転プロパティを切り替えます。
+            回転しないように図形を切り替えたり、図形を回転しないように切り替えたりします。
+            このメソッドは、固定および移動図形の回転プロパティを切り替えます。
          </summary>
          <param name="shapeName">形状の名前。</param>
       </member>
       <member name="M:LitDev.LDPhysics.ToggleSensor(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            センサとして動作するようにシェイプを切り替える（逆も同様）。
+            センサとして動作するように図形を切り替える（逆も同様）。
             センサ形状は他の形状と相互作用しませんが、依然として衝突データを提供します。
          </summary>
          <param name="shapeName">形状の名前。</param>
@@ -10226,19 +10226,19 @@
          <summary>
             2 つの図形を接続して、いくつかの関節タイプの 1 つとして一緒に動くようにします。
             これらは高度化することができ、Box2D のマニュアルを参照する必要があります。
-            多くの場合、ジョイントが必要に応じて動作するようにシェイプの回転を防止することが最善です。
-            複数のジョイントをシェイプに適用することもできます。
+            多くの場合、ジョイントが必要に応じて動作するように図形の回転を防止することが最善です。
+            複数のジョイントを図形に適用することもできます。
             この方法では最初の形状の位置が使用されるため、最初に設定します。
          </summary>
-         <param name="shape1">最初のシェイプ名。</param>
-         <param name="shape2">2 番目のシェイプ名。</param>
+         <param name="shape1">最初の図形名。</param>
+         <param name="shape2">2 番目の図形名。</param>
          <param name="type">
             以下のジョイントタイプのいずれか。
 
             "Distance"（距離） - 形状間の固定距離を維持します。
             "Gear"（歯車） -  2 つの形状のプリズムまたは回転ジョイント（以前に作成したもの）をリンクします。
             "Line"（線） - 最初に図形を結ぶ線に沿って図形を移動します。
-            "Mouse" - シェイプをマウスの後に移動します（両方のシェイプ名は同じにする必要があります）。
+            "Mouse" - 図形をマウスの後に移動します（両方の図形名は同じにする必要があります）。
             "Prismatic_H" -  2 つの図形の間の線に沿って図形を垂直に移動します。
             "Prismatic_V" -  2 つの図形の間の線に沿って図形を水平に移動します。
             "Pulley"（プーリー） - プーリーシステムで、一方の形状が下に動くにつれて上に移動し、最初にプーリーの動きの極端な点で形状を位置決めします。
@@ -10265,7 +10265,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.DetachJoint(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            以前にジョイントで結合された 2 つのシェイプを切断します。
+            以前にジョイントで結合された 2 つの図形を切断します。
          </summary>
          <param name="jointName">
             ジョイント名。
@@ -10321,9 +10321,9 @@
             詳細については、https://www.iforce2d.net/rube を参照してください。
          </summary>
          <param name="fileName">読み取る json ファイルへのフルパス。</param>
-         <param name="scale">すべてのシェイプのスケールを設定します（既定の 1（スケーリングなし））。</param>
+         <param name="scale">すべての図形のスケールを設定します（既定の 1（スケーリングなし））。</param>
          <param name="reverseY">Y 方向を上から下に反転します（"True" または "False"）。</param>
-         <param name="stationary">すべてのシェイプを最初に休止状態に設定すると、ジョイントモーターはまだ有効です（"True" または "False"）。</param>
+         <param name="stationary">すべての図形を最初に休止状態に設定すると、ジョイントモーターはまだ有効です（"True" または "False"）。</param>
          <param name="offsetX">すべての図形に x 座標オフセットを追加します。</param>
          <param name="offsetY">すべての図形に y 座標オフセットを追加します。特に、reverseY が設定されている場合に便利です。</param>
          <returns>モデルの作成に使用された LDPhysics コマンドを含むテキスト配列。</returns>
@@ -10554,7 +10554,7 @@
       </member>
       <member name="M:LitDev.LDShapes.GetProperty(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            シェイププロパティを取得します。これは .Net UIElement プロパティです。
+            図形プロパティを取得します。これは .Net UIElement プロパティです。
          </summary>
          <param name="shapeName">形状または制御名。</param>
          <param name="property">取得するプロパティ名。</param>
@@ -10562,14 +10562,14 @@
       </member>
       <member name="M:LitDev.LDShapes.GetProperties(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            シェイプのプロパティのリストを取得します。これらは .Net UIElement プロパティです。
+            図形のプロパティのリストを取得します。これらは .Net UIElement プロパティです。
          </summary>
          <param name="shapeName">形状または制御名。</param>
          <returns>プロパティとその値の配列。</returns>
       </member>
       <member name="M:LitDev.LDShapes.SetProperty(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            シェイププロパティを設定します。これは .Net UIElement プロパティです。
+            図形プロパティを設定します。これは .Net UIElement プロパティです。
          </summary>
          <param name="shapeName">形状または制御名。</param>
          <param name="property">設定するプロパティ名。</param>
@@ -10612,7 +10612,7 @@
             線の形を移動します。
          </summary>
          <param name="shapeName">
-            シェイプ名（Shapes.AddLine で作成された行）。
+            図形名（Shapes.AddLine で作成された行）。
          </param>
          <param name="x1">
             行を移動する最初の X 座標。
@@ -10635,7 +10635,7 @@
             三角形を移動します。
          </summary>
          <param name="shapeName">
-            シェイプ名（Shapes.AddTriangle で作成された三角形）。
+            図形名（Shapes.AddTriangle で作成された三角形）。
          </param>
          <param name="x1">
             三角形を移動する最初の X 座標。
@@ -10685,10 +10685,10 @@
             形状の名前。
          </param>
          <param name="x">
-            シェイプを回転させるための X 座標。
+            図形を回転させるための X 座標。
          </param>
          <param name="y">
-            シェイプを回転させるための Y 座標。
+            図形を回転させるための Y 座標。
          </param>
          <param name="angle">
             形状を回転させる角度（度）。
@@ -10702,10 +10702,10 @@
             多角形を移動します。
          </summary>
          <param name="shapeName">
-            シェイプ名（LDShapes.AddPolygon で作成されたポリゴン）。
+            図形名（LDShapes.AddPolygon で作成されたポリゴン）。
          </param>
          <param name="points">
-            フォームポイント [i] [1] = x、points [i] [2] = y のポリゴンコーナーの新しい座標の配列。
+            points[i][1] = x、points[i][2] = y 形式のポリゴンコーナーの新しい座標の配列。
 
             ポイント数は 3 以上でなければならず、コールごとに変更することができます。
          </param>
@@ -10715,10 +10715,10 @@
       </member>
       <member name="M:LitDev.LDShapes.AddPolygon(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            ポリゴンシェイプを作成します。
+            ポリゴン図形を作成します。
          </summary>
          <param name="points">
-            フォーム points [i] [1] = x、points [i] [2] = y のポリゴンコーナーの座標の配列。
+            points[i][1] = x、points[i][2] = y 形式のポリゴンコーナーの座標の配列。
 
             ポイント数は 3 以上でなければなりません。
          </param>
@@ -10753,10 +10753,10 @@
             境界ボックスの形状の重なりをチェックします（衝突検出）。
          </summary>
          <param name="shape1">
-            最初のシェイプ名。
+            最初の図形名。
          </param>
          <param name="shape2">
-            2 番目のシェイプ名。
+            2 番目の図形名。
          </param>
          <returns>
             "True" または "False"。
@@ -10767,10 +10767,10 @@
             境界円の形の重なりをチェックします（衝突検出）。
          </summary>
          <param name="shape1">
-            最初のシェイプ名。
+            最初の図形名。
          </param>
          <param name="shape2">
-            2 番目のシェイプ名。
+            2 番目の図形名。
          </param>
          <returns>
             "True" または "False"。
@@ -10782,10 +10782,10 @@
             最初の形状は、ズームされず、回転しないようにする必要があります。
          </summary>
          <param name="shape1">
-            最初のシェイプ名。
+            最初の図形名。
          </param>
          <param name="shape2">
-            2 番目のシェイプ名。
+            2 番目の図形名。
          </param>
          <returns>
             "True" または "False"。
@@ -10807,14 +10807,14 @@
       </member>
       <member name="M:LitDev.LDShapes.GetColour(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            シェイプのブラシとペンの色を取得します。
+            図形のブラシとペンの色を取得します。
          </summary>
          <param name="shapeName">
             形状または制御名。
          </param>
          <returns>
             3 要素配列
-            1）16 進形式のブラシ（または背景色）のシェイプ
+            1）16 進形式のブラシ（または背景色）の図形
             2）形状の不透明度（0 ～ 100）
             3）16 進形式のペン（またはフォアグラウンド）カラーを描く
          </returns>
@@ -10824,7 +10824,7 @@
             線形または放射状のグラデーションブラシを作成します。
          </summary>
          <param name="colours">
-            グラデーションのシェイプに適用する色の配列。
+            グラデーションの図形に適用する色の配列。
          </param>
          <param name="orientation">
             グラデーションの向き。
@@ -10958,7 +10958,7 @@
             以前に作成されたグラデーションまたはイメージブラシ（LDShapes.BrushGradient LDShapes.BrushImage）。
          </param>
          <param name="points">
-            フォーム points [i] [1] = x、points [i] [2] = y のポリゴンコーナーの座標の配列。
+            points[i][1] = x、points[i][2] = y 形式のポリゴンコーナーの座標の配列。
 
             ポイント数は 3 以上でなければなりません。
          </param>
@@ -11045,7 +11045,7 @@
       </member>
       <member name="M:LitDev.LDShapes.ReSize(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            シェイプの幅と高さのサイズ変更（ズームの絶対バージョン）。
+            図形の幅と高さのサイズ変更（ズームの絶対バージョン）。
          </summary>
          <param name="shapeName">
             形状または制御名。
@@ -11098,19 +11098,19 @@
       <member name="M:LitDev.LDShapes.GetLeft(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             図形の左の位置を取得します（三角形、ポリゴン、および線に対して機能します）。
-            アニメーション化しながらシェイプでも機能します。
+            アニメーション化しながら図形でも機能します。
          </summary>
          <param name="shapeName">
             形状または制御名。
          </param>
          <returns>
-            シェイプの左端の x 座標。
+            図形の左端の x 座標。
          </returns>
       </member>
       <member name="M:LitDev.LDShapes.GetTop(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
             図形の一番上の位置を取得します（三角形、ポリゴン、および線に対して機能します）。
-            アニメーション化しながらシェイプでも機能します。
+            アニメーション化しながら図形でも機能します。
          </summary>
          <param name="shapeName">
             形状または制御名。
@@ -11121,7 +11121,7 @@
       </member>
       <member name="M:LitDev.LDShapes.Width(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            シェイプの表示可能な幅（ズームを含む）を取得します。
+            図形の表示可能な幅（ズームを含む）を取得します。
          </summary>
          <param name="shapeName">
             形状または制御名。
@@ -11158,7 +11158,7 @@
       </member>
       <member name="M:LitDev.LDShapes.AddAnimatedGif(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            アニメーション GIF シェイプを作成します。
+            アニメーション GIF 図形を作成します。
             これらを非常に多く追加したり、パフォーマンスが低下する可能性があります。
          </summary>
          <param name="imageName">
@@ -11168,7 +11168,7 @@
             アニメーション "True" または "False" を連続して繰り返します。
          </param>
          <returns>
-            アニメーション GIF シェイプ名。
+            アニメーション GIF 図形名。
          </returns>
       </member>
       <member name="M:LitDev.LDShapes.AddAnimatedImage(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -11190,7 +11190,7 @@
             Y 方向のサブ画像の数。
          </param>
          <returns>
-            アニメーションシェイプ名。
+            アニメーション図形名。
          </returns>
       </member>
       <member name="M:LitDev.LDShapes.AnimationSet(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -11198,7 +11198,7 @@
             アニメーションイメージを選択したイメージにリセットします。
          </summary>
          <param name="shapeName">
-            アニメーション画像のシェイプ名。
+            アニメーション画像の図形名。
          </param>
          <param name="image">
             選択したアニメーション画像番号（1 からインデックス付け）。
@@ -11209,7 +11209,7 @@
             アニメーション画像内の画像の数を取得します。
          </summary>
          <param name="shapeName">
-            アニメーション画像のシェイプ名。
+            アニメーション画像の図形名。
          </param>
          <returns>アニメーション画像内の画像の数。</returns>
       </member>
@@ -11219,7 +11219,7 @@
             AnimationSet を使用して一時停止した画像を更新することもできます
          </summary>
          <param name="shapeName">
-            アニメーション画像のシェイプ名。
+            アニメーション画像の図形名。
          </param>
       </member>
       <member name="M:LitDev.LDShapes.AnimationResume(Microsoft.SmallBasic.Library.Primitive)">
@@ -11227,7 +11227,7 @@
             以前に一時停止したアニメーション画像を再開します。
          </summary>
          <param name="shapeName">
-            アニメーション画像のシェイプ名。
+            アニメーション画像の図形名。
          </param>
       </member>
       <member name="M:LitDev.LDShapes.GetAllShapesAt(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
@@ -11239,14 +11239,14 @@
          <param name="y">Y 座標</param>
          <returns>
             形状名の配列または "False"。
-            複数のシェイプの場合、返される配列は、最上位のビジュアルレイヤーから最下部のレイヤーに並べられます。
+            複数の図形の場合、返される配列は、最上位のビジュアルレイヤーから最下部のレイヤーに並べられます。
          </returns>
       </member>
       <member name="M:LitDev.LDShapes.AnimateOpacity(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            不透明度をアニメーション化するためのシェイプを設定し、フラッシュ（フェードアウトおよびイン）します。
+            不透明度をアニメーション化するための図形を設定し、フラッシュ（フェードアウトおよびイン）します。
          </summary>
-         <param name="shapeName">点滅するシェイプまたはコントロール。</param>
+         <param name="shapeName">点滅する図形またはコントロール。</param>
          <param name="interval">
             完全なフラッシュあサイクルの間隔（ミリ秒単位）。
             値 0 は点滅を停止します。
@@ -11258,9 +11258,9 @@
       </member>
       <member name="M:LitDev.LDShapes.AnimateRotation(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            回転をアニメートするためのシェイプを設定します（連続的に回転します）。
+            回転をアニメートするための図形を設定します（連続的に回転します）。
          </summary>
-         <param name="shapeName">回転するシェイプまたはコントロール。</param>
+         <param name="shapeName">回転する図形またはコントロール。</param>
          <param name="interval">
             完全な 360 度回転の間隔（ms 単位）。
             値 0 を指定すると回転が停止します。
@@ -11273,9 +11273,9 @@
       </member>
       <member name="M:LitDev.LDShapes.AnimateZoom(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            ズームをアニメーション化するためのシェイプを設定します（イン / アウト）。
+            ズームをアニメーション化するための図形を設定します（イン / アウト）。
          </summary>
-         <param name="shapeName">ズームするシェイプまたはコントロール。</param>
+         <param name="shapeName">ズームする図形またはコントロール。</param>
          <param name="interval">
             完全なズームサイクルの間隔（ミリ秒単位）。
             値 0 はズームを停止します。
@@ -11289,9 +11289,9 @@
       </member>
       <member name="M:LitDev.LDShapes.SetShapeEvent(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            マウスイベントを記録するシェイプを登録する：MouseDown、MouseUp、MouseEnter、MouseLeave、GotFocus、LostFocus。
+            マウスイベントを記録する図形を登録する：MouseDown、MouseUp、MouseEnter、MouseLeave、GotFocus、LostFocus。
          </summary>
-         <param name="shapeName">追加するシェイプまたはコントロール。</param>
+         <param name="shapeName">追加する図形またはコントロール。</param>
       </member>
       <member name="M:LitDev.LDShapes.GetAllShapes">
          <summary>
@@ -11301,7 +11301,7 @@
       </member>
       <member name="M:LitDev.LDShapes.GetOpacity(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            シェイプの不透明度を取得します。
+            図形の不透明度を取得します。
          </summary>
          <param name="shapeName">
             形状の名前。
@@ -11319,16 +11319,16 @@
       </member>
       <member name="M:LitDev.LDShapes.Skew(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            指定された名前のシェイプを指定された角度だけ傾けます。
+            指定された名前の図形を指定された角度だけ傾けます。
          </summary>
          <param name="shapeName">
-            スキューするシェイプの名前。
+            スキューする図形の名前。
          </param>
          <param name="angleX">
-            X 方向のシェイプを斜めにする角度。
+            X 方向の図形を斜めにする角度。
          </param>
          <param name="angleY">
-            Y 方向のシェイプを傾斜させる角度。
+            Y 方向の図形を傾斜させる角度。
          </param>
          <returns>
             なし。
@@ -11336,7 +11336,7 @@
       </member>
       <member name="M:LitDev.LDShapes.FastMove(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            指定された名前のシェイプを新しい位置に移動します。
+            指定された名前の図形を新しい位置に移動します。
             この方法は速度を最大限に最適化しています。
          </summary>
          <param name="shapeName">
@@ -11368,12 +11368,12 @@
       </member>
       <member name="P:LitDev.LDShapes.LastEventShape">
          <summary>
-            イベントが発生した最後のシェイプです（ShapeEvent）。
+            イベントが発生した最後の図形です（ShapeEvent）。
          </summary>
       </member>
       <member name="P:LitDev.LDShapes.LastEventType">
          <summary>
-            イベントが発生した最後のシェイプイベントタイプ（ShapeEvent）。次のいずれかになります。
+            イベントが発生した最後の図形イベントタイプ（ShapeEvent）。次のいずれかになります。
             "MouseDown"
             "MouseUp"
             "MouseEnter"
@@ -11504,7 +11504,7 @@
             指定された図形にフォーカスがあるかどうかをチェックします。
          </summary>
          <param name="shapeName">
-            シェイプ名（通常はテキストボックス）。
+            図形名（通常はテキストボックス）。
          </param>
          <returns>
             "True" または "False"。
@@ -11512,10 +11512,10 @@
       </member>
       <member name="M:LitDev.LDFocus.SetFocus(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            名前付きシェイプにフォーカスを設定します。
+            名前付き図形にフォーカスを設定します。
          </summary>
          <param name="shapeName">
-            シェイプ名（通常はテキストボックス）。
+            図形名（通常はテキストボックス）。
          </param>
          <returns>
             成功または失敗に応じて "True"（真） または "False"（偽）。
@@ -11523,7 +11523,7 @@
       </member>
       <member name="M:LitDev.LDFocus.GetFocus">
          <summary>
-            現在のフォーカスがあるシェイプを取得します。
+            現在のフォーカスがある図形を取得します。
          </summary>
          <returns>
             形状名（通常はテキストボックス）または "False"。
@@ -12237,7 +12237,7 @@
             カラー画像ヒストグラムを返します。
          </summary>
          <param name="OriginalImage">元の ARGB 画像</param>
-         <returns>画像ヒストグラム（次元 0 はカラーコード（0  - &gt; 赤、1  - &gt; 緑、2  - &gt; 青）、次元 1  - 各位置は輝度レベルに対応）</returns>
+         <returns>画像ヒストグラム（次元 0 はカラーコード（0  -&gt; 赤、1  -&gt; 緑、2  -&gt; 青）、次元 1  - 各位置は輝度レベルに対応）</returns>
       </member>
       <member name="M:LitDev.Engines.FIP.MinBrightness(System.Drawing.Bitmap)">
          <summary>
