@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <doc>
    <assembly>
-      <name>LitDev 1.2.2 ja</name>
+      <name>LitDev 1.2.3 ja</name>
    </assembly>
    <members>
       <member name="M:Bing.BingSearchContainer.Composite(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
@@ -12,12 +12,12 @@
          <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlighting です。サンプル値：EnableHighlighting</param>
          <param name="WebSearchOptions">Web ソース・タイプへの要求のオプションを指定します。有効な値は、DisableHostCollapsing、DisableQueryAlterations です。サンプル値：DisableQueryAlterations</param>
          <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
-         <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：中位</param>
+         <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：Moderate</param>
          <param name="Latitude">緯度サンプル値：47.603450</param>
          <param name="Longitude">経度サンプル値：-122.329696</param>
          <param name="WebFileType">サンプル値を返すファイル拡張子：XLS</param>
-         <param name="ImageFilters">API がサイズ、アスペクト、色、スタイル、面、またはそれらの任意の組み合わせに基づいて送信するレスポンスをフィルタリングする文字列の配列。有効な値は次のとおりです：サイズ：小、サイズ：中、サイズ：大、サイズ：幅：[ 幅 ]、サイズ：高さ：[ 高さ ]、アスペクト比：スクエア、アスペクト比：ワイド、アスペクト比：タル、カラー：モノクロ、スタイル：写真、スタイル：グラフィック、顔：顔、顔：ポートレート、顔：その他。サンプル値：Size：Small + Aspect：Square</param>
-         <param name="VideoFilters">API がサイズ、アスペクト、色、スタイル、面、またはそれらの任意の組み合わせに基づいて送信するレスポンスをフィルタリングする文字列の配列。有効な値は次のとおりです。長さ：短、長さ：中、長さ：長、アスペクト：標準、アスペクト：ワイドスクリーン、解像度：低、解像度：中、解像度：高サンプル値：Duration：Short + Resolution：High</param>
+         <param name="ImageFilters">API がサイズ、アスペクト、色、スタイル、面、またはそれらの任意の組み合わせに基づいて送信するレスポンスをフィルタリングする文字列の配列。有効な値は次のとおりです：サイズ：小、サイズ：中、サイズ：大、サイズ：幅：[ 幅 ]、サイズ：高さ：[ 高さ ]、アスペクト比：スクエア、アスペクト比：ワイド、アスペクト比：タル、カラー：モノクロ、スタイル：写真、スタイル：グラフィック、顔：顔、顔：ポートレート、顔：その他。サンプル値：Size:Small+Aspect:Square</param>
+         <param name="VideoFilters">API がサイズ、アスペクト、色、スタイル、面、またはそれらの任意の組み合わせに基づいて送信するレスポンスをフィルタリングする文字列の配列。有効な値は次のとおりです。長さ：短、長さ：中、長さ：長、アスペクト：標準、アスペクト：ワイドスクリーン、解像度：低、解像度：中、解像度：高。サンプル値：Duration:Short+Resolution:High</param>
          <param name="VideoSortBy">返された結果のソート順サンプル値：Date</param>
          <param name="NewsLocationOverride">Bing の位置検出を無効にします。このパラメータは、en-US 市場にのみ適用されます。サンプル値：US.WA</param>
          <param name="NewsCategory">結果を提供するニュースのカテゴリサンプル値：rt_Business</param>
@@ -26,70 +26,70 @@
       <member name="M:Bing.BingSearchContainer.Web(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.String)">
          <summary>
          </summary>
-         <param name="Query">Bing 検索クエリのサンプル値：xbox</param>
+         <param name="Query">Bing 検索クエリ。サンプル値：xbox</param>
          <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlighting です。サンプル値：EnableHighlighting</param>
          <param name="WebSearchOptions">Web ソース・タイプへの要求のオプションを指定します。有効な値は、DisableHostCollapsing、DisableQueryAlterations です。サンプル値：DisableQueryAlterations</param>
          <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
-         <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：中位</param>
-         <param name="Latitude">緯度サンプル値：47.603450</param>
-         <param name="Longitude">経度サンプル値：-122.329696</param>
-         <param name="WebFileType">サンプル値を返すファイル拡張子：XLS</param>
+         <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：Moderate</param>
+         <param name="Latitude">緯度。サンプル値：47.603450</param>
+         <param name="Longitude">経度。サンプル値：-122.329696</param>
+         <param name="WebFileType">返されるファイル拡張子。サンプル値：XLS</param>
       </member>
       <member name="M:Bing.BingSearchContainer.Image(System.String,System.String,System.String,System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.String)">
          <summary>
          </summary>
-         <param name="Query">Bing 検索クエリのサンプル値：xbox</param>
+         <param name="Query">Bing 検索クエリ。サンプル値：xbox</param>
          <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlighting です。サンプル値：EnableHighlighting</param>
          <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
-         <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：中位</param>
+         <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：Moderate</param>
          <param name="Latitude">緯度サンプル値：47.603450</param>
          <param name="Longitude">経度サンプル値：-122.329696</param>
-         <param name="ImageFilters">API がサイズ、アスペクト、色、スタイル、面、またはそれらの任意の組み合わせに基づいて送信するレスポンスをフィルタリングする文字列の配列。有効な値は次のとおりです：サイズ：小、サイズ：中、サイズ：大、サイズ：幅：[ 幅 ]、サイズ：高さ：[ 高さ ]、アスペクト比：スクエア、アスペクト比：ワイド、アスペクト比：タル、カラー：モノクロ、スタイル：写真、スタイル：グラフィック、顔：顔、顔：ポートレート、顔：その他。サンプル値：Size：Small + Aspect：Square</param>
+         <param name="ImageFilters">API がサイズ、アスペクト、色、スタイル、面、またはそれらの任意の組み合わせに基づいて送信するレスポンスをフィルタリングする文字列の配列。有効な値は次のとおりです：サイズ：小、サイズ：中、サイズ：大、サイズ：幅：[ 幅 ]、サイズ：高さ：[ 高さ ]、アスペクト比：スクエア、アスペクト比：ワイド、アスペクト比：タル、カラー：モノクロ、スタイル：写真、スタイル：グラフィック、顔：顔、顔：ポートレート、顔：その他。サンプル値：Size:Small+Aspect:Square</param>
       </member>
       <member name="M:Bing.BingSearchContainer.Video(System.String,System.String,System.String,System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String)">
          <summary>
          </summary>
-         <param name="Query">Bing 検索クエリのサンプル値：xbox</param>
+         <param name="Query">Bing 検索クエリ。サンプル値：xbox</param>
          <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlighting です。サンプル値：EnableHighlighting</param>
          <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
-         <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：中位</param>
-         <param name="Latitude">緯度サンプル値：47.603450</param>
-         <param name="Longitude">経度サンプル値：-122.329696</param>
-         <param name="VideoFilters">API がサイズ、アスペクト、色、スタイル、面、またはそれらの任意の組み合わせに基づいて送信するレスポンスをフィルタリングする文字列の配列。有効な値は次のとおりです。長さ：短、長さ：中、長さ：長、アスペクト：標準、アスペクト：ワイドスクリーン、解像度：低、解像度：中、解像度：高サンプル値：Duration：Short + Resolution：High</param>
-         <param name="VideoSortBy">返された結果のソート順サンプル値：Date</param>
+         <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：Moderate</param>
+         <param name="Latitude">緯度。サンプル値：47.603450</param>
+         <param name="Longitude">経度。サンプル値：-122.329696</param>
+         <param name="VideoFilters">API がサイズ、アスペクト、色、スタイル、面、またはそれらの任意の組み合わせに基づいて送信するレスポンスをフィルタリングする文字列の配列。有効な値は次のとおりです。長さ：短、長さ：中、長さ：長、アスペクト：標準、アスペクト：ワイドスクリーン、解像度：低、解像度：中、解像度：高。サンプル値：Duration:Short+Resolution:High</param>
+         <param name="VideoSortBy">返される結果のソート順。サンプル値：Date</param>
       </member>
       <member name="M:Bing.BingSearchContainer.News(System.String,System.String,System.String,System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String,System.String)">
          <summary>
          </summary>
-         <param name="Query">Bing 検索クエリのサンプル値：xbox</param>
+         <param name="Query">Bing 検索クエリ。サンプル値：xbox</param>
          <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlighting です。サンプル値：EnableHighlighting</param>
          <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
-         <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：中位</param>
-         <param name="Latitude">緯度サンプル値：47.603450</param>
-         <param name="Longitude">経度サンプル値：-122.329696</param>
+         <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：Moderate</param>
+         <param name="Latitude">緯度。サンプル値：47.603450</param>
+         <param name="Longitude">経度。サンプル値：-122.329696</param>
          <param name="NewsLocationOverride">Bing の位置検出を無効にします。このパラメータは、en-US 市場にのみ適用されます。サンプル値：US.WA</param>
-         <param name="NewsCategory">結果を提供するニュースのカテゴリサンプル値：rt_Business</param>
-         <param name="NewsSortBy">返された結果のソート順サンプル値：Date</param>
+         <param name="NewsCategory">結果を提供するニュースのカテゴリ。サンプル値：rt_Business</param>
+         <param name="NewsSortBy">返される結果のソート順。サンプル値：Date</param>
       </member>
       <member name="M:Bing.BingSearchContainer.RelatedSearch(System.String,System.String,System.String,System.String,System.Nullable{System.Double},System.Nullable{System.Double})">
          <summary>
          </summary>
-         <param name="Query">Bing 検索クエリのサンプル値：xbox</param>
+         <param name="Query">Bing 検索クエリ。サンプル値：xbox</param>
          <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlighting です。サンプル値：EnableHighlighting</param>
          <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
-         <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：中位</param>
-         <param name="Latitude">緯度サンプル値：47.603450</param>
-         <param name="Longitude">経度サンプル値：-122.329696</param>
+         <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：Moderate</param>
+         <param name="Latitude">緯度。サンプル値：47.603450</param>
+         <param name="Longitude">経度。サンプル値：-122.329696</param>
       </member>
       <member name="M:Bing.BingSearchContainer.SpellingSuggestions(System.String,System.String,System.String,System.String,System.Nullable{System.Double},System.Nullable{System.Double})">
          <summary>
          </summary>
-         <param name="Query">Bing 検索照会のサンプル値：xblox</param>
+         <param name="Query">Bing 検索照会。サンプル値：xblox</param>
          <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlighting です。サンプル値：EnableHighlighting</param>
          <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
-         <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：中位</param>
-         <param name="Latitude">緯度サンプル値：47.603450</param>
-         <param name="Longitude">経度サンプル値：-122.329696</param>
+         <param name="Adult">性的に露骨なコンテンツをフィルタリングするために大人の設定が使用されます。サンプル値：Moderate</param>
+         <param name="Latitude">緯度。サンプル値：47.603450</param>
+         <param name="Longitude">経度。サンプル値：-122.329696</param>
       </member>
       <member name="T:LitDev.LDFastArray">
          <summary>
@@ -256,7 +256,7 @@
       </member>
       <member name="M:LitDev.LDFastArray.CreateFromValues(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            SmallBasic 配列を FastArray 配列に変換します。
+            Small Basic 配列を FastArray 配列に変換します。
             Small Basic 配列のすべてのインデックスは連続した整数インデックスに置き換えられます。
          </summary>
          <param name="sbArray">Small Basic 配列。</param>
@@ -264,7 +264,7 @@
       </member>
       <member name="M:LitDev.LDFastArray.CreateFromIndices(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            SmallBasic 配列（最大 3 次元）を FastArray 配列に変換します。
+            Small Basic 配列（最大 3 次元）を FastArray 配列に変換します。
             このメソッドは、Small Basic 配列インデックスのみを含む配列を作成します。
          </summary>
          <param name="sbArray">Small Basic 配列。</param>
@@ -1808,12 +1808,12 @@
       </member>
       <member name="T:LitDev.LDColours">
          <summary>
-            Standard SmallBasic の色と他のカラーユーティリティを取得します。
+            標準の Small Basic の色と他のカラーユーティリティを取得します。
          </summary>
       </member>
       <member name="M:LitDev.LDColours.HSLtoRGB(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            色相、彩度、明度（HSL）の色を SmallBasic で使用される赤、緑、青（RGB）の色に変換します。
+            色相、彩度、明度（HSL）の色を Small Basic で使用される赤、緑、青（RGB）の色に変換します。
          </summary>
          <param name="H">色相（0 ～ 360）。</param>
          <param name="S">飽和（0 ～ 1）。</param>
@@ -1879,7 +1879,7 @@
       </member>
       <member name="T:LitDev.LDArray">
          <summary>
-            標準の SmallBasic 配列よりもはるかに高速な 1 次元配列メソッドです。
+            標準の Small Basic 配列よりもはるかに高速な 1 次元配列メソッドです。
 
             100 ～ 1000 以上の要素を持つ配列に役立ちます。
             エラーが発生すると、"FAILED" という戻り値が返されます。
@@ -1966,16 +1966,16 @@
       </member>
       <member name="M:LitDev.LDArray.CopyToSBArray(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            LDArray 型を SmallBasic 配列型にコピーします。
+            LDArray 型を Small Basic 配列型にコピーします。
 
-            SmallBasic インデックスが必ずしも連続した整数ではないため、逆オペレーション（SmallBasic から LDArray へ）は不可能です。
+            Small Basic インデックスが必ずしも連続した整数ではないため、逆オペレーション（SmallBasic から LDArray へ）は不可能です。
             また、SmallBasic 配列は空の文字列値を保持できないため、これらはコピーされません。
          </summary>
          <param name="array">
             配列名。
          </param>
          <returns>
-            SmallBasic 配列または "FAILED"。
+            Small Basic 配列または "FAILED"。
          </returns>
       </member>
       <member name="M:LitDev.LDArray.Sort(Microsoft.SmallBasic.Library.Primitive)">
@@ -3402,7 +3402,7 @@
          <summary>
             任意の拡張メソッドを非同期に呼び出します。
             LDCallAsync の例を参照してください。
-            dll、extension、obj、引数がすべて "" の場合、メソッドは SmallBasic プログラムのサブルーチンになります。
+            dll、extension、obj、引数がすべて "" の場合、メソッドは Small Basic プログラムのサブルーチンになります。
          </summary>
          <param name="dll">拡張子 dll（例："LitDev.dll" または "SmallBasicLibrary.dll"）。</param>
          <param name="extension">拡張名前空間（通常、SmallBasicLibrary.dll の場合は "LitDev" や "MicroSoft.SmallBasic.Library" などの dll 名と同じです）。</param>
@@ -4934,7 +4934,7 @@
       </member>
       <member name="M:LitDev.LDList.ToArray(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            リストを SmallBasic 配列に変換します。
+            リストを Small Basic 配列に変換します。
             大きなリストの場合には推奨されません。
          </summary>
          <param name="listName">
@@ -4946,20 +4946,20 @@
       </member>
       <member name="M:LitDev.LDList.CreateFromValues(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            SmallBasic 配列をリストにコピーします。
+            Small Basic 配列をリストにコピーします。
             配列インデックスはリストによって無視されます。
          </summary>
          <param name="sbArray">
-            SmallBasic 配列。
+            Small Basic 配列。
          </param>
          <returns>作成されたリスト。</returns>
       </member>
       <member name="M:LitDev.LDList.CreateFromIndices(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            SmallBasic 配列のインデックスをリストにコピーします。
+            Small Basic 配列のインデックスをリストにコピーします。
          </summary>
          <param name="sbArray">
-            SmallBasic 配列。
+            Small Basic 配列。
          </param>
          <returns>作成されたリスト。</returns>
       </member>
@@ -5943,7 +5943,7 @@
       <member name="P:LitDev.LDScrollBars.Rasterize">
          <summary>
             ラスタライズドローイング "True"（デフォルト）または "False"。
-            100 以上のオブジェクトが描画されると（図形ではありません）、パフォーマンス上の理由から SmallBasic はこれらを画像にラスタライズします。
+            100 以上のオブジェクトが描画されると（図形ではありません）、パフォーマンス上の理由から Small Basic はこれらを画像にラスタライズします。
             非常に大きなスクロール可能領域の場合、メモリが不足し、ここでは無効にすることができます。
             無効になっている場合は、100 を超える描画可能オブジェクトを使用しないでください。
             このプロパティは、LDScrollBars.Add が呼び出される前に設定する必要があります。
@@ -7500,15 +7500,15 @@
       </member>
       <member name="M:LitDev.LDMatrix.CopyToSBArray(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            LDMatrix 型を SmallBasic 配列型にコピーします。
+            LDMatrix 型を Small Basic 配列型にコピーします。
 
-            SmallBasic インデックスが必ずしも連続した整数ではないため、逆演算（SmallBasic から LDMatrix へ）は不可能です。
+            Small Basic インデックスが必ずしも連続した整数ではないため、逆演算（SmallBasic から LDMatrix へ）は不可能です。
          </summary>
          <param name="matrix">
             行列名。
          </param>
          <returns>
-            SmallBasic 配列または "FAILED"。
+            Small Basic 配列または "FAILED"。
          </returns>
       </member>
       <member name="T:LitDev.LDMusic">
@@ -7909,12 +7909,12 @@
       </member>
       <member name="M:LitDev.LDDebug.Instrument(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            各行にブレークポイントを自動的に追加した SmallBasic ファイル（_debug.sb）を作成します。
+            各行にブレークポイントを自動的に追加した Small Basic ファイル（_debug.sb）を作成します。
 
             新しい計測ファイルを開いて実行して、それをデバッグしてください。
             問題が見つかったら、オリジナルファイルと再インストゥルメントで修正して修正ファイルをデバッグします。
          </summary>
-         <param name="fileName">インストルメントの Smallbasic ファイル（*.sb）。</param>
+         <param name="fileName">インストルメントの Small Basic ファイル（*.sb）。</param>
       </member>
       <member name="M:LitDev.LDDebug.Break(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
@@ -8511,7 +8511,7 @@
       <member name="P:LitDev.LDFile.CSVplaceholder">
          <summary>
             CSV ファイルを読み込むときに、インポートされた配列に空の値の代わりに使用する文字。
-            SmallBasic 配列は空の値、つまり "" を保持できません。
+            Small Basic 配列は空の値、つまり "" を保持できません。
 
             デフォルトは空文字列 "" です（CSV ファイルの空の値に対して作成された配列エントリはありません）。
          </summary>
@@ -8798,7 +8798,7 @@
       </member>
       <member name="M:LitDev.LDUtilities.IsNumber(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            入力が SmallBasic によって数値として扱われるかどうかをテストします。
+            入力が Small Basic によって数値として扱われるかどうかをテストします。
             これはカルチャ不変の番号です（例："3.14" ではなく、"3,14" または "24x" です。
          </summary>
          <param name="input">テストする入力。</param>
@@ -9241,7 +9241,7 @@
 
             データのグラフは、線、点またはヒストグラムとしてプロットすることができます。
 
-            各一連のデータは、（ユニークな）X 値を返す配列インデックスと Y 値を表す配列値を持つ SmallBasic 配列です。
+            各一連のデータは、（ユニークな）X 値を返す配列インデックスと Y 値を表す配列値を持つ Small Basic 配列です。
 
             例えば：
             data[1] = 5
@@ -9442,7 +9442,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.AddFixedShape(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            フィジカルエンジンに既存の SmallBasic 図形を追加します。フィーチャに影響を与える摩擦や反発を伴う固定（非動的）図形として追加します。
+            フィジカルエンジンに既存の Small Basic 図形を追加します。フィーチャに影響を与える摩擦や反発を伴う固定（非動的）図形として追加します。
          </summary>
          <param name="shapeName">
             図形の名前。
@@ -9459,7 +9459,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.AddInactiveShape(Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            既存の SmallBasic 図形を物理エンジンに追加するには、PanView メソッドでのみ動作する非アクティブ（非インタラクティブで非インタラクティブな）図形として追加します。
+            既存の Small Basic 図形を物理エンジンに追加するには、PanView メソッドでのみ動作する非アクティブ（非インタラクティブで非インタラクティブな）図形として追加します。
          </summary>
          <param name="shapeName">
             図形の名前。
@@ -9484,7 +9484,7 @@
       </member>
       <member name="M:LitDev.LDPhysics.AddMovingShape(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
          <summary>
-            既存の SmallBasic 図形を物理エンジンに移動（動的）図形として追加します。
+            既存の Small Basic 図形を物理エンジンに移動（動的）図形として追加します。
          </summary>
          <param name="shapeName">
             図形の名前。
@@ -9736,7 +9736,7 @@
 
             拡張機能は Box2D（http://box2d.org）をエンジンとして使用し、SmallBasic のグラフィックス機能との間のインターフェイスを提供します。
 
-            物理エンジンに接続されている図形だけがモーション物理に参加します。たとえば、通常の図形（たとえば、ガンを物理エンジンに接続しないなど）を追加することができます。図形がエンジンに接続されたら、拡張機能によって提供される方法でのみ図形と対話するのが最善です。すべての位置は SmallBasic GraphicsWindow ピクセルにあり、図形センターを参照します。
+            物理エンジンに接続されている図形だけがモーション物理に参加します。たとえば、通常の図形（たとえば、ガンを物理エンジンに接続しないなど）を追加することができます。図形がエンジンに接続されたら、拡張機能によって提供される方法でのみ図形と対話するのが最善です。すべての位置は Small Basic GraphicsWindow ピクセルにあり、図形センターを参照します。
 
             画像とテキストの図形は長方形として扱われ、楕円は円として扱われます。三角形と凸多角形のサポートもありますが、線はありません。LoadImagesAsCircles プロパティを "True" に設定することで、画像を円として扱うことができます。
 
@@ -9746,11 +9746,11 @@
 
             TimestepControl の設定を使用していくつかの "難しい" モデルの安定性を向上させることは可能かもしれませんが、デフォルトはほとんどの場合よく見えます。
 
-            SmallBasic イベントサブルーチン内の物理メソッドを直接呼び出すのではなく、メインのゲームループで処理できるフラグを設定します。
+            Small Basic イベントサブルーチン内の物理メソッドを直接呼び出すのではなく、メインのゲームループで処理できるフラグを設定します。
 
-            サンプルの SmallBasic プログラムと、拡張 DLL に付属の "入門ガイド" があります。これは開始するのに最適な場所です。
+            サンプルの Small Basic プログラムと、拡張 DLL に付属の "入門ガイド" があります。これは開始するのに最適な場所です。
 
-            バグや問題を SmallBasic フォーラム（http://social.msdn.microsoft.com/Forums/en-US/smallbasic/threads）に報告してください。しかし、最初に SmallBasic コードを単純化して短い "実行可能な" コードを提供する前に問題を特定してくださいサンプル。
+            バグや問題を Small Basic フォーラム（http://social.msdn.microsoft.com/Forums/en-US/smallbasic/threads）に報告してください。しかし、最初に Small Basic コードを単純化して短い "実行可能な" コードを提供する前に問題を特定してくださいサンプル。
          </summary>
          <returns>
             なし。
