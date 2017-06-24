@@ -1,23 +1,24 @@
 # LitDevJa
-LitDev Extension Help Document in Japanese
-i“ú–{Œê‚Ì LitDev Šg’£ƒ‰ƒCƒuƒ‰ƒŠ‚Ìƒwƒ‹ƒv ƒhƒLƒ…ƒƒ“ƒgj
+LitDev Extension Help Document in Japanese<br>
+ï¼ˆæ—¥æœ¬èªã® LitDev æ‹¡å¼µãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®ãƒ˜ãƒ«ãƒ— ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼‰
 
-In current version 1.2.3 ja, most of issues by machine translation were resolved.  The next step is reviewing the technical contents for each object.
-iŒ»İ‚Ì version 1.2.3 ‚Å‹@ŠB“I‚È–|–ó‚Ì–â‘è‚Í‚Ù‚Ú‰ğÁ‚µ‚Ü‚µ‚½B¡ŒãAŠeƒIƒuƒWƒFƒNƒg‚É‘Î‚µ‚ÄA‹Zp“I‚È“à—e‚Ì¸¸‚ğs‚¢‚Ü‚·Bj
+In current version 1.2.3 ja, most of issues by machine translation were resolved.  The next step is reviewing the technical contents for each object.<br>
+ï¼ˆç¾åœ¨ã® version 1.2.3 ã§æ©Ÿæ¢°çš„ãªç¿»è¨³ã®å•é¡Œã¯ã»ã¼è§£æ¶ˆã—ã¾ã—ãŸã€‚ä»Šå¾Œã€å„ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«å¯¾ã—ã¦ã€æŠ€è¡“çš„ãªå†…å®¹ã®ç²¾æŸ»ã‚’è¡Œã„ã¾ã™ã€‚ï¼‰
 
-## System Requirementi“®ìŠÂ‹«j
+## System Requirementï¼ˆå‹•ä½œç’°å¢ƒï¼‰
 - Small Basic 1.2
 - Litdev Extension 1.2
 
-## Usageig‚¢•ûj
-1. Copy LitDev.ja.xml to C:\Program Files (x86)\Microsoft\Small Basic\Lib .
-   iLitDev.ja.xml ‚ğ C:\Program Files (x86)\Microsoft\Small Basic\Lib ‚ÖƒRƒs[‚µ‚Ü‚·Bj
-1. Run Japanese Version of Small Basic.
-   i“ú–{Œê”Å‚Ì Small Basic ‚ğ‹N“®‚µ‚Ü‚·Bj
+## Usageï¼ˆä½¿ã„æ–¹ï¼‰
+1. Copy LitDev.ja.xml to C:\Program Files (x86)\Microsoft\Small Basic\Lib .<br>
+   ï¼ˆLitDev.ja.xml ã‚’ C:\Program Files (x86)\Microsoft\Small Basic\Lib ã¸ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã€‚ï¼‰
+1. Run Japanese Version of Small Basic.<br>
+   ï¼ˆæ—¥æœ¬èªç‰ˆã® Small Basic ã‚’èµ·å‹•ã—ã¾ã™ã€‚ï¼‰
 
-## Known Issuesi–â‘è“_j
-Known issues are listed [here](https://github.com/nonkit/LitDevJa/issues).
+## Known Issuesï¼ˆå•é¡Œç‚¹ï¼‰
+Known issues are listed [here](https://github.com/nonkit/LitDevJa/issues).<br>
+ï¼ˆå•é¡Œç‚¹ã¯[ã“ã“](https://github.com/nonkit/LitDevJa/issues)ã«è‹±èªã§ãƒªã‚¹ãƒˆã•ã‚Œã¦ã„ã¾ã™ã€‚ï¼‰
 
-## Development Tool ŠJ”­ƒc[ƒ‹
-- Translate Aid J (written in Small Basic with LitDev Extension)
-  iLitDev Šg’£ƒ‰ƒCƒuƒ‰ƒŠ‚ğg‚¢ASmall Basic ‚Å‘‚©‚ê‚Ä‚Ü‚·j
+## Development Toolï¼ˆé–‹ç™ºãƒ„ãƒ¼ãƒ«ï¼‰
+- Translate Aid J (written in Small Basic with LitDev Extension)<br>
+  ï¼ˆLitDev æ‹¡å¼µãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’ä½¿ã„ã€Small Basic ã§æ›¸ã‹ã‚Œã¦ã¾ã™ï¼‰
