@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <doc>
    <assembly>
-      <name>LitDev 1.2.3 ja</name>
+      <name>LitDev 1.2.4 ja</name>
    </assembly>
    <members>
       <member name="M:Bing.BingSearchContainer.Composite(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
          <summary>
          </summary>
-         <param name="Sources">Bing 検索ソースサンプル値：web+image+video+news+spell</param>
-         <param name="Query">Bing 検索クエリのサンプル値：xbox</param>
+         <param name="Sources">Bing 検索ソース。サンプル値：web+image+video+news+spell</param>
+         <param name="Query">Bing 検索クエリ。サンプル値：xbox</param>
          <param name="Options">すべてのソースに対するこの要求のオプションを指定します。有効な値は、DisableLocationDetection、EnableHighlighting です。サンプル値：EnableHighlighting</param>
          <param name="WebSearchOptions">Web ソース・タイプへの要求のオプションを指定します。有効な値は、DisableHostCollapsing、DisableQueryAlterations です。サンプル値：DisableQueryAlterations</param>
          <param name="Market">市場。注：すべてのソースがすべての市場をサポートしているわけではありません。サンプル値：en-US</param>
@@ -18,10 +18,10 @@
          <param name="WebFileType">サンプル値を返すファイル拡張子：XLS</param>
          <param name="ImageFilters">API がサイズ、アスペクト、色、スタイル、面、またはそれらの任意の組み合わせに基づいて送信するレスポンスをフィルタリングする文字列の配列。有効な値は次のとおりです：サイズ：小、サイズ：中、サイズ：大、サイズ：幅：[ 幅 ]、サイズ：高さ：[ 高さ ]、アスペクト比：スクエア、アスペクト比：ワイド、アスペクト比：タル、カラー：モノクロ、スタイル：写真、スタイル：グラフィック、顔：顔、顔：ポートレート、顔：その他。サンプル値：Size:Small+Aspect:Square</param>
          <param name="VideoFilters">API がサイズ、アスペクト、色、スタイル、面、またはそれらの任意の組み合わせに基づいて送信するレスポンスをフィルタリングする文字列の配列。有効な値は次のとおりです。長さ：短、長さ：中、長さ：長、アスペクト：標準、アスペクト：ワイドスクリーン、解像度：低、解像度：中、解像度：高。サンプル値：Duration:Short+Resolution:High</param>
-         <param name="VideoSortBy">返された結果のソート順サンプル値：Date</param>
+         <param name="VideoSortBy">返された結果のソート順。サンプル値：Date</param>
          <param name="NewsLocationOverride">Bing の位置検出を無効にします。このパラメータは、en-US 市場にのみ適用されます。サンプル値：US.WA</param>
-         <param name="NewsCategory">結果を提供するニュースのカテゴリサンプル値：rt_Business</param>
-         <param name="NewsSortBy">返された結果のソート順サンプル値：Date</param>
+         <param name="NewsCategory">結果を提供するニュースのカテゴリ。サンプル値：rt_Business</param>
+         <param name="NewsSortBy">返された結果のソート順。サンプル値：Date</param>
       </member>
       <member name="M:Bing.BingSearchContainer.Web(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.String)">
          <summary>
@@ -7526,8 +7526,8 @@
          </param>
          <example>
             <code>
-               LDMusic.Instrument = LDMusic.Xylophone
-               LDMusic.PlayMusic("O5 C8 C8 G8 G8 A8 A8 G4 F8 F8 E8 E8 D8 D8 C2")
+            LDMusic.Instrument = LDMusic.Xylophone
+            LDMusic.PlayMusic("O5 C8 C8 G8 G8 A8 A8 G4 F8 F8 E8 E8 D8 D8 C2")
             </code>
          </example>
       </member>
